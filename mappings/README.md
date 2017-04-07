@@ -10,16 +10,16 @@ So, for SciGraph (```sg:```) to FOAF (```foaf:```) mappings, we have a mappings 
     sg--foaf.ttl
 ```
 
-Note that we use a double dash separator (```--```) as either source or target namespaces may include dashes.  
+Note that the double dash separator (```--```) is used as either source or target namespaces may include dashes.  
 
-The main organization for mappings files is by *target* namespace. So e.g. under ```production``` we would have mappings to ```fabio``` and ```foaf``` namespaces as:
+The main organization for mappings files is by *target* namespace. So e.g. under ```mappings``` there are mappings to ```fabio``` and ```foaf``` namespaces as:
 
-* [production/](https://github.com/springernature/knowledge-graph/blob/master/models/mappings/production/) 
+* [mappings/](https://github.com/springernature/scigraph/blob/master/models/mappings/) 
   * ...
-  * [fabio/](https://github.com/springernature/knowledge-graph/blob/master/models/mappings/production/fabio/) 
-    * [sg--fabio.ttl](https://github.com/springernature/knowledge-graph/blob/master/models/mappings/production/fabio/sg--fabio.ttl) 
-  * [foaf/](https://github.com/springernature/knowledge-graph/blob/master/models/mappings/production/foaf/) 
-    * [sg--foaf.ttl](https://github.com/springernature/knowledge-graph/blob/master/models/mappings/production/foaf/sg--foaf.ttl) 
+  * [fabio/](https://github.com/springernature/scigraph/blob/master/models/mappings/fabio/) 
+    * [sg--fabio.ttl](https://github.com/springernature/scigraph/blob/master/models/mappings/fabio/sg--fabio.ttl) 
+  * [foaf/](https://github.com/springernature/scigraph/blob/master/models/mappings/foaf/) 
+    * [sg--foaf.ttl](https://github.com/springernature/scigraph/blob/master/models/mappings/foaf/sg--foaf.ttl) 
   * ...
 
 ## Structure
@@ -43,7 +43,7 @@ The mappings files are structured as simple Turtle files with a standard layout.
 
 ## Example – Ontologies
 
-For ontologies we use the well-known prefix, e.g. for SciGraph  we use ```sg:```.
+For SciGraph core ontology the well-known prefix ```sg:``` is used.
 
 ```
 ## Source namespace
@@ -68,7 +68,7 @@ sg:issn owl:equivalentProperty bibo:issn .
 
 ## Example – Taxonomies
 
-For taxonomies we use our local prefixes, e.g. for SciGraph subjects we use ```subjects:```.
+For the Subjects Taxonomy the local prefix ```subjects:``` is used.
 
 ```
 ## Source namespace
