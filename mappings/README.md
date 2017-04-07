@@ -16,12 +16,12 @@ Note that the double dash separator (```--```) is used as either source or targe
 
 The main organization for mappings files is by *target* namespace. So e.g. under ```mappings``` there are mappings to ```fabio``` and ```foaf``` namespaces as:
 
-* [mappings/](https://github.com/springernature/scigraph/tree/master/models/mappings/) 
+* [mappings/](https://github.com/springernature/scigraph/tree/master/mappings/) 
   * ...
-  * [fabio/](https://github.com/springernature/scigraph/tree/master/models/mappings/fabio/) 
-    * [sg--fabio.ttl](https://github.com/springernature/scigraph/tree/master/models/mappings/fabio/sg--fabio.ttl) 
-  * [foaf/](https://github.com/springernature/scigraph/tree/master/models/mappings/foaf/) 
-    * [sg--foaf.ttl](https://github.com/springernature/scigraph/tree/master/models/mappings/foaf/sg--foaf.ttl) 
+  * [fabio/](https://github.com/springernature/scigraph/tree/master/mappings/fabio/) 
+    * [sg--fabio.ttl](https://github.com/springernature/scigraph/tree/master/mappings/fabio/sg--fabio.ttl) 
+  * [foaf/](https://github.com/springernature/scigraph/tree/master/mappings/foaf/) 
+    * [sg--foaf.ttl](https://github.com/springernature/scigraph/tree/master/mappings/foaf/sg--foaf.ttl) 
   * ...
 
 ### Structure
