@@ -1,4 +1,6 @@
-## Organization
+## Mappings
+
+### Filename conventions 
 
 Mappings files are named as *source* namespace to *target* namespace, using standard namespace prefixes:
 ```
@@ -22,7 +24,7 @@ The main organization for mappings files is by *target* namespace. So e.g. under
     * [sg--foaf.ttl](https://github.com/springernature/scigraph/blob/master/models/mappings/foaf/sg--foaf.ttl) 
   * ...
 
-## Structure
+### Structure
 
 The mappings files are structured as simple Turtle files with a standard layout.
 
@@ -41,7 +43,7 @@ The mappings files are structured as simple Turtle files with a standard layout.
 ...
 ```
 
-## Example – Ontologies
+### Example – Ontologies
 
 For SciGraph core ontology the well-known prefix ```sg:``` is used.
 
@@ -66,7 +68,7 @@ sg:issn owl:equivalentProperty bibo:issn .
 ...
 ```
 
-## Example – Taxonomies
+### Example – Taxonomies
 
 For the Subjects Taxonomy the local prefix ```subjects:``` is used.
 
