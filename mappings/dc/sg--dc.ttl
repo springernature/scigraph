@@ -1,0 +1,14 @@
+## Source namespace
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+##  Mappings - classes
+
+##  Mappings - properties
+sg:title owl:equivalentProperty dc:title .
+sg:date owl:equivalentProperty dc:date .

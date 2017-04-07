@@ -1,0 +1,22 @@
+## Source namespace
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+##  Mappings - classes
+sg:Agent owl:equivalentClass foaf:Agent .
+sg:Organization owl:equivalentClass foaf:Organization .
+sg:Person owl:equivalentClass foaf:Person .
+
+##  Mappings - properties
+sg:familyName owl:equivalentProperty foaf:familyName .
+sg:givenName owl:equivalentProperty foaf:givenName .
+sg:hasSubject owl:equivalentProperty  foaf:primaryTopic .
+sg:homepage owl:equivalentProperty foaf:homepage .
+sg:name owl:equivalentProperty foaf:name .
+sg:title owl:equivalentProperty  foaf:title .
+sg:webpage owl:equivalentProperty foaf:page .

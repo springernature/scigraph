@@ -1,0 +1,21 @@
+## Source namespace
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+##  Mappings - classes
+sg:Agent owl:equivalentClass crm:E39_Actor .
+sg:Asset owl:equivalentClass crm:E84_Information_Carrier .
+sg:Concept owl:equivalentClass crm:E28_Conceptual_Object .
+sg:Event owl:equivalentClass crm:E2_Temporal_Entity .
+sg:Organization owl:equivalentClass crm:E40_Legal_Body .
+sg:Person owl:equivalentClass crm:E21_Person .
+sg:Publication owl:equivalentClass crm:E73_Information_Object .
+sg:PublicationEvent rdfs:subClassOf crm:E12_Production .
+sg:Type owl:equivalentClass crm:E55_Type .
+
+##  Mappings - properties

@@ -1,0 +1,24 @@
+## Source namespace
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+##  Mappings - classes
+sg:Article owl:equivalentClass bibo:Article .
+sg:Event owl:equivalentClass bibo:Event .
+sg:Journal owl:equivalentClass bibo:Journal .
+sg:Serial owl:equivalentClass bibo:Periodical .
+
+##  Mappings - properties
+sg:doi owl:equivalentProperty bibo:doi .
+sg:issn owl:equivalentProperty bibo:issn .
+sg:issue owl:equivalentProperty bibo:issue .
+sg:pages owl:equivalentProperty bibo:pages .
+sg:pageEnd owl:equivalentProperty bibo:pageEnd .
+sg:pageStart owl:equivalentProperty bibo:pageStart .
+sg:shortTitle owl:equivalentProperty bibo:shortTitle .
+sg:volume owl:equivalentProperty bibo:volume .

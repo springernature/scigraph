@@ -1,0 +1,18 @@
+## Source namespace
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+
+##  Mappings - classes
+sg:Agent owl:equivalentClass dbpedia-owl:Agent .
+sg:Journal owl:equivalentClass dbpedia-owl:AcademicJournal .
+sg:Organization owl:equivalentClass dbpedia-owl:Organisation .
+sg:Person owl:equivalentClass dbpedia-owl:Person .
+sg:Publisher owl:equivalentClass dbpedia-owl:Publisher .
+sg:Type owl:equivalentClass dbpedia-owl:Type .
+
+##  Mappings - properties

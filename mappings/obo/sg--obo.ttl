@@ -1,0 +1,13 @@
+## Source namespace
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+
+##  Mappings - classes
+sg:Article owl:equivalentClass obo:IAO_0000013 .
+
+##  Mappings - properties
