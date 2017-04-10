@@ -1,0 +1,277 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sgo: <http://www.springernature.com/scigraph/ontologies/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix shapes: <http://www.springernature.com/scigraph/shapes/> .
+
+# shape - OwlOntology
+
+shapes:OwlOntology
+    a sh:Shape ;
+    sh:targetClass owl:Ontology ;
+    rdfs:label "RDF shape for the owl:Ontology model" ;
+    sh:closed true ;
+
+    # Type
+    sh:property [
+        sh:predicate rdf:type ;
+        sh:hasValue owl:Ontology ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+
+    # Label
+    sh:property [
+        sh:predicate owl:versionInfo ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:label ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:comment ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:seeAlso ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    # Annotation
+    sh:property [
+        sh:predicate rdfs:isDefinedBy ;
+        sh:hasValue sg: ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate sg:webpage ;
+        sh:nodeKind sh:IRI ; sh:maxCount 1 ;
+    ] ;
+
+    # Publisher
+    sh:property [
+        sh:predicate dc:creator ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:predicate dc:publisher ;
+        sh:datatype xsd:string ; sh:maxCount 1 ;
+    ] ;
+
+    # Rights
+    sh:property [
+        sh:predicate dc:rights ;
+        sh:datatype xsd:string ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate dcterms:license ;
+        sh:nodeKind sh:IRI ; sh:maxCount 1 ;
+    ] ;
+
+    # Namespace
+    sh:property [
+        sh:predicate vann:preferredNamespacePrefix ;
+        sh:datatype xsd:string ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate vann:preferredNamespaceUri ;
+        sh:nodeKind sh:IRI ; sh:maxCount 1 ;
+    ] ;
+
+    .
+
+# shape - OwlClass
+
+shapes:OwlClass
+    a sh:Shape ;
+    sh:targetClass owl:Class ;
+    rdfs:label "RDF shape for the owl:Class model" ;
+    sh:closed true ;
+
+    # Type
+    sh:property [
+        sh:predicate rdf:type ;
+        sh:hasValue owl:Class ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:subClassOf ;
+        sh:hasValue owl:Class ;
+    ] ;
+
+    # Label
+    sh:property [
+        sh:predicate rdfs:label ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:comment ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:seeAlso ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    # Annotation
+    sh:property [
+        sh:predicate rdfs:isDefinedBy ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate sg:namespace ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+
+    .
+
+# shape - OwlDatatypeProperty
+
+shapes:OwlDatatypeProperty
+    a sh:Shape ;
+    sh:targetClass owl:DatatypeProperty ;
+    rdfs:label "RDF shape for the owl:DatatypeProperty model" ;
+    sh:closed true ;
+
+    # Type
+    sh:property [
+        sh:predicate rdf:type ;
+        sh:hasValue owl:Class ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:subPropertyOf ;
+        sh:hasValue owl:Class ;
+    ] ;
+
+    # Label
+    sh:property [
+        sh:predicate rdfs:label ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:comment ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:seeAlso ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    # Annotation
+    sh:property [
+        sh:predicate rdfs:isDefinedBy ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+
+    # Range/Domain
+    sh:property [
+        sh:predicate rdfs:domain ;
+        # sh:hasValue owl:Class ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:range ;
+        # sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+
+   .
+
+# shape - OwlObjectProperty
+
+shapes:OwlObjectProperty
+    a sh:Shape ;
+    sh:targetClass owl:ObjectProperty ;
+    rdfs:label "RDF shape for the owl:ObjectProperty model" ;
+    sh:closed true ;
+
+    # Type
+    sh:property [
+        sh:predicate rdf:type ;
+        sh:hasValue owl:Class ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:subPropertyOf ;
+        sh:hasValue owl:Class ;
+    ] ;
+    sh:property [
+        sh:predicate owl:inverseOf ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+
+    # Label
+    sh:property [
+        sh:predicate rdfs:label ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:comment ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:seeAlso ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    # Annotation
+    sh:property [
+        sh:predicate rdfs:isDefinedBy ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+
+    # Range/Domain
+    sh:property [
+        sh:predicate rdfs:domain ;
+        # sh:hasValue owl:Class ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:range ;
+        # sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+
+   .
+
+# shape - OwlAnnotationProperty
+
+shapes:OwlAnnotationProperty
+    a sh:Shape ;
+    sh:targetClass owl:AnnotationProperty ;
+    rdfs:label "RDF shape for the owl:AnnotationProperty model" ;
+    sh:closed true ;
+
+    # Type
+    sh:property [
+        sh:predicate rdf:type ;
+        sh:hasValue owl:Class ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:subPropertyOf ;
+        sh:hasValue owl:Class ;
+    ] ;
+
+    # Label
+    sh:property [
+        sh:predicate rdfs:label ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:comment ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:predicate rdfs:seeAlso ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    # Annotation
+    sh:property [
+        sh:predicate rdfs:isDefinedBy ;
+        sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+    ] ;
+
+   .
