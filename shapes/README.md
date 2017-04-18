@@ -21,7 +21,7 @@ These shapes are used primarily for data extraction rather than validation, wher
 
 Some points of note:
 
-* These shapes conform to an earlier version of the SHACL spec, ca. September 2016, when we forked the [TopBraid SHACL API](https://github.com/TopQuadrant/shacl) project. In particular, we make use use of the ```sh:predicate``` property, rather than ```sh:path```. 
+* These shapes conform to an earlier version of the SHACL spec, ca. September 2016, when we forked the [TopBraid SHACL API](https://github.com/TopQuadrant/shacl) project. In particular, we make use use of the ```sh:Shape``` class, rather than ```sh:NodeShape```, and the ```sh:predicate``` property, rather than ```sh:path```. 
 * We have not yet defined any modularization techniques so some shapes are repeated more or less verbatim across different shapes graphs (see e.g. ```shapes:Contribution``` in [articles.ttl](https://github.com/springernature/scigraph/tree/master/shapes/articles.ttl) and [grants.ttl](https://github.com/springernature/scigraph/tree/master/shapes/grants.ttl)) 
 * We also use shape definitions for our OWL ontology (see [ontologies.ttl](https://github.com/springernature/scigraph/tree/master/shapes/ontologies.ttl)) and SKOS concept schemes (see [subjects.ttl](https://github.com/springernature/scigraph/tree/master/shapes/subjects.ttl)) . 
  
