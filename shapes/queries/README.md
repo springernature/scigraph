@@ -1,4 +1,4 @@
-## Export Queries
+## Queries
 
 The SPARQL queries presented here were used to generate our [public datasets](https://github.com/springernature/scigraph/wiki#downloads) using the SHACL [shapes files](https://github.com/springernature/scigraph/tree/master/shapes) as publishing 'views' on our internal triplestore.
 
@@ -6,7 +6,7 @@ Since SHACL shapes are expressed in RDF they can be loaded into a triplestore an
 
 The basic plan then is as follows. Build a ```CONSTRUCT``` query for each dataset where for each class we set up an inner ```SELECT``` query which queries the shapes graph for a corresponding ```sh:targetClass``` to get the allowed list of properties and then filter on class and property. 
 
-### Example Export Query: 2012-articles.rq
+### Example Query: 2012-articles.rq
 
 In the example below we develop our query for the 2012 articles dataset (```springernature-scigraph-2012-articles.2017-02-15.nt```). Here we have ```sgg:shapes.exports``` as the shapes graph.
 
