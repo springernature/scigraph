@@ -38,7 +38,6 @@ construct {
     ?s ?p ?o
 }
 where {
-    {
         bind ( "2012"^^xsd:gYear as ?year )
         {
             ...
