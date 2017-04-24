@@ -15,7 +15,7 @@ shapes:Article
     ...
 ```
 
-These shapes are used primarily for data extraction rather than validation, where SPARQL queries range over the SHACL shapes to build RDF datasets via a ```CONSTRUCT``` query type. See the [queries](https://github.com/springernature/scigraph/tree/master/shapes/queries) folder for actual queries used. See also the wiki section [Classes and Properties](https://github.com/springernature/scigraph/wiki#classes-and-properties) for model descriptions.
+These shapes are used primarily for data extraction rather than validation, where SPARQL queries range over the SHACL shapes to build RDF datasets via a ```CONSTRUCT``` query type. See the [queries/](https://github.com/springernature/scigraph/tree/master/shapes/queries) folder for actual queries used. See also the wiki section [Classes and Properties](https://github.com/springernature/scigraph/wiki#classes-and-properties) for model descriptions.
 
 (Note that we use a corresponding – but wider – set of shapes for data validation and restriction on our ETL import workflows.)
 
