@@ -6,6 +6,6 @@
 
 ## Scigraph Objects
 
-[Retrieve Article Object](Article.md "Article")
+[Quering Elastic Search Index](json/Querying-Elasticsearch.md "Elasticsearch ")
 
-[Retrieve Journal Object ](Journal.md "Journal")
+[Quering Scigraph ](rdf/Querying-GraphDB.md "GraphDB")

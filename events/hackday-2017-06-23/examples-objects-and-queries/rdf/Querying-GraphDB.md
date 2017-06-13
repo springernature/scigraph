@@ -111,14 +111,12 @@ Article JSON Object
 
 ### GraphDB and Sparql Query 
 
-Query q1.rq
+
 ```
 PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
-construct {
-?s ?p ?o    
-}
+describe ?s
 where {
     graph sgg:articles.content-hub{
         ?s rdf:type sg:Article .
@@ -131,6 +129,18 @@ where {
 } 
 ```
 
+Query q1.rq
+```
+PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
+describe ?s
+where {   
+        ?s a sg:Article .
+        ?s sg:doi "10.1038/nature13195"
+    
+}
+```
 
 
 Execute the query on GraphDb Workbench
