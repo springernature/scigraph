@@ -4,7 +4,8 @@
 
 ![Scigraph Schema](scigraph-schema.png "Scigraph Schema")
 
+## Scigraph Objects
 
-![Retrieve Article Object](Article.md "Article")
+[Retrieve Article Object](Article.md "Article")
 
-![Retrieve Journal Object ](Journal.md "Journal")
+[Retrieve Journal Object ](Journal.md "Journal")
