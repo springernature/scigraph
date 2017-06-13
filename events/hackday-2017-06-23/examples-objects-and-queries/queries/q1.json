@@ -1,0 +1,19 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "wildcard": {
+            "title": "*Palaeozoic*osteichthyan*"
+          }
+        }
+      ],
+      "must_not": [ ],
+      "should": [ ]
+    }
+  },
+  "from": 0,
+  "size": 10,
+  "sort": [ ],
+  "aggs": { }
+}
