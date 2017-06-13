@@ -1,9 +1,9 @@
 # [\#SN-Scigraph](https://twitter.com/hashtag/sn-scigraph) Hackday 2017-06-23
 
+Execute queries on GraphDb Workbench \<aws public dns\>:7200/sparql
+
 ## Article with Contributions and Affiliations
 Searching the article on "Palaeozoic osteichthyan" with DOI "10.1038/nature13195"
-
-Execute the query on GraphDb Workbench \<aws public dns\>:7200/sparql
 
 Query q1.rq
 ```
@@ -323,4 +323,20 @@ where {
 	<http://www.springernature.com/scigraph/things/contributions/90f3a74b48f81d174a4b363777a7c655> sg:hasAffiliation <http://www.springernature.com/scigraph/things/affiliations/ea95df3e802f2c1e35b789f33a6c0f3d> .
 }
 
+```
+
+## Journal and JournalBrand Objects
+
+```
+PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
+PREFIX : <http://www.ontotext.com/connectors/elasticsearch#>
+describe  ?j ?jb
+where {   
+        ?s a sg:Article .
+        ?s sg:doi "10.1038/nature13195" .
+		?s sg:hasJournal ?j .
+    	?s sg:hasJournalBrand ?jb
+}
 ```
