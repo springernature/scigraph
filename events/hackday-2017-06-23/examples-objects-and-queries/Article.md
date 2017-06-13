@@ -136,6 +136,10 @@ where {
 } 
 ```
 
+
+
+Execute the query on GraphDb Workbench
+
 RDF Object / Trig
 
 ```
