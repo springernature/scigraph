@@ -1,0 +1,14 @@
+```
+PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
+describe ?s
+where {
+    graph sgg:articles.content-hub{
+        ?s rdf:type sg:Article .
+        ?s sg:title ?t .
+        filter (regex(?t,'Palaeozoic'))
+        filter (regex(?t,'osteichthyan'))
+    }
+}
+```

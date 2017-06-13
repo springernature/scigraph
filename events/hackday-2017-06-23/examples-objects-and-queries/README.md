@@ -6,6 +6,6 @@
 
 ## Scigraph Objects
 
-[Quering Elastic Search Index](json/Querying-Elasticsearch.md "Elasticsearch ")
+[Quering Elastic Search Index](elasticsearch/Querying-Elasticsearch.md "Elasticsearch ")
 
-[Quering Scigraph ](rdf/Querying-GraphDB.md "GraphDB")
+[Quering Scigraph ](graphdb/Querying-GraphDB.md "GraphDB")
