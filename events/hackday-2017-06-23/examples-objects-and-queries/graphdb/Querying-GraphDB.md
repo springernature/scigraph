@@ -3,7 +3,7 @@
 ## Article with Contributions and Affiliations
 Searching the article on "Palaeozoic osteichthyan" with DOI "10.1038/nature13195"
 
-Execute the query on GraphDb Workbench http://aws public dns:7200/sparql
+Execute the query on GraphDb Workbench \<aws public dns\>:7200/sparql
 
 Query q1.rq
 ```
