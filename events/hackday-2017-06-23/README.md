@@ -11,8 +11,8 @@
 
 1. Ask the organisers for the IP address of your VM
 1. Download the [RSA private key](https://drive.google.com/open?id=0BxTNjwMyIXOoclE2VHdhaWtyLXM)
-1. Fix permissions: `chmod 400 ./Downloads/scigraph.pem.env`
-1. Log in: `ssh -i scigraph.pem.env ubuntu@<your-vm-ip-address>`
+1. Fix permissions: `chmod 400 ./Downloads/scigraph.env`
+1. Log in: `ssh -i scigraph.env ubuntu@<your-vm-ip-address>`
 
 ## What's running
 
