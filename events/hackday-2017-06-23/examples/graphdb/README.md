@@ -17,5 +17,5 @@ The queries below can be executed in your GraphDB Workbench: `<your-vm-ip-addres
  and see [result-for-get-journalbrand-by-title-with-journal.ttl](result-for-get-journalbrand-by-title-with-journal.ttl) for the result in Turtle format.
 
 ## BookEdition, Book and Chapter Objects
-* **BookEdition and Book Objects:** To also retrieve information about a book either by using the ISBN code or the title  (see queries  [b](b), [a](a)), 
-  and see [book.ttl](book.ttl) for the result in Turtle format.
+* **BookEdition and Book Objects:** To also retrieve information about a book either by using the ISBN code or the title  (see queries  [get-book-bookeditions-by-isbn.rq](get-book-bookeditions-by-isbn.rq), [a](a)), 
+  and see [result-for-get-book-bookeditions-by-isbn.ttl](result-for-get-book-bookeditions-by-isbn.ttl) for the result in Turtle format.
