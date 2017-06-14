@@ -4,7 +4,7 @@ The queries below can be executed against your Elasticsearch instance: `<your-vm
 
 ## Articles with Contributions and Affiliations
 
-To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (see [articleContributionsAffiliationsJournal.json](example-output/articleContributionsAffiliationsJournal.json)):
+To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (see [articleContributionsAffiliationsJournal.json](example-queries/articleContributionsAffiliationsJournal.json)):
 
 ```
 {
@@ -29,7 +29,6 @@ To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (
 ```
 
 For example, using cURL:
-````
 ```
 curl -XPOST <your-ip-address>:9200/sg_docs_articles_a/_search?pretty=true -d @articleContributionsAffiliationsJournal.json
 ```
@@ -129,7 +128,6 @@ This produces the following result (see [articleContributionsAffiliationsJournal
   }
 }
 ```
-````
 
 ## Aggregating Articles By Journal
 
