@@ -1,0 +1,38 @@
+@prefix : <http://www.ontotext.com/connectors/elasticsearch#> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://www.springernature.com/scigraph/things/journal-brands/012496b06989edb434c6b8e1d0b0a7db> a sg:JournalBrand .
+
+<http://www.springernature.com/scigraph/things/journals/723ba46cf7980ad6089b3da0ba4b0b47> a sg:Journal ;
+	sg:hasJournalBrand <http://www.springernature.com/scigraph/things/journal-brands/012496b06989edb434c6b8e1d0b0a7db> ;
+	sg:isActivePublication "true"^^xsd:boolean ;
+	sg:scigraphId "723ba46cf7980ad6089b3da0ba4b0b47" ;
+	sg:medium "Electronic" ;
+	sg:issn "1476-4687" .
+
+<http://www.springernature.com/scigraph/things/journals/5ea8996a5bb089dd0562d3bfe24eaad9> a sg:Journal ;
+	sg:hasJournalBrand <http://www.springernature.com/scigraph/things/journal-brands/012496b06989edb434c6b8e1d0b0a7db> ;
+	sg:isActivePublication "true"^^xsd:boolean ;
+	sg:scigraphId "5ea8996a5bb089dd0562d3bfe24eaad9" ;
+	sg:medium "Paper (journals, normal index)" ;
+	sg:issn "0028-0836" .
+
+<http://www.springernature.com/scigraph/things/journal-brands/012496b06989edb434c6b8e1d0b0a7db> sg:scigraphId "012496b06989edb434c6b8e1d0b0a7db" ;
+	sg:ddsId "41586" ;
+	sg:language "English" ;
+	sg:title "Nature" ;
+	sg:publisher "Nature Publishing Group UK" ;
+	sg:copyrightHolder "Macmillan Publishers Ltd" ;
+	sg:hasProductMarketCode <http://www.springernature.com/scigraph/things/product-market-codes/A11007> , <http://www.springernature.com/scigraph/things/product-market-codes/A12000> ;
+	sg:shortTitle "Nature" ;
+	sg:subtitle "International weekly journal of science" ;
+	sg:webpage <http://www.nature.com/nature/> ;
+	sg:imprint "Springer Nature" ;
+	sg:pcode "nature" .

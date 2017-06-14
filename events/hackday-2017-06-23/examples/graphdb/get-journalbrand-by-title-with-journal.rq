@@ -2,10 +2,16 @@ PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
 PREFIX : <http://www.ontotext.com/connectors/elasticsearch#>
-describe  ?j ?jb
+construct
+{
+    ?s ?p ?o .
+    ?j 	?p_ ?o_ .
+}
 where {
-        ?s a sg:Article .
-        ?s sg:doi "10.1038/nature13195" .
-		?s sg:hasJournal ?j .
-    	?s sg:hasJournalBrand ?jb
+        ?s a sg:JournalBrand .
+        ?s sg:title "Nature" .
+    	?s ?p ?o .
+        ?j sg:hasJournalBrand ?s .
+    	?j a sg:Journal .
+    	?j ?p_ ?o_ .
 }
