@@ -2,7 +2,7 @@
 
 ## Data model
 
-* [Datasetsl](https://github.com/springernature/scigraph/tree/master/events/hackday-2017-06-23/datasets)
+* [Datasets](https://github.com/springernature/scigraph/tree/master/events/hackday-2017-06-23/datasets)
 * [Classes & Properties](http://ontologies.scigraph.com/core/v1.0.0/dendogram/index.html)
 * [Querying GraphDB](https://www.w3.org/TR/rdf-sparql-query) 
 
