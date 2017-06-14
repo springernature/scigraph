@@ -5,6 +5,4 @@ PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
 describe ?s ?a
 where {
     	?s a sg:Grant .
-    	?s sg:hasFundedPublication  ?a
-
 } limit 1
