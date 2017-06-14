@@ -340,3 +340,4 @@ where {
     	?s sg:hasJournalBrand ?jb
 }
 ```
+
