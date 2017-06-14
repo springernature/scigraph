@@ -36,3 +36,4 @@ If you need to, you can start and stop these as follows:
 
 * Twitter: please use the hashtag [\#sn-scigraph](https://twitter.com/hashtag/sn-scigraph).
 * [Slack?]
+* If you want to share your code then please ask the organisers to invite you to [SN-HackDay](https://github.com/SN-HackDay) on GitHub.
