@@ -2,8 +2,8 @@
 
 ## Data model
 
-* [Documentation](https://github.com/springernature/knowledge-graph/wiki) 
-* [Data Model](https://github.com/springernature/knowledge-graph/wiki/Data:-Data-Model)
+* [Documentation](https://github.com/springernature/scigraph/wiki)
+* [Data Model](https://github.com/springernature/scigraph/wiki#datasets-at-a-glance)
 * [Classes & Properties](http://ontologies.scigraph.com/core/v1.0.0/dendogram/index.htm)
 * [Querying GraphDB](https://www.w3.org/TR/rdf-sparql-query) 
 
