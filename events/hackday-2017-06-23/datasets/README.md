@@ -1,6 +1,6 @@
 ![graph-image](http://static.springer.com/spcom/sites/sgw/images/logo-springernature.svg)
 
-![SpringerNature SciGraph](./wiki/images/SpringerNature.png)
+![SpringerNature SciGraph](https://github.com/springernature/scigraph/wiki/images/SpringerNature.png)
 
 # SciGraph Datasets
 
@@ -13,7 +13,7 @@ Welcome to the [Springer Nature SciGraph](http://www.springernature.com/scigraph
 
 ## Datasets
 
-![scigraph-hack-day-2017-06-23](images/scigraph-hack-day-2017-06-23.png)
+![scigraph-hack-day-2017-06-23](https://github.com/springernature/scigraph/wiki/images/scigraph-hack-day-2017-06-23.png)
 
 ## Classes and Properties
 
