@@ -1,0 +1,1239 @@
+{
+  "took": 1647,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 10398,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/050aa3f8b92ae214d6fb8828099fe3b9",
+        "_score": 1,
+        "_source": {
+          "journalIssn": "1752-0509",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12918",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract BackgroundThe large amount of literature in the post-genomics era enables the study of gene interactions and networks using all available articles published for a specific organism. MeSH is a controlled vocabulary of medical and scientific terms that is used by biomedical scientists to manually index articles in the PubMed literature database. We hypothesized that genome-wide gene-MeSH term associations from the PubMed literature database could be used to predict implicit gene-to-gene relationships and networks. While the gene-MeSH associations have been used to detect gene-gene interactions in some studies, different methods have not been well compared, and such a strategy has not been evaluated for a genome-wide literature analysis. Genome-wide literature mining of gene-to-gene interactions allows ranking of the best gene interactions and investigation of comprehensive biological networks at a genome level. ResultsThe genome-wide GenoMesh literature mining algorithm was developed by sequentially generating a gene-article matrix, a normalized gene-MeSH term matrix, and a gene-gene matrix. The gene-gene matrix relies on the calculation of pairwise gene dissimilarities based on gene-MeSH relationships. An optimized dissimilarity score was identified from six well-studied functions based on a receiver operating characteristic (ROC) analysis. Based on the studies with well-studied Escherichia coli and less-studied Brucella spp., GenoMesh was found to accurately identify gene functions using weighted MeSH terms, predict gene-gene interactions not reported in the literature, and cluster all the genes studied from an organism using the MeSH-based gene-gene matrix. A web-based GenoMesh literature mining program is also available at: http://genomesh.hegroup.org. GenoMesh also predicts gene interactions and networks among genes associated with specific MeSH terms or user-selected gene lists. ConclusionsThe GenoMesh algorithm and web program provide the first genome-wide, MeSH-based literature mining system that effectively predicts implicit gene-gene interaction relationships and networks in a genome-wide scope.",
+          "title": "A genome-wide MeSH-based literature mining system predicts implicit gene-to-gene relationships and networks",
+          "contribution": [
+            {
+              "publishedName": "Zuoshuang Xiang",
+              "affiliation": [
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                }
+              ],
+              "order": "1"
+            },
+            {
+              "publishedName": "Tingting Qin",
+              "affiliation": {
+                "publishedName": "Medical University of South Carolina",
+                "gridName": "Medical University of South Carolina",
+                "location": {
+                  "lon": "-79.951921",
+                  "lat": "32.786599"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.259828.c",
+                "countryName": "United States",
+                "homePage": "http://academicdepartments.musc.edu/musc/"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Zhaohui S Qin",
+              "affiliation": [
+                {
+                  "publishedName": "Emory University",
+                  "gridName": "Emory University",
+                  "location": {
+                    "lon": "-84.32401",
+                    "lat": "33.792787"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.189967.8",
+                  "countryName": "United States",
+                  "homePage": "http://www.emory.edu/home/index.html"
+                },
+                {
+                  "publishedName": "Emory School of Medicine",
+                  "gridName": "Emory University",
+                  "location": {
+                    "lon": "-84.32401",
+                    "lat": "33.792787"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.189967.8",
+                  "countryName": "United States",
+                  "homePage": "http://www.emory.edu/home/index.html"
+                }
+              ],
+              "order": "3"
+            },
+            {
+              "publishedName": "Yongqun He",
+              "affiliation": [
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                }
+              ],
+              "order": "4"
+            }
+          ],
+          "scigraphId": "050aa3f8b92ae214d6fb8828099fe3b9",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            204019881,
+            203994681,
+            9938,
+            204019403,
+            16660,
+            203989870,
+            16663,
+            204026222,
+            37113,
+            34444
+          ],
+          "publicationYear": "2013",
+          "_transaction_origin": 1214983,
+          "fieldOfResearchCode": [
+            "GENETICS",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 1214983,
+          "doiLink": "http://dx.doi.org/10.1186/1752-0509-7-S3-S9",
+          "publicationDate": "2013-10-16",
+          "issnElectronic": "1752-0509",
+          "journalTitle": "BMC Systems Biology",
+          "doi": "10.1186/1752-0509-7-S3-S9"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/d4dfdf4bcf01a64784eeb8cfdc36cbc6",
+        "_score": 1,
+        "_source": {
+          "journalIssn": [
+            "1673-3622",
+            "1673-3509"
+          ],
+          "journalOpenAccess": "Hybrid (Open Choice)",
+          "journalId": "11515",
+          "language": "English",
+          "journalPublisher": "Higher Education Press",
+          "abstract": "Abstract Following the completion of genome sequencing of model plants, such as rice (Oryza sativa L.) and Arabidopsis thaliana, the era of functional plant genomics has arrived which provides a solid basis for the development of plant proteomics. We review the background and concepts of proteomics, as well as the key techniques which include: (1) separation techniques such as 2-DE (two-dimensional electrophoresis), RP-HPLC (reverse phase high performance liquid chromatography) and SELDI (surface enhanced laser desorption/ionization) protein chip; (2) mass spectrometry such as MALDI-TOF-MS (matrix assisted laser desorption/ionizationtime of flight-mass spectrometry) and ESI-MS/MS (electrospray ionization mass spectrometry/mass spectrometry); (3) Peptide sequence tags; (4) databases related to proteomics; (5) quantitative proteome; (6) TAP (tandem affinity purification) and (7) yeast two-hybrid system. In addition, the challenges and prospects of proteomics are also discussed.",
+          "title": "Advances in plant proteomics—key techniques of proteome",
+          "contribution": [
+            {
+              "publishedName": "Songlin Ruan",
+              "affiliation": {
+                "publishedName": "Hangzhou Academy of Agriculture Science",
+                "gridName": "Hangzhou Academy of Agricultural Sciences",
+                "location": {
+                  "lon": "120.124887",
+                  "lat": "30.867809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.464313.7",
+                "countryName": "China",
+                "homePage": "http://www.hznky.com/html/main/gb2312/index.html"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Huasheng Ma",
+              "affiliation": {
+                "publishedName": "Hangzhou Academy of Agriculture Science",
+                "gridName": "Hangzhou Academy of Agricultural Sciences",
+                "location": {
+                  "lon": "120.124887",
+                  "lat": "30.867809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.464313.7",
+                "countryName": "China",
+                "homePage": "http://www.hznky.com/html/main/gb2312/index.html"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Shiheng Wang",
+              "affiliation": {
+                "publishedName": "Hangzhou Academy of Agriculture Science",
+                "gridName": "Hangzhou Academy of Agricultural Sciences",
+                "location": {
+                  "lon": "120.124887",
+                  "lat": "30.867809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.464313.7",
+                "countryName": "China",
+                "homePage": "http://www.hznky.com/html/main/gb2312/index.html"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Ya Xin",
+              "affiliation": {
+                "publishedName": "Hangzhou Academy of Agriculture Science",
+                "gridName": "Hangzhou Academy of Agricultural Sciences",
+                "location": {
+                  "lon": "120.124887",
+                  "lat": "30.867809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.464313.7",
+                "countryName": "China",
+                "homePage": "http://www.hznky.com/html/main/gb2312/index.html"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Lihua Qian",
+              "affiliation": {
+                "publishedName": "Hangzhou Academy of Agriculture Science",
+                "gridName": "Hangzhou Academy of Agricultural Sciences",
+                "location": {
+                  "lon": "120.124887",
+                  "lat": "30.867809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.464313.7",
+                "countryName": "China",
+                "homePage": "http://www.hznky.com/html/main/gb2312/index.html"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Jianxing Tong",
+              "affiliation": {
+                "publishedName": "Hangzhou Academy of Agriculture Science",
+                "gridName": "Hangzhou Academy of Agricultural Sciences",
+                "location": {
+                  "lon": "120.124887",
+                  "lat": "30.867809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.464313.7",
+                "countryName": "China",
+                "homePage": "http://www.hznky.com/html/main/gb2312/index.html"
+              },
+              "order": "6"
+            },
+            {
+              "publishedName": "Jie Wang",
+              "affiliation": {
+                "publishedName": "National Center for Biomedical Analysis",
+                "gridName": "National Center of Biomedical Analysis",
+                "gridId": "http://www.grid.ac/institutes/grid.410601.2"
+              },
+              "order": "7"
+            }
+          ],
+          "scigraphId": "d4dfdf4bcf01a64784eeb8cfdc36cbc6",
+          "articleType": "ReviewPaper",
+          "_chains": [
+            203994681,
+            204374639,
+            1193937,
+            203989856,
+            203994737,
+            1193963,
+            128042,
+            128044,
+            128047,
+            203989911
+          ],
+          "publicationYear": "2008",
+          "_transaction_origin": 1193917,
+          "fieldOfResearchCode": [
+            "BIOCHEMISTRY AND CELL BIOLOGY",
+            "ANALYTICAL CHEMISTRY",
+            "BIOLOGICAL SCIENCES",
+            "CHEMICAL SCIENCES"
+          ],
+          "_graphdb_id": 1193917,
+          "doiLink": "http://dx.doi.org/10.1007/s11515-008-0048-4",
+          "publicationDate": "2008-03-15",
+          "issnElectronic": "1673-3622",
+          "journalTitle": "Frontiers in Biology",
+          "doi": "10.1007/s11515-008-0048-4",
+          "issnPrint": "1673-3509"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/136627837fba854c12b88d7409ecfa7d",
+        "_score": 1,
+        "_source": {
+          "journalIssn": "1752-0509",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12918",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract The Asia-Pacific Bioinformatics Network (APBioNet) held the first International Conference on Bioinformatics (InCoB) in Bangkok in 2002 to promote North-South networking. Commencing as a forum for Asia-Pacific researchers to interact with and learn from with scientists of developed countries, InCoB has become a major regional bioinformatics conference, with participants from the region as well as North America and Europe. Since 2006, InCoB has selected the best submissions for publication in BMC Bioinformatics. In response to the growth and maturation of data-driven approaches, InCoB added BMC Genomics in 2009 and with the introduction of this conference supplement, BMC Systems Biology to its journal choices for submitting authors. Co-hosting InCoB2013 with the second International Conference for Translational Bioinformatics (ICTBI) is in line with InCoB's support for the current trend in taking bioinformatics to the bedside, along with a systems approach to solving biological problems.",
+          "title": "InCoB2013 introduces Systems Biology as a major conference theme",
+          "contribution": [
+            {
+              "publishedName": "Christian Schönbach",
+              "affiliation": [
+                {
+                  "publishedName": "Nazarbayev University",
+                  "gridName": "Nazarbayev University",
+                  "gridId": "http://www.grid.ac/institutes/grid.428191.7"
+                },
+                {
+                  "publishedName": "Kyushu Institute of Technology",
+                  "gridName": "Kyushu Institute of Technology",
+                  "location": {
+                    "lon": "130.839204",
+                    "lat": "33.894437"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.258806.1",
+                  "countryName": "Japan",
+                  "homePage": "https://www.kyutech.ac.jp/english/"
+                }
+              ],
+              "order": "1"
+            },
+            {
+              "publishedName": "Bairong Shen",
+              "affiliation": {
+                "publishedName": "Soochow University",
+                "gridName": "Soochow University",
+                "location": {
+                  "lon": "120.641337",
+                  "lat": "31.30919"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.263761.7",
+                "countryName": "China",
+                "homePage": "http://eng.suda.edu.cn/"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Tin Wee Tan",
+              "affiliation": {
+                "publishedName": "National University of Singapore",
+                "gridName": "National University of Singapore",
+                "location": {
+                  "lon": "103.776667",
+                  "lat": "1.295556"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.4280.e",
+                "countryName": "Singapore",
+                "homePage": "http://www.nus.edu.sg/"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Shoba Ranganathan",
+              "affiliation": [
+                {
+                  "publishedName": "Macquarie University",
+                  "gridName": "Macquarie University",
+                  "location": {
+                    "lon": "151.112915",
+                    "lat": "-33.775259"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.1004.5",
+                  "countryName": "Australia",
+                  "homePage": "http://mq.edu.au/"
+                },
+                {
+                  "publishedName": "National University of Singapore",
+                  "gridName": "National University of Singapore",
+                  "location": {
+                    "lon": "103.776667",
+                    "lat": "1.295556"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.4280.e",
+                  "countryName": "Singapore",
+                  "homePage": "http://www.nus.edu.sg/"
+                }
+              ],
+              "order": "4"
+            }
+          ],
+          "scigraphId": "136627837fba854c12b88d7409ecfa7d",
+          "articleType": "EditorialNotes",
+          "_chains": [
+            149414,
+            203989856,
+            11210,
+            203999110,
+            203998119,
+            203994681,
+            368404,
+            358935,
+            204028378,
+            16660,
+            16663,
+            204025748,
+            22045
+          ],
+          "publicationYear": "2013",
+          "_transaction_origin": 1213493,
+          "fieldOfResearchCode": [
+            "BIOCHEMISTRY AND CELL BIOLOGY",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 1213493,
+          "doiLink": "http://dx.doi.org/10.1186/1752-0509-7-S3-S1",
+          "publicationDate": "2013-11-04",
+          "issnElectronic": "1752-0509",
+          "journalTitle": "BMC Systems Biology",
+          "doi": "10.1186/1752-0509-7-S3-S1"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/75053a7dbe92cb4e30bc5a81a51e21ad",
+        "_score": 1,
+        "_source": {
+          "journalIssn": "1756-994X",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "13073",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract Common infrastructures and platforms are required for international collaborations in large-scale human genomic research and policy development, such as the Global Alliance for Genomics and Health and the ‘ELSI 2.0’ initiative. Such initiatives may require international harmonization of ethical and regulatory requirements. To enable this, however, a greater understanding of issues and practices that relate to the ethical, legal and social implications (ELSI) of genomic research will be needed for the different countries and global regions involved in such research. Here, we review the ELSI practices and regulations for genomic research in six East Asian countries (China, Indonesia, Japan, Singapore, South Korea and Taiwan), highlighting the main similarities and differences between these countries, and more generally, in relation to Western countries. While there are significant differences in ELSI practices among these East Asian countries, there is a consistent emphasis on advancing genomic science and technology. In addition, considerable emphasis is placed on informed consent for participation in research, whether through the contribution of tissue samples or personal information. However, a higher level of engagement with interested stakeholders and the public will be needed in some countries.",
+          "title": "ELSI practices in genomic research in East Asia: implications for research collaboration and public participation",
+          "contribution": [
+            {
+              "publishedName": "Go Yoshizawa",
+              "affiliation": {
+                "publishedName": "Graduate School of Medicine, Osaka University",
+                "gridName": "Osaka University",
+                "location": {
+                  "lon": "135.524447",
+                  "lat": "34.822287"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.136593.b",
+                "countryName": "Japan",
+                "homePage": "http://www.osaka-u.ac.jp/en"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Calvin Wai-Loon Ho",
+              "affiliation": [
+                {
+                  "publishedName": "Centre for Biomedical Ethics, Yong Loo Lin School of Medicine, National University of Singapore",
+                  "gridName": "National University of Singapore",
+                  "location": {
+                    "lon": "103.776667",
+                    "lat": "1.295556"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.4280.e",
+                  "countryName": "Singapore",
+                  "homePage": "http://www.nus.edu.sg/"
+                },
+                {
+                  "publishedName": "The Ethox Centre, Nuffield Department of Population Health, University of Oxford, Old Road Campus",
+                  "gridName": "University of Oxford",
+                  "location": {
+                    "lon": "-1.25400973048628",
+                    "lat": "51.7534358"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.4991.5",
+                  "countryName": "United Kingdom",
+                  "homePage": "http://www.ox.ac.uk/"
+                }
+              ],
+              "order": "2"
+            },
+            {
+              "publishedName": "Wei Zhu",
+              "affiliation": {
+                "publishedName": "Fudan University",
+                "gridName": "Fudan University",
+                "location": {
+                  "lon": "121.503607",
+                  "lat": "31.297713"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.8547.e",
+                "countryName": "China",
+                "homePage": "http://www.fudan.edu.cn/en/"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Chingli Hu",
+              "affiliation": {
+                "publishedName": "Office of the President, Shanghai Jiaotong University School of Medicine",
+                "gridName": "Shanghai Jiao Tong University",
+                "location": {
+                  "lon": "121.432777",
+                  "lat": "31.201268"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.16821.3c",
+                "countryName": "China",
+                "homePage": "http://en.sjtu.edu.cn/"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Yoni Syukriani",
+              "affiliation": {
+                "publishedName": "Faculty of Medicine, Padjadjaran University",
+                "gridName": "Padjadjaran University",
+                "location": {
+                  "lon": "107.616944",
+                  "lat": "-6.893333"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.11553.33",
+                "countryName": "Indonesia",
+                "homePage": "http://www.unpad.ac.id/en/"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Ilhak Lee",
+              "affiliation": {
+                "publishedName": "Center for ELSI Research, Asian Institute for Bioethics and Health Law, College of Medicine, Yonsei University",
+                "gridName": "Yonsei University",
+                "location": {
+                  "lon": "126.93854",
+                  "lat": "37.566031"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.15444.30",
+                "countryName": "South Korea",
+                "homePage": "http://www.yonsei.ac.kr/eng/"
+              },
+              "order": "6"
+            },
+            {
+              "publishedName": "Hannah Kim",
+              "affiliation": {
+                "publishedName": "Center for ELSI Research, Asian Institute for Bioethics and Health Law, College of Medicine, Yonsei University",
+                "gridName": "Yonsei University",
+                "location": {
+                  "lon": "126.93854",
+                  "lat": "37.566031"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.15444.30",
+                "countryName": "South Korea",
+                "homePage": "http://www.yonsei.ac.kr/eng/"
+              },
+              "order": "7"
+            },
+            {
+              "publishedName": "Daniel Fu Chang Tsai",
+              "affiliation": {
+                "publishedName": "National Taiwan University College of Medicine",
+                "gridName": "National Taiwan University",
+                "location": {
+                  "lon": "121.536",
+                  "lat": "25.016"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.19188.39",
+                "countryName": "Taiwan",
+                "homePage": "http://www.ntu.edu.tw/english/"
+              },
+              "order": "8"
+            },
+            {
+              "publishedName": "Jusaku Minari",
+              "affiliation": {
+                "publishedName": "Graduate School of Medicine, Osaka University",
+                "gridName": "Osaka University",
+                "location": {
+                  "lon": "135.524447",
+                  "lat": "34.822287"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.136593.b",
+                "countryName": "Japan",
+                "homePage": "http://www.osaka-u.ac.jp/en"
+              },
+              "order": "9"
+            },
+            {
+              "publishedName": "Kazuto Kato",
+              "affiliation": [
+                {
+                  "publishedName": "Graduate School of Medicine, Osaka University",
+                  "gridName": "Osaka University",
+                  "location": {
+                    "lon": "135.524447",
+                    "lat": "34.822287"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.136593.b",
+                  "countryName": "Japan",
+                  "homePage": "http://www.osaka-u.ac.jp/en"
+                },
+                {
+                  "publishedName": "Institute for Integrated Cell-Material Sciences (iCeMS), Kyoto University, Yoshida Ushinomiya-cho",
+                  "gridName": "Kyoto University",
+                  "location": {
+                    "lon": "135.779792",
+                    "lat": "35.026156"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.258799.8",
+                  "countryName": "Japan",
+                  "homePage": "http://www.kyoto-u.ac.jp/en"
+                }
+              ],
+              "order": "10"
+            }
+          ],
+          "scigraphId": "75053a7dbe92cb4e30bc5a81a51e21ad",
+          "articleType": "ReviewPaper",
+          "_chains": [
+            44673,
+            9089,
+            44642,
+            204007018,
+            204018218,
+            676,
+            44645,
+            203989903,
+            204004431,
+            44681,
+            11210,
+            204025733,
+            44653,
+            203999110,
+            204000103,
+            44688,
+            204008858,
+            2196,
+            204009488,
+            203994674,
+            204010260,
+            44701
+          ],
+          "publicationYear": "2014",
+          "_transaction_origin": 44624,
+          "fieldOfResearchCode": [
+            "LAW",
+            "LAW AND LEGAL STUDIES"
+          ],
+          "_graphdb_id": 44624,
+          "doiLink": "http://dx.doi.org/10.1186/gm556",
+          "publicationDate": "2014-05-30",
+          "issnElectronic": "1756-994X",
+          "journalTitle": "Genome Medicine",
+          "doi": "10.1186/gm556"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/c9f1a792d081e5509cddd060586e94d0",
+        "_score": 1,
+        "_source": {
+          "journalIssn": [
+            "1559-0275",
+            "1542-6416"
+          ],
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12014",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract Predicting the response to medical therapy and subsequently individualizing the treatment to increase efficacy or reduce toxicity has been a longstanding clinical goal. Not least within oncology, where many patients fail to be cured, and others are treated to or beyond the limit of acceptable toxicity, an individualized therapeutic approach is indicated. The mapping of the human genome and technological developments in DNA sequencing, gene expression profiling, and proteomics have raised the expectations for implementing genotype-phenotype data into the clinical decision process, but also multiplied the complex interaction of genetic and other laboratory parameters that can be used for therapy adjustments. Thus, with the advances in the laboratory techniques, post laboratory issues have become major obstacles for treatment individualization. Many of these challenges have been illustrated by studies involving childhood acute lymphoblastic leukemia (ALL), where each patient may receive up to 13 different anticancer agents over a period of 2-3 years. The challenges include i) addressing important, but low-frequency outcomes, ii) difficulties in interpreting the impact of single drug or single gene response data that often vary across treatment protocols, iii) combining disease and host genomics with outcome variations, and iv) physicians' reluctance in implementing potentially useful genotype and phenotype data into clinical practice, since unjustified downward or upward dose adjustments could increase the of risk of relapse or life-threatening complications. In this review we use childhood ALL therapy as a model and discuss these issues, and how they may be addressed.",
+          "title": "Challenges in implementing individualized medicine illustrated by antimetabolite therapy of childhood acute lymphoblastic leukemia",
+          "contribution": [
+            {
+              "publishedName": "Jacob Nersting",
+              "affiliation": {
+                "publishedName": "Copenhagen University Hospital Rigshospitalet",
+                "gridName": "Copenhagen University Hospital",
+                "location": {
+                  "lon": "12.565691",
+                  "lat": "55.697972"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.4973.9",
+                "countryName": "Denmark"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Louise Borst",
+              "affiliation": {
+                "publishedName": "Copenhagen University Hospital Rigshospitalet",
+                "gridName": "Copenhagen University Hospital",
+                "location": {
+                  "lon": "12.565691",
+                  "lat": "55.697972"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.4973.9",
+                "countryName": "Denmark"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Kjeld Schmiegelow",
+              "affiliation": [
+                {
+                  "publishedName": "Copenhagen University Hospital Rigshospitalet",
+                  "gridName": "Copenhagen University Hospital",
+                  "location": {
+                    "lon": "12.565691",
+                    "lat": "55.697972"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.4973.9",
+                  "countryName": "Denmark"
+                },
+                {
+                  "publishedName": "University of Copenhagen",
+                  "gridName": "University of Copenhagen",
+                  "location": {
+                    "lon": "12.5725",
+                    "lat": "55.679722"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.5254.6",
+                  "countryName": "Denmark",
+                  "homePage": "http://www.ku.dk/english/"
+                }
+              ],
+              "order": "3"
+            }
+          ],
+          "scigraphId": "c9f1a792d081e5509cddd060586e94d0",
+          "articleType": "ReviewPaper",
+          "_chains": [
+            46272,
+            25136,
+            46275,
+            204000028,
+            21877,
+            203994754,
+            204000387,
+            203989893,
+            46270
+          ],
+          "publicationYear": "2011",
+          "_transaction_origin": 46259,
+          "fieldOfResearchCode": [
+            "CARDIORESPIRATORY MEDICINE AND HAEMATOLOGY",
+            "MEDICAL AND HEALTH SCIENCES"
+          ],
+          "_graphdb_id": 46259,
+          "doiLink": "http://dx.doi.org/10.1186/1559-0275-8-8",
+          "publicationDate": "2011-06-03",
+          "issnElectronic": "1559-0275",
+          "journalTitle": "Clinical Proteomics",
+          "doi": "10.1186/1559-0275-8-8",
+          "issnPrint": "1542-6416"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/3ccd131eb16adedb278508a967f8feb3",
+        "_score": 1,
+        "_source": {
+          "journalIssn": [
+            "1939-8433",
+            "1939-8425"
+          ],
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12284",
+          "language": "English",
+          "journalPublisher": "Springer US",
+          "abstract": "Abstract BackgroundThe high-quality sequence information and rich bioinformatics tools available for rice have contributed to remarkable advances in functional genomics. To facilitate the application of gene function information to the study of natural variation in rice, we comprehensively searched for articles related to rice functional genomics and extracted information on functionally characterized genes. ResultsAs of 31 March 2012, 702 functionally characterized genes were annotated. This number represents about 1.6% of the predicted loci in the Rice Annotation Project Database. The compiled gene information is organized to facilitate direct comparisons with quantitative trait locus (QTL) information in the Q-TARO database. Comparison of genomic locations between functionally characterized genes and the QTLs revealed that QTL clusters were often co-localized with high-density gene regions, and that the genes associated with the QTLs in these clusters were different genes, suggesting that these QTL clusters are likely to be explained by tightly linked but distinct genes. Information on the functionally characterized genes compiled during this study is now available in the O verview of Functionally Characterized G enes in R ice O nline database (OGRO) on the Q-TARO website (http://qtaro.abr.affrc.go.jp/ogro). The database has two interfaces: a table containing gene information, and a genome viewer that allows users to compare the locations of QTLs and functionally characterized genes. ConclusionsOGRO on Q-TARO will facilitate a candidate-gene approach to identifying the genes responsible for QTLs. Because the QTL descriptions in Q-TARO contain information on agronomic traits, such comparisons will also facilitate the annotation of functionally characterized genes in terms of their effects on traits important for rice breeding. The increasing amount of information on rice gene function being generated from mutant panels and other types of studies will make the OGRO database even more valuable in the future.",
+          "title": "OGRO: The Overview of functionally characterized Genes in Rice online database",
+          "contribution": [
+            {
+              "publishedName": "Eiji Yamamoto",
+              "affiliation": {
+                "publishedName": "National Institute of Agrobiological Sciences",
+                "gridName": "National Institute of Agrobiological Sciences",
+                "location": {
+                  "lon": "140.097961",
+                  "lat": "36.030138"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410590.9",
+                "countryName": "Japan",
+                "homePage": "http://www.nias.affrc.go.jp/index_e.html"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Jun-ichi Yonemaru",
+              "affiliation": {
+                "publishedName": "National Institute of Agrobiological Sciences",
+                "gridName": "National Institute of Agrobiological Sciences",
+                "location": {
+                  "lon": "140.097961",
+                  "lat": "36.030138"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410590.9",
+                "countryName": "Japan",
+                "homePage": "http://www.nias.affrc.go.jp/index_e.html"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Toshio Yamamoto",
+              "affiliation": {
+                "publishedName": "National Institute of Agrobiological Sciences",
+                "gridName": "National Institute of Agrobiological Sciences",
+                "location": {
+                  "lon": "140.097961",
+                  "lat": "36.030138"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410590.9",
+                "countryName": "Japan",
+                "homePage": "http://www.nias.affrc.go.jp/index_e.html"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Masahiro Yano",
+              "affiliation": {
+                "publishedName": "National Institute of Agrobiological Sciences",
+                "gridName": "National Institute of Agrobiological Sciences",
+                "location": {
+                  "lon": "140.097961",
+                  "lat": "36.030138"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410590.9",
+                "countryName": "Japan",
+                "homePage": "http://www.nias.affrc.go.jp/index_e.html"
+              },
+              "order": "4"
+            }
+          ],
+          "scigraphId": "3ccd131eb16adedb278508a967f8feb3",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            203994681,
+            19234,
+            19236,
+            203989870,
+            19239,
+            19323,
+            204038738
+          ],
+          "publicationYear": "2012",
+          "_transaction_origin": 177506,
+          "fieldOfResearchCode": [
+            "GENETICS",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 177506,
+          "doiLink": "http://dx.doi.org/10.1186/1939-8433-5-26",
+          "publicationDate": "2012-09-24",
+          "issnElectronic": "1939-8433",
+          "journalTitle": "Rice",
+          "doi": "10.1186/1939-8433-5-26",
+          "issnPrint": "1939-8425"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/aac30a8c3f315bebd31b77ff12b14887",
+        "_score": 1,
+        "_source": {
+          "journalIssn": "1471-2229",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12870",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract BackgroundThe PLAnt co-EXpression database (PLANEX) is a new internet-based database for plant gene analysis. PLANEX (http://planex.plantbioinformatics.org) contains publicly available GeneChip data obtained from the Gene Expression Omnibus (GEO) of the National Center for Biotechnology Information (NCBI). PLANEX is a genome-wide co-expression database, which allows for the functional identification of genes from a wide variety of experimental designs. It can be used for the characterization of genes for functional identification and analysis of a gene’s dependency among other genes. Gene co-expression databases have been developed for other species, but gene co-expression information for plants is currently limited. DescriptionWe constructed PLANEX as a list of co-expressed genes and functional annotations for Arabidopsis thaliana, Glycine max, Hordeum vulgare, Oryza sativa, Solanum lycopersicum, Triticum aestivum, Vitis vinifera and Zea mays. PLANEX reports Pearson’s correlation coefficients (PCCs; r-values) that distribute from a gene of interest for a given microarray platform set corresponding to a particular organism. To support PCCs, PLANEX performs an enrichment test of Gene Ontology terms and Cohen’s Kappa value to compare functional similarity for all genes in the co-expression database. PLANEX draws a cluster network with co-expressed genes, which is estimated using the k-mean method. To construct PLANEX, a variety of datasets were interpreted by the IBM supercomputer Advanced Interactive eXecutive (AIX) in a supercomputing center. ConclusionPLANEX provides a correlation database, a cluster network and an interpretation of enrichment test results for eight plant species. A typical co-expressed gene generates lists of co-expression data that contain hundreds of genes of interest for enrichment analysis. Also, co-expressed genes can be identified and cataloged in terms of comparative genomics by using the ‘Co-expression gene compare’ feature. This type of analysis will help interpret experimental data and determine whether there is a common term among genes of interest.",
+          "title": "PLANEX: the plant co-expression database",
+          "contribution": [
+            {
+              "publishedName": "Won Cheol Yim",
+              "affiliation": {
+                "publishedName": "Dongguk Univ-Seoul"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Yongbin Yu",
+              "affiliation": {
+                "publishedName": "The Catholic University of Korea"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Kitae Song",
+              "affiliation": {
+                "publishedName": "Dongguk Univ-Seoul"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Cheol Seong Jang",
+              "affiliation": {
+                "publishedName": "Kangwon National University"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Byung-Moo Lee",
+              "affiliation": {
+                "publishedName": "Dongguk Univ-Seoul"
+              },
+              "order": "5"
+            }
+          ],
+          "scigraphId": "aac30a8c3f315bebd31b77ff12b14887",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            138123,
+            203994681,
+            138126,
+            203989870
+          ],
+          "publicationYear": "2013",
+          "_transaction_origin": 385811,
+          "fieldOfResearchCode": [
+            "GENETICS",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 385811,
+          "doiLink": "http://dx.doi.org/10.1186/1471-2229-13-83",
+          "publicationDate": "2013-05-20",
+          "issnElectronic": "1471-2229",
+          "journalTitle": "BMC Plant Biology",
+          "doi": "10.1186/1471-2229-13-83"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/0bf3bcf51bb60b9aee2cac20a1fc814a",
+        "_score": 1,
+        "_source": {
+          "journalIssn": "1471-2164",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12864",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract BackgroundThe accurate detection of genes and the identification of functional regions is still an open issue in the annotation of genomic sequences. This problem affects new genomes but also those of very well studied organisms such as human and mouse where, despite the great efforts, the inventory of genes and regulatory regions is far from complete. Comparative genomics is an effective approach to address this problem. Unfortunately it is limited by the computational requirements needed to perform genome-wide comparisons and by the problem of discriminating between conserved coding and non-coding sequences. This discrimination is often based (thus dependent) on the availability of annotated proteins. ResultsIn this paper we present the results of a comprehensive comparison of human and mouse genomes performed with a new high throughput grid-based system which allows the rapid detection of conserved sequences and accurate assessment of their coding potential. By detecting clusters of coding conserved sequences the system is also suitable to accurately identify potential gene loci.Following this analysis we created a collection of human-mouse conserved sequence tags and carefully compared our results to reliable annotations in order to benchmark the reliability of our classifications. Strikingly we were able to detect several potential gene loci supported by EST sequences but not corresponding to as yet annotated genes. ConclusionHere we present a new system which allows comprehensive comparison of genomes to detect conserved coding and non-coding sequences and the identification of potential gene loci. Our system does not require the availability of any annotated sequence thus is suitable for the analysis of new or poorly annotated genomes.",
+          "title": "Genome-wide identification of coding and non-coding conserved sequence tags in human and mouse genomes",
+          "contribution": [
+            {
+              "publishedName": "Flavio Mignone",
+              "affiliation": {
+                "publishedName": "University of Milan",
+                "gridName": "University of Milan",
+                "location": {
+                  "lon": "9.194592",
+                  "lat": "45.460989"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.4708.b",
+                "countryName": "Italy",
+                "homePage": "http://www.unimi.it/ENG/"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Anna Anselmo",
+              "affiliation": {
+                "publishedName": "University of Milan",
+                "gridName": "University of Milan",
+                "location": {
+                  "lon": "9.194592",
+                  "lat": "45.460989"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.4708.b",
+                "countryName": "Italy",
+                "homePage": "http://www.unimi.it/ENG/"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Giacinto Donvito",
+              "affiliation": {
+                "publishedName": "National Institute of Nuclear Physics"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Giorgio P Maggi",
+              "affiliation": {
+                "publishedName": "National Institute of Nuclear Physics"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Giorgio Grillo",
+              "affiliation": {
+                "publishedName": "Consiglio Nazionale delle Ricerche",
+                "gridName": "National Research Council",
+                "location": {
+                  "lon": "12.5126",
+                  "lat": "41.901"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.5326.2",
+                "countryName": "Italy",
+                "homePage": "http://www.cnr.it/sitocnr/home.html"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Graziano Pesole",
+              "affiliation": [
+                {
+                  "publishedName": "Consiglio Nazionale delle Ricerche",
+                  "gridName": "National Research Council",
+                  "location": {
+                    "lon": "12.5126",
+                    "lat": "41.901"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.5326.2",
+                  "countryName": "Italy",
+                  "homePage": "http://www.cnr.it/sitocnr/home.html"
+                },
+                {
+                  "publishedName": "University of Bari",
+                  "gridName": "University of Bari Aldo Moro",
+                  "location": {
+                    "lon": "16.868333",
+                    "lat": "41.120278"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.7644.1",
+                  "countryName": "Italy",
+                  "homePage": "http://www.uniba.it/english-version"
+                }
+              ],
+              "order": "6"
+            }
+          ],
+          "scigraphId": "0bf3bcf51bb60b9aee2cac20a1fc814a",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            203994681,
+            26034,
+            12851,
+            203999628,
+            26037,
+            203989870,
+            69030,
+            67225,
+            204003348,
+            204000487
+          ],
+          "publicationYear": "2008",
+          "_transaction_origin": 433848,
+          "fieldOfResearchCode": [
+            "GENETICS",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 433848,
+          "doiLink": "http://dx.doi.org/10.1186/1471-2164-9-277",
+          "publicationDate": "2008-06-11",
+          "issnElectronic": "1471-2164",
+          "journalTitle": "BMC Genomics",
+          "doi": "10.1186/1471-2164-9-277"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/2d3439c4dda773f726c6669a5562dfc1",
+        "_score": 1,
+        "_source": {
+          "journalIssn": "1471-2164",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12864",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract BackgroundIn the post-genomic era several methods of computational genomics are emerging to understand how the whole information is structured within genomes. Literature of last five years accounts for several alignment-free methods, arisen as alternative metrics for dissimilarity of biological sequences. Among the others, recent approaches are based on empirical frequencies of DNA k-mers in whole genomes. ResultsAny set of words (factors) occurring in a genome provides a genomic dictionary. About sixty genomes were analyzed by means of informational indexes based on genomic dictionaries, where a systemic view replaces a local sequence analysis. A software prototype applying a methodology here outlined carried out some computations on genomic data. We computed informational indexes, built the genomic dictionaries with different sizes, along with frequency distributions. The software performed three main tasks: computation of informational indexes, storage of these in a database, index analysis and visualization. The validation was done by investigating genomes of various organisms. A systematic analysis of genomic repeats of several lengths, which is of vivid interest in biology (for example to compute excessively represented functional sequences, such as promoters), was discussed, and suggested a method to define synthetic genetic networks. ConclusionsWe introduced a methodology based on dictionaries, and an efficient motif-finding software application for comparative genomics. This approach could be extended along many investigation lines, namely exported in other contexts of computational genomics, as a basis for discrimination of genomic pathologies.",
+          "title": "A dictionary based informational genome analysis",
+          "contribution": [
+            {
+              "publishedName": "Alberto Castellini",
+              "affiliation": {
+                "publishedName": "Strada Le Grazie 15"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Giuditta Franco",
+              "affiliation": {
+                "publishedName": "Strada Le Grazie 15"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Vincenzo Manca",
+              "affiliation": {
+                "publishedName": "Strada Le Grazie 15"
+              },
+              "order": "3"
+            }
+          ],
+          "scigraphId": "2d3439c4dda773f726c6669a5562dfc1",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            203994681,
+            26034,
+            26037,
+            203989870
+          ],
+          "publicationYear": "2012",
+          "_transaction_origin": 481376,
+          "fieldOfResearchCode": [
+            "GENETICS",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 481376,
+          "doiLink": "http://dx.doi.org/10.1186/1471-2164-13-485",
+          "publicationDate": "2012-09-17",
+          "issnElectronic": "1471-2164",
+          "journalTitle": "BMC Genomics",
+          "doi": "10.1186/1471-2164-13-485"
+        }
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/54fe93bfff7d270834ff690ecbec6792",
+        "_score": 1,
+        "_source": {
+          "journalIssn": "1471-2105",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12859",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract BackgroundUncovering the relationship between the conserved chromosomal segments and the functional relatedness of elements within these segments is an important question in computational genomics. We build upon the series of works on gene teams and homology teams. ResultsOur primary contribution is a local sliding-window SYNS (SYNtenic teamS) algorithm that refines an existing family structure into orthologous sub-families by analyzing the neighborhoods around the members of a given family with a locally sliding window. The neighborhood analysis is done by computing conserved gene clusters. We evaluate our algorithm on the existing homologous families from the Genolevures database over five genomes of the Hemyascomycete phylum. ConclusionsThe result is an efficient algorithm that works on multiple genomes, considers paralogous copies of genes and is able to uncover orthologous clusters even in distant genomes. Resulting orthologous clusters are comparable to those obtained by manual curation.",
+          "title": "Identification of conserved gene clusters in multiple genomes based on synteny and homology",
+          "contribution": [
+            {
+              "publishedName": "Anasua Sarkar",
+              "affiliation": {
+                "publishedName": "CNRS/Université Bordeaux 1"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Hayssam Soueidan",
+              "affiliation": {
+                "publishedName": "Netherlands Cancer Institute",
+                "gridName": "Antoni van Leeuwenhoek Hospital",
+                "location": {
+                  "lon": "4.82639",
+                  "lat": "52.350868"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.430814.a",
+                "countryName": "Netherlands",
+                "homePage": "http://www.avl.nl/"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Macha Nikolski",
+              "affiliation": {
+                "publishedName": "CNRS/Université Bordeaux 1"
+              },
+              "order": "3"
+            }
+          ],
+          "scigraphId": "54fe93bfff7d270834ff690ecbec6792",
+          "articleType": "Report",
+          "_chains": [
+            197802,
+            203994681,
+            232930,
+            204164830,
+            197805,
+            203989870
+          ],
+          "publicationYear": "2011",
+          "_transaction_origin": 498515,
+          "fieldOfResearchCode": [
+            "GENETICS",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 498515,
+          "doiLink": "http://dx.doi.org/10.1186/1471-2105-12-S9-S18",
+          "publicationDate": "2011-10-05",
+          "issnElectronic": "1471-2105",
+          "journalTitle": "BMC Bioinformatics",
+          "doi": "10.1186/1471-2105-12-S9-S18"
+        }
+      }
+    ]
+  }
+}

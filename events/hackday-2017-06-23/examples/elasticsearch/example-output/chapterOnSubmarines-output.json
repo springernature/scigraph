@@ -1,0 +1,1330 @@
+{
+  "took": 524,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 21,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/df0ae6345479b585137b4eb6d0d6fc8b",
+        "_score": 1,
+        "_source": {
+          "book": {},
+          "pageFirst": "276",
+          "language": "En",
+          "abstract": "Abstract A collaborative program of work was set up between STC Submarine Systems Ltd. (now part of the Northern Telecom group), and the School of Systems Engineering at Portsmouth Polytechnic. The aim of the work has been to establish methodologies (not necessarily new ones) which can be used to formalise methods of design, and to apply these to current design problems within the company. This also includes the representation of these methodologies through practical applications within an expert system tool. We also wish to show how formal techniques can be used to uncover areas of missing knowledge.",
+          "title": "Representation of the design to manufacture methodology of the armour protection element of the fibre optic submarine cable within an expert system",
+          "pageLast": "283",
+          "contribution": [
+            {
+              "publishedName": "Darren Bayliss",
+              "affiliation": {
+                "publishedName": "STC Submarine Systems & Portsmouth Polytechnic"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Sharon Berry",
+              "affiliation": {
+                "publishedName": "STC Submarine Systems & Portsmouth Polytechnic"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "David Curtis",
+              "affiliation": {
+                "publishedName": "STC Submarine Systems & Portsmouth Polytechnic"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Bernard Cox",
+              "affiliation": {
+                "publishedName": "STC Submarine Systems & Portsmouth Polytechnic"
+              },
+              "order": "4"
+            }
+          ],
+          "scigraphId": "df0ae6345479b585137b4eb6d0d6fc8b",
+          "copyrightHolder": "Springer-Verlag",
+          "copyrightYear": "1992",
+          "_transaction_origin": 163070820,
+          "_graphdb_id": 163070820,
+          "ddsId": "Chap30",
+          "doi": "10.1007/BFb0024979"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/875db7ac2fd275b2dc81ad43ffd83fd2",
+        "_score": 1,
+        "_source": {
+          "book": {
+            "scigraphId": "fc8011fbcd4fad1a06ba7c27cfb13fa9",
+            "isbn": "978-3-642-24076-8",
+            "medium": "eBook",
+            "shortTitle": "Lambrakis (Eds), Advances in the Research of Aquatic Environment (Environmental Earth Sciences) <eBook>",
+            "bookEdition": {
+              "chapterCount": "59",
+              "description": "Focuses on sustainable aquatic environment <br><br>Provides new research results <br><br>In close collaboration with leading societies of this field",
+              "language": "En",
+              "title": "Advances in the Research of Aquatic Environment",
+              "editionNumber": "1",
+              "contribution": [
+                {
+                  "publishedName": "Nicolaos Lambrakis",
+                  "affiliation": {
+                    "publishedName": "University of Patras",
+                    "gridName": "University of Patras",
+                    "location": {
+                      "lon": "21.786389",
+                      "lat": "38.286667"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.11047.33",
+                    "countryName": "Greece",
+                    "homePage": "http://www.upatras.gr/"
+                  },
+                  "order": "1"
+                },
+                {
+                  "publishedName": "George Stournaras",
+                  "affiliation": {
+                    "publishedName": "University of Athens",
+                    "gridName": "National and Kapodistrian University of Athens",
+                    "location": {
+                      "lon": "23.778344",
+                      "lat": "37.968264"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.5216.0",
+                    "countryName": "Greece",
+                    "homePage": "http://en.uoa.gr/"
+                  },
+                  "order": "2"
+                },
+                {
+                  "publishedName": "Konstantina Katsanou",
+                  "affiliation": {
+                    "publishedName": "University of Patras",
+                    "gridName": "University of Patras",
+                    "location": {
+                      "lon": "21.786389",
+                      "lat": "38.286667"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.11047.33",
+                    "countryName": "Greece",
+                    "homePage": "http://www.upatras.gr/"
+                  },
+                  "order": "3"
+                }
+              ],
+              "copyrightHolder": "Springer-Verlag GmbH Berlin Heidelberg",
+              "scigraphId": "010c4bd2d3645f6bf81fb8427b431e55",
+              "copyrightYear": "2011",
+              "intellectualUnitId": "273274",
+              "subtitle": "Volume 2",
+              "publisher": "Springer Berlin Heidelberg",
+              "productMarketCode": [
+                {
+                  "skosLabel": [
+                    "Climate Change",
+                    "Klimaveränderung"
+                  ],
+                  "scigraphId": "U12007"
+                },
+                {
+                  "skosLabel": [
+                    "Waste Water Technology / Water Pollution Control / Water Management / Aquatic Pollution",
+                    "Abwassertechnik/Gewässerschutz/Wasserwirtschaft"
+                  ],
+                  "scigraphId": "U35040"
+                },
+                {
+                  "skosLabel": [
+                    "Earth Sciences",
+                    "Geowissenschaften"
+                  ],
+                  "scigraphId": "G"
+                },
+                {
+                  "skosLabel": [
+                    "Hydrogeology",
+                    "Hydrogeologie"
+                  ],
+                  "scigraphId": "G19005"
+                }
+              ],
+              "ddsId": "174163",
+              "bookType": "Monograph"
+            },
+            "bookSeries": {
+              "scigraphId": "5dd13b355e748d86c9b73659d06b0724",
+              "description": "Environmental Earth Sciences encompass mulitdisciplinary studies of the Earth's atmosphere, biosphere, hydrosphere, lithosphere and pedosphere and humanity's interaction with them. This book series aims to provide a forum for this diverse range of studies, reporting on the very latest results and documenting our emerging understanding of the Earth's system and our place in it. The type of material published traditionally includes: ?proceedings that are peer-reviewed and published in association with a conference; ?post-proceedings consisting of thoroughly revised final papers; and ?research monographs that may be based on individual research projects . The Environmental Earth Sciences series also includes various other publications, including:?tutorials or collections of lectures for advanced courses; ?contemporary surveys that offer an objective summary of a current topic of interest; and ?emerging areas of research directed at a broad community of practitioners.",
+              "language": "En",
+              "shortTitle": [
+                "",
+                "Environmental Earth Sciences"
+              ],
+              "title": "Environmental Earth Sciences",
+              "issnElectronic": "2199-9155",
+              "ddsId": "8394",
+              "issnPrint": "2199-9163"
+            },
+            "ddsId": "80113129",
+            "doi": "10.1007/978-3-642-24076-8"
+          },
+          "pageFirst": "249",
+          "language": "En",
+          "abstract": "Abstract The application of an in-situ gamma-ray spectrometer for long-term measurements of natural radionuclides into groundwater emanating from submarine groundwater discharge (SGD) sources is described. The system (named KATERINA) has been developed for aquatic applications by Hellenic Centre for Marine Research and as a preliminary study it was deployed at three pilot SGD sites in Greece. After the initial deployment into the lake Tsivlou where background spectrum was obtained, the system was deployed for several hours in Hellenic coastal submarine groundwater sources at Chalkida, Stoupa and Korfos. The radon progenies activity concentration at Chalkida measured in a range from 1.2 to 1.3 Bq/L while at Stoupa from 2.4 to 2.6 Bq/L. Also, the concentration of the radon progenies in the region of Korfos varied from 1.4 to 2.3 Bq/L and an inversely linear dependency with salinity values was observed. The system monitoring radon progeny variations may contribute to hydrological studies concerning the transport, the emanation and the quantification of the groundwater using radiotracing techniques.",
+          "title": "Application of an in-situ system for continuous monitoring of radionuclides in submarine groundwater sources",
+          "pageLast": "256",
+          "contribution": [
+            {
+              "publishedName": "C. Tsabaris",
+              "affiliation": {
+                "publishedName": "Hellenic Centre for Marine Research",
+                "gridName": "Hellenic Centre for Marine Research",
+                "location": {
+                  "lon": "23.904064",
+                  "lat": "37.733809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410335.0",
+                "countryName": "Greece",
+                "homePage": "http://www.hcmr.gr/en/"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "D.L. Patiris",
+              "affiliation": {
+                "publishedName": "Hellenic Centre for Marine Research",
+                "gridName": "Hellenic Centre for Marine Research",
+                "location": {
+                  "lon": "23.904064",
+                  "lat": "37.733809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410335.0",
+                "countryName": "Greece",
+                "homePage": "http://www.hcmr.gr/en/"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "A. Karageorgis",
+              "affiliation": {
+                "publishedName": "Hellenic Centre for Marine Research",
+                "gridName": "Hellenic Centre for Marine Research",
+                "location": {
+                  "lon": "23.904064",
+                  "lat": "37.733809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410335.0",
+                "countryName": "Greece",
+                "homePage": "http://www.hcmr.gr/en/"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "G. Eleftheriou",
+              "affiliation": {
+                "publishedName": "Hellenic Centre for Marine Research",
+                "gridName": "Hellenic Centre for Marine Research",
+                "location": {
+                  "lon": "23.904064",
+                  "lat": "37.733809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410335.0",
+                "countryName": "Greece",
+                "homePage": "http://www.hcmr.gr/en/"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "D. Georgopoulos",
+              "affiliation": {
+                "publishedName": "Hellenic Centre for Marine Research",
+                "gridName": "Hellenic Centre for Marine Research",
+                "location": {
+                  "lon": "23.904064",
+                  "lat": "37.733809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410335.0",
+                "countryName": "Greece",
+                "homePage": "http://www.hcmr.gr/en/"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "V. Papadopoulos",
+              "affiliation": {
+                "publishedName": "Hellenic Centre for Marine Research",
+                "gridName": "Hellenic Centre for Marine Research",
+                "location": {
+                  "lon": "23.904064",
+                  "lat": "37.733809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410335.0",
+                "countryName": "Greece",
+                "homePage": "http://www.hcmr.gr/en/"
+              },
+              "order": "6"
+            },
+            {
+              "publishedName": "A. Prospathopoulos",
+              "affiliation": {
+                "publishedName": "Hellenic Centre for Marine Research",
+                "gridName": "Hellenic Centre for Marine Research",
+                "location": {
+                  "lon": "23.904064",
+                  "lat": "37.733809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410335.0",
+                "countryName": "Greece",
+                "homePage": "http://www.hcmr.gr/en/"
+              },
+              "order": "7"
+            },
+            {
+              "publishedName": "E. Papathanassiou",
+              "affiliation": {
+                "publishedName": "Hellenic Centre for Marine Research",
+                "gridName": "Hellenic Centre for Marine Research",
+                "location": {
+                  "lon": "23.904064",
+                  "lat": "37.733809"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.410335.0",
+                "countryName": "Greece",
+                "homePage": "http://www.hcmr.gr/en/"
+              },
+              "order": "8"
+            }
+          ],
+          "scigraphId": "875db7ac2fd275b2dc81ad43ffd83fd2",
+          "copyrightHolder": "Springer-Verlag Berlin Heidelberg",
+          "copyrightYear": "2011",
+          "_chains": [
+            204006600,
+            86826,
+            204000347,
+            1358754,
+            204037183,
+            11390
+          ],
+          "_transaction_origin": 199511767,
+          "_graphdb_id": 199511767,
+          "ddsId": "Chap29",
+          "doi": "10.1007/978-3-642-24076-8_29"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/7953a6892f123ba500eb355023205988",
+        "_score": 1,
+        "_source": {
+          "book": {
+            "scigraphId": "16b94e9d2bade7b7532ba72ac6dce960",
+            "isbn": "978-94-011-1234-5",
+            "medium": "eBook",
+            "shortTitle": "Pickering (Ed), Atlas of Deep Water Environments <eBook>",
+            "bookEdition": {
+              "chapterCount": "50",
+              "language": "En",
+              "title": "Atlas of Deep Water Environments",
+              "editionNumber": "1",
+              "contribution": [
+                {
+                  "publishedName": "K. T. Pickering",
+                  "order": "1"
+                },
+                {
+                  "publishedName": "R. N. Hiscott",
+                  "order": "2"
+                },
+                {
+                  "publishedName": "N. H. Kenyon",
+                  "order": "3"
+                },
+                {
+                  "publishedName": "F. Ricci Lucchi",
+                  "order": "4"
+                },
+                {
+                  "publishedName": "R. D. A. Smith",
+                  "order": "5"
+                }
+              ],
+              "copyrightHolder": "Springer Science+Business Media B.V.",
+              "scigraphId": "5202dc8c085105484c0ed1b3d5fd5d67",
+              "copyrightYear": "1995",
+              "intellectualUnitId": "98115",
+              "subtitle": "Architectural style in turbidite systems",
+              "publisher": "Springer Netherlands",
+              "productMarketCode": [
+                {
+                  "skosLabel": [
+                    "Earth Sciences",
+                    "Geowissenschaften"
+                  ],
+                  "scigraphId": "G"
+                },
+                {
+                  "skosLabel": [
+                    "Oceanography",
+                    "Ozeanographie"
+                  ],
+                  "scigraphId": "G25005"
+                }
+              ],
+              "ddsId": "97220",
+              "bookType": "Contributed volume"
+            },
+            "ddsId": "80047960",
+            "doi": "10.1007/978-94-011-1234-5"
+          },
+          "pageFirst": "157",
+          "language": "En",
+          "abstract": "Abstract The two outcrops described here are located in the Tabernas Basin in southern Spain, c. 50 km north of Almeria.",
+          "chapterNumber": "23",
+          "title": "Heterogeneity within a sand-rich submarine fan, Tabernas Basin, Spain",
+          "pageLast": "161",
+          "contribution": [
+            {
+              "publishedName": "S. P. J. Cossey",
+              "affiliation": {
+                "publishedName": "BP Exploration Inc."
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "K. Kleverlaan",
+              "affiliation": {
+                "publishedName": "A/B ‘Hoop op Welvaart’"
+              },
+              "order": "2"
+            }
+          ],
+          "scigraphId": "7953a6892f123ba500eb355023205988",
+          "copyrightHolder": "Springer Science+Business Media Dordrecht",
+          "copyrightYear": "1995",
+          "_transaction_origin": 164686783,
+          "_graphdb_id": 164686783,
+          "ddsId": "Chap24",
+          "doi": "10.1007/978-94-011-1234-5_24"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/befa066484bce11dd9cc88a11f69a69d",
+        "_score": 1,
+        "_source": {
+          "book": {},
+          "pageFirst": "389",
+          "language": "En",
+          "abstract": "Abstract The Neugrund Bank is situated on the southern side of the entrance of the Gulf of Finland (59°20′N; 23°31′E) between Osmussaar and Krass islands. It is a shoal of a very peculiar multi-ring shape. In the coastal and offshore area of North-Western Estonia, numerous erratic boulders, consisting of rocks resembling impact breccias, have been found. The investigations proved that under Neugrund Bank and in its surrounding is located a classic buried and partially newly exposed impact crater. The studies revealed the general morphology of the structure. In the summer of 1998, during three expeditions, the submarine impact structure was investigated in detail by diving and sidescan sonar profiling. As a result, the hypothesis, which had been indirectly indicated by remote sensing, was finally verified. The Neugrund impact crater formed ca. 540 My ago in a shallow epicontinental sea as the result of the impact of an extraterrestrial body with a diameter of ca. 400 m. As a consequence of the impact a crater with the rim-to-rim diameter of 7 km was formed. The depth of the ca. 5 km-diameter crater has not yet been determined, but is assumed to range over 500 m. At the distance of about 10 km around the crater, the target rocks are strongly disturbed. After the impact the crater deep was filled with clastic deposits and was buried within a rather short time (some millions of years). The sedimentation conditions in the crater differed from those of the surrounding area until the Middle Ordovician. Since then, and up to the Tertiary, the crater remained buried and was partially uncovered during the Neogene. In the impact-derived rocks (clast-supported mono- and polymict impact breccias), the following evidence for shock metamorphism has been observed: shatter cones, mosaicism of quartz and feldspar, planar fractures and planar deformation features in quartz, kink bands in biotite, diaplectic glass, partial melting of clasts, occurrence of recrystallized glassy grains, occurrence of thin veins of melt. The impact origin of the Neugrund structure may be considered verified. In the impact-affected Precambrian basement rocks of the Neugrund structure, we observed an enrichment of potassium, and a decrease in the sodium content, similar to the behavior of these elements in some rocks of the Kärdla impact crater.",
+          "chapterNumber": "16",
+          "title": "Neugrund structure — the newly discovered submarine early Cambrian impact crater",
+          "pageLast": "416",
+          "contribution": [
+            {
+              "publishedName": "Kalle Suuroja",
+              "affiliation": {
+                "publishedName": "Geological Survey of Estonia",
+                "gridName": "Geological Survey of Estonia",
+                "location": {
+                  "lon": "24.649396",
+                  "lat": "59.402407"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.434380.8",
+                "countryName": "Estonia",
+                "homePage": "http://www.egk.ee/?lang=en"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Sten Suuroja",
+              "affiliation": {
+                "publishedName": "Geological Survey of Estonia",
+                "gridName": "Geological Survey of Estonia",
+                "location": {
+                  "lon": "24.649396",
+                  "lat": "59.402407"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.434380.8",
+                "countryName": "Estonia",
+                "homePage": "http://www.egk.ee/?lang=en"
+              },
+              "order": "2"
+            }
+          ],
+          "scigraphId": "befa066484bce11dd9cc88a11f69a69d",
+          "copyrightHolder": "Springer-Verlag",
+          "copyrightYear": "2000",
+          "_chains": [
+            163255841,
+            204184016
+          ],
+          "_transaction_origin": 189825077,
+          "_graphdb_id": 189825077,
+          "ddsId": "Chap16",
+          "doi": "10.1007/BFb0027769"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/ec086a949f48a2b6c24948c23626e223",
+        "_score": 1,
+        "_source": {
+          "book": {
+            "scigraphId": "a7fb8be2706e950c4bb066669a4de194",
+            "isbn": "978-3-642-19902-8",
+            "medium": "eBook",
+            "shortTitle": "Lambrakis (Eds), Advances in the Research of Aquatic Environment (Environmental Earth Sciences) <eBook>",
+            "bookEdition": {
+              "chapterCount": "66",
+              "description": "Focuses on sustainable aquatic environmentProvides new research resultsIn close collaboration with leading societies of this field",
+              "language": "En",
+              "title": "Advances in the Research of Aquatic Environment",
+              "editionNumber": "1",
+              "contribution": [
+                {
+                  "publishedName": "Nicolaos Lambrakis",
+                  "affiliation": {
+                    "publishedName": "University of Patras",
+                    "gridName": "University of Patras",
+                    "location": {
+                      "lon": "21.786389",
+                      "lat": "38.286667"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.11047.33",
+                    "countryName": "Greece",
+                    "homePage": "http://www.upatras.gr/"
+                  },
+                  "order": "1"
+                },
+                {
+                  "publishedName": "George Stournaras",
+                  "affiliation": {
+                    "publishedName": "University of Athens",
+                    "gridName": "National and Kapodistrian University of Athens",
+                    "location": {
+                      "lon": "23.778344",
+                      "lat": "37.968264"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.5216.0",
+                    "countryName": "Greece",
+                    "homePage": "http://en.uoa.gr/"
+                  },
+                  "order": "2"
+                },
+                {
+                  "publishedName": "Konstantina Katsanou",
+                  "affiliation": {
+                    "publishedName": "University of Patras",
+                    "gridName": "University of Patras",
+                    "location": {
+                      "lon": "21.786389",
+                      "lat": "38.286667"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.11047.33",
+                    "countryName": "Greece",
+                    "homePage": "http://www.upatras.gr/"
+                  },
+                  "order": "3"
+                }
+              ],
+              "copyrightHolder": "Springer-Verlag Berlin Heidelberg",
+              "scigraphId": "a769f5d62669b48d8e0699e4f41f7bbf",
+              "copyrightYear": "2011",
+              "intellectualUnitId": "216574",
+              "subtitle": "Volume 1",
+              "publisher": "Springer Berlin Heidelberg",
+              "productMarketCode": [
+                {
+                  "skosLabel": [
+                    "Climate Change",
+                    "Klimaveränderung"
+                  ],
+                  "scigraphId": "U12007"
+                },
+                {
+                  "skosLabel": [
+                    "Waste Water Technology / Water Pollution Control / Water Management / Aquatic Pollution",
+                    "Abwassertechnik/Gewässerschutz/Wasserwirtschaft"
+                  ],
+                  "scigraphId": "U35040"
+                },
+                {
+                  "skosLabel": [
+                    "Earth Sciences",
+                    "Geowissenschaften"
+                  ],
+                  "scigraphId": "G"
+                },
+                {
+                  "skosLabel": [
+                    "Hydrogeology",
+                    "Hydrogeologie"
+                  ],
+                  "scigraphId": "G19005"
+                }
+              ],
+              "ddsId": "168514",
+              "bookType": "Monograph"
+            },
+            "bookSeries": {
+              "scigraphId": "5dd13b355e748d86c9b73659d06b0724",
+              "description": "Environmental Earth Sciences encompass mulitdisciplinary studies of the Earth's atmosphere, biosphere, hydrosphere, lithosphere and pedosphere and humanity's interaction with them. This book series aims to provide a forum for this diverse range of studies, reporting on the very latest results and documenting our emerging understanding of the Earth's system and our place in it. The type of material published traditionally includes: ?proceedings that are peer-reviewed and published in association with a conference; ?post-proceedings consisting of thoroughly revised final papers; and ?research monographs that may be based on individual research projects . The Environmental Earth Sciences series also includes various other publications, including:?tutorials or collections of lectures for advanced courses; ?contemporary surveys that offer an objective summary of a current topic of interest; and ?emerging areas of research directed at a broad community of practitioners.",
+              "language": "En",
+              "shortTitle": [
+                "",
+                "Environmental Earth Sciences"
+              ],
+              "title": "Environmental Earth Sciences",
+              "issnElectronic": "2199-9155",
+              "ddsId": "8394",
+              "issnPrint": "2199-9163"
+            },
+            "ddsId": "80032482",
+            "doi": "10.1007/978-3-642-19902-8"
+          },
+          "pageFirst": "459",
+          "language": "En",
+          "abstract": "Abstract The study of the SW Taygetos Mt. karst system, based on the implementation of tracer test and hydrochemical analyses, is aimed at the investigation of the geohydraulic characteristics and the water quality of the coastal and submarine springs at Stoupa region (Peloponnese). The study area is formed by intensively karstified carbonate rocks, flysch, Neogene sediments and Quaternary deposits. The high potential karstic aquifer is been discharged via coastal and submarine springs in Messinian Gulf. The submarine spring (Anavalos) is brackish to saline (EC: 0.023-5.438 S/m and Sal: 0.14-39.12), periodically acquires freshwater characteristics and it is not suitable for exploitation for human consumption. Among the four coastal springs, two of them having permanent flow, appear brackish, while the other two are of freshwater and flow periodically during the wet period. The tracer test pronounced a SW direction of groundwater flow and relatively high velocities, up to 150m/h, revealing the intense karstification of the carbonate formations.",
+          "title": "Application of tracer method and hydrochemical analyses regarding the investigation of the coastal karstic springs and the submarine spring (Anavalos) in Stoupa Bay (W. Mani Peninsula)",
+          "pageLast": "467",
+          "contribution": [
+            {
+              "publishedName": "G. Stamatis",
+              "affiliation": {
+                "publishedName": "Agricultural University of Athens",
+                "gridName": "Agricultural University of Athens",
+                "location": {
+                  "lon": "23.705556",
+                  "lat": "37.983889"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.10985.35",
+                "countryName": "Greece",
+                "homePage": "http://www.aua.gr/index.php"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "G. Migiros",
+              "affiliation": {
+                "publishedName": "Agricultural University of Athens",
+                "gridName": "Agricultural University of Athens",
+                "location": {
+                  "lon": "23.705556",
+                  "lat": "37.983889"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.10985.35",
+                "countryName": "Greece",
+                "homePage": "http://www.aua.gr/index.php"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "A. Kontari",
+              "affiliation": {
+                "publishedName": "Agricultural University of Athens",
+                "gridName": "Agricultural University of Athens",
+                "location": {
+                  "lon": "23.705556",
+                  "lat": "37.983889"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.10985.35",
+                "countryName": "Greece",
+                "homePage": "http://www.aua.gr/index.php"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "E. Dikarou",
+              "affiliation": {
+                "publishedName": "Agricultural University of Athens",
+                "gridName": "Agricultural University of Athens",
+                "location": {
+                  "lon": "23.705556",
+                  "lat": "37.983889"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.10985.35",
+                "countryName": "Greece",
+                "homePage": "http://www.aua.gr/index.php"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "D. Gamvroula",
+              "affiliation": {
+                "publishedName": "Agricultural University of Athens",
+                "gridName": "Agricultural University of Athens",
+                "location": {
+                  "lon": "23.705556",
+                  "lat": "37.983889"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.10985.35",
+                "countryName": "Greece",
+                "homePage": "http://www.aua.gr/index.php"
+              },
+              "order": "5"
+            }
+          ],
+          "scigraphId": "ec086a949f48a2b6c24948c23626e223",
+          "copyrightHolder": "Springer-Verlag Berlin Heidelberg",
+          "copyrightYear": "2011",
+          "_chains": [
+            204006600,
+            204006521,
+            110899,
+            86826,
+            204000347,
+            11390
+          ],
+          "_transaction_origin": 199409366,
+          "_graphdb_id": 199409366,
+          "ddsId": "Chap54",
+          "doi": "10.1007/978-3-642-19902-8_54"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/6f919f8d963b41acf871fc5d55549e4b",
+        "_score": 1,
+        "_source": {
+          "book": {
+            "scigraphId": "2ad012b042ab2ebea2b98478a7628698",
+            "isbn": "978-1-4020-6156-1",
+            "medium": "eBook",
+            "shortTitle": "Relini (Eds), Biodiversity in Enclosed Seas and Artificial Marine Habitats (Developments in Hydrobiology 193) <eBook>",
+            "bookEdition": {
+              "chapterCount": "25",
+              "description": "<P>Up-to-date knowledge on Artificial Marine Habitats</P><P>Presents current research about Marine Biodiversity in enclosed seas</P>",
+              "language": "En",
+              "title": "Biodiversity in Enclosed Seas and Artificial Marine Habitats",
+              "editionNumber": "1",
+              "contribution": [
+                {
+                  "publishedName": "G. Relini",
+                  "affiliation": {
+                    "publishedName": "Universit? di Genova",
+                    "gridName": "University of Genoa",
+                    "location": {
+                      "lon": "8.958889",
+                      "lat": "44.402919"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.5606.5",
+                    "countryName": "Italy",
+                    "homePage": "http://www.unige.it/"
+                  },
+                  "order": "1"
+                },
+                {
+                  "publishedName": "J. Ryland",
+                  "affiliation": {
+                    "publishedName": "University of Wales Swansea",
+                    "gridName": "Swansea University",
+                    "location": {
+                      "lon": "-3.980556",
+                      "lat": "51.609722"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.4827.9",
+                    "countryName": "United Kingdom",
+                    "homePage": "http://www.swansea.ac.uk/"
+                  },
+                  "order": "2"
+                }
+              ],
+              "copyrightHolder": "Springer",
+              "scigraphId": "d540627e10b0ead77d492a784f55ceb3",
+              "copyrightYear": "2007",
+              "intellectualUnitId": "148976",
+              "subtitle": "Proceedings of the 39th European Marine Biology Symposium, held in Genoa, Italy, 21-24 July 2004",
+              "publisher": "Springer Netherlands",
+              "productMarketCode": [
+                {
+                  "skosLabel": [
+                    "Life Sciences",
+                    "Biologie"
+                  ],
+                  "scigraphId": "L"
+                },
+                {
+                  "skosLabel": [
+                    "Environmental Management",
+                    "Umweltmanagement"
+                  ],
+                  "scigraphId": "U17009"
+                },
+                {
+                  "skosLabel": [
+                    "Ecology",
+                    "Ökologie"
+                  ],
+                  "scigraphId": "L19007"
+                },
+                {
+                  "skosLabel": [
+                    "Freshwater & Marine Ecology",
+                    "Süßwasser- und Meeresökologie"
+                  ],
+                  "scigraphId": "L19066"
+                },
+                {
+                  "skosLabel": [
+                    "Biodiversity",
+                    "Biodiversität"
+                  ],
+                  "scigraphId": "L19031"
+                }
+              ],
+              "ddsId": "135524",
+              "bookType": "Proceedings"
+            },
+            "bookSeries": {
+              "scigraphId": "66751a3d64cd1981df274b8460d91138",
+              "language": "En",
+              "shortTitle": "",
+              "title": [
+                "Developments in Hydrobiology",
+                "Developments in Hydrobiology 213",
+                "Developments in Hydrobiology 210",
+                "Developments in Hydrobiology 86",
+                "Developments in Hydrobiology 195",
+                "Developments in Hydrobiology 212",
+                "Developments in Hydrobiology 215",
+                "Developments in Hydrobiology 69",
+                "Developments in Hydrobiology 7",
+                "Developments in Hydrobiology 211"
+              ],
+              "ddsId": "5842"
+            },
+            "ddsId": "12046980",
+            "doi": "10.1007/978-1-4020-6156-1"
+          },
+          "pageFirst": "265",
+          "language": "En",
+          "abstract": "Abstract In this work we have studied the assemblages from Quirra canyon (Sardinia). We analysed data from 25 trawl samples from the canyon, made at different times and depth. A total of 71 demersal species (38 teleosts, 5 cartilaginous fishes, 13 molluscs and 15 crustaceans) were examined. We found four groups using cluster analysis; each group is characterised by a certain depth or time. In particular we have shown that the time of the day appears to have a role in the movement of shrimps and other species. This phenomenon seems to be linked to trophic need and by the consequent different food availability into the Canyon.",
+          "title": "Assemblages in a submarine canyon: influence of depth and time",
+          "pageLast": "271",
+          "contribution": [
+            {
+              "publishedName": "A. Sabatini",
+              "affiliation": {
+                "publishedName": "University of Cagliari",
+                "gridName": "University of Cagliari",
+                "location": {
+                  "lon": "9.114956",
+                  "lat": "39.217532"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.7763.5",
+                "countryName": "Italy",
+                "homePage": "http://www.unica.it/"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "M. C. Follesa",
+              "affiliation": {
+                "publishedName": "University of Cagliari",
+                "gridName": "University of Cagliari",
+                "location": {
+                  "lon": "9.114956",
+                  "lat": "39.217532"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.7763.5",
+                "countryName": "Italy",
+                "homePage": "http://www.unica.it/"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "I. Locci",
+              "affiliation": {
+                "publishedName": "University of Cagliari",
+                "gridName": "University of Cagliari",
+                "location": {
+                  "lon": "9.114956",
+                  "lat": "39.217532"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.7763.5",
+                "countryName": "Italy",
+                "homePage": "http://www.unica.it/"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "A. A. Pendugiu",
+              "affiliation": {
+                "publishedName": "University of Cagliari",
+                "gridName": "University of Cagliari",
+                "location": {
+                  "lon": "9.114956",
+                  "lat": "39.217532"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.7763.5",
+                "countryName": "Italy",
+                "homePage": "http://www.unica.it/"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "P. Pesci",
+              "affiliation": {
+                "publishedName": "University of Cagliari",
+                "gridName": "University of Cagliari",
+                "location": {
+                  "lon": "9.114956",
+                  "lat": "39.217532"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.7763.5",
+                "countryName": "Italy",
+                "homePage": "http://www.unica.it/"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "A. Cau",
+              "affiliation": {
+                "publishedName": "University of Cagliari",
+                "gridName": "University of Cagliari",
+                "location": {
+                  "lon": "9.114956",
+                  "lat": "39.217532"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.7763.5",
+                "countryName": "Italy",
+                "homePage": "http://www.unica.it/"
+              },
+              "order": "6"
+            }
+          ],
+          "scigraphId": "6f919f8d963b41acf871fc5d55549e4b",
+          "copyrightHolder": "Springer Science+Business Media B.V.",
+          "copyrightYear": "2007",
+          "_chains": [
+            204003514,
+            120227,
+            204001092,
+            7509,
+            203999806,
+            4807
+          ],
+          "_transaction_origin": 161242585,
+          "_graphdb_id": 161242585,
+          "ddsId": "Chap25",
+          "doi": "10.1007/978-1-4020-6156-1_25"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/e1cad00b1efa52411c1d33789c865c84",
+        "_score": 1,
+        "_source": {
+          "book": {},
+          "pageFirst": "247",
+          "language": "En",
+          "abstract": "Abstract Submarine canyons are structurally complex habitats known to support high densities and diversity of megafaunal organisms. This study describes deepwater corals and their habitats in The Gully, the largest submarine canyon in eastern North America, situated at the Canadian margin off Nova Scotia. Video recordings of the seabed were made along 49 transects, at depths between 110 and 544 m, using a tethered video camera system. The Gully has a high diversity of habitats with steep bedrock outcrops, high relief bottom with ledges of semi-consolidated mudstone, as well as level soft bottoms and areas with gravel. In total 95 megafaunal taxa were observed of which 16 species were corals. There was a strong, positive correlation between the total number of megafaunal taxa and number of coral species along transects, suggesting that coral diversity is a good indicator for overall megafaunal diversity. Corals were present in most parts of the canyon, and up to 11 species were observed along a single transect. The distribution patterns of corals were mainly related to distance along the axis from the canyon head and type of seabed substratum. The highest abundance of corals was found on the western side in the outer part of the canyon and is probably related to circulation patterns with a higher load of particulate matter in the out-fl owing water. Nephtheid soft corals, mainly Duva florida, were most frequent and were found within the whole depth range. Gorgonian corals were observed only deeper than 340 m. Except for Acanella arbuscula and Radicipes gracilis, which are anchored in mud, the gorgonians were mainly confined to areas with cobble and boulder and in a few cases to semiconsolidated mudstone. Multivariate analyses were applied to identify groups of transects and species, and to indicate which environmental factors control the distribution of corals and other megafauna in The Gully.",
+          "title": "Deep-water corals and their habitats in The Gully, a submarine canyon off Atlantic Canada",
+          "pageLast": "277",
+          "contribution": [
+            {
+              "publishedName": "Pål B. Mortensen",
+              "affiliation": {
+                "publishedName": "Institute of Marine Research",
+                "gridName": "Norwegian Institute of Marine Research",
+                "location": {
+                  "lon": "5.303892",
+                  "lat": "60.399961"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.10917.3e",
+                "countryName": "Norway",
+                "homePage": "http://www.imr.no/en"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Lene Buhl-Mortensen",
+              "affiliation": {
+                "publishedName": "Institute of Marine Research",
+                "gridName": "Norwegian Institute of Marine Research",
+                "location": {
+                  "lon": "5.303892",
+                  "lat": "60.399961"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.10917.3e",
+                "countryName": "Norway",
+                "homePage": "http://www.imr.no/en"
+              },
+              "order": "2"
+            }
+          ],
+          "scigraphId": "e1cad00b1efa52411c1d33789c865c84",
+          "copyrightHolder": "Springer-Verlag Berlin Heidelberg",
+          "copyrightYear": "2005",
+          "_chains": [
+            565001,
+            204006466
+          ],
+          "_transaction_origin": 175091395,
+          "_graphdb_id": 175091395,
+          "ddsId": "Chap12",
+          "doi": "10.1007/3-540-27673-4_12"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/ffac24faa87db6ea69589449d52bb870",
+        "_score": 1,
+        "_source": {
+          "book": {
+            "scigraphId": "d8d2b710861ee514a8d4f8f371430286",
+            "isbn": "978-1-4020-4386-4",
+            "medium": "eBook",
+            "shortTitle": "Caiti (Eds), Acoustic Sensing Techniques for the Shallow Water Environment <eBook>",
+            "bookEdition": {
+              "chapterCount": "25",
+              "description": "<P>Comprehensive account of state-of-the-art research by leading scientists in the field</P><P>Emphasis on experimental procedures and results</P><P>Wide range of applications from marine biology to geophysics and sonar systems</P>",
+              "language": "En",
+              "title": "Acoustic Sensing Techniques for the Shallow Water Environment",
+              "editionNumber": "1",
+              "contribution": [
+                {
+                  "publishedName": "Andrea Caiti",
+                  "affiliation": {
+                    "publishedName": "University of Pisa",
+                    "gridName": "University of Pisa",
+                    "location": {
+                      "lon": "10.398687",
+                      "lat": "43.716429"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.5395.a",
+                    "countryName": "Italy",
+                    "homePage": "http://www.unipi.it/"
+                  },
+                  "order": "1"
+                },
+                {
+                  "publishedName": "N. Ross Chapman",
+                  "affiliation": {
+                    "publishedName": "University of Victoria",
+                    "gridName": "University of Victoria",
+                    "location": {
+                      "lon": "-123.311751",
+                      "lat": "48.463325"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.143640.4",
+                    "countryName": "Canada",
+                    "homePage": "http://www.uvic.ca/"
+                  },
+                  "order": "2"
+                },
+                {
+                  "publishedName": "Jean-Pierre Hermand",
+                  "affiliation": {
+                    "publishedName": "Universit? Libre de Bruxelles",
+                    "gridName": "Université Libre de Bruxelles",
+                    "location": {
+                      "lon": "4.381621",
+                      "lat": "50.813519"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.4989.c",
+                    "countryName": "Belgium",
+                    "homePage": "http://www.ulb.ac.be/"
+                  },
+                  "order": "3"
+                },
+                {
+                  "publishedName": "S?rgio M. Jesus",
+                  "affiliation": {
+                    "publishedName": "University of Algarve",
+                    "gridName": "University of Algarve",
+                    "location": {
+                      "lon": "-7.927639",
+                      "lat": "37.022361"
+                    },
+                    "gridId": "http://www.grid.ac/institutes/grid.7157.4",
+                    "countryName": "Portugal",
+                    "homePage": "https://www.ualg.pt/home/en"
+                  },
+                  "order": "4"
+                }
+              ],
+              "copyrightHolder": "Springer Science+Business Media B.V.",
+              "scigraphId": "8657b6d999ef6cb53d7c71bb95ada498",
+              "copyrightYear": "2006",
+              "intellectualUnitId": "127106",
+              "subtitle": "Inversion Methods and Experiments",
+              "publisher": "Springer Netherlands",
+              "productMarketCode": [
+                {
+                  "skosLabel": [
+                    "Signal,Image and Speech Processing",
+                    "Signalverarbeitung"
+                  ],
+                  "scigraphId": "T24051"
+                },
+                {
+                  "skosLabel": [
+                    "Geophysics/Geodesy",
+                    "Geophysik/Geodäsie"
+                  ],
+                  "scigraphId": "G18009"
+                },
+                {
+                  "skosLabel": [
+                    "Earth Sciences",
+                    "Geowissenschaften"
+                  ],
+                  "scigraphId": "G"
+                },
+                {
+                  "skosLabel": [
+                    "Acoustics",
+                    "Akustik"
+                  ],
+                  "scigraphId": "P21069"
+                },
+                {
+                  "skosLabel": [
+                    "Vibration, Dynamical Systems, Control",
+                    "Schwingungen, Dynamische Systeme und Regelung"
+                  ],
+                  "scigraphId": "T15036"
+                },
+                {
+                  "skosLabel": [
+                    "Oceanography",
+                    "Ozeanographie"
+                  ],
+                  "scigraphId": "G25005"
+                },
+                {
+                  "skosLabel": [
+                    "Offshore Engineering",
+                    "Hochseetechnik"
+                  ],
+                  "scigraphId": "T23070"
+                }
+              ],
+              "ddsId": "120482",
+              "bookType": "Monograph"
+            },
+            "ddsId": "11568780",
+            "doi": "10.1007/978-1-4020-4386-4"
+          },
+          "pageFirst": "109",
+          "language": "En",
+          "title": "Acoustic clutter from buried submarine mud volcanoes",
+          "pageLast": "124",
+          "contribution": [
+            {
+              "publishedName": "Charles W. Holland",
+              "affiliation": {
+                "publishedName": "Pennsylvania State University",
+                "gridName": "Pennsylvania State University",
+                "location": {
+                  "lon": "-77.859929",
+                  "lat": "40.798449"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.29857.31",
+                "countryName": "United States",
+                "homePage": "http://www.psu.edu/"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Anthony L. Gerig",
+              "affiliation": {
+                "publishedName": "Pennsylvania State University",
+                "gridName": "Pennsylvania State University",
+                "location": {
+                  "lon": "-77.859929",
+                  "lat": "40.798449"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.29857.31",
+                "countryName": "United States",
+                "homePage": "http://www.psu.edu/"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Piero Boni",
+              "affiliation": {
+                "publishedName": "NATO Undersea Research Centre",
+                "gridName": "NATO Centre for Maritime Research and Experimentation",
+                "location": {
+                  "lon": "9.862798",
+                  "lat": "44.09818"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.425579.8",
+                "countryName": "Italy",
+                "homePage": "http://www.cmre.nato.int/"
+              },
+              "order": "3"
+            }
+          ],
+          "scigraphId": "ffac24faa87db6ea69589449d52bb870",
+          "copyrightHolder": "Springer",
+          "copyrightYear": "2006",
+          "_chains": [
+            7489,
+            19426,
+            3493491,
+            8360,
+            204018320,
+            204000049,
+            204012850,
+            204138944,
+            204000771,
+            26267,
+            43389,
+            204002742
+          ],
+          "_transaction_origin": 179909941,
+          "_graphdb_id": 179909941,
+          "ddsId": "Chap9",
+          "doi": "10.1007/978-1-4020-4386-4_9"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/d5ba9c59a530cfb3ad9f50a7c3f358b4",
+        "_score": 1,
+        "_source": {
+          "book": {
+            "scigraphId": "70ed6014ec67529da48feea271901bf4",
+            "isbn": "978-3-662-36584-7",
+            "medium": "eBook",
+            "shortTitle": "von Siemens, Wissenschaftliche und Technische Arbeiten 2.Aufl. <eBook>",
+            "bookEdition": {
+              "chapterCount": "36",
+              "language": "De",
+              "title": "Wissenschaftliche und Technische Arbeiten",
+              "editionNumber": "2",
+              "contribution": {
+                "publishedName": "Werner Siemens",
+                "order": "1"
+              },
+              "copyrightHolder": "Springer-Verlag Berlin Heidelberg",
+              "scigraphId": "474df035286179d08391930e7e77a274",
+              "copyrightYear": "1889",
+              "intellectualUnitId": "218382",
+              "subtitle": "Erster Band. Wissenschaftliche Abhandlungen und Vortr?ge",
+              "publisher": "Springer Berlin Heidelberg",
+              "productMarketCode": [
+                {
+                  "skosLabel": [
+                    "Engineering",
+                    "Technik"
+                  ],
+                  "scigraphId": "T"
+                },
+                {
+                  "skosLabel": [
+                    "Engineering, general",
+                    "Technik, allgemein"
+                  ],
+                  "scigraphId": "T00004"
+                }
+              ],
+              "ddsId": "257967",
+              "bookType": "Monograph"
+            },
+            "ddsId": "86329384",
+            "doi": "10.1007/978-3-662-36584-7"
+          },
+          "pageFirst": "234",
+          "language": "De",
+          "abstract": "Zusammenfassung Als Ausgangspunkt der submarinen Telegraphie sind die in den Jahren 1847 bis 1852 in Preussen angelegten unterirdischen Leitungen zu betrachten. Es waren zwar schon früher Versuche mit Isolirung der zu unterirdischen Leitungen bestimmten Drähte durch Glasröhren, Kautschuk etc. gemacht , unter denen namentlich die von Jacobi in Petersburg im Jahre 18421) in ziemlich grossem Massstabe durchgeführten Erwähnung verdienen, — doch alle waren fehlgeschlagen. Im Jahre 1846 schlug ich der preussischen Regierung die Anwendung der kurz vorher in Europa bekannt gewordenen Guttapercha als Isolirungsmittel vor. Die Eigenschaft derselben, im erwärmten Zustande plastisch zu werden, verbunden mit ihrer isolirenden Eigenschaft, Hessen sie als besonders geeignet für den vorliegenden Zweck erscheinen. Doch auch die hier, sowie auch zu gleicher Zeit in England mit diesem Material angestellten Versuche ergaben kein befriedigendes Resultat, da die Verbindungsnähte der um den Draht gewalzten Guttapercha sich nach kurzer Zeit wieder trennten. Erst mit Hülfe einer von mir und Halske im Jahre 1847 construirten und in Thätigkeit gesetzten Umpressungsmaschine, durch welche die durch Erwärmung plastisch gemachte Guttapercha ohne Naht um den Draht gepresst wird, fand das Problem der Herstellung hinreichend isolirter unterirdischer oder submariner Leitungen seine Lösung.",
+          "chapterNumber": "22",
+          "title": "Beiträge zur Theorie der Legung und Untersuchung submariner Telegraphenleitungen",
+          "pageLast": "257",
+          "contribution": {
+            "publishedName": "Werner Siemens",
+            "order": "1"
+          },
+          "scigraphId": "d5ba9c59a530cfb3ad9f50a7c3f358b4",
+          "copyrightHolder": "Springer-Verlag Berlin Heidelberg",
+          "copyrightYear": "1889",
+          "_transaction_origin": 191042044,
+          "_graphdb_id": 191042044,
+          "ddsId": "Chap22",
+          "doi": "10.1007/978-3-662-36584-7_22"
+        }
+      },
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/85165b6f928b0a4e13515b5db2fdf155",
+        "_score": 1,
+        "_source": {
+          "book": {},
+          "pageFirst": "111",
+          "language": "En",
+          "abstract": "Abstract Submarine hard bottoms (e.g., boulders, outcropping strata) are of particular ecological importance. They were investigated in the Exclusive Economic Zones (EEZ) of the German North Sea and the Baltic Sea, using high-resolution seafloor imaging techniques (i.e., sidescan sonar and multibeam echosounder). Examples are shown from the research areas Sylt Outer Reef (Sylter Außenriff; North Sea), Kadet Trench (Kadetrinne), and Adler Ground (Adlergrund) (both in the Baltic Sea). There exist distinct differences between the two continental shelf seas regarding the distribution of boulders and the density (percent coverage) of boulders per unit seafloor. The observed differences are attributed to (a) different geological evolution of the seafloor, and (b) different forcing by waves, tides and currents, which are responsible for the redistribution of sediments.",
+          "chapterNumber": "Chapter 6",
+          "title": "Identification of submarine hard-bottom substrates in the German North Sea and Baltic Sea EEZ with high-resolution acoustic seafloor imaging",
+          "pageLast": "125",
+          "contribution": [
+            {
+              "publishedName": "Markus Diesing",
+              "affiliation": {
+                "publishedName": "Christian-Albrechts-Universität zu Kiel",
+                "gridName": "Kiel University",
+                "location": {
+                  "lon": "10.112299",
+                  "lat": "54.345805"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.9764.c",
+                "countryName": "Germany",
+                "homePage": "http://www.uni-kiel.de/index-e.shtml"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Klaus Schwarzer",
+              "affiliation": {
+                "publishedName": "Christian-Albrechts-Universität zu Kiel",
+                "gridName": "Kiel University",
+                "location": {
+                  "lon": "10.112299",
+                  "lat": "54.345805"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.9764.c",
+                "countryName": "Germany",
+                "homePage": "http://www.uni-kiel.de/index-e.shtml"
+              },
+              "order": "2"
+            }
+          ],
+          "scigraphId": "85165b6f928b0a4e13515b5db2fdf155",
+          "copyrightHolder": "Springer-Verlag Berlin Heidelberg",
+          "copyrightYear": "2006",
+          "_chains": [
+            204005361,
+            42838
+          ],
+          "_transaction_origin": 195565680,
+          "_graphdb_id": 195565680,
+          "ddsId": "Chap7",
+          "doi": "10.1007/3-540-33291-X_7"
+        }
+      }
+    ]
+  }
+}

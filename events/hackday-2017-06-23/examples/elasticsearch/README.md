@@ -2,7 +2,10 @@
 
 The queries below can be executed against your Elasticsearch instance: `<your-vm-ip-address>:9200`.
 
-## Articles with Contributions and Affiliations
+## Index *sg_docs_articles* : Articles with Contributions and Affiliations
+
+This search uses the index *sg_docs_articles*, which links each article with
+the corresponding contributions, affiliations, grants, and journal.
 
 To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (see [articleContributionsAffiliationsJournal.json](example-queries/articleContributionsAffiliationsJournal.json)):
 
@@ -128,6 +131,347 @@ This produces the following result (see [articleContributionsAffiliationsJournal
   }
 }
 ```
+
+## Index *sg_docs_grants*: Grants
+
+We have set up an index *sg_docs_grants*, which links each grant with
+the corresponding contributions, affiliations, and articles.
+
+To search for a grant on "Genomics", run the following Elasticsearch query
+(see [grantOnGenomics.json](example-queries/grantOnGenomics.json)):
+
+```
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "wildcard": {
+            "abstract": "genomics"
+          }
+        }
+      ],
+      "must_not": [ ],
+      "should": [ ]
+    }
+  },
+  "from": 0,
+  "size": 10,
+  "sort": [ ],
+  "aggs": { }
+}
+```
+
+Sample Response
+```
+{
+  "took": 1647,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 10398,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/050aa3f8b92ae214d6fb8828099fe3b9",
+        "_score": 1,
+        "_source": {
+          "journalIssn": "1752-0509",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12918",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract BackgroundThe large amount of literature in the post-genomics era enables the study of gene interactions and networks using all available articles published for a specific organism. MeSH is a controlled vocabulary of medical and scientific terms that is used by biomedical scientists to manually index articles in the PubMed literature database. We hypothesized that genome-wide gene-MeSH term associations from the PubMed literature database could be used to predict implicit gene-to-gene relationships and networks. While the gene-MeSH associations have been used to detect gene-gene interactions in some studies, different methods have not been well compared, and such a strategy has not been evaluated for a genome-wide literature analysis. Genome-wide literature mining of gene-to-gene interactions allows ranking of the best gene interactions and investigation of comprehensive biological networks at a genome level. ResultsThe genome-wide GenoMesh literature mining algorithm was developed by sequentially generating a gene-article matrix, a normalized gene-MeSH term matrix, and a gene-gene matrix. The gene-gene matrix relies on the calculation of pairwise gene dissimilarities based on gene-MeSH relationships. An optimized dissimilarity score was identified from six well-studied functions based on a receiver operating characteristic (ROC) analysis. Based on the studies with well-studied Escherichia coli and less-studied Brucella spp., GenoMesh was found to accurately identify gene functions using weighted MeSH terms, predict gene-gene interactions not reported in the literature, and cluster all the genes studied from an organism using the MeSH-based gene-gene matrix. A web-based GenoMesh literature mining program is also available at: http://genomesh.hegroup.org. GenoMesh also predicts gene interactions and networks among genes associated with specific MeSH terms or user-selected gene lists. ConclusionsThe GenoMesh algorithm and web program provide the first genome-wide, MeSH-based literature mining system that effectively predicts implicit gene-gene interaction relationships and networks in a genome-wide scope.",
+          "title": "A genome-wide MeSH-based literature mining system predicts implicit gene-to-gene relationships and networks",
+          "contribution": [
+            {
+              "publishedName": "Zuoshuang Xiang",
+              "affiliation": [
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                }
+              ],
+              "order": "1"
+            },
+            {
+              "publishedName": "Tingting Qin",
+              "affiliation": {
+                "publishedName": "Medical University of South Carolina",
+                "gridName": "Medical University of South Carolina",
+                "location": {
+                  "lon": "-79.951921",
+                  "lat": "32.786599"
+                },
+                "gridId": "http://www.grid.ac/institutes/grid.259828.c",
+                "countryName": "United States",
+                "homePage": "http://academicdepartments.musc.edu/musc/"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Zhaohui S Qin",
+              "affiliation": [
+                {
+                  "publishedName": "Emory University",
+                  "gridName": "Emory University",
+                  "location": {
+                    "lon": "-84.32401",
+                    "lat": "33.792787"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.189967.8",
+                  "countryName": "United States",
+                  "homePage": "http://www.emory.edu/home/index.html"
+                },
+                {
+                  "publishedName": "Emory School of Medicine",
+                  "gridName": "Emory University",
+                  "location": {
+                    "lon": "-84.32401",
+                    "lat": "33.792787"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.189967.8",
+                  "countryName": "United States",
+                  "homePage": "http://www.emory.edu/home/index.html"
+                }
+              ],
+              "order": "3"
+            },
+            {
+              "publishedName": "Yongqun He",
+              "affiliation": [
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                },
+                {
+                  "publishedName": "University of Michigan",
+                  "gridName": "University of Michigan–Ann Arbor",
+                  "location": {
+                    "lon": "-83.738224",
+                    "lat": "42.278306"
+                  },
+                  "gridId": "http://www.grid.ac/institutes/grid.214458.e",
+                  "countryName": "United States",
+                  "homePage": "https://www.umich.edu/"
+                }
+              ],
+              "order": "4"
+            }
+          ],
+          "scigraphId": "050aa3f8b92ae214d6fb8828099fe3b9",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            204019881,
+            203994681,
+            9938,
+            204019403,
+            16660,
+            203989870,
+            16663,
+            204026222,
+            37113,
+            34444
+          ],
+          "publicationYear": "2013",
+          "_transaction_origin": 1214983,
+          "fieldOfResearchCode": [
+            "GENETICS",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 1214983,
+          "doiLink": "http://dx.doi.org/10.1186/1752-0509-7-S3-S9",
+          "publicationDate": "2013-10-16",
+          "issnElectronic": "1752-0509",
+          "journalTitle": "BMC Systems Biology",
+          "doi": "10.1186/1752-0509-7-S3-S9"
+        }
+      },
+      ...
+    ]
+  }
+}
+```
+
+See [grantOnGenomics-output.json](example-output/grantOnGenomics-output.json).
+
+## Index *sg_docs_book_chapters*: Books and Chapters
+
+We have set up an index *sg_docs_books_chapters*, which links each chapter with
+the corresponding book, contributions, affiliations.
+
+To search for a chapter on "Submarine", run the following Elasticsearch query
+(see [chapterOnSubmarines.json](example-queries/chapterOnSubmarines.json)):
+
+```
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "wildcard": {
+            "title": "*submarine*"
+          }
+        }
+      ],
+      "must_not": [ ],
+      "should": [ ]
+    }
+  },
+  "from": 0,
+  "size": 10,
+  "sort": [ ],
+  "aggs": { }
+}
+```
+
+Sample Response
+```
+{
+  "took": 524,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 21,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "sg_docs_book_chapters_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/book-chapters/df0ae6345479b585137b4eb6d0d6fc8b",
+        "_score": 1,
+        "_source": {
+          "book": {},
+          "pageFirst": "276",
+          "language": "En",
+          "abstract": "Abstract A collaborative program of work was set up between STC Submarine Systems Ltd. (now part of the Northern Telecom group), and the School of Systems Engineering at Portsmouth Polytechnic. The aim of the work has been to establish methodologies (not necessarily new ones) which can be used to formalise methods of design, and to apply these to current design problems within the company. This also includes the representation of these methodologies through practical applications within an expert system tool. We also wish to show how formal techniques can be used to uncover areas of missing knowledge.",
+          "title": "Representation of the design to manufacture methodology of the armour protection element of the fibre optic submarine cable within an expert system",
+          "pageLast": "283",
+          "contribution": [
+            {
+              "publishedName": "Darren Bayliss",
+              "affiliation": {
+                "publishedName": "STC Submarine Systems & Portsmouth Polytechnic"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Sharon Berry",
+              "affiliation": {
+                "publishedName": "STC Submarine Systems & Portsmouth Polytechnic"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "David Curtis",
+              "affiliation": {
+                "publishedName": "STC Submarine Systems & Portsmouth Polytechnic"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Bernard Cox",
+              "affiliation": {
+                "publishedName": "STC Submarine Systems & Portsmouth Polytechnic"
+              },
+              "order": "4"
+            }
+          ],
+          "scigraphId": "df0ae6345479b585137b4eb6d0d6fc8b",
+          "copyrightHolder": "Springer-Verlag",
+          "copyrightYear": "1992",
+          "_transaction_origin": 163070820,
+          "_graphdb_id": 163070820,
+          "ddsId": "Chap30",
+          "doi": "10.1007/BFb0024979"
+        }
+      },
+      ...
+    ]
+  }
+}
+```
+
+See [grantOnGenomics-output.json](example-output/grantOnGenomics-output.json).
 
 ## Aggregating Articles By Journal
 
