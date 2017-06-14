@@ -1,7 +1,7 @@
 # Example Queries
 
-* [Quering Elasticsearch](elasticsearch)
-* [Quering SciGraph](graphdb)
+* [Querying Elasticsearch](elasticsearch)
+* [Querying SciGraph](graphdb)
 
 ## SciGraph Schema
 
