@@ -1,0 +1,381 @@
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> a sg:BookChapter ;
+	sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2005> ;
+	sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	sg:scigraphId "4116aea4578bb856e2623944a9b15294" ;
+	sg:ddsId "Chap8" ;
+	sg:doi "10.1057/9780230503076_8" ;
+	sg:language "En" ;
+	sg:title "Afterword" ;
+	sg:abstract "Abstract In the midst of a welter of ‘spoofs’ and ‘ironic slasher movies’, ‘comic Gothic’ has perhaps been easily dismissed as parody in its lower sense. Preoccupied with the anxieties of modernity, deadly serious scholarly criticism of texts that disturb and shock has dominated the rise of Gothic studies. Thus, we have argued, the value of the comic turn in Gothic texts has been largely overlooked. What we have tried to do in Gothic and the Comic Turn is to open up a new approach to reading Gothic texts, one that recognizes the play of surface effects as they locate themselves on the unstable boundary between humour and horror and transgress it in both directions. We have avoided becoming mired in the attempt to set up a taxonomy of humour or of comic effects, just as we have resisted the depth model of reading offered by psychoanalysis. Rather than attempt a comprehensive survey of texts that might be deemed ‘comic Gothic’, we have offered the selective study appropriate to a book of this length. By focusing on exemplar texts, we have tried to sketch out a rough trajectory of the comic turn in Gothic from The Castle of Otranto to the 1980s. In so doing, we have concentrated mainly on British writing but have also considered the work of two North American writers where thematic links are strong." ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/2ec4a975adcebb727dbe0f90b12e747d> , <http://www.springernature.com/scigraph/things/contributions/8c17ea703a8342c2b16dfb0d70335f05> ;
+	sg:copyrightHolder "Avril M. Horner and Susan H. Zlosnik" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:pageFirst "165" ;
+	sg:pageLast "166" ;
+	sg:metadataRights "OpenAccess" ;
+	sg:abstractRights "OpenAccess" ;
+	sg:bodyPdfRights "Restricted" ;
+	sg:bodyHtmlRights "Restricted" ;
+	sg:bibliographyRights "Restricted" ;
+	sg:esmRights "Restricted" .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> a sg:BookChapter ;
+	sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2002> ;
+	sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	sg:scigraphId "0575fc217183b1a0fd1ac713a0e74d82" ;
+	sg:ddsId "Chap7" ;
+	sg:doi "10.1057/9780230503076_7" ;
+	sg:language "En" ;
+	sg:title "Men Writing Men" ;
+	sg:abstract "Abstract Such was the impact of second wave feminism that the 1980s saw the invention of the term ‘crisis in masculinity’. However, as Michael Roper and John Tosh have pointed out, the phenomenon is not new: ‘Masculinity is always bound up with negotiations about power, and is often therefore experienced as tenuous’.1 One of the effects of feminism in the 1960s and 1970s was to focus the spotlight on gendered social practices and on sexuality. Thus by the 1980s there was a growing popular understanding that gender was not synonymous with the biological body, that gender and sex are not synonymous. This is nicely illustrated in a comic vein by the popular satirical television series, Spitting Image, which portrayed the then prime minister, Mrs Thatcher (otherwise known as ‘The Iron Lady’ and ‘Attila the Hen’, to quote two of her more repeatable nicknames), dressed in a man’s suit. Topped with the three-dimensional caricature that was the latex head of the Spitting Image puppet, this representation of Mrs Thatcher became equally as familiar to the British in the 1980s as the dulcet tones and gentle visage of ‘the lady’ herself.2 Along with similar puppets, ‘she’ was manipulated to participate in scenes of public and private life in which her weaknesses and strengths alike were ruthlessly satirized. In addition to adopting male dress, ‘Mrs Thatcher’ was shown behaving in a far more masculine manner than her male Cabinet colleagues." ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/8b78509cfca2380923308ad96c4eed32> , <http://www.springernature.com/scigraph/things/contributions/ab44cf578a854d2ec2cfbd1fe36afcbf> ;
+	sg:copyrightHolder "Avril M. Horner and Susan H. Zlosnik" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:chapterNumber "6" ;
+	sg:pageFirst "136" ;
+	sg:pageLast "164" ;
+	sg:metadataRights "OpenAccess" ;
+	sg:abstractRights "OpenAccess" ;
+	sg:bodyPdfRights "Restricted" ;
+	sg:bodyHtmlRights "Restricted" ;
+	sg:bibliographyRights "Restricted" ;
+	sg:esmRights "Restricted" .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> a sg:BookChapter ;
+	sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2103> , <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2002> , <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2005> ;
+	sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	sg:scigraphId "af8e2db84923b0d7ec1385c393ea8c52" ;
+	sg:ddsId "Chap6" ;
+	sg:doi "10.1057/9780230503076_6" ;
+	sg:language "En" ;
+	sg:title "Women Writing Women" ;
+	sg:abstract "Abstract Writing in 1979, Patricia Stubbs identified a problem encountered by feminist writers at the end of the nineteenth century as still having relevance for the current generation of women writers. ‘This’, she claims: is a difficulty peculiar to realist fiction — that of how to incorporate it into a form whose essential characteristic is the exploration of existing realities, experiences and aspirations which go well beyond the possibilities afforded by that reality…. This explains the increasing importance of non-realist linear narrative forms in contemporary women’s writing. She cites Monique Wittig, Beryl Bainbridge, Angela Carter and Patricia Highsmith as writers who write in fantasy modes in order to evade this constraint.1 Those feminist writers of fiction who remained within realist paradigms found themselves writing narratives of victimhood: Margaret Drabble’s heroines are an interesting example. ‘This, above all, to refuse to be a victim’, says Margaret Atwood’s nameless narrator at the end of her 1972 novel Surfacing.2 In the 1970s and 1980s, a number of women novelists did just that and found in the traditions of Gothic the potential for writing transgression that challenged patriarchal assumptions and expectations in the late twentieth-century context. In Gothic’s hybridity they discovered ways of opening up parodic spaces to comic and liberating effect." ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/29a2f294c0de5a0d12bb5a841f49e020> , <http://www.springernature.com/scigraph/things/contributions/68565ec60bb01d028d008f8c0fe5fd90> ;
+	sg:copyrightHolder "Avril M. Horner and Susan H. Zlosnik" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:chapterNumber "5" ;
+	sg:pageFirst "116" ;
+	sg:pageLast "135" ;
+	sg:metadataRights "OpenAccess" ;
+	sg:abstractRights "OpenAccess" ;
+	sg:bodyPdfRights "Restricted" ;
+	sg:bodyHtmlRights "Restricted" ;
+	sg:bibliographyRights "Restricted" ;
+	sg:esmRights "Restricted" .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> a sg:BookChapter ;
+	sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2103> , <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2002> , <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2005> ;
+	sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	sg:scigraphId "ec367d78feb244ad125c53676b61aa9b" ;
+	sg:ddsId "Chap5" ;
+	sg:doi "10.1057/9780230503076_5" ;
+	sg:language "En" ;
+	sg:title "Topography and the Comic Gothic Turn" ;
+	sg:abstract "Abstract In this chapter we shall look at how the relationship between place and identity is explored in comic Gothic writing. As we saw in Chapter 3, both Trilby and Nightwood focus on Paris as an arena in which the potentially hybrid identities of late modernity can be ambiguously played out. Both glimpse the rural as a peripheral alternative to the metropolis. In Trilby, true to an English cultural and literary heritage in which the country house and the countryside are indicative of tradition, Little Billee’s family home in Devonshire is associated with the conservative values of rural England. In Nightwood, the rural is represented by Nora’s rambling estate in North America that has been in her family for two hundred years and which, ‘a mass of tangled grass and weeds’, contains ‘its own burial ground, and a decaying chapel’ (p. 77). It is here that Robin’s peculiar communion with a dog takes place, man’s best friend, as it were, becoming woman’s. The first two novels we explore in this chapter continue this tradition of setting the countryside against the city in a binary opposition. Evelyn Waugh’s A Handful of Dust (1934), moving between London, a large country house and the wilds of the Brazilian jungle, is a bitter and satiric vision of life in the twentieth century, whereas Stella Gibbons’s Cold Comfort Farm (1932) is a more benign novel that uses burlesque and parody to critique fictional representations of the rural." ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/20c622b7a8cc09863f61758c865e363f> , <http://www.springernature.com/scigraph/things/contributions/22ec1b0551cc0009c1a91b7156220b96> ;
+	sg:copyrightHolder "Avril M. Horner and Susan H. Zlosnik" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:chapterNumber "4" ;
+	sg:pageFirst "95" ;
+	sg:pageLast "115" ;
+	sg:metadataRights "OpenAccess" ;
+	sg:abstractRights "OpenAccess" ;
+	sg:bodyPdfRights "Restricted" ;
+	sg:bodyHtmlRights "Restricted" ;
+	sg:bibliographyRights "Restricted" ;
+	sg:esmRights "Restricted" .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> a sg:BookChapter ;
+	sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2103> , <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2002> ;
+	sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	sg:scigraphId "5d9f1383244082908b3502f443a78f3a" ;
+	sg:ddsId "Chap4" ;
+	sg:doi "10.1057/9780230503076_4" ;
+	sg:language "En" ;
+	sg:title "Towards Gothic Modernism" ;
+	sg:abstract "Abstract Both George du Maurier’s Trilby (1894) and Djuna Barnes’s Nightwood (1936) focus on Paris as an arena in which identities in process can be played out. As a quintessentially ‘modern’ European city, Paris became, from the late nineteenth to the mid-twentieth century, associated with metamorphosis and experimentation. It is thus an appropriate setting for the plots of these two novels which, in their depiction of gender, national identity, urban space and a godless world, indicate a movement into the late phase of modernity. However, whereas du Maurier’s text anticipates the vital importance of such issues for the twentieth century (despite setting them back in time in the 1850s), Barnes’s novel deals with their outcome on the eve of the Second World War. Both texts use Gothic tropes and devices to represent the anxieties associated with twentieth-century Europe; both use the comic Gothic turn as a means of engaging with such anxieties in a more ambivalent manner than ‘horror’ Gothic; both are written on the cusp of important social, political and cultural historical moments; both present the city space as a place of liberation in its embrace of the flâneur and the bohemian." ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/131c94a7fce36b05ad15c1a57076c47c> , <http://www.springernature.com/scigraph/things/contributions/a36de778837ee174cb0ccf188084907b> ;
+	sg:copyrightHolder "Avril M. Horner and Susan H. Zlosnik" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:chapterNumber "3" ;
+	sg:pageFirst "69" ;
+	sg:pageLast "94" ;
+	sg:metadataRights "OpenAccess" ;
+	sg:abstractRights "OpenAccess" ;
+	sg:bodyPdfRights "Restricted" ;
+	sg:bodyHtmlRights "Restricted" ;
+	sg:bibliographyRights "Restricted" ;
+	sg:esmRights "Restricted" .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> a sg:BookChapter ;
+	sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2002> , <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2005> ;
+	sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	sg:scigraphId "1ba7773d673cc12c885b1601df947176" ;
+	sg:ddsId "Chap3" ;
+	sg:doi "10.1057/9780230503076_3" ;
+	sg:language "En" ;
+	sg:title "Realism and Romance" ;
+	sg:abstract "Abstract It is clear that the tendency of early Gothic fiction to self-parody did not put it beyond the reach of further parodic treatment, in which the mix of horror and humour tipped towards the latter. As the conventions of the Gothic genre became clichéd, they lost their powers of horror and became ripe for parody. In comic parodic Gothic, excess and the grotesque produce humour, not horror. This chapter, however, examines a different kind of Gothic comic turn. While (as critics broadly agree) the Gothic novel as a genre (however diverse its examples) can be located in the period from The Castle of Otranto (1764) to Melmoth the Wanderer (1820), Gothic as a mode of writing pervaded the fiction (and, indeed, other kinds of writing) of the nineteenth century as a kind of textual haunting. Similarly, the settings of Gothic became no longer confined to those of the earlier genre. As Julian Wolfreys suggests, ‘Escaping from the tomb and the castle, the gothic in the Victorian period becomes arguably even more potentially terrifying because of its ability to manifest itself anywhere.’1 The seeds of this dispersal may be seen in novels like The Heroine, Northanger Abbey and Castle Rackrent, which had simultaneously parodied Gothic novels and represented everyday experience in terms of Gothic discourses. This perception of the Gothic dimensions of ‘real life’ is the focus of this chapter, where we will argue that the quotidian is imbued with Gothic threat, particularly in the realm of gender relations." ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/38d3d717b66de3f0ebfff996d936566b> , <http://www.springernature.com/scigraph/things/contributions/b22d6279ab80f703b7af0445da842d02> ;
+	sg:copyrightHolder "Avril M. Horner and Susan H. Zlosnik" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:chapterNumber "2" ;
+	sg:pageFirst "45" ;
+	sg:pageLast "68" ;
+	sg:metadataRights "OpenAccess" ;
+	sg:abstractRights "OpenAccess" ;
+	sg:bodyPdfRights "Restricted" ;
+	sg:bodyHtmlRights "Restricted" ;
+	sg:bibliographyRights "Restricted" ;
+	sg:esmRights "Restricted" .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> a sg:BookChapter ;
+	sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2005> ;
+	sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	sg:scigraphId "a485e82f33f0d52d34b14331ae115c3e" ;
+	sg:ddsId "Chap2" ;
+	sg:doi "10.1057/9780230503076_2" ;
+	sg:language "En" ;
+	sg:title "The Late Romantic Turn" ;
+	sg:abstract "Abstract Maria Edgeworth’s Castle Rackrent was published in 1800 and Eaton Stannard Barrett’s The Heroine in 1813, that is, after the Gothic novel had peaked in terms of its popularity during the 1790s and before those better-known parodies of Gothic fiction, Peacock’s Nightmare Abbey and Austen’s Northanger Abbey, which were published in 1818.1 Whereas The Heroine is a clear parody of the conventions of the popular Gothic novel, Castle Rackrent is perhaps a more subtle parody of the Gothic mode. Both Edgeworth and Barrett were commended by Austen, who wrote in a letter dated 2 March 1814: ‘I finished The Heroine last night and was very much amused by it … It diverted me exceedingly … I have torn through the third volume… I do not think it falls off. It is a delightful burlesque particularly on the Radcliffe style.’2 Belinda, Maria Edgeworth’s novel published in 1801, is of course linked with Fanny Burney’s Cecilia (1782) and Camilla (1796) in Austen’s Northanger Abbey as one of those works ‘in which the greatest powers of the mind are displayed, in which the most thorough knowledge of human nature, the happiest delineation of its varieties, the liveliest effusions of wit and humour are conveyed to the world in the best chosen language’.3" ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/43522fff4a721368792f9fe7fadb5ea0> , <http://www.springernature.com/scigraph/things/contributions/2195712f559dee429bfdcc155db76a26> ;
+	sg:copyrightHolder "Avril M. Horner and Susan H. Zlosnik" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:chapterNumber "1" ;
+	sg:pageFirst "19" ;
+	sg:pageLast "44" ;
+	sg:metadataRights "OpenAccess" ;
+	sg:abstractRights "OpenAccess" ;
+	sg:bodyPdfRights "Restricted" ;
+	sg:bodyHtmlRights "Restricted" ;
+	sg:bibliographyRights "Restricted" ;
+	sg:esmRights "Restricted" .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	a sg:BookChapter ;
+	sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/2005> ;
+	sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> ;
+	sg:scigraphId "38e64b2aeee455f3f8b3baa3cf7b9455" ;
+	sg:ddsId "Chap1" ;
+	sg:doi "10.1057/9780230503076_1" ;
+	sg:language "En" ;
+	sg:title "Introduction" ;
+	sg:abstract "Abstract Although Gothic writing is now safely established within the academy, its comic dimension has received very little critical attention. Indeed, most accepted definitions of Gothic writing resolutely ignore its comic aspect. In his ground-breaking, Freudian-Marxist study of the Gothic, The Literature of Terror, published in 1980, David Punter defines three elements that lie at the ‘heart’ of Gothic writing; these are: the concept of paranoia, the notion of the barbaric and the nature of the taboo — ‘aspects of the terrifying to which Gothic constantly, and hauntedly, returns’.1 The Literature of Terror presents Gothic writing as a textual engagement with profound social collective neuroses, the study of which can teach us much about cultural and political oppression. This set the tone for many critical works of the 1980s and early 1990s, during which time Gothic moved in from the margins to become a respectable area of academic enquiry within literary studies. Despite disputes concerning ever more inclusive definitions of Gothic (which Maurice Levy, for example, thinks far too inclusive2), most critics would probably agree that Gothic writing always concerns itself with boundaries and their instabilities, whether between the quick/the dead, eros/thanatos, pain/pleasure, ‘real’/‘unreal’, ‘natural’/‘supernatural’, material/transcendent, man/machine, human/vampire or ‘masculine’/‘feminine’." ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/97a8ebe5a742bfdc98e42cf9448ea52a> , <http://www.springernature.com/scigraph/things/contributions/d77bf48e73b8d82c7c308616c4690ab6> ;
+	sg:copyrightHolder "Avril M. Horner and Susan H. Zlosnik" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:pageFirst "1" ;
+	sg:pageLast "18" ;
+	sg:metadataRights "OpenAccess" ;
+	sg:abstractRights "OpenAccess" ;
+	sg:bodyPdfRights "Restricted" ;
+	sg:bodyHtmlRights "Restricted" ;
+	sg:bibliographyRights "Restricted" ;
+	sg:esmRights "Restricted" .
