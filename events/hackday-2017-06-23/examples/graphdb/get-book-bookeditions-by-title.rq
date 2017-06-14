@@ -2,10 +2,9 @@ PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
 
-describe ?s ?c ?a
+describe ?s ?be
 where {
-        ?s a sg:Article .
-        ?s sg:doi "10.1038/nature13195" .
- 		?s sg:hasContribution ?c   .
-    	?c sg:hasAffiliation ?a
+        ?s a sg:Book .
+    	?s sg:hasBookEdition ?be .
+    	?be sg:title "Gothic and the Comic Turn"
 }

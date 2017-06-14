@@ -1,7 +1,7 @@
 PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
-PREFIX : <http://www.ontotext.com/connectors/elasticsearch#>
+
 describe ?s ?be
 where {
         ?s a sg:Book .
