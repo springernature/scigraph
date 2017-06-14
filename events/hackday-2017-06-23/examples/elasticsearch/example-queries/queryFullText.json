@@ -1,0 +1,25 @@
+{
+  "query": {
+    "filtered": {
+      "query": {
+        "match_phrase": {
+          "abstract": "artificial intelligence"
+        }
+      },
+      "filter": {
+        "term": {
+          "journalOpenAccess": "Fully Open Access"
+        }
+      }
+    }
+  },
+  "from": 0,
+  "size": 10,
+  "sort": [
+    {
+      "publicationDate": {
+        "order": "desc"
+      }
+    }
+  ]
+}

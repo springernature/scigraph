@@ -1,0 +1,23 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match_all": {}
+        }
+      ],
+      "must_not": [],
+      "should": []
+    }
+  },
+  "from": 0,
+  "size": 0,
+  "sort": [],
+  "aggs": {
+    "JournalNames" : {
+      "terms" : {
+        "field" : "journalTitle"
+      }
+    }
+  }
+}

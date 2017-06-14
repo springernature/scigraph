@@ -1,0 +1,967 @@
+{
+  "took": 733,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 453419,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/8df6d8e3399e3fff758736d3332b5d76",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2198-4093",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "40730",
+          "language": "English",
+          "journalPublisher": "Laboratory of Stem Cell Research and Application",
+          "abstract": "Abstract Introduction:Bone marrow derived MSCs (BM-MSCs) and adipose derived MSCs (AD-MSCs) are among the types of stem cells most commonly studied. Our study aims to compare the therapeutic efficacy of allograft AD-MSCs versus BM-MSCs in a mouse model of hindlimb ischemia. Methods:AD-MSCs were isolated from belly fat and BM-MSCs were isolated from femur bone marrow. They were used to treat mice with acute hindlimb ischemia. Treatment efficacy was compared among 4 groups: injected with BM-MSCs, injected with AD-MSCs, non-treated and injected with phosphate buffered saline. Mice in the groups were evaluated for the following: necrosis grade of leg, leg edema, blood flow, muscle cell restructure and new blood vessel formation. Results:Results showed that AD-MSC transplantation significantly recovered acute limb ischemia, with 76.5% of mice fully recovered, while the ratio was only 48.5% in BM-MSC transplanted group, and 0% in the non-treated and PBS groups. Evaluation of leg edema, blood flow, muscle cell restructure and new blood vessel formation also supported the observation that AD-MSC transplantation was superior over BM-MSC transplantation. Conclusion:Therefore, AD-MSCs may serve as the more suitable MSC for hindlimb ischemia treatment and angiogenesis therapy.",
+          "title": "Adipose derived stem cell transplantation is better than bone marrow mesenchymal stem cell transplantation in treating hindlimb ischemia in mice",
+          "contribution": [
+            {
+              "publishedName": "Ngoc Bich Vu",
+              "affiliation": {
+                "publishedName": "Vietnam National University"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Lan Thi Phi",
+              "affiliation": {
+                "publishedName": "Vietnam National University"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Thuy Thi-Thanh Dao",
+              "affiliation": {
+                "publishedName": "Vietnam National University"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Ha Thi-Ngan Le",
+              "affiliation": {
+                "publishedName": "Vietnam National University"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Van Thanh Ta",
+              "affiliation": {
+                "publishedName": "Hanoi Medical University"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Phuc Van Pham",
+              "affiliation": [
+                {
+                  "publishedName": "Vietnam National University"
+                },
+                {
+                  "publishedName": "Vietnam National University"
+                }
+              ],
+              "order": "6"
+            }
+          ],
+          "scigraphId": "8df6d8e3399e3fff758736d3332b5d76",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            972255,
+            972252,
+            203994754,
+            203989869,
+            203989893
+          ],
+          "publicationYear": "2019",
+          "_transaction_origin": 122829680,
+          "fieldOfResearchCode": [
+            "CLINICAL SCIENCES",
+            "CARDIORESPIRATORY MEDICINE AND HAEMATOLOGY",
+            "MEDICAL AND HEALTH SCIENCES"
+          ],
+          "_graphdb_id": 122829680,
+          "doiLink": "http://dx.doi.org/10.7603/s40730-016-0046-0",
+          "publicationDate": "2019-09-29",
+          "issnElectronic": "2198-4093",
+          "journalTitle": "Biomedical Research and Therapy",
+          "doi": "10.7603/s40730-016-0046-0"
+        },
+        "sort": [
+          1569715200000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/9da2de8317693cbfb6e5ba3288c2297e",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Electrocatalysis",
+            "Electronic properties and devices"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "Amorphous molybdenum sulfide (MoSx) is covalently anchored to reduced graphene oxide (r-GO) via a simple one-pot reaction, thereby inducing the reduction of GO and simultaneous doping of heteroatoms on the GO. The oxygen atoms form a bridged between MoSx and GO and play a crucial role in the fine dispersion of the MoSx particles, control of planar MoSx growth, and increase of exposed active sulfur sites. This bridging leads to highly efficient (−157 mV overpotential and 41 mV/decade Tafel slope) and stable (95% versus initial activity after 1000 cycles) electrocatalyst for hydrogen evolution.",
+          "title": "Bi-axial grown amorphous MoSx bridged with oxygen on r-GO as a superior stable and efficient nonprecious catalyst for hydrogen evolution",
+          "contribution": [
+            {
+              "publishedName": "Cheol-Ho Lee",
+              "affiliation": [
+                {
+                  "publishedName": "Carbon Convergence Materials Research Center, Institute of Advanced Composite Materials, Korea Institute of Science and Technology (KIST)"
+                },
+                {
+                  "publishedName": "Department of Chemical and Biomolecular Engineering (BK21+ Program), KAIST Institute for the Nanocentury, Korea Advanced Institute of Science and Technology (KAIST)"
+                }
+              ],
+              "order": "1"
+            },
+            {
+              "publishedName": "Jin-Mun Yun",
+              "affiliation": {
+                "publishedName": "Radiation Research Division for Industry and Environment, Korea Atomic Energy Research Institute (KAERI)"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Sungho Lee",
+              "affiliation": {
+                "publishedName": "Carbon Convergence Materials Research Center, Institute of Advanced Composite Materials, Korea Institute of Science and Technology (KIST)"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Seong Mu Jo",
+              "affiliation": {
+                "publishedName": "Carbon Convergence Materials Research Center, Institute of Advanced Composite Materials, Korea Institute of Science and Technology (KIST)"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "KwangSup Eom",
+              "affiliation": {
+                "publishedName": "Department of Materials Science and Engineering, Gwangju Institute of Science and Technology (GIST)"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Doh C. Lee",
+              "affiliation": {
+                "publishedName": "Department of Chemical and Biomolecular Engineering (BK21+ Program), KAIST Institute for the Nanocentury, Korea Advanced Institute of Science and Technology (KAIST)"
+              },
+              "order": "6"
+            },
+            {
+              "publishedName": "Han-Ik Joh",
+              "affiliation": {
+                "publishedName": "Carbon Convergence Materials Research Center, Institute of Advanced Composite Materials, Korea Institute of Science and Technology (KIST)"
+              },
+              "order": "7"
+            },
+            {
+              "publishedName": "Thomas F. Fuller",
+              "affiliation": {
+                "publishedName": "School of Chemical & Biomolecular Engineering, Georgia Institute of Technology"
+              },
+              "order": "8"
+            }
+          ],
+          "scigraphId": "9da2de8317693cbfb6e5ba3288c2297e",
+          "_chains": [
+            203994737,
+            127384598,
+            203989883,
+            127291986,
+            127298715,
+            127291985
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145747724,
+          "fieldOfResearchCode": [
+            "PHYSICAL CHEMISTRY (INCL. STRUCTURAL)",
+            "CHEMICAL SCIENCES"
+          ],
+          "_graphdb_id": 145747724,
+          "doiLink": "http://dx.doi.org/10.1038/srep41190",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep41190"
+        },
+        "sort": [
+          1484870400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/d2719a95fc435fb4f34707412cc1c839",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Molecular neuroscience",
+            "Risk factors",
+            "Demyelinating diseases"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "Radiofrequency electromagnetic field (RF-EMF) is used globally in conjunction with mobile communications. There are public concerns of the perceived deleterious biological consequences of RF-EMF exposure. This study assessed neuronal effects of RF-EMF on the cerebral cortex of the mouse brain as a proxy for cranial exposure during mobile phone use. C57BL/6 mice were exposed to 835 MHz RF-EMF at a specific absorption rate (SAR) of 4.0 W/kg for 5 hours/day during 12 weeks. The aim was to examine activation of autophagy pathway in the cerebral cortex, a brain region that is located relatively externally. Induction of autophagy genes and production of proteins including LC3B-II and Beclin1 were increased and accumulation of autolysosome was observed in neuronal cell bodies. However, proapoptotic factor Bax was down-regulted in the cerebral cortex. Importantly, we found that RF-EMF exposure led to myelin sheath damage and mice displayed hyperactivity-like behaviour. The data suggest that autophagy may act as a protective pathway for the neuronal cell bodies in the cerebral cortex during radiofrequency exposure. The observations that neuronal cell bodies remained structurally stable but demyelination was induced in cortical neurons following prolonged RF-EMF suggests a potential cause of neurological or neurobehavioural disorders.",
+          "title": "Long-term exposure to 835 MHz RF-EMF induces hyperactivity, autophagy and demyelination in the cortical neurons of mice",
+          "contribution": [
+            {
+              "publishedName": "Ju Hwan Kim",
+              "affiliation": {
+                "publishedName": "Department of Pharmacology, College of Medicine, Dankook University"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Da-Hyeon Yu",
+              "affiliation": {
+                "publishedName": "Department of Pharmacology, College of Medicine, Dankook University"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Yang Hoon Huh",
+              "affiliation": {
+                "publishedName": "Center for Electron Microscopy Research, Korea Basic Science Institute"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Eun Ho Lee",
+              "affiliation": {
+                "publishedName": "Department of Pharmacology, College of Medicine, Dankook University"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Hyung-Gun Kim",
+              "affiliation": {
+                "publishedName": "Department of Pharmacology, College of Medicine, Dankook University"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Hak Rim Kim",
+              "affiliation": {
+                "publishedName": "Department of Pharmacology, College of Medicine, Dankook University"
+              },
+              "order": "6"
+            }
+          ],
+          "scigraphId": "d2719a95fc435fb4f34707412cc1c839",
+          "_chains": [
+            128299607,
+            127291986,
+            127291985,
+            127300641,
+            203994754,
+            203989876,
+            128102285
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145745162,
+          "fieldOfResearchCode": [
+            "NEUROSCIENCES",
+            "MEDICAL AND HEALTH SCIENCES"
+          ],
+          "_graphdb_id": 145745162,
+          "doiLink": "http://dx.doi.org/10.1038/srep41129",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep41129"
+        },
+        "sort": [
+          1484870400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/30fe62cc61d27ed33c22476ce2c29e7b",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Batteries",
+            "Energy science and technology"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "In this work, CoMoO4@NiMoO4·xH2O core-shell heterostructure electrode is directly grown on carbon fabric (CF) via a feasible hydrothermal procedure with CoMoO4 nanowires (NWs) as the core and NiMoO4 nanosheets (NSs) as the shell. This core-shell heterostructure could provide fast ion and electron transfer, a large number of active sites, and good strain accommodation. As a result, the CoMoO4@NiMoO4·xH2O electrode yields high-capacitance performance with a high specific capacitance of 1582 F g−1, good cycling stability with the capacitance retention of 97.1% after 3000 cycles and good rate capability. The electrode also shows excellent mechanical flexibility. Also, a flexible Fe2O3 nanorods/CF electrode with enhanced electrochemical performance was prepared. A solid-state asymmetric supercapacitor device is successfully fabricated by using flexible CoMoO4@NiMoO4·xH2O as the positive electrode and Fe2O3 as the negative electrode. The asymmetric supercapacitor with a maximum voltage of 1.6 V demonstrates high specific energy (41.8 Wh kg−1 at 700 W kg−1), high power density (12000 W kg−1 at 26.7 Wh kg−1), and excellent cycle ability with the capacitance retention of 89.3% after 5000 cycles (at the current density of 3A g−1).",
+          "title": "Assembly of flexible CoMoO4@NiMoO4·xH2O and Fe2O3 electrodes for solid-state asymmetric supercapacitors",
+          "contribution": [
+            {
+              "publishedName": "Jing Wang",
+              "affiliation": {
+                "publishedName": "MIIT Key Laboratory of Critical Materials Technology for New Energy Conversion and Storage, School of Chemistry and Chemical Engineering, Harbin Institute of Technology"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Leipeng Zhang",
+              "affiliation": {
+                "publishedName": "Center for Composite Materials, Harbin Institute of Technology"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Xusong Liu",
+              "affiliation": {
+                "publishedName": "MIIT Key Laboratory of Critical Materials Technology for New Energy Conversion and Storage, School of Chemistry and Chemical Engineering, Harbin Institute of Technology"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Xiang Zhang",
+              "affiliation": {
+                "publishedName": "Center for Composite Materials, Harbin Institute of Technology"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Yanlong Tian",
+              "affiliation": {
+                "publishedName": "Center for Composite Materials, Harbin Institute of Technology"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Xiaoxu Liu",
+              "affiliation": [
+                {
+                  "publishedName": "MIIT Key Laboratory of Critical Materials Technology for New Energy Conversion and Storage, School of Chemistry and Chemical Engineering, Harbin Institute of Technology"
+                },
+                {
+                  "publishedName": "Heilongjiang University of Science and Technology"
+                }
+              ],
+              "order": "6"
+            },
+            {
+              "publishedName": "Jiupeng Zhao",
+              "affiliation": {
+                "publishedName": "MIIT Key Laboratory of Critical Materials Technology for New Energy Conversion and Storage, School of Chemistry and Chemical Engineering, Harbin Institute of Technology"
+              },
+              "order": "7"
+            },
+            {
+              "publishedName": "Yao Li",
+              "affiliation": {
+                "publishedName": "Center for Composite Materials, Harbin Institute of Technology"
+              },
+              "order": "8"
+            }
+          ],
+          "scigraphId": "30fe62cc61d27ed33c22476ce2c29e7b",
+          "_chains": [
+            203994737,
+            203989883,
+            127305573,
+            131948134,
+            127291986,
+            127291985
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145754672,
+          "fieldOfResearchCode": [
+            "PHYSICAL CHEMISTRY (INCL. STRUCTURAL)",
+            "CHEMICAL SCIENCES"
+          ],
+          "_graphdb_id": 145754672,
+          "doiLink": "http://dx.doi.org/10.1038/srep41088",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep41088"
+        },
+        "sort": [
+          1484870400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/c1ec077a78ea9579ca594d6bdb77d3bb",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Mechanisms of disease",
+            "Molecular medicine"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "Endoplasmic reticulum (ER) and oxidative stress are two related phenomena that have important metabolic consequences. As many skeletal muscle diseases are triggered by oxidative stress, we explored the chain of events linking a hyperoxidized ER (which causes ER and oxidative stress) with skeletal muscle dysfunction. An unbiased exon expression array showed that the combined genetic modulation of the two master ER redox proteins, selenoprotein N (SEPN1) and endoplasmic oxidoreductin 1 (ERO1), led to an SEPN1-related myopathic phenotype due to excessive signalling of transforming growth factor (TGF)-beta. The increased TGF-beta activity in the genetic mutants was caused by accelerated turnover of the ER localized (anti-oxidant) ascorbic acid that affected collagen deposition in the extracellular matrix. In a mouse mutant of SEPN1, which is dependent on exogenous ascorbic acid, a limited intake of ascorbic acid revealed a myopathic phenotype as a consequence of an altered TGF-beta signalling. Indeed, systemic antagonism of TGF-beta re-established skeletal muscle function in SEPN1 mutant mice. In conclusion, this study sheds new light on the molecular mechanism of SEPN1-related myopathies and indicates that the TGF-beta/ERO1/ascorbic acid axis offers potential for their treatment.",
+          "title": "Endoplasmic Reticulum Oxidative Stress Triggers Tgf-Beta-Dependent Muscle Dysfunction by Accelerating Ascorbic Acid Turnover",
+          "contribution": [
+            {
+              "publishedName": "Diego Pozzer",
+              "affiliation": {
+                "publishedName": "IRCCS-Istituto di Ricerche Farmacologiche Mario Negri"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Mariagrazia Favellato",
+              "affiliation": {
+                "publishedName": "IRCCS-Istituto di Ricerche Farmacologiche Mario Negri"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Marco Bolis",
+              "affiliation": {
+                "publishedName": "IRCCS-Istituto di Ricerche Farmacologiche Mario Negri"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Roberto William Invernizzi",
+              "affiliation": {
+                "publishedName": "IRCCS-Istituto di Ricerche Farmacologiche Mario Negri"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Francesca Solagna",
+              "affiliation": {
+                "publishedName": "Venetian Institute of Molecular Medicine"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Bert Blaauw",
+              "affiliation": [
+                {
+                  "publishedName": "Venetian Institute of Molecular Medicine"
+                },
+                {
+                  "publishedName": "Department of Biomedical Science, University of Padova"
+                }
+              ],
+              "order": "6"
+            },
+            {
+              "publishedName": "Ester Zito",
+              "affiliation": {
+                "publishedName": "Dulbecco Telethon Institute at IRCCS-Istituto di Ricerche Farmacologiche Mario Negri"
+              },
+              "order": "7"
+            }
+          ],
+          "scigraphId": "c1ec077a78ea9579ca594d6bdb77d3bb",
+          "_chains": [
+            203994681,
+            127291986,
+            203989870,
+            127291985,
+            203989856,
+            130365246,
+            127313403
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145757899,
+          "fieldOfResearchCode": [
+            "BIOCHEMISTRY AND CELL BIOLOGY",
+            "GENETICS",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 145757899,
+          "doiLink": "http://dx.doi.org/10.1038/srep40993",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep40993"
+        },
+        "sort": [
+          1484870400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/e0f24d2e679876bd22dda533b911ec54",
+        "_score": null,
+        "_source": {
+          "journalIssn": [
+            "2049-3169",
+            "1674-2818"
+          ],
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "41368",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "The aim of this study was to investigate the root canal configuration, accessory canals and number of main foramina of 123 maxillary second molars by means of micro-computed tomography. The teeth were scanned and reproduced with 3D software imaging. The root canal configuration and number of main foramina were evaluated by means of a four-digit system. The morphological complexity of human maxillary second molars is depicted by the number of accessory and connecting canals. The most frequently observed root canal configurations in the mesiobuccal root were 2-2-2/2 (19.5%), 2-2-1/1 (14.6%) and 2-1-1/1 (13.0%). A 1-1-1/1 configuration was observed in 93.5% and in 96.7% in the distobuccal and palatal roots, respectively. The MB1 root canal had one accessory canal (18.7%), and 8.9% of the MB2 root canal had one or two accessory canals. The distobuccal (11.3%) and palatal (14.6%) root canals had at least one accessory canal, and connecting canals were observed in 16.3% of mesiobuccal roots. The MB1, MB2, distobuccal and palatal root canals had one main foramen in 99.2%, 43.1%, 98.4% and 99.2% of samples, respectively. In the mesiobuccal root, one accessory foramen was detected in 14.6%, two were detected in 7.3%, and three were detected in 5.7%. The distobuccal root showed one or two accessory foramina in 9.1% of samples. The root canal configuration of maxillary second molars is quite heterogeneous; the mesiobuccal root has predominantly two root canal entrances (58.4%, 1 in 41.1%) with one main foramen (54.4%). Two main foramina were observed in 43.0%. Morphological variations, connecting and accessory canals were observed in all apical thirds.",
+          "title": "Root canal morphology and configuration of 123 maxillary second molars by means of micro-CT",
+          "contribution": [
+            {
+              "publishedName": "Thomas Gerhard Wolf",
+              "affiliation": {
+                "publishedName": "Department of Operative Dentistry, Johannes Gutenberg University Medical Center"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Frank Paqué",
+              "affiliation": {
+                "publishedName": "Division of Endodontology, Department of Preventive Dentistry, Periodontology and Cariology, University of Zürich"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Anja-Christin Woop",
+              "affiliation": {
+                "publishedName": "Department of Operative Dentistry, Johannes Gutenberg University Medical Center"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Brita Willershausen",
+              "affiliation": {
+                "publishedName": "Department of Operative Dentistry, Johannes Gutenberg University Medical Center"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Benjamín Briseño-Marroquín",
+              "affiliation": {
+                "publishedName": "Department of Operative Dentistry, Johannes Gutenberg University Medical Center"
+              },
+              "order": "5"
+            }
+          ],
+          "scigraphId": "e0f24d2e679876bd22dda533b911ec54",
+          "_chains": [
+            127317414,
+            203989896,
+            203994681,
+            127317412,
+            127317411
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145728498,
+          "fieldOfResearchCode": [
+            "PLANT BIOLOGY",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 145728498,
+          "doiLink": "http://dx.doi.org/10.1038/ijos.2016.53",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2049-3169",
+          "journalTitle": "International Journal of Oral Science",
+          "doi": "10.1038/ijos.2016.53",
+          "issnPrint": "1674-2818"
+        },
+        "sort": [
+          1484870400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/cbd48efe81399e5b0a5ef5f4385817a4",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Risk factors",
+            "Cardiology"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "Sudden cardiac death (SCD) is the leading cause of death. The current paradigm in SCD requires the presence of an abnormal myocardial substrate and an internal or external transient factor that triggers cardiac arrest. Based on prior mechanistic evidence, we hypothesized that an unusually cold weather event (a cold spell) could act as an external factor triggering SCD. We tested potential effect modification of prior diagnoses and select pharmacological agents disrupting pathological pathways between cold exposure and death. The home coordinates of 2572 autopsy-verified cases of ischaemic SCD aged ≥35 in the Province of Oulu, Finland, were linked to 51 years of home-specific weather data. Based on conditional logistic regression, an increased risk of ischaemic SCD associated with a cold spell preceding death (OR 1.49; 95% CI: 1.06–2.09). Cases without a prior diagnosis of ischaemic heart disease seemed more susceptible to the effects of cold spells (OR 1.70; 95% CI: 1.13–2.56) than cases who had been diagnosed during lifetime (OR 1.14; 95% CI: 0.61–2.10). The use of aspirin, β-blockers, and/or nitrates, independently and in combinations decreased the risk of ischaemic SCD during cold spells. The findings open up new lines of research in mitigating the adverse health effects of weather.",
+          "title": "Cold spells and ischaemic sudden cardiac death: effect modification by prior diagnosis of ischaemic heart disease and cardioprotective medication",
+          "contribution": [
+            {
+              "publishedName": "Niilo R. I. Ryti",
+              "affiliation": [
+                {
+                  "publishedName": "Center for Environmental and Respiratory Health Research (CERH), Faculty of Medicine, University of Oulu"
+                },
+                {
+                  "publishedName": "Medical Research Center Oulu, Oulu University Hospital and University of Oulu"
+                }
+              ],
+              "order": "1"
+            },
+            {
+              "publishedName": "Elina M. S. Mäkikyrö",
+              "affiliation": [
+                {
+                  "publishedName": "Center for Environmental and Respiratory Health Research (CERH), Faculty of Medicine, University of Oulu"
+                },
+                {
+                  "publishedName": "Medical Research Center Oulu, Oulu University Hospital and University of Oulu"
+                }
+              ],
+              "order": "2"
+            },
+            {
+              "publishedName": "Harri Antikainen",
+              "affiliation": {
+                "publishedName": "Department of Geography, University of Oulu"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "M. Juhani Junttila",
+              "affiliation": {
+                "publishedName": "Division of Cardiology, Department of Internal Medicine, University of Oulu"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Eeva Hookana",
+              "affiliation": {
+                "publishedName": "Division of Cardiology, Department of Internal Medicine, University of Oulu"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Tiina M. Ikäheimo",
+              "affiliation": [
+                {
+                  "publishedName": "Center for Environmental and Respiratory Health Research (CERH), Faculty of Medicine, University of Oulu"
+                },
+                {
+                  "publishedName": "Medical Research Center Oulu, Oulu University Hospital and University of Oulu"
+                }
+              ],
+              "order": "6"
+            },
+            {
+              "publishedName": "Marja-Leena Kortelainen",
+              "affiliation": {
+                "publishedName": "Department of Forensic Medicine, University of Oulu"
+              },
+              "order": "7"
+            },
+            {
+              "publishedName": "Heikki V. Huikuri",
+              "affiliation": [
+                {
+                  "publishedName": "Medical Research Center Oulu, Oulu University Hospital and University of Oulu"
+                },
+                {
+                  "publishedName": "Division of Cardiology, Department of Internal Medicine, University of Oulu"
+                }
+              ],
+              "order": "8"
+            },
+            {
+              "publishedName": "Jouni J. K. Jaakkola",
+              "affiliation": [
+                {
+                  "publishedName": "Center for Environmental and Respiratory Health Research (CERH), Faculty of Medicine, University of Oulu"
+                },
+                {
+                  "publishedName": "Medical Research Center Oulu, Oulu University Hospital and University of Oulu"
+                }
+              ],
+              "order": "9"
+            }
+          ],
+          "scigraphId": "cbd48efe81399e5b0a5ef5f4385817a4",
+          "_chains": [
+            130392444,
+            203994754,
+            127291986,
+            203989893,
+            127291985,
+            128102285
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145735142,
+          "fieldOfResearchCode": [
+            "CARDIORESPIRATORY MEDICINE AND HAEMATOLOGY",
+            "MEDICAL AND HEALTH SCIENCES"
+          ],
+          "_graphdb_id": 145735142,
+          "doiLink": "http://dx.doi.org/10.1038/srep41060",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep41060"
+        },
+        "sort": [
+          1484870400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/a0b6867f37c599862b7529fdbc14340d",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Epidemiology",
+            "Health services"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "Recent increases in family planning (FP) use have been reported among women of reproductive age in union (WRAU) in Senegal. However, trends have not been monitored among harder-to-reach groups (including adolescents, unmarried and rural poor women), key to understanding whether FP progress is equitable. We combined data from six Demographic and Health Surveys conducted in Senegal between 1992/93 and 2014. We examined FP trends over time among WRAU and subgroups, and trends in knowledge of FP and intention to use among women with unmet need for FP. Our results show that percent demand satisfied is lower among rural poor women and adolescents than WRAU, although higher among unmarried women. Marked recent increases have been observed in all subgroups, however fewer than 50% of women in need of FP use modern contraception in Senegal. Knowledge of FP has risen steadily among women with unmet need; however, intention to use FP has remained stable at around 40% since 2005 for all groups except unmarried women (75% of whom intend to use). Significant progress in meeting the need for FP has been achieved in Senegal, but more needs to be done particularly to improve acceptability of FP, and to strategically target interventions toward adolescents and rural poor women.",
+          "title": "Examining trends in family planning among harder-to-reach women in Senegal 1992–2014",
+          "contribution": [
+            {
+              "publishedName": "Francesca L. Cavallaro",
+              "affiliation": {
+                "publishedName": "Department of Infectious Disease Epidemiology, London School of Hygiene & Tropical Medicine"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Lenka Benova",
+              "affiliation": {
+                "publishedName": "Department of Infectious Disease Epidemiology, London School of Hygiene & Tropical Medicine"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "David Macleod",
+              "affiliation": {
+                "publishedName": "Department of Infectious Disease Epidemiology, London School of Hygiene & Tropical Medicine"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Adama Faye",
+              "affiliation": {
+                "publishedName": "Institut Santé et Développement, Université Cheikh Anta Diop"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Caroline A. Lynch",
+              "affiliation": {
+                "publishedName": "Department of Infectious Disease Epidemiology, London School of Hygiene & Tropical Medicine"
+              },
+              "order": "5"
+            }
+          ],
+          "scigraphId": "a0b6867f37c599862b7529fdbc14340d",
+          "_chains": [
+            128516440,
+            203994754,
+            127324196,
+            127291986,
+            203989860,
+            127291985
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145735537,
+          "fieldOfResearchCode": [
+            "PUBLIC HEALTH AND HEALTH SERVICES",
+            "MEDICAL AND HEALTH SCIENCES"
+          ],
+          "_graphdb_id": 145735537,
+          "doiLink": "http://dx.doi.org/10.1038/srep41006",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep41006"
+        },
+        "sort": [
+          1484870400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/c3678487ebc62e97f0d7066a05006e16",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Drug delivery",
+            "Biopolymers"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "Targeted drug delivery has long been extensively researched since drug delivery and release at the diseased site with minimum dosage realizes the effective therapy without adverse side effects. In this work, to achieve enhanced intracellular uptake of anticancer drug carriers for efficient chemo-therapy, we have designed targeted multifunctional anticancer drug carrier hydrogels. Temperature-responsive poly(N-isopropylacrylamide) (PNIPAm) hydrogel core containing superparamagnetic magnetite nanoparticles (MNP) were prepared using precipitation polymerization, and further polymerized with amine-functionalized copolymer shell to facilitate the conjugation of targeting ligand. Then, folic acid, specific targeting ligand for cervical cancer cell line (HeLa), was conjugated on the hydrogel surface, yielding the ligand conjugated hybrid hydrogels. We revealed that enhanced intracellular uptake by HeLa cells in vitro was enabled by both magnetic attraction and receptor-mediated endocytosis, which were contributed by MNP and folic acid, respectively. Furthermore, site-specific uptake of the developed carrier was confirmed by incubating with several other cell lines. Based on synergistically enhanced intracellular uptake, efficient cytotoxicity and apoptotic activity of HeLa cells incubated with anticancer drug loaded hybrid hydrogels were successfully achieved. The developed dual-targeted hybrid hydrogels are expected to provide a platform for the next generation intelligent drug delivery systems.",
+          "title": "Synergistically enhanced selective intracellular uptake of anticancer drug carrier comprising folic acid-conjugated hydrogels containing magnetite nanoparticles",
+          "contribution": [
+            {
+              "publishedName": "Haneul Kim",
+              "affiliation": {
+                "publishedName": "Department of Chemistry, Dong-A University"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Ara Jo",
+              "affiliation": {
+                "publishedName": "Department of Biological Science, Dong-A University"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Seulgi Baek",
+              "affiliation": {
+                "publishedName": "Department of Chemistry, Dong-A University"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Daeun Lim",
+              "affiliation": {
+                "publishedName": "Department of Chemistry, Dong-A University"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Soon-Yong Park",
+              "affiliation": {
+                "publishedName": "Department of Biological Science, Dong-A University"
+              },
+              "order": "5"
+            },
+            {
+              "publishedName": "Soo Kyung Cho",
+              "affiliation": {
+                "publishedName": "Department of Chemistry, Dong-A University"
+              },
+              "order": "6"
+            },
+            {
+              "publishedName": "Jin Woong Chung",
+              "affiliation": {
+                "publishedName": "Department of Biological Science, Dong-A University"
+              },
+              "order": "7"
+            },
+            {
+              "publishedName": "Jinhwan Yoon",
+              "affiliation": {
+                "publishedName": "Department of Chemistry, Dong-A University"
+              },
+              "order": "8"
+            }
+          ],
+          "scigraphId": "c3678487ebc62e97f0d7066a05006e16",
+          "_chains": [
+            203994793,
+            127291986,
+            128139381,
+            127291985,
+            203989921,
+            203994737,
+            203989875,
+            127306713
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145738075,
+          "fieldOfResearchCode": [
+            "BIOMEDICAL ENGINEERING",
+            "MACROMOLECULAR AND MATERIALS CHEMISTRY",
+            "CHEMICAL SCIENCES",
+            "ENGINEERING"
+          ],
+          "_graphdb_id": 145738075,
+          "doiLink": "http://dx.doi.org/10.1038/srep41090",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep41090"
+        },
+        "sort": [
+          1484870400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/8767a1dfcd9762c17bb343bab09c3862",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Magnetic properties and materials",
+            "Electronic properties and materials"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "We predict from first principles an entirely topological orbital magnetization in the noncoplanar bulk antiferromagnet γ-FeMn originating in the nontrivial topology of the underlying spin structure, without any reference to spin-orbit interaction. Studying the influence of strain, composition ratio, and spin texture on the topological orbital magnetization and the accompanying topological Hall effect, we promote the scalar spin chirality as key mechanism lifting the orbital degeneracy. The system is thus a prototypical topological orbital ferromagnet, the macroscopic orbital magnetization of which is prominent even without spin-orbit coupling. One of the remarkable features of γ-FeMn is the possibility for pronounced orbital magnetostriction mediated by the complex spin topology in real space.",
+          "title": "Prototypical topological orbital ferromagnet γ-FeMn",
+          "contribution": [
+            {
+              "publishedName": "Jan-Philipp Hanke",
+              "affiliation": {
+                "publishedName": "Peter Grünberg Institut and Institute for Advanced Simulation, Forschungszentrum Jülich and JARA"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Frank Freimuth",
+              "affiliation": {
+                "publishedName": "Peter Grünberg Institut and Institute for Advanced Simulation, Forschungszentrum Jülich and JARA"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Stefan Blügel",
+              "affiliation": {
+                "publishedName": "Peter Grünberg Institut and Institute for Advanced Simulation, Forschungszentrum Jülich and JARA"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Yuriy Mokrousov",
+              "affiliation": {
+                "publishedName": "Peter Grünberg Institut and Institute for Advanced Simulation, Forschungszentrum Jülich and JARA"
+              },
+              "order": "4"
+            }
+          ],
+          "scigraphId": "8767a1dfcd9762c17bb343bab09c3862",
+          "_chains": [
+            203994793,
+            127321559,
+            127320012,
+            127291986,
+            203989861,
+            127291985
+          ],
+          "publicationYear": "2017",
+          "_transaction_origin": 145783816,
+          "fieldOfResearchCode": [
+            "MATERIALS ENGINEERING",
+            "ENGINEERING"
+          ],
+          "_graphdb_id": 145783816,
+          "doiLink": "http://dx.doi.org/10.1038/srep41078",
+          "publicationDate": "2017-01-20",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep41078"
+        },
+        "sort": [
+          1484870400000
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "took": 418,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 76,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/fa931bd36a4e66111a3950b4aec27a66",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2197-3768",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "40638",
+          "language": "English",
+          "journalPublisher": "Springer Berlin Heidelberg",
+          "abstract": "Abstract Exploration in an unknown environment is an elemental application for mobile robots. In this paper, we outlined a reinforcement learning method aiming for solving the exploration problem in a corridor environment. The learning model took the depth image from an RGB-D sensor as the only input. The feature representation of the depth image was extracted through a pre-trained convolutional-neural-networks model. Based on the recent success of deep Q-network on artificial intelligence, the robot controller achieved the exploration and obstacle avoidance abilities in several different simulated environments. It is the first time that the reinforcement learning is used to build an exploration strategy for mobile robots through raw sensor information.",
+          "title": "Mobile robots exploration through cnn-based reinforcement learning",
+          "contribution": [
+            {
+              "publishedName": "Lei Tai",
+              "affiliation": {
+                "publishedName": "City University of Hong Kong"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Ming Liu",
+              "affiliation": [
+                {
+                  "publishedName": "City University of Hong Kong"
+                },
+                {
+                  "publishedName": "HKUST"
+                }
+              ],
+              "order": "2"
+            }
+          ],
+          "scigraphId": "fa931bd36a4e66111a3950b4aec27a66",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            2777072,
+            203994698,
+            203994826,
+            203989963,
+            203989868,
+            2777069
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 3905417,
+          "fieldOfResearchCode": [
+            "ARTIFICIAL INTELLIGENCE AND IMAGE PROCESSING",
+            "COGNITIVE SCIENCE",
+            "PSYCHOLOGY AND COGNITIVE SCIENCES",
+            "INFORMATION AND COMPUTING SCIENCES"
+          ],
+          "_graphdb_id": 3905417,
+          "doiLink": "http://dx.doi.org/10.1186/s40638-016-0055-x",
+          "publicationDate": "2016-12-21",
+          "issnElectronic": "2197-3768",
+          "journalTitle": "Robotics and Biomimetics",
+          "doi": "10.1186/s40638-016-0055-x"
+        },
+        "sort": [
+          1482278400000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/30836234e36f5d79c7bc8de27b8a0c09",
+        "_score": null,
+        "_source": {
+          "journalIssn": "1471-2105",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12859",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract Background Azopirillum brasilense is a plant-growth promoting nitrogen-fixing bacteria that is used as bio-fertilizer in agriculture. Since nitrogen fixation has a high-energy demand, the reduction of N2 to NH4 + by nitrogenase occurs only under limiting conditions of NH4 + and O2. Moreover, the synthesis and activity of nitrogenase is highly regulated to prevent energy waste. In A. brasilense nitrogenase activity is regulated by the products of draG and draT. The product of the draB gene, located downstream in the draTGB operon, may be involved in the regulation of nitrogenase activity by an, as yet, unknown mechanism. ResultsA deep in silico analysis of the product of draB was undertaken aiming at suggesting its possible function and involvement with DraT and DraG in the regulation of nitrogenase activity in A. brasilense. In this work, we present a new artificial intelligence strategy for protein classification, named ProClaT. The features used by the pattern recognition model were derived from the primary structure of the DraB homologous proteins, calculated by a ProClaT internal algorithm. ProClaT was applied to this case study and the results revealed that the A. brasilense draB gene codes for a protein highly similar to the nitrogenase associated NifO protein of Azotobacter vinelandii. ConclusionsThis tool allowed the reclassification of DraB/NifO homologous proteins, hypothetical, conserved hypothetical and those annotated as putative arsenate reductase, ArsC, as NifO-like. An analysis of co-occurrence of draB, draT, draG and of other nif genes was performed, suggesting the involvement of draB (nifO) in nitrogen fixation, however, without the definition of a specific function.",
+          "title": "ProClaT, a new bioinformatics tool for in silico protein reclassification: case study of DraB, a protein coded from the draTGB operon in Azospirillum brasilense",
+          "contribution": [
+            {
+              "publishedName": "Elisa Terumi Rubel",
+              "affiliation": [
+                {
+                  "publishedName": "Federal University of Paraná"
+                },
+                {}
+              ],
+              "order": "1"
+            },
+            {
+              "publishedName": "Roberto Tadeu Raittz",
+              "affiliation": [
+                {
+                  "publishedName": "Federal University of Paraná"
+                },
+                {}
+              ],
+              "order": "2"
+            },
+            {
+              "publishedName": "Nilson Antonio da Rocha Coimbra",
+              "affiliation": [
+                {
+                  "publishedName": "Federal University of Paraná"
+                },
+                {}
+              ],
+              "order": "3"
+            },
+            {
+              "publishedName": "Michelly Alves Coutinho Gehlen",
+              "affiliation": [
+                {
+                  "publishedName": "Federal University of Paraná"
+                },
+                {}
+              ],
+              "order": "4"
+            },
+            {
+              "publishedName": "Fábio de Oliveira Pedrosa",
+              "affiliation": [
+                {
+                  "publishedName": "Federal University of Paraná"
+                },
+                {}
+              ],
+              "order": "5"
+            }
+          ],
+          "scigraphId": "30836234e36f5d79c7bc8de27b8a0c09",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            203989856,
+            197802,
+            203994681,
+            197805
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 122298073,
+          "fieldOfResearchCode": [
+            "BIOCHEMISTRY AND CELL BIOLOGY",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 122298073,
+          "doiLink": "http://dx.doi.org/10.1186/s12859-016-1338-5",
+          "publicationDate": "2016-12-15",
+          "issnElectronic": "1471-2105",
+          "journalTitle": "BMC Bioinformatics",
+          "doi": "10.1186/s12859-016-1338-5"
+        },
+        "sort": [
+          1481760000000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/3033b2497809f5e20eb73f4240c657fa",
+        "_score": null,
+        "_source": {
+          "journalIssn": [
+            "2190-0566",
+            "2190-0558"
+          ],
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "13202",
+          "language": "English",
+          "journalPublisher": "Springer Berlin Heidelberg",
+          "abstract": "Abstract The well-testing analysis is performed in two consecutive steps including identification of underlying reservoir models and estimation of model-related parameters. The non-uniqueness problem always brings about confusion in selecting the correct reservoir model using the conventional interpretation approaches. Many researchers have recommended artificial intelligence techniques to automate the well-testing analysis in recent years. The purpose of this article is to apply an artificial neural network (ANN) methodology to identify the well-testing interpretation model and estimate the model-related variables from the pressure derivative plots. Different types of ANNs including multi-layer perceptrons, probabilistic neural networks and generalized regression neural networks are used in this article. The best structure and parameters of each neural network is found via grid search and cross-validation techniques. The experimental design is also employed to select the most governing variables in designing well tests of different reservoir models. Seven real buildup tests are used to validate the proposed approach. The presented ANN-based approach shows promising results both in recognizing the reservoir models and estimating the model-related parameters. The experimental design employed in this study guarantees the comprehensiveness of the training data sets generated for learning the proposed ANNs using fewer numbers of experiments compared to the previous studies.",
+          "title": "Automatic well-testing model diagnosis and parameter estimation using artificial neural networks and design of experiments",
+          "contribution": [
+            {
+              "publishedName": "Rouhollah Ahmadi",
+              "affiliation": {
+                "publishedName": "Amirkabir University of Technology, Tehran Polytechnique"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Jamal Shahrabi",
+              "affiliation": {
+                "publishedName": "Amirkabir University of Technology, Tehran Polytechnique"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Babak Aminshahidy",
+              "affiliation": {
+                "publishedName": "Amirkabir University of Technology, Tehran Polytechnique"
+              },
+              "order": "3"
+            }
+          ],
+          "scigraphId": "3033b2497809f5e20eb73f4240c657fa",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            203994826,
+            203995147,
+            203989868,
+            166551,
+            166549,
+            166554,
+            203989890
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 123443319,
+          "fieldOfResearchCode": [
+            "ARTIFICIAL INTELLIGENCE AND IMAGE PROCESSING",
+            "STATISTICS",
+            "INFORMATION AND COMPUTING SCIENCES",
+            "MATHEMATICAL SCIENCES"
+          ],
+          "_graphdb_id": 123443319,
+          "doiLink": "http://dx.doi.org/10.1007/s13202-016-0293-z",
+          "publicationDate": "2016-11-15",
+          "issnElectronic": "2190-0566",
+          "journalTitle": "Journal of Petroleum Exploration and Production Technology",
+          "doi": "10.1007/s13202-016-0293-z",
+          "issnPrint": "2190-0558"
+        },
+        "sort": [
+          1479168000000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/e8351fd226769825902037eca25660d0",
+        "_score": null,
+        "_source": {
+          "journalIssn": "1743-0003",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "12984",
+          "language": "English",
+          "journalPublisher": "BioMed Central",
+          "abstract": "Abstract BackgroundThe purpose of this study was to derive data from real, recorded, personal emergency response call conversations to help improve the artificial intelligence and decision making capability of a spoken dialogue system in a smart personal emergency response system. The main study objectives were to: develop a model of personal emergency response; determine categories for the model’s features; identify and calculate measures from call conversations (verbal ability, conversational structure, timing); and examine conversational patterns and relationships between measures and model features applicable for improving the system’s ability to automatically identify call model categories and predict a target response. MethodsThis study was exploratory and used mixed methods. Personal emergency response calls were pre-classified according to call model categories identified qualitatively from response call transcripts. The relationships between six verbal ability measures, three conversational structure measures, two timing measures and three independent factors: caller type, risk level, and speaker type, were examined statistically. ResultsEmergency medical response services were the preferred response for the majority of medium and high risk calls for both caller types. Older adult callers mainly requested non-emergency medical service responders during medium risk situations. By measuring the number of spoken words-per-minute and turn-length-in-words for the first spoken utterance of a call, older adult and care provider callers could be identified with moderate accuracy. Average call taker response time was calculated using the number-of-speaker-turns and time-in-seconds measures. Care providers and older adults used different conversational strategies when responding to call takers. The words ‘ambulance’ and ‘paramedic’ may hold different latent connotations for different callers. ConclusionsThe data derived from the real personal emergency response recordings may help a spoken dialogue system classify incoming calls by caller type with moderate probability shortly after the initial caller utterance. Knowing the caller type, the target response for the call may be predicted with some degree of probability and the output dialogue could be tailored to this caller type. The average call taker response time measured from real calls may be used to limit the conversation length in a spoken dialogue system before defaulting to a live call taker.",
+          "title": "Exploratory analysis of real personal emergency response call conversations: considerations for personal emergency response spoken dialogue systems",
+          "contribution": [
+            {
+              "publishedName": "Victoria Young",
+              "affiliation": {
+                "publishedName": "University Health Network - Toronto Rehabilitation Institute"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Elizabeth Rochon",
+              "affiliation": [
+                {
+                  "publishedName": "University Health Network - Toronto Rehabilitation Institute"
+                },
+                {
+                  "publishedName": "University of Toronto"
+                }
+              ],
+              "order": "2"
+            },
+            {
+              "publishedName": "Alex Mihailidis",
+              "affiliation": [
+                {
+                  "publishedName": "University of Toronto"
+                },
+                {
+                  "publishedName": "University of Toronto"
+                },
+                {
+                  "publishedName": "University Health Network - Toronto Rehabilitation Institute"
+                },
+                {
+                  "publishedName": "University of Toronto"
+                }
+              ],
+              "order": "3"
+            }
+          ],
+          "scigraphId": "e8351fd226769825902037eca25660d0",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            2187328,
+            2187331,
+            203994698,
+            203989871
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 125335790,
+          "fieldOfResearchCode": [
+            "PSYCHOLOGY",
+            "PSYCHOLOGY AND COGNITIVE SCIENCES"
+          ],
+          "_graphdb_id": 125335790,
+          "doiLink": "http://dx.doi.org/10.1186/s12984-016-0207-9",
+          "publicationDate": "2016-11-14",
+          "issnElectronic": "1743-0003",
+          "journalTitle": "Journal of NeuroEngineering and Rehabilitation",
+          "doi": "10.1186/s12984-016-0207-9"
+        },
+        "sort": [
+          1479081600000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/ca9fcc729eab1aa22e2fdec8814480a2",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2195-1721",
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "40411",
+          "language": "English",
+          "journalPublisher": "Springer Berlin Heidelberg",
+          "abstract": "Abstract Software game is a kind of application that is used not only for entertainment, but also for serious purposes that can be applicable to different domains such as education, business, and health care. Multidisciplinary nature of the game development processes that combine sound, art, control systems, artificial intelligence (AI), and human factors, makes the software game development practice different from traditional software development. However, the underline software engineering techniques help game development to achieve maintainability, flexibility, lower effort and cost, and better design. The purpose of this study is to assesses the state of the art research on the game development software engineering process and highlight areas that need further consideration by researchers. In the study, we used a systematic literature review methodology based on well-known digital libraries. The largest number of studies have been reported in the production phase of the game development software engineering process life cycle, followed by the pre-production phase. By contrast, the post-production phase has received much less research activity than the pre-production and production phases. The results of this study suggest that the game development software engineering process has many aspects that need further attention from researchers; that especially includes the postproduction phase.",
+          "title": "Game development software engineering process life cycle: a systematic review",
+          "contribution": [
+            {
+              "publishedName": "Saiqa Aleem",
+              "affiliation": {
+                "publishedName": "Zayed University"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Luiz Fernando Capretz",
+              "affiliation": {
+                "publishedName": "University of Western Ontario"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Faheem Ahmed",
+              "affiliation": {
+                "publishedName": "Thompson Rivers University"
+              },
+              "order": "3"
+            }
+          ],
+          "scigraphId": "ca9fcc729eab1aa22e2fdec8814480a2",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            6850760,
+            203994826,
+            6850763,
+            203989887
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 7533945,
+          "fieldOfResearchCode": [
+            "COMPUTER SOFTWARE",
+            "INFORMATION AND COMPUTING SCIENCES"
+          ],
+          "_graphdb_id": 7533945,
+          "doiLink": "http://dx.doi.org/10.1186/s40411-016-0032-7",
+          "publicationDate": "2016-11-09",
+          "issnElectronic": "2195-1721",
+          "journalTitle": "Journal of Software Engineering Research and Development",
+          "doi": "10.1186/s40411-016-0032-7"
+        },
+        "sort": [
+          1478649600000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/5b65e9e56a8e05027e9e000d68419a04",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2057-3960",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Carbon nanotubes and fullerenes",
+            "Chemical engineering"
+          ],
+          "journalId": "41524",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "Advances in materials are an important contributor to our technological progress, and yet the process of materials discovery and development itself is slow. Our current research process is human-centred, where human researchers design, conduct, analyse and interpret experiments, and then decide what to do next. We have built an Autonomous Research System (ARES)—an autonomous research robot capable of first-of-its-kind closed-loop iterative materials experimentation. ARES exploits advances in autonomous robotics, artificial intelligence, data sciences, and high-throughput and in situ techniques, and is able to design, execute and analyse its own experiments orders of magnitude faster than current research methods. We applied ARES to study the synthesis of single-walled carbon nanotubes, and show that it successfully learned to grow them at targeted growth rates. ARES has broad implications for the future roles of humans and autonomous research robots, and for human-machine partnering. We believe autonomous research robots like ARES constitute a disruptive advance in our ability to understand and develop complex materials at an unprecedented rate.",
+          "title": "Autonomy in materials research: a case study in carbon nanotube growth",
+          "contribution": [
+            {
+              "publishedName": "Pavel Nikolaev",
+              "affiliation": [
+                {
+                  "publishedName": "Air Force Research Laboratory, Materials and Manufacturing Directorate, RXAS, WPAFB"
+                },
+                {
+                  "publishedName": "UES Inc"
+                }
+              ],
+              "order": "1"
+            },
+            {
+              "publishedName": "Daylond Hooper",
+              "affiliation": [
+                {
+                  "publishedName": "Air Force Research Laboratory, Materials and Manufacturing Directorate, RXAS, WPAFB"
+                },
+                {
+                  "publishedName": "UES Inc"
+                }
+              ],
+              "order": "2"
+            },
+            {
+              "publishedName": "Frederick Webber",
+              "affiliation": [
+                {
+                  "publishedName": "Air Force Research Laboratory, Materials and Manufacturing Directorate, RXAS, WPAFB"
+                },
+                {
+                  "publishedName": "UES Inc"
+                }
+              ],
+              "order": "3"
+            },
+            {
+              "publishedName": "Rahul Rao",
+              "affiliation": [
+                {
+                  "publishedName": "Air Force Research Laboratory, Materials and Manufacturing Directorate, RXAS, WPAFB"
+                },
+                {
+                  "publishedName": "UES Inc"
+                }
+              ],
+              "order": "4"
+            },
+            {
+              "publishedName": "Kevin Decker",
+              "affiliation": [
+                {
+                  "publishedName": "Air Force Research Laboratory, Materials and Manufacturing Directorate, RXAS, WPAFB"
+                },
+                {
+                  "publishedName": "UES Inc"
+                }
+              ],
+              "order": "5"
+            },
+            {
+              "publishedName": "Michael Krein",
+              "affiliation": {
+                "publishedName": "Lockheed Martin Advanced Technology Laboratories"
+              },
+              "order": "6"
+            },
+            {
+              "publishedName": "Jason Poleski",
+              "affiliation": {
+                "publishedName": "Lockheed Martin Advanced Technology Laboratories"
+              },
+              "order": "7"
+            },
+            {
+              "publishedName": "Rick Barto",
+              "affiliation": {
+                "publishedName": "Lockheed Martin Advanced Technology Laboratories"
+              },
+              "order": "8"
+            },
+            {
+              "publishedName": "Benji Maruyama",
+              "affiliation": {
+                "publishedName": "Air Force Research Laboratory, Materials and Manufacturing Directorate, RXAS, WPAFB"
+              },
+              "order": "9"
+            }
+          ],
+          "scigraphId": "5b65e9e56a8e05027e9e000d68419a04",
+          "_chains": [
+            203994826,
+            203989868,
+            127331266,
+            130592398,
+            127880089,
+            130592399
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 132819752,
+          "fieldOfResearchCode": [
+            "ARTIFICIAL INTELLIGENCE AND IMAGE PROCESSING",
+            "INFORMATION AND COMPUTING SCIENCES"
+          ],
+          "_graphdb_id": 132819752,
+          "doiLink": "http://dx.doi.org/10.1038/npjcompumats.2016.31",
+          "publicationDate": "2016-10-21",
+          "issnElectronic": "2057-3960",
+          "journalTitle": "npj Computational Materials",
+          "doi": "10.1038/npjcompumats.2016.31"
+        },
+        "sort": [
+          1477008000000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/bde828c529e870cc005e2d4a057653f3",
+        "_score": null,
+        "_source": {
+          "journalIssn": [
+            "2251-6832",
+            "2008-9163"
+          ],
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "40095",
+          "language": "English",
+          "journalPublisher": "Springer Berlin Heidelberg",
+          "abstract": "Abstract Wind energy is increasingly being utilized globally, in part as it is a renewable and environmental-friendly energy source. The uncertainty caused by the discontinuous nature of wind energy affects the power grid. Hence, forecasting wind behavior (e.g., wind speed) is important for energy managers and electricity traders, to overcome the risks of unpredictability when using wind energy. Forecasted wind values can be utilized in various applications, such as evaluating wind energy potential, designing wind farms, performing wind turbine predictive control, and wind power planning. In this study, four methods of forecasting using artificial intelligence (artificial neural networks with radial basis function, adaptive neuro-fuzzy inference system, artificial neural network-genetic algorithm hybrid and artificial neural network-particle swarm optimization) are utilized to accurately forecast short-term wind speed data for Tehran, Iran. A large set of wind speed data measured at 1-h intervals, provided by the Iran Renewable Energy Organization (SUNA), is utilized as input in algorithm development. Comparisons of statistical indices for both predicted and actual test data indicate that the artificial neural network-particle swarm optimization hybrid model with the lowest root mean square error and mean square error values outperforms other methods. Nonetheless, all of the models can be used to predict wind speed with reasonable accuracy.",
+          "title": "Short-term wind speed forecasting using artificial neural networks for Tehran, Iran",
+          "contribution": [
+            {
+              "publishedName": "Farivar Fazelpour",
+              "affiliation": {
+                "publishedName": "Islamic Azad University-South Tehran Branch"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Negar Tarashkar",
+              "affiliation": {
+                "publishedName": "Islamic Azad University-South Tehran Branch"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Marc A. Rosen",
+              "affiliation": {
+                "publishedName": "University of Ontario Institute of Technology"
+              },
+              "order": "3"
+            }
+          ],
+          "scigraphId": "bde828c529e870cc005e2d4a057653f3",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            1878070,
+            203994826,
+            1878072,
+            203989868,
+            1878075
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 117723515,
+          "fieldOfResearchCode": [
+            "ARTIFICIAL INTELLIGENCE AND IMAGE PROCESSING",
+            "INFORMATION AND COMPUTING SCIENCES"
+          ],
+          "_graphdb_id": 117723515,
+          "doiLink": "http://dx.doi.org/10.1007/s40095-016-0220-6",
+          "publicationDate": "2016-09-23",
+          "issnElectronic": "2251-6832",
+          "journalTitle": "International Journal of Energy and Environmental Engineering",
+          "doi": "10.1007/s40095-016-0220-6",
+          "issnPrint": "2008-9163"
+        },
+        "sort": [
+          1474588800000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/5c3b616bbaf987cd8e912c25b180128f",
+        "_score": null,
+        "_source": {
+          "journalIssn": [
+            "2196-8896",
+            "2196-8888"
+          ],
+          "journalOpenAccess": "Fully Open Access",
+          "journalId": "40595",
+          "language": "English",
+          "journalPublisher": "Springer Berlin Heidelberg",
+          "abstract": "Abstract The measure of sentence similarity is useful in various research fields, such as artificial intelligence, knowledge management, and information retrieval. Several methods have been proposed to measure the sentence similarity based on syntactic and/or semantic knowledge. Most proposals are evaluated on English sentences where the accuracy can decrease when these proposals are applied to other languages. Moreover, the results of these methods are unsatisfactory, as much relevant semantic knowledge, such as semantic class, thematic role and syntactico-semantic knowledge like the semantic predicates, are not taken into account. We must acknowledge that this kind of knowledge is rare in most of the lexical resources. Recently, the International Organization for Standardization (ISO) has published the Lexical Markup Framework (LMF) ISO-24613 norm for the development of lexical resources. This norm provides, for each meaning of a lexical entry, all the semantic and syntactico-semantic knowledge in a fine structure. Profiting from the availability of LMF-standardized dictionaries, we propose, in this paper, a generic method that enhances the measure of sentence similarity by applying semantic and syntactico-semantic knowledge. An experiment was carried out on Arabic, as this language is processed within our research team and an LMF-standardized Arabic dictionary is at hand where the semantic and the syntactico-semantic knowledge are accessible and well structured. Moreover, the experiments yielded better results, showing a high correlation with human ratings.",
+          "title": "Enhancing the sentence similarity measure by semantic and syntactico-semantic knowledge",
+          "contribution": [
+            {
+              "publishedName": "Wafa Wali",
+              "affiliation": {
+                "publishedName": "MIR@CL Laboratory FSEGS"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Bilel Gargouri",
+              "affiliation": {
+                "publishedName": "MIR@CL Laboratory FSEGS"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Abdelmajid Ben Hamadou",
+              "affiliation": {
+                "publishedName": "MIR@CL Laboratory ISIMS"
+              },
+              "order": "3"
+            }
+          ],
+          "scigraphId": "5c3b616bbaf987cd8e912c25b180128f",
+          "articleType": "OriginalPaper",
+          "_chains": [
+            1726201,
+            1726199,
+            1726204,
+            203989894,
+            203994734
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 29448479,
+          "fieldOfResearchCode": [
+            "LINGUISTICS",
+            "LANGUAGE, COMMUNICATION AND CULTURE"
+          ],
+          "_graphdb_id": 29448479,
+          "doiLink": "http://dx.doi.org/10.1007/s40595-016-0080-2",
+          "publicationDate": "2016-09-16",
+          "issnElectronic": "2196-8896",
+          "journalTitle": "Vietnam Journal of Computer Science",
+          "doi": "10.1007/s40595-016-0080-2",
+          "issnPrint": "2196-8888"
+        },
+        "sort": [
+          1473984000000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/58fe52832edb6bf8c3a84e9701d936eb",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2045-2322",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Biomedical engineering",
+            "Information technology"
+          ],
+          "journalId": "41598",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "The combination of biological and artificial intelligence is particularly driven by two major strands of research: one involves the control of mechanical, usually prosthetic, devices by conscious biological subjects, whereas the other involves the control of animal behaviour by stimulating nervous systems electrically or optically. However, to our knowledge, no study has demonstrated that spatial learning in a computer-based system can affect the learning and decision making behaviour of the biological component, namely a rat, when these two types of intelligence are wired together to form a new intelligent entity. Here, we show how rule operations conducted by computing components contribute to a novel hybrid brain-computer system, i.e., ratbots, exhibit superior learning abilities in a maze learning task, even when their vision and whisker sensation were blocked. We anticipate that our study will encourage other researchers to investigate combinations of various rule operations and other artificial intelligence algorithms with the learning and memory processes of organic brains to develop more powerful cyborg intelligence systems. Our results potentially have profound implications for a variety of applications in intelligent systems and neural rehabilitation.",
+          "title": "Maze learning by a hybrid brain-computer system",
+          "contribution": [
+            {
+              "publishedName": "Zhaohui Wu",
+              "affiliation": {
+                "publishedName": "College of Computer Science and Technology, Zhejiang University"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "Nenggan Zheng",
+              "affiliation": {
+                "publishedName": "Qiushi Academy for Advanced Studies, Zhejiang University"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Shaowu Zhang",
+              "affiliation": {
+                "publishedName": "Research School of Biology, the Australian National University"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Xiaoxiang Zheng",
+              "affiliation": [
+                {
+                  "publishedName": "Qiushi Academy for Advanced Studies, Zhejiang University"
+                },
+                {
+                  "publishedName": "Department of Biomedical Engineering, Zhejiang University"
+                }
+              ],
+              "order": "4"
+            },
+            {
+              "publishedName": "Liqiang Gao",
+              "affiliation": [
+                {
+                  "publishedName": "College of Computer Science and Technology, Zhejiang University"
+                },
+                {
+                  "publishedName": "Qiushi Academy for Advanced Studies, Zhejiang University"
+                }
+              ],
+              "order": "5"
+            },
+            {
+              "publishedName": "Lijuan Su",
+              "affiliation": {
+                "publishedName": "College of Computer Science and Technology, Zhejiang University"
+              },
+              "order": "6"
+            }
+          ],
+          "scigraphId": "58fe52832edb6bf8c3a84e9701d936eb",
+          "_chains": [
+            203994826,
+            127291986,
+            203989868,
+            127291985,
+            127482576,
+            203994754,
+            203989876,
+            127529879
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 132307986,
+          "fieldOfResearchCode": [
+            "ARTIFICIAL INTELLIGENCE AND IMAGE PROCESSING",
+            "NEUROSCIENCES",
+            "MEDICAL AND HEALTH SCIENCES",
+            "INFORMATION AND COMPUTING SCIENCES"
+          ],
+          "_graphdb_id": 132307986,
+          "doiLink": "http://dx.doi.org/10.1038/srep31746",
+          "publicationDate": "2016-09-13",
+          "issnElectronic": "2045-2322",
+          "journalTitle": "Scientific Reports",
+          "doi": "10.1038/srep31746"
+        },
+        "sort": [
+          1473724800000
+        ]
+      },
+      {
+        "_index": "sg_docs_articles_b",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/e1380b8831f9ffefee4e67445c02e057",
+        "_score": null,
+        "_source": {
+          "journalIssn": "2041-1723",
+          "journalOpenAccess": "Fully Open Access",
+          "subject": [
+            "Learning and memory",
+            "Reward",
+            "Social neuroscience"
+          ],
+          "journalId": "41467",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "When learning from direct experience, neurons in the primate brain have been shown to encode a teaching signal used by algorithms in artificial intelligence: the reward prediction error (PE)—the difference between how rewarding an event is, and how rewarding it was expected to be. However, in humans and other species learning often takes place by observing other individuals. Here, we show that, when humans observe other players in a card game, neurons in their rostral anterior cingulate cortex (rACC) encode both the expected value of an observed choice, and the PE after the outcome was revealed. Notably, during the same task neurons recorded in the amygdala (AMY) and the rostromedial prefrontal cortex (rmPFC) do not exhibit this type of encoding. Our results suggest that humans learn by observing others, at least in part through the encoding of observational PEs in single neurons in the rACC.",
+          "title": "Observational learning computations in neurons of the human anterior cingulate cortex",
+          "contribution": [
+            {
+              "publishedName": "Michael R. Hill",
+              "affiliation": [
+                {
+                  "publishedName": "Division of Biology and Biological Engineering, California Institute of Technology"
+                },
+                {
+                  "publishedName": "Computation and Neural Systems, California Institute of Technology"
+                },
+                {
+                  "publishedName": "Division of Neurosurgery and Neuropsychiatric Institute, University of California (UCLA)"
+                },
+                {
+                  "publishedName": "Center for Neuroprosthetics, Ecole Polytechnique Fédérale de Lausanne (EPFL), Campus Biotech H4"
+                }
+              ],
+              "order": "1"
+            },
+            {
+              "publishedName": "Erie D. Boorman",
+              "affiliation": [
+                {
+                  "publishedName": "Computation and Neural Systems, California Institute of Technology"
+                },
+                {
+                  "publishedName": "Department of Humanities and Social Sciences, California Institute of Technology"
+                },
+                {
+                  "publishedName": "Centre for Functional Magnetic Resonance Imaging of the Brain, University of Oxford, John Radcliffe Hospital"
+                }
+              ],
+              "order": "2"
+            },
+            {
+              "publishedName": "Itzhak Fried",
+              "affiliation": [
+                {
+                  "publishedName": "Division of Neurosurgery and Neuropsychiatric Institute, University of California (UCLA)"
+                },
+                {
+                  "publishedName": "Functional Neurosurgery Unit, Tel-Aviv Medical Centre and Sackler Faculty of Medicine, Tel-Aviv University"
+                }
+              ],
+              "order": "3"
+            }
+          ],
+          "scigraphId": "e1380b8831f9ffefee4e67445c02e057",
+          "_chains": [
+            128305702,
+            128546346,
+            127294142,
+            128152139,
+            203994754,
+            127294141,
+            203989876
+          ],
+          "publicationYear": "2016",
+          "_transaction_origin": 133785356,
+          "fieldOfResearchCode": [
+            "NEUROSCIENCES",
+            "MEDICAL AND HEALTH SCIENCES"
+          ],
+          "_graphdb_id": 133785356,
+          "doiLink": "http://dx.doi.org/10.1038/ncomms12722",
+          "publicationDate": "2016-09-06",
+          "issnElectronic": "2041-1723",
+          "journalTitle": "Nature Communications",
+          "doi": "10.1038/ncomms12722"
+        },
+        "sort": [
+          1473120000000
+        ]
+      }
+    ]
+  }
+}

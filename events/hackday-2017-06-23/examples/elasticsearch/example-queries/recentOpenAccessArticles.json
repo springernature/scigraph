@@ -1,0 +1,23 @@
+{
+  "query": {
+    "filtered": {
+      "query": {
+        "match_all" : {}
+      },
+      "filter": {
+        "term": {
+          "journalOpenAccess": "Fully Open Access"
+        }
+      }
+    }
+  },
+  "from": 0,
+  "size": 10,
+  "sort": [
+    {
+      "publicationDate": {
+        "order": "desc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "took": 257,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 8808627,
+    "max_score": 0,
+    "hits": []
+  },
+  "aggregations": {
+    "JournalNames": {
+      "doc_count_error_upper_bound": 14425,
+      "sum_other_doc_count": 5797283,
+      "buckets": [
+        {
+          "key": "Nature",
+          "doc_count": 389742
+        },
+        {
+          "key": "Scientific American",
+          "doc_count": 195125
+        },
+        {
+          "key": "Reactions Weekly",
+          "doc_count": 126541
+        },
+        {
+          "key": "Analytical and Bioanalytical Chemistry",
+          "doc_count": 98627
+        },
+        {
+          "key": "Inpharma Weekly",
+          "doc_count": 83708
+        },
+        {
+          "key": "Pediatric Research",
+          "doc_count": 42496
+        },
+        {
+          "key": "Scientific Reports",
+          "doc_count": 40873
+        },
+        {
+          "key": "Journal of Molecular Medicine",
+          "doc_count": 37116
+        },
+        {
+          "key": "Journal of Materials Science",
+          "doc_count": 35323
+        },
+        {
+          "key": "Russian Chemical Bulletin",
+          "doc_count": 35208
+        }
+      ]
+    }
+  }
+}
