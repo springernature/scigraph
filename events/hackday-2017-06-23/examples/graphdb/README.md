@@ -1,3 +1,32 @@
+# GraphDB
+
+The queries below can be executed in your GraphDB Workbench: `<your-vm-ip-address>:7200/sparql`.
+
+## Article, Contribution and Affiliation Objects
+
+[Maybe make this a table with links to queries and results]
+
+To look up the article with DOI `10.1038/nature13195` about "Palaeozoic osteichthyan", see [get-article-by-doi.rq](get-article-by-doi.rq), and see [result-for-get-article-by-doi.ttl](result-for-get-article-by-doi.ttl) for the result in Turtle format.
+
+To also retrieve information about the associated contribution and affiliation objects (see [q2.rq](q2.rq)):
+
+```
+PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
+PREFIX : <http://www.ontotext.com/connectors/elasticsearch#>
+describe ?s ?c ?a
+where {   
+        ?s a sg:Article .
+        ?s sg:doi "10.1038/nature13195" .
+ 		?s sg:hasContribution ?c   .
+    	?c sg:hasAffiliation ?a
+}
+```
+
+This results in the following.
+
+```
 @prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
@@ -8,7 +37,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 
-{
 	<http://www.springernature.com/scigraph/things/articles/787e60fcaf79211c91c6fb0b47c1d30b> a rdfs:Resource , sg:Article , sg:Publication , sg:Thing ;
 		sg:hasFieldOfResearchCode <http://purl.org/au-research/vocabulary/anzsrc-for/2008/0602> , <http://purl.org/au-research/vocabulary/anzsrc-for/2008/06> ;
 		sg:hasJournalBrand <http://www.springernature.com/scigraph/things/journal-brands/012496b06989edb434c6b8e1d0b0a7db> ;
@@ -243,4 +271,20 @@
 		sg:order "1"^^xsd:integer .
 	
 	<http://www.springernature.com/scigraph/things/contributions/90f3a74b48f81d174a4b363777a7c655> sg:hasAffiliation <http://www.springernature.com/scigraph/things/affiliations/ea95df3e802f2c1e35b789f33a6c0f3d> .
+```
+
+## Journal and JournalBrand Objects
+
+```
+PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
+PREFIX : <http://www.ontotext.com/connectors/elasticsearch#>
+describe  ?j ?jb
+where {   
+        ?s a sg:Article .
+        ?s sg:doi "10.1038/nature13195" .
+		?s sg:hasJournal ?j .
+    	?s sg:hasJournalBrand ?jb
 }
+```

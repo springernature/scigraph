@@ -1,6 +1,6 @@
-# Querying Elasticsearch
+# Elasticsearch
 
-The queries below can be executed against your Elasticsearch instance: `<your-ip-address>:9200`.
+The queries below can be executed against your Elasticsearch instance: `<your-vm-ip-address>:9200`.
 
 ## Articles with Contributions and Affiliations
 
@@ -29,7 +29,7 @@ To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (
 ```
 
 For example, using cURL:
-
+````
 ```
 curl -XPOST <your-ip-address>:9200/sg_docs_articles_a/_search?pretty=true -d @q1.json
 ```
