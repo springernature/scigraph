@@ -4,7 +4,7 @@
 
 * [Documentation](https://github.com/springernature/scigraph/wiki)
 * [Data Model](https://github.com/springernature/scigraph/wiki#datasets-at-a-glance)
-* [Classes & Properties](http://ontologies.scigraph.com/core/v1.0.0/dendogram/index.htm)
+* [Classes & Properties](http://ontologies.scigraph.com/core/v1.0.0/dendogram/index.html)
 * [Querying GraphDB](https://www.w3.org/TR/rdf-sparql-query) 
 
 ## Logging in to your VM
