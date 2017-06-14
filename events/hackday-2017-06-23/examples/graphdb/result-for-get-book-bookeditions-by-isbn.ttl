@@ -1,0 +1,53 @@
+@prefix : <http://www.ontotext.com/connectors/elasticsearch#> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> a sg:BookEdition ;
+	sg:scigraphId "11bc5bae7a42b324e2096429cf4f0f67" ;
+	sg:ddsId "304003" ;
+	sg:language "En" ;
+	sg:title "Gothic and the Comic Turn" ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/d9e66dd0153253a382972e0616d41f20> , <http://www.springernature.com/scigraph/things/contributions/7fa885b5242b83c97956e4155a90135e> ;
+	sg:intellectualUnitId "358108" ;
+	sg:editionNumber "1" ;
+	sg:chapterCount "8"^^xsd:integer ;
+	sg:publisher "Palgrave Macmillan UK" ;
+	sg:copyrightHolder "Palgrave Macmillan, a division of Macmillan Publishers Limited" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:hasProductMarketCode <http://www.springernature.com/scigraph/things/product-market-codes/8> , <http://www.springernature.com/scigraph/things/product-market-codes/812000> , <http://www.springernature.com/scigraph/things/product-market-codes/411130> , <http://www.springernature.com/scigraph/things/product-market-codes/833000> , <http://www.springernature.com/scigraph/things/product-market-codes/821000> , <http://www.springernature.com/scigraph/things/product-market-codes/825000> ;
+	sg:bookType "Monograph" .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> .
+
+<http://www.springernature.com/scigraph/things/books/0eeaadb763ef4fd0703cc1dd793e4cae> sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> sg:hasBook <http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> .
