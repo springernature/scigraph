@@ -471,7 +471,7 @@ Sample Response
 }
 ```
 
-See [grantOnGenomics-output.json](example-output/grantOnGenomics-output.json).
+See [chapterOnSubmarines-output.json](example-output/chapterOnSubmarines-output.json).
 
 ## Aggregating Articles By Journal
 
