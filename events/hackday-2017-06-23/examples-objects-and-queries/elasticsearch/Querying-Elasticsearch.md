@@ -1,111 +1,132 @@
-# [\#SN-Scigraph](https://twitter.com/hashtag/sn-scigraph) Hackday 2017-06-23
+# Querying Elasticsearch
 
-## Article with Contributions and Affiliations
-On Searching "Palaeozoic osteichthyan"
+The queries below can be executed against your Elasticsearch instance: `<your-ip-address>:9200`.
 
-### Elastic Search Query and JSON Object 
+## Articles with Contributions and Affiliations
 
-Query q1.json:
+To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (see [q1.json](q1.json)):
+
 ```
 {
-    "query": {
-        "bool": {
-            "must": [
-            {
-                "wildcard": {
-                    "title": "*Palaeozoic*osteichthyan*"
-                }
-            }
-            ],
-            "must_not": [ ],
-            "should": [ ]
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "wildcard": {
+            "title": "*Palaeozoic*osteichthyan*"
+          }
         }
-    },
-    "from": 0,
-    "size": 10,
-    "sort": [ ],
-    "aggs": { }
+      ],
+      "must_not": [ ],
+      "should": [ ]
+    }
+  },
+  "from": 0,
+  "size": 10,
+  "sort": [ ],
+  "aggs": { }
 }
 ```
 
-Execute the query on Elastic Search:
-```
-curl -POST http://ec2-34-253-74-192.eu-west-1.compute.amazonaws.com:9200/sg_docs_articles_a/_search?pretty=true -d @q1.json
+For example, using cURL:
 
 ```
+curl -XPOST <your-ip-address>:9200/sg_docs_articles_a/_search?pretty=true -d @q1.json
+```
 
-Article JSON Object
+This produces the following result (see [article-contributions-affiliations-journal-q1.json](article-contributions-affiliations-journal-q1.json)).
+
 ```
 {
-  "took" : 621,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 5,
-    "successful" : 5,
-    "failed" : 0
+  "took": 621,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 1,
-    "max_score" : 1.0,
-    "hits" : [ {
-      "_index" : "sg_docs_articles_a",
-      "_type" : "semantic-index",
-      "_id" : "http://www.springernature.com/scigraph/things/articles/787e60fcaf79211c91c6fb0b47c1d30b",
-      "_score" : 1.0,
-      "_source" : {
-        "journalIssn" : [ "1476-4687", "0028-0836" ],
-        "subject" : "Palaeontology",
-        "journalId" : "41586",
-        "journalPublisher" : "Nature Publishing Group UK",
-        "abstract" : "The evolution of serially arranged, jointed endoskeletal supports internal to the gills—the visceral branchial arches—represents one of the key events in early jawed vertebrate (gnathostome) history, because it provided the morphological basis for the subsequent evolution of jaws1,2,3,4,5. However, until now little was known about visceral arches in early gnathostomes6,7,8,9,10,11,12,13,14,15,16,17, and theories about gill arch evolution were driven by information gleaned mostly from both modern cartilaginous (chondrichthyan) and bony (osteichthyan) fishes. New fossil discoveries can profoundly affect our understanding of evolutionary history, by revealing hitherto unseen combinations of primitive and derived characters18,19. Here we describe a 325 million year (Myr)-old Palaeozoic shark-like fossil that represents, to our knowledge, the earliest identified chondrichthyan in which the complete gill skeleton is three-dimensionally preserved in its natural position. Its visceral arch arrangement is remarkably osteichthyan-like, suggesting that this may represent the common ancestral condition for crown gnathostomes. Our findings thus reinterpret the polarity of some arch features of the crown jawed vertebrates and invert the classic hypothesis, in which modern sharks retain the ancestral condition3,20. This study underscores the importance of early chondrichthyans in resolving the evolutionary history of jawed vertebrates.",
-        "title" : "A Palaeozoic shark with osteichthyan-like branchial arches",
-        "contribution" : [ {
-          "publishedName" : "Alan Pradel",
-          "affiliation" : {
-            "publishedName" : "Department of Vertebrate Paleontology, American Museum of Natural History"
-          },
-          "order" : "1"
-        }, {
-          "publishedName" : "John G. Maisey",
-          "affiliation" : {
-            "publishedName" : "Department of Vertebrate Paleontology, American Museum of Natural History"
-          },
-          "order" : "2"
-        }, {
-          "publishedName" : "Paul Tafforeau",
-          "affiliation" : {
-            "publishedName" : "European Synchrotron Radiation Facility, BP 220"
-          },
-          "order" : "3"
-        }, {
-          "publishedName" : "Royal H. Mapes",
-          "affiliation" : {
-            "publishedName" : "Department of Geological Sciences, Ohio University"
-          },
-          "order" : "4"
-        }, {
-          "publishedName" : "Jon Mallatt",
-          "affiliation" : {
-            "publishedName" : "School of Biological Sciences, Washington State University"
-          },
-          "order" : "5"
-        } ],
-        "scigraphId" : "787e60fcaf79211c91c6fb0b47c1d30b",
-        "_chains" : [ 127290894, 127290895, 127290893, 203965644, 127315963, 207227844 ],
-        "publicationYear" : "2014",
-        "_transaction_origin" : 129526970,
-        "fieldOfResearchCode" : [ "ECOLOGY", "BIOLOGICAL SCIENCES" ],
-        "_graphdb_id" : 129526970,
-        "doiLink" : "http://dx.doi.org/10.1038/nature13195",
-        "publicationDate" : "2014-04-16",
-        "issnElectronic" : "1476-4687",
-        "journalTitle" : "Nature",
-        "doi" : "10.1038/nature13195",
-        "issnPrint" : "0028-0836"
+  "hits": {
+    "total": 1,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "sg_docs_articles_a",
+        "_type": "semantic-index",
+        "_id": "http://www.springernature.com/scigraph/things/articles/787e60fcaf79211c91c6fb0b47c1d30b",
+        "_score": 1,
+        "_source": {
+          "journalIssn": [
+            "1476-4687",
+            "0028-0836"
+          ],
+          "subject": "Palaeontology",
+          "journalId": "41586",
+          "journalPublisher": "Nature Publishing Group UK",
+          "abstract": "The evolution of serially arranged, jointed endoskeletal supports internal to the gills—the visceral branchial arches—represents one of the key events in early jawed vertebrate (gnathostome) history, because it provided the morphological basis for the subsequent evolution of jaws1,2,3,4,5. However, until now little was known about visceral arches in early gnathostomes6,7,8,9,10,11,12,13,14,15,16,17, and theories about gill arch evolution were driven by information gleaned mostly from both modern cartilaginous (chondrichthyan) and bony (osteichthyan) fishes. New fossil discoveries can profoundly affect our understanding of evolutionary history, by revealing hitherto unseen combinations of primitive and derived characters18,19. Here we describe a 325 million year (Myr)-old Palaeozoic shark-like fossil that represents, to our knowledge, the earliest identified chondrichthyan in which the complete gill skeleton is three-dimensionally preserved in its natural position. Its visceral arch arrangement is remarkably osteichthyan-like, suggesting that this may represent the common ancestral condition for crown gnathostomes. Our findings thus reinterpret the polarity of some arch features of the crown jawed vertebrates and invert the classic hypothesis, in which modern sharks retain the ancestral condition3,20. This study underscores the importance of early chondrichthyans in resolving the evolutionary history of jawed vertebrates.",
+          "title": "A Palaeozoic shark with osteichthyan-like branchial arches",
+          "contribution": [
+            {
+              "publishedName": "Alan Pradel",
+              "affiliation": {
+                "publishedName": "Department of Vertebrate Paleontology, American Museum of Natural History"
+              },
+              "order": "1"
+            },
+            {
+              "publishedName": "John G. Maisey",
+              "affiliation": {
+                "publishedName": "Department of Vertebrate Paleontology, American Museum of Natural History"
+              },
+              "order": "2"
+            },
+            {
+              "publishedName": "Paul Tafforeau",
+              "affiliation": {
+                "publishedName": "European Synchrotron Radiation Facility, BP 220"
+              },
+              "order": "3"
+            },
+            {
+              "publishedName": "Royal H. Mapes",
+              "affiliation": {
+                "publishedName": "Department of Geological Sciences, Ohio University"
+              },
+              "order": "4"
+            },
+            {
+              "publishedName": "Jon Mallatt",
+              "affiliation": {
+                "publishedName": "School of Biological Sciences, Washington State University"
+              },
+              "order": "5"
+            }
+          ],
+          "scigraphId": "787e60fcaf79211c91c6fb0b47c1d30b",
+          "_chains": [
+            127290894,
+            127290895,
+            127290893,
+            203965644,
+            127315963,
+            207227844
+          ],
+          "publicationYear": "2014",
+          "_transaction_origin": 129526970,
+          "fieldOfResearchCode": [
+            "ECOLOGY",
+            "BIOLOGICAL SCIENCES"
+          ],
+          "_graphdb_id": 129526970,
+          "doiLink": "http://dx.doi.org/10.1038/nature13195",
+          "publicationDate": "2014-04-16",
+          "issnElectronic": "1476-4687",
+          "journalTitle": "Nature",
+          "doi": "10.1038/nature13195",
+          "issnPrint": "0028-0836"
+        }
       }
-    } ]
+    ]
   }
 }
-
 ```
  

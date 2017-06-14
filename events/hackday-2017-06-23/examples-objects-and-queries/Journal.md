@@ -1,11 +1,10 @@
 # [\#SN-Scigraph](https://twitter.com/hashtag/sn-scigraph) Hackday 2017-06-23
 
 
-
 ## Journal 
 On Searching "Palaeozoic osteichthyan"
 
-### Elastic Search Query and JSON Object 
+### Elasticsearch Query and JSON Object 
 
 Query q1.json:
 ```
@@ -30,7 +29,7 @@ Query q1.json:
 }
 ```
 
-Execute the query on Elastic Search:
+Execute the query on Elasticsearch:
 ```
 curl -POST http://ec2-34-253-74-192.eu-west-1.compute.amazonaws.com:9200/sg_docs_articles_a/_search?pretty=true -d @q1.json
 

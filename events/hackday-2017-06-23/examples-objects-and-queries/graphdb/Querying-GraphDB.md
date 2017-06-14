@@ -1,24 +1,21 @@
-# [\#SN-Scigraph](https://twitter.com/hashtag/sn-scigraph) Hackday 2017-06-23
+# Querying GraphDB
 
-Execute queries on GraphDb Workbench \<aws public dns\>:7200/sparql
+The queries below can be executed in your GraphDB Workbench: `<aws public dns>:7200/sparql`.
 
-## Article with Contributions and Affiliations
-Searching the article on "Palaeozoic osteichthyan" with DOI "10.1038/nature13195"
+## Article, Contribution and Affiliation Objects
 
-Query q1.rq
+To look up the article with DOI `10.1038/nature13195` about "Palaeozoic osteichthyan" (see [q1.rq](q1.rq)):
+
 ```
 PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
 describe ?s
 where {   
         ?s a sg:Article .
         ?s sg:doi "10.1038/nature13195"
-    
 }
 ```
 
-RDF Object / Trig
+Below is the result in TriG format:
 
 ```
 @prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
@@ -60,7 +57,8 @@ RDF Object / Trig
 }
 ```
 
-Including in the response information of the associated contribution and affiliation objects using q2.rq
+To also retrieve information about the associated contribution and affiliation objects (see [q2.rq](q2.rq)):
+
 ```
 PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -74,6 +72,8 @@ where {
     	?c sg:hasAffiliation ?a
 }
 ```
+
+This results in the following.
 
 ```
 @prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .

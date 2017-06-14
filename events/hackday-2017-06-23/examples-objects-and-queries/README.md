@@ -1,11 +1,11 @@
-# [\#SN-Scigraph](https://twitter.com/hashtag/sn-scigraph) Hackday 2017-06-23
+# [\#SN-SciGraph](https://twitter.com/hashtag/sn-scigraph) Hackday 2017-06-23
 
-## Scigraph Schema
+## SciGraph Schema
 
-![Scigraph Schema](scigraph-schema.png "Scigraph Schema")
+![SciGraph Schema](scigraph-schema.png "SciGraph Schema")
 
-## Scigraph Objects
+## SciGraph Objects
 
-[Quering Elastic Search Index](elasticsearch/Querying-Elasticsearch.md "Elasticsearch ")
+[Quering Elasticsearch](elasticsearch/Querying-Elasticsearch.md "Elasticsearch")
 
-[Quering Scigraph ](graphdb/Querying-GraphDB.md "GraphDB")
+[Quering SciGraph](graphdb/Querying-GraphDB.md "GraphDB")
