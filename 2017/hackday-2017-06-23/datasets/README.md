@@ -31,6 +31,7 @@ Models for the main classes in the datasets are described below:
 * [Conference](#Conference)
 * [ConferenceSeries](#ConferenceSeries)
 * [Contribution](#Contribution)
+* ~[FieldOfResearchCode](#FieldOfResearchCode)~
 * [Grant](#Grant)
 * [IndexCheckEvent](#IndexCheckEvent)
 * [Journal](#Journal)
@@ -65,7 +66,7 @@ Models for the main classes in the datasets are described below:
 | Field | 	Property | 	Datatype | Example |
 | --- | --- | --- | --- |
 | _(Type)_ | 	rdf:type	 | sg:Article | 	sg:Article |  
-| _(ID)_ | 	sg:scigraphId	 | xsd:string | 	"8ba89261543322df04dfe9aa9cf0b2dc" | 
+| _(ID)_ | 	sg:scigraphId	 | xsd:string | 	"8ba89261543322df04dfe9aa9cf0b2dc" |
 | .					 | | | |
 | _**Identity**_	 | | | |
 | DOI	 | sg:doi | 	xsd:string	 | "10.1038/npjschz.2014.6" |
@@ -85,10 +86,10 @@ Models for the main classes in the datasets are described below:
 | Year | sg:publicationYear | 	xsd:gYear| "2014"^^	xsd:gYear |
 | Year Month | sg:publicationYearMonth | 	xsd:gYearMonth | "2014-07"^^	xsd:gYearMonth |
 | Date | sg:publicationDate | 	xsd:date | "2014-07-21"^^xsd:date |
-| Webpage	 | sg:webpage | 	rdfs:Resource	 | <http://...> | 
+| Webpage	 | sg:webpage | 	rdfs:Resource	 | <http://...> |
 | .					 | | | |
 | _**Description**_	 | | | |
-| FOR Code | sg:hasFieldOfResearchCode | 	rdfs:Resource	 | <http://purl.org/au-research/vocabulary/anzsrc-for/...> | 
+| FOR Code | sg:hasFieldOfResearchCode | 	rdfs:Resource	 | <http://purl.org/au-research/vocabulary/anzsrc-for/...> |
 | Subject | sg:hasSubject | 	sg:Subject | subjects:... |
 | .					 | | | |
 | _**Source**_	 | | | |
@@ -120,7 +121,7 @@ Models for the main classes in the datasets are described below:
 | Edition	 | 	sg:hasBookEdition | sg:BookEdition | book-editions:TBD-2 |
 | Conference	 | 	sg:hasConference | sg:Conference | conferences:TBD-2 |
 | .					 | | | |
-| _**???**_	 | | | |
+| _**Other**_	 | | | |
 | Medium	 | sg:medium | 	xsd:string	 | "Book" |
 | Short Title	 | sg:shortTitle | 	xsd:string	 | "Short title ..." |
 
@@ -202,25 +203,25 @@ Models for the main classes in the datasets are described below:
 <a name="BookSeries"></a>
 ### Class: BookSeries
 
----
-
-<a name="Conference"></a>
-### Class: Conference
-
 | Field | 	Property | 	Datatype | Example |
 | --- | --- | --- | --- |
-| (Type) | 	rdf:type	 | sg:Conference | 	sg:Conference |
-| (ID) | 	sg:scigraphId	 | xsd:string | 	"..." |
+| (Type) | 	rdf:type	 | sg:BookSeries | 	sg:BookSeries |
+| (ID)	 | sg:scigraphId	 | xsd:string	 | "c6a3a2c5533022519407029f38d214fa" |
 | .					 | | | |
-| Acronym	 | 	sg:acronym	 | xsd:string	 | "NAME"	 |
-| City	 | 	sg:city | xsd:string	 | "City"	 |
-| Country	 | 	sg:country | xsd:string	 | "Country"	 |
-| End Date	 | 	sg:dateEnd	 | xsd:string	 | "2010-10-27"^^xsd:date	 |
-| Name	 | 	sg:name | xsd:string	 | "Conference Name"	 |
-| Number	 | 	sg:number | xsd:integer | 2	 |
-| Series Number	 | 	sg:hasConferenceSeries | sg:ConferenceSeries |
-| Start Date	 | 	sg:dateStart | xsd:string	 | "2010-10-24"	^^xsd:date | 
-| Year	 | 	sg:year | xsd:gYear	 | "2010"^^xsd:gYear	 |
+| _**Identity**_	 | | | |
+| DDS ID | sg:ddsId	 | xsd:string	 | "41427" |
+| ISSN (Electronic) | sg:issnElectronic	 | xsd:string	 | "1" |
+| ISSN (Print) | sg:issnPrint	 | xsd:string	 | "39334" |
+| .					 | | | |
+| _**Label**_	 | | | |
+| Language	 | sg:language	 | xsd:string	 | "English" |
+| Title	 | sg:title | 	xsd:string	 | "Title ..." |
+| Short Title	 | sg:shortTitle | 	xsd:string	 | "Short title ..." |
+| .					 | | | |
+| _**Description**_	 | | | |
+| Description	 | sg:description	 | xsd:string	 | "English" |
+| Category	 | sg:category | 	xsd:string	 | "Title ..." |
+| .					 | | | |
 
 ---
 
@@ -239,6 +240,26 @@ Models for the main classes in the datasets are described below:
 | Category | 	sg:hasAnnotationCategory | sg:Category	 | subjects:...	 |
 | | 	sg:annotationCategory | rdfs:Literal	 | "..."	 |
 | Score | 	sg:score| xsd:decimal	 | 1.0	 |
+
+---
+
+<a name="Conference"></a>
+### Class: Conference
+
+| Field | 	Property | 	Datatype | Example |
+| --- | --- | --- | --- |
+| (Type) | 	rdf:type	 | sg:Conference | 	sg:Conference |
+| (ID) | 	sg:scigraphId	 | xsd:string | 	"..." |
+| .					 | | | |
+| Acronym	 | 	sg:acronym	 | xsd:string	 | "NAME"	 |
+| City	 | 	sg:city | xsd:string	 | "City"	 |
+| Country	 | 	sg:country | xsd:string	 | "Country"	 |
+| End Date	 | 	sg:dateEnd	 | xsd:string	 | "2010-10-27"^^xsd:date	 |
+| Name	 | 	sg:name | xsd:string	 | "Conference Name"	 |
+| Number	 | 	sg:number | xsd:integer | 2	 |
+| Series Number	 | 	sg:hasConferenceSeries | sg:ConferenceSeries |
+| Start Date	 | 	sg:dateStart | xsd:string	 | "2010-10-24"	^^xsd:date |
+| Year	 | 	sg:year | xsd:gYear	 | "2010"^^xsd:gYear	 |
 
 ---
 
@@ -278,13 +299,18 @@ Models for the main classes in the datasets are described below:
 
 ---
 
+<a name="FieldOfResearchCode"></a>
+### Class: FieldOfResearchCode
+
+---
+
 <a name="Grant"></a>
 ### Class: Grant
 
-| Field | 	Property | 	Datatype | Example | 
+| Field | 	Property | 	Datatype | Example |
 | --- | --- | --- | --- |
 | _(Type)_ | 	rdf:type	 | sg:Grant | 	sg:Grant |
-| _(ID)_	 | sg:scigraphId	 | xsd:string	 | "81dc9bdb52d04dc20036dbd8313ed055" | 
+| _(ID)_	 | sg:scigraphId	 | xsd:string	 | "81dc9bdb52d04dc20036dbd8313ed055" |
 | .					 | | | |
 | _**Label**_	 | | | |
 | Language (Original)	 | sg:language | 	xsd:string	 | "English" |
@@ -297,18 +323,18 @@ Models for the main classes in the datasets are described below:
 | PI | sg:hasContribution | sg:Contribution	 | contributors:... |
 | .					 | | | |
 | _**Funder**_	 | | | |
-| Funding Amount | 	sg:fundingAmount	 | xsd:decimal	 | 13021970.0 | 
-| Funding Currency | 	sg:fundingCurrency	 | xsd:string	 | "USD"	 | 
+| Funding Amount | 	sg:fundingAmount	 | xsd:decimal	 | 13021970.0 |
+| Funding Currency | 	sg:fundingCurrency	 | xsd:string	 | "USD"	 |
 | Funder | 	sg:hasFundingOrganization | rdfs:Resource	 | <http://grid.ac/...>	 |
-| Recipient | sg:hasRecipientOrganization | rdfs:Resource | <http://grid.ac/...>	 | 
+| Recipient | sg:hasRecipientOrganization | rdfs:Resource | <http://grid.ac/...>	 |
 | Start Year | 	sg:startYear	 | xsd:gYear	 | "2007"^^xsd:gYear |
-| End Year | 	sg:endYear	 | xsd:gYear	 | "2014"^^xsd:gYear | 
+| End Year | 	sg:endYear	 | xsd:gYear	 | "2014"^^xsd:gYear |
 | License | sg:license | 	xsd:string | "..." |
 | Web Page | 	sg:webpage | rdfs:Resource	 | <http://...>	 |
-| . | 		|	 | |	
+| . | 		|	 | |
 | _**Description**_	 | | | |
-| FOR Code | 	sg:hasFieldOfResearchCode | rdfs:Resource	 | <http://purl.org/au-research/...> | 
-| . | 		|	 | |	
+| FOR Code | 	sg:hasFieldOfResearchCode | rdfs:Resource	 | <http://purl.org/au-research/...> |
+| . | 		|	 | |
 | _**Publication**_	 | | | |
 | Publication | sg:hasFundedPublication | sg:Article	 | articles:... |
 
@@ -401,7 +427,7 @@ Models for the main classes in the datasets are described below:
 <a name="Subject"></a>
 ### Class: Subject
 
-| Field | 	Property* | 	Datatype | Example | 
+| Field | 	Property* | 	Datatype | Example |
 | --- | --- | --- | --- |
 | _(Type)_ | 	rdf:type	 | 	sg:Subject | 	sg:Subject |
 | | 	rdf:type	 | skos:Concept | 	skos:Concept |
@@ -432,6 +458,3 @@ Models for the main classes in the datasets are described below:
 
 <a name="TechnicalArticleType"></a>
 ### Class: TechnicalArticleType
-
-
-
