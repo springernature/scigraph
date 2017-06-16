@@ -7,7 +7,7 @@ The queries below can be executed against your Elasticsearch instance: `<your-vm
 This search uses the index *sg_docs_articles*, which links each article with
 the corresponding contributions, affiliations, grants, and journal.
 
-To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (see [articleContributionsAffiliationsJournal.json](example-queries/articleContributionsAffiliationsJournal.json)):
+To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (see [get-article-with-contributions-affiliations.json](example-queries/get-article-with-contributions-affiliations.json)):
 
 ```
 {
@@ -33,10 +33,10 @@ To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (
 
 For example, using cURL:
 ```
-curl -XPOST <your-ip-address>:9200/sg_docs_articles_a/_search?pretty=true -d @articleContributionsAffiliationsJournal.json
+curl -XPOST <your-ip-address>:9200/sg_docs_articles_a/_search?pretty=true -d @get-article-with-contributions-affiliations.json
 ```
 
-This produces the following result (see [articleContributionsAffiliationsJournal-result.json](example-results/articleContributionsAffiliationsJournal-result.json)).
+This produces the following result (see [get-article-with-contributions-affiliations-result.json](example-results/get-article-with-contributions-affiliations-result.json)).
 
 ```
 {
@@ -138,7 +138,7 @@ We have set up an index *sg_docs_grants*, which links each grant with
 the corresponding contributions, affiliations, and articles.
 
 To search for a grant on "Genomics", run the following Elasticsearch query
-(see [grantOnGenomics.json](example-queries/grantOnGenomics.json)):
+(see [get-grant-on-genomics.json](example-queries/get-grant-on-genomics.json)):
 
 ```
 {
