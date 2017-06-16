@@ -1,9 +1,9 @@
 # Examples
 
 * [Elasticsearch](elasticsearch)
-* [SciGraph](graphdb)
+* [GraphDB](graphdb)
 * [Kibana](kibana)
 
 ## SciGraph Schema
 
-![SciGraph Schema](../data-model/scigraph-schema.png "SciGraph Schema")
+![scigraph-hack-day-2017-06-23](https://github.com/springernature/scigraph/wiki/images/scigraph-hack-day-2017-06-23.png)
