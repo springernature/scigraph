@@ -24,5 +24,5 @@ The queries below can be executed in your GraphDB Workbench: `<your-vm-ip-addres
 
 ## 4. Grant Objects
 
-* **Grant Objects:** retrieve information of a grant (see queries  [get-grant.rq](get-grant.rq)),
+* **Grant Object:** To retrieve information about a grant (see queries  [get-grant.rq](get-grant.rq)),
     and see [result-for-get-grant.ttl](result-for-get-grant.ttl) for the result in Turtle format.
