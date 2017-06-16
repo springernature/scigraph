@@ -4,18 +4,18 @@
 
 ### All Articles Overview Dashboard
 
-See [DashArticleOverview.png](dashboard-images/DashArticleOverview.png).
+See [DashArticlesV.png](dashboard-images/DashArticlesV.png).
 
 ### Journals: statistics and general overview
 
-See [DashJournals.png](dashboard-images/DashJournals.png).
+See [DashJournalsV.png](dashboard-images/DashJournalsV.png).
 
 ### Nature Field of Research Profile
 
-See [DashNatureFOR.png](dashboard-images/DashNatureFOR.png).
+See [DashNatureFORV.png](dashboard-images/DashNatureFORV.png).
 
 ### USA grants profiles
 
-See [DashGrants.png](dashboard-images/DashGrants.png).
+See [DashGrantsV.png](dashboard-images/DashGrantsV.png).
 
 
