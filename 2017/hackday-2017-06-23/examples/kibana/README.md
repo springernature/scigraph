@@ -4,7 +4,7 @@
 
 ### All Articles Overview Dashboard
 
-See [DashArticleOverview.png](dashboard-images/DashArticleOverview.png).
+See [DashArticles.png](dashboard-images/DashArticles.png).
 
 ### Journals: statistics and general overview
 
