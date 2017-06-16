@@ -36,7 +36,7 @@ For example, using cURL:
 curl -XPOST <your-ip-address>:9200/sg_docs_articles_a/_search?pretty=true -d @articleContributionsAffiliationsJournal.json
 ```
 
-This produces the following result (see [articleContributionsAffiliationsJournal-output.json](example-output/articleContributionsAffiliationsJournal-output.json)).
+This produces the following result (see [articleContributionsAffiliationsJournal-result.json](example-results/articleContributionsAffiliationsJournal-result.json)).
 
 ```
 {
