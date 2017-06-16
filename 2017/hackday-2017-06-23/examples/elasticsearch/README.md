@@ -33,7 +33,7 @@ To search for "Palaeozoic osteichthyan", run the following Elasticsearch query (
 
 For example, using cURL:
 ```
-curl -XPOST <your-ip-address>:9200/sg_docs_articles_a/_search?pretty=true -d @get-article-with-contributions-affiliations.json
+curl -XPOST <your-ip-address>:9200/sg_docs_articles/_search?pretty=true -d @get-article-with-contributions-affiliations.json
 ```
 
 This produces the following result (see [get-article-with-contributions-affiliations-result.json](example-results/get-article-with-contributions-affiliations-result.json)).
@@ -160,6 +160,11 @@ To search for a grant on "Genomics", run the following Elasticsearch query
   "sort": [ ],
   "aggs": { }
 }
+```
+
+For example, using cURL:
+```
+curl -XPOST <your-ip-address>:9200/sg_docs_grants/_search?pretty=true -d @get-grant-on-genomics.json
 ```
 
 Sample Response
