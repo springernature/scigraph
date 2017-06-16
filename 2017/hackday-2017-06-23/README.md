@@ -31,6 +31,7 @@ If you need to, you can start and stop these as follows:
 * [GraphDB](examples/graphdb)
 * [Elasticsearch](examples/elasticsearch)
 * [Kibana](examples/kibana)
+* [Sample Apps](examples/apps)
 
 ## Comms Channels
 
