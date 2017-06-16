@@ -26,7 +26,7 @@ Models for the main classes in the datasets are described below:
 * [Book](#Book)
 * [BookChapter](#BookChapter)
 * [BookEdition](#BookEdition)
-* ~[BookSeries](#BookSeries)~
+* [BookSeries](#BookSeries)
 * [CategorizationEvent](#CategorizationEvent)
 * [Conference](#Conference)
 * [ConferenceSeries](#ConferenceSeries)
@@ -40,6 +40,8 @@ Models for the main classes in the datasets are described below:
 * ~[Relation](#Relation)~
 * [Subject](#Subject)
 * ~[TechnicalArticleType](#TechnicalArticleType)~
+
+Note that those classes indicated with strikethrough are taxonomies for which no data model is currently reported.
 
 ---
 
