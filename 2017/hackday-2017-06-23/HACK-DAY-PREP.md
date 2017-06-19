@@ -3,9 +3,9 @@
 ## Setting up 
 
 1. Bring your Laptop & Charger
-1. Install Slack - that'll be our main communication tool for the day!
+1. Install [Slack](https://slack.com/) - that'll be our main communication tool for the day!
 
-## Read the Docs 
+## Read up on the Docs 
 
 It'd be great if you took some time to familiarize witht the SciGraph data. Please use the following links to get started with it. 
 
@@ -25,6 +25,8 @@ It'd be great if you took some time to familiarize witht the SciGraph data. Plea
 
 
 ## Think of some Hacking Ideas 
+
+Here're some examples:
 
 * What topics are newly emerging in sustainable cities research? What is attracting the most attention?
 * Who is putting money into work on cities?
