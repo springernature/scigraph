@@ -5,7 +5,7 @@
 1. Bring your Laptop & Charger
 1. Install Slack - that'll be our main communication tool for the day!
 
-## Reads the Docs 
+## Read the Docs 
 
 It'd be great if you took some time to familiarize witht the SciGraph data. Please use the following links to get started with it. 
 
