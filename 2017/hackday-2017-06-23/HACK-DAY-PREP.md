@@ -1,11 +1,11 @@
 # Preparation for the SciGraph Hack Day
 
-## What to Bring
+## Setting up 
 
-1. Laptop & Charger
-1. Your Ideas ! 
+1. Bring your Laptop & Charger
+1. Install Slack - that'll be our main communication tool for the day!
 
-## Documentation 
+## Taking a look at the docs 
 
 It'd be great if you took some time to familiarize witht the SciGraph data. Please use the following links to get started with it. 
 
@@ -24,7 +24,7 @@ It'd be great if you took some time to familiarize witht the SciGraph data. Plea
 * [Sample Apps](examples/apps)
 
 
-## Hacking Ideas 
+## Think of some Hacking Ideas 
 
 * What topics are newly emerging in sustainable cities research? What is attracting the most attention?
 * Who is putting money into work on cities?
