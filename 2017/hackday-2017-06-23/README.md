@@ -5,13 +5,13 @@
 1. Ask the organisers for the IP address of your VM
 1. Append a **port number** to the IP address (see the next section) to access a data source 
 
-### Accessing the Databases
+#### Accessing the Databases
 
 * GraphDB: `http://<your-vm-ip-address>:7200`
 * Elasticsearch: `http://<your-vm-ip-address>:9200/_plugin/head`
 * Kibana: `http://<your-vm-ip-address>:5601`
 
-### Advanced: Logging in to your VM
+#### Advanced: Logging in to your VM
 
 This won't be necessary in most cases, but if you know what you're doing here's the details:
 
@@ -25,14 +25,14 @@ This won't be necessary in most cases, but if you know what you're doing here's 
 
 Please use the following links to get started with the SciGraph data.
 
-### Data model
+#### Data model
 
 * [Datasets](https://github.com/springernature/scigraph/tree/master/events/hackday-2017-06-23/datasets)
 * [Classes & Properties](http://ontologies.scigraph.com/core/v1.0.0/dendogram/index.html)
 * [Querying GraphDB](https://www.w3.org/TR/rdf-sparql-query) 
 * [Querying Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/query-dsl.html) 
 
-### Code Examples
+#### Code Examples
 
 * [GraphDB](examples/graphdb)
 * [Elasticsearch](examples/elasticsearch)
