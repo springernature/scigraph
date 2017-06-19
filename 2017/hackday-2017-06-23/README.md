@@ -11,8 +11,9 @@
 * Elasticsearch: `http://<your-vm-ip-address>:9200/_plugin/head`
 * Kibana: `http://<your-vm-ip-address>:5601`
 
+### Advanced: Logging in to your VM
 
-## Advanced: Logging in to your VM
+This won't be necessary in most cases, but if you.... 
 
 1. Ask the organisers for the IP address of your VM
 1. Download the [RSA private key](https://drive.google.com/open?id=0BxTNjwMyIXOoclE2VHdhaWtyLXM)
