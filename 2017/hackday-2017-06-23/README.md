@@ -13,7 +13,7 @@
 
 ### Advanced: Logging in to your VM
 
-This won't be necessary in most cases, but if you.... 
+This won't be necessary in most cases, but if you know what you're doing here's the details:
 
 1. Ask the organisers for the IP address of your VM
 1. Download the [RSA private key](https://drive.google.com/open?id=0BxTNjwMyIXOoclE2VHdhaWtyLXM)
