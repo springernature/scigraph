@@ -7,26 +7,31 @@
 * [Querying GraphDB](https://www.w3.org/TR/rdf-sparql-query) 
 * [Querying Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/query-dsl.html) 
 
-## Logging in to your VM
+## Quick Start
+
+1. Ask the organisers for the IP address of your VM
+1. Append a port number to the IP address (see the next section) to access a data source 
+
+## Data Services and Ports
+
+* GraphDB: `http://<your-vm-ip-address>:7200`
+* Elasticsearch: `http://<your-vm-ip-address>:9200/_plugin/head`
+* Kibana: `http://<your-vm-ip-address>:5601`
+
+## Advanced: Logging in to your VM
 
 1. Ask the organisers for the IP address of your VM
 1. Download the [RSA private key](https://drive.google.com/open?id=0BxTNjwMyIXOoclE2VHdhaWtyLXM)
 1. Fix permissions: `chmod 400 ./Downloads/scigraph.env`
 1. Log in: `ssh -i scigraph.env ubuntu@<your-vm-ip-address>`
-
-## What's running
-
-* GraphDB: `http://<your-vm-ip-address>:7200`
-* Elasticsearch: `http://<your-vm-ip-address>:9200/_plugin/head`
-* Kibana: `http://<your-vm-ip-address>:5601`
  
-If you need to, you can start and stop these as follows:
+If you need to, you can start and stop these as follows (note: you must be logged in first, see below for more info):
 
 * `sudo /etc/init.d/graphdb-service start|stop`
 * `sudo /etc/init.d/elasticsearch start|stop`
 * `sudo /etc/init.d/kibana start|stop`
 
-## Examples
+## Code Examples
 
 * [GraphDB](examples/graphdb)
 * [Elasticsearch](examples/elasticsearch)
