@@ -3,7 +3,7 @@
 ## What to Bring
 
 1. Laptop & Charger
-1. Your Ideas  
+1. Your Ideas ! 
 
 ## Documentation 
 
@@ -26,11 +26,17 @@ It'd be great if you took some time to familiarize witht the SciGraph data. Plea
 
 ## Hacking Ideas 
 
-* 
+* What topics are newly emerging in sustainable cities research? What is attracting the most attention?
+* Who is putting money into work on cities?
+* Who are the top people working on sustainable cities?
+* Data Visualization: Develop insightful dashboards on top of our data, e.g. visually appealing journal or institutional pages
+* Information Retrieval: Text data mine our abstracts and grants description texts to better understand what the content is really about by extracting contained facts
+* Linked Data Browsing: develop an intuitive and innovative approach to simply browse our linked data offering, making it easy and fun to explore -rather than to search- on top of linked data
+* Predictive Analytics: train a model using SciGraph data, e.g. funding patterns, to be able to predict the future for an institute or a journal based on their past - the data is there!
 
 ## Comms Channels
 
-Come talk to us if you get stuck. Alternatively, you can use one of the following channels:
+Use one of the following channels:
 
-* Twitter: please use the hashtag [\#sn-scigraph](https://twitter.com/hashtag/sn-scigraph)
-* [Slack](https://sn-hackday.slack.com)
+* Twitter: please use the hashtag [\#SN_HackDay](https://twitter.com/hashtag/SN_HackDay)
+* [sn-hackday channel on Slack](https://sn-hackday.slack.com)
