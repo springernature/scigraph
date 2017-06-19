@@ -1,12 +1,9 @@
 #! /usr/bin/env python
 
-# pip install python-pip
-# pip install SPARQLWrapper
-
 from rdflib import Graph, URIRef
 from rdflib.plugins.stores import sparqlstore
 
-endpoint = 'http://<IP>:7200/repositories/<REPOSITORY>'
+endpoint = 'http://<IP>:7200/repositories/SciGraph'
 store = sparqlstore.SPARQLStore()
 store.open(endpoint)
 
@@ -20,9 +17,3 @@ print(q)
 
 for s, o in ng.query(q):
     print 'article Id:' +s + '\t article Title:' +o
-
-print('End')
-
-
-
-
