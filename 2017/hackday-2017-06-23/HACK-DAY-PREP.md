@@ -38,12 +38,5 @@ Here are some general themes to consider:
 Here are some more specific questions: 
 
 * What topics are newly emerging in *sustainable cities* research? What is attracting the most attention? Who is putting money into work on cities?
-* 
-* 
-
-## Comms Channels
-
-Use one of the following channels:
-
-* Twitter: please use the hashtag [\#SN_HackDay](https://twitter.com/hashtag/SN_HackDay)
-* Slack: [sn-hackday](https://sn-hackday.slack.com)
+* @todo
+* @todo
