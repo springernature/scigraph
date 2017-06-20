@@ -41,4 +41,4 @@ Here are some examples:
 Use one of the following channels:
 
 * Twitter: please use the hashtag [\#SN_HackDay](https://twitter.com/hashtag/SN_HackDay)
-* [sn-hackday channel on Slack](https://sn-hackday.slack.com)
+* Slack: [sn-hackday](https://sn-hackday.slack.com)
