@@ -1,22 +1,24 @@
 # Preparation for the SciGraph Hack Day
 
-## Setting up 
+## Basic Stuff 
 
 1. Bring your laptop and charger.
-1. Install [Slack](https://slack.com/) which will be our main communication tool for the day.
+1. Install [Slack](https://slack.com/) which will be our main internal communication tool for the day ([sn-hackday] channel (https://sn-hackday.slack.com) - a personal invite will be sent out shortly).
+1. Make a note of the official Twitter hashtag for the event [\#SN_HackDay](https://twitter.com/hashtag/SN_HackDay).
+1. Review the agenda, location, and more info about SciGraph by going to the [official event page](http://www.springernature.com/gp/researchers/scigraph/sn-scigraph-hack-day).
 
 ## Read up on the docs
 
-It would be great if you could take some time to familiarize yourself with the SciGraph data. Please use the following links to get started with it. 
+It would be great if you could take some time to familiarize yourself with the SciGraph data. Please use the following links to get started. 
 
 #### Data model
 
-* [Datasets](https://github.com/springernature/scigraph/tree/master/events/hackday-2017-06-23/datasets)
-* [Classes & Properties](http://ontologies.scigraph.com/core/v1.0.0/dendogram/index.html)
-* [Querying GraphDB](https://www.w3.org/TR/rdf-sparql-query) 
-* [Querying Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/query-dsl.html) 
+* [Datasets](https://github.com/springernature/scigraph/tree/master/2017/hackday-2017-06-23/datasets)
+* [Classes & Properties](http://ontologies.scigraph.com/#core)
+* [Querying GraphDB: SPARQL documentation](https://www.w3.org/TR/rdf-sparql-query) 
+* [Querying Elasticsearch: API documentation](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/query-dsl.html) 
 
-#### Code examples
+#### Code Examples
 
 * [GraphDB](examples/graphdb)
 * [Elasticsearch](examples/elasticsearch)
