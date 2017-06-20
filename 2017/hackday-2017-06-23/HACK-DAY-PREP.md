@@ -28,15 +28,18 @@ It would be great if you could take some time to familiarize yourself with the S
 
 ## Think of some hacking Ideas 
 
-Here are some examples:
+Here are some general themes to consider:
 
-* What topics are newly emerging in sustainable cities research? What is attracting the most attention?
-* Who is putting money into work on cities?
-* Who are the top people working on sustainable cities?
-* Data Visualization: Develop insightful dashboards on top of our data, e.g. visually appealing journal or institutional pages
-* Information Retrieval: Text data mine our abstracts and grants description texts to better understand what the content is really about by extracting contained facts
-* Linked Data Browsing: develop an intuitive and innovative approach to simply browse our linked data offering, making it easy and fun to explore -rather than to search- on top of linked data
-* Predictive Analytics: train a model using SciGraph data, e.g. funding patterns, to be able to predict the future for an institute or a journal based on their past - the data is there!
+* *Data Visualization*: Develop insightful dashboards on top of our data, e.g. visually appealing journal or institutional pages
+* *Information Retrieval*: Text data mine our abstracts and grants description texts to better understand what the content is really about by extracting contained facts
+* *Linked Data Browsing*: develop an intuitive and innovative approach to simply browse our linked data offering, making it easy and fun to explore -rather than to search- on top of linked data
+* *Predictive Analytics*: train a model using SciGraph data, e.g. funding patterns, to be able to predict the future for an institute or a journal based on their past - the data is there!
+
+Here are some more specific questions: 
+
+* What topics are newly emerging in *sustainable cities* research? What is attracting the most attention? Who is putting money into work on cities?
+* 
+* 
 
 ## Comms Channels
 
