@@ -1,12 +1,8 @@
-# Example Python App
+# Example Python Application
 
-Example how to connect to GraphDB from python.
+This example Python application shows how to connect to GraphDB.
 
-## How to configure app
+## Running
 
-Please edit file `Example.py` and replace tag `<IP>` with IP of the GraphDB.
-
-## How to run app
-
-Please execute `run.sh` script.
-
+1. Install the libraries in `requirements.txt` in a virtual environment or similar.
+1. Edit `example.py` to replace `<IP>` with the IP address or host name of your VM.

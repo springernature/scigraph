@@ -1,13 +1,8 @@
-# Example Java App
+# Example Java Application
 
-Example how to connect to GraphDB from java
+This example Java application shows how to connect to GraphDB.
 
-## How to configure app
+## Running
 
-Please edit file `QueryingArticleExample.java` and replace tag `<IP>` with IP of the GraphDB.
-
-
-## How to run
-
-Please execute `run.sh` script.
-
+1. Edit `QueryingArticleExample.java` to replace `<IP>` with the IP address or host name of your VM.
+1. Execute `run.sh`.
