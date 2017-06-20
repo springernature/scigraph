@@ -7,7 +7,7 @@
 
 ## Read up on the Docs 
 
-It'd be great if you took some time to familiarize witht the SciGraph data. Please use the following links to get started with it. 
+It would be great if you could take some time to familiarize yourself with the SciGraph data. Please use the following links to get started with it. 
 
 #### Data model
 
