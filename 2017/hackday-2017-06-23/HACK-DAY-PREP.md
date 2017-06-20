@@ -2,8 +2,8 @@
 
 ## Setting up 
 
-1. Bring your Laptop & Charger
-1. Install [Slack](https://slack.com/) - that'll be our main communication tool for the day!
+1. Bring your laptop and charger.
+1. Install [Slack](https://slack.com/) which will be our main communication tool for the day.
 
 ## Read up on the Docs 
 
