@@ -28,7 +28,7 @@ Please use the following links to get started with the SciGraph data.
 #### Data model
 
 * [Datasets](https://github.com/springernature/scigraph/tree/master/2017/hackday-2017-06-23/datasets)
-* [Classes & Properties](http://ontologies.scigraph.com/core/v1.0.0/dendogram/index.html)
+* [Classes & Properties](http://ontologies.scigraph.com/#core)
 * [Querying GraphDB: SPARQL documentation](https://www.w3.org/TR/rdf-sparql-query) 
 * [Querying Elasticsearch: API documentation](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/query-dsl.html) 
 
