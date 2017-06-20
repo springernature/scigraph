@@ -9,7 +9,7 @@ import org.eclipse.rdf4j.repository.sparql.SPARQLRepository;
 
 public class QueryingArticleExample {
     public static void main(String[] args) {
-        String sparqlEndpoint = "http://<IP>:7200/repositories/<REPOSITORY>"; // fill IP and REPOSITORY
+        String sparqlEndpoint = "http://<IP>:7200/repositories/SciGraph"; // fill IP
         Repository repo = new SPARQLRepository(sparqlEndpoint);
         repo.initialize();
         try (RepositoryConnection con = repo.getConnection()) {
