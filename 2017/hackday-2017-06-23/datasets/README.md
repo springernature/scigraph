@@ -17,4 +17,6 @@ Welcome to the [Springer Nature SciGraph](http://www.springernature.com/scigraph
 
 ## Ontology
 
-You can inspect the ontology classes and properties via this [documentation page](http://ontologies.scigraph.com/#core). Download the ontology source code [here](...) 
+You can inspect the ontology classes and properties via this [documentation page](http://ontologies.scigraph.com/#core).
+
+The ontology source file is available [here](https://github.com/springernature/scigraph/blob/master/2017/hackday-2017-06-23/datasets/sg-core-ontology.ttl).  
