@@ -3,7 +3,7 @@
 ## Basic Stuff 
 
 1. Bring your laptop and charger.
-1. Install [Slack](https://slack.com/) which will be our main internal communication tool for the day ([sn-hackday] channel (https://sn-hackday.slack.com) - a personal invite will be sent out shortly).
+1. Install [Slack](https://slack.com/) which will be our main internal communication tool for the day ([sn-hackday channel](https://sn-hackday.slack.com) - a personal invite will be sent out shortly).
 1. Make a note of the official Twitter hashtag for the event [\#SN_HackDay](https://twitter.com/hashtag/SN_HackDay).
 1. Review the agenda, location, and more info about SciGraph by going to the [official event page](http://www.springernature.com/gp/researchers/scigraph/sn-scigraph-hack-day).
 
@@ -38,5 +38,6 @@ Here are some general themes to consider:
 Here are some more specific questions: 
 
 * What topics are newly emerging in *sustainable cities* research? What is attracting the most attention? Who is putting money into work on cities?
-* @todo
-* @todo
+* Can you do a forecast with regards to domain distribution / funding patterns?
+* Which conferences take place in subject areas that show an increase of funding over the last 5 years in a given geographical area?
+* How can we identify new areas of research, e.g. by linking article and subject over time to quantity, Impact Factor and number of new journals in a field and funding for articles in that field?
