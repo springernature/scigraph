@@ -47,3 +47,7 @@ Come talk to us if you get stuck. Alternatively, you can use one of the followin
 * Twitter: please use the hashtag [\#sn-scigraph](https://twitter.com/hashtag/sn-scigraph)
 * [Slack](https://sn-hackday.slack.com)
 * If you want to share your code then please ask the organisers to invite you to [SN-HackDay](https://github.com/SN-HackDay) on GitHub
+
+## Disclaimer
+
+Just a reminder - all of the data accessible on the hack day is available under a *CC-BY-NC license*, so feel free to use it for research and experimentation but not for commercial purposes. 
