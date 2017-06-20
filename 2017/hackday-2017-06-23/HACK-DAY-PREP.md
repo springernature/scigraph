@@ -38,6 +38,6 @@ Here are some general themes to consider:
 Here are some more specific questions: 
 
 * What topics are newly emerging in *sustainable cities* research? What is attracting the most attention? Who is putting money into work on cities?
-* Can you do a forecast with regards to domain distribution / funding patterns?
+* Can you do a forecast for a given journal with regards to research domain distribution / funding patterns?
 * Which conferences take place in subject areas that show an increase of funding over the last 5 years in a given geographical area?
 * How can we identify new areas of research, e.g. by linking article and subject over time to quantity, Impact Factor and number of new journals in a field and funding for articles in that field?
