@@ -1,0 +1,2556 @@
+#
+# core/ontology.ttl
+#
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sgo: <http://www.springernature.com/scigraph/ontologies/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sg:
+    dc:rights "This work is distributed under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) Public License <https://creativecommons.org/licenses/by-nc/4.0/>."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    .
+#
+# Scigraph core ontology namespaces
+#
+
+## Public namespaces
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+## Private namespaces - Graphs
+
+@prefix graphs: <http://www.springernature.com/scigraph/graphs/> .
+
+## Private namespaces - Shapes
+
+@prefix shapes: <http://www.springernature.com/scigraph/shapes/> .
+
+## Private namespaces - Things
+
+@prefix access-types: <http://www.springernature.com/scigraph/things/access-types/> .
+@prefix affiliations: <http://www.springernature.com/scigraph/things/affiliations/> .
+@prefix agents: <http://www.springernature.com/scigraph/things/agents/> .
+@prefix aggregation-events: <http://www.springernature.com/scigraph/things/aggregation-events/> .
+@prefix annotations: <http://www.springernature.com/scigraph/things/annotations/> .
+@prefix annotation-events: <http://www.springernature.com/scigraph/things/annotation-events/> .
+@prefix articles: <http://www.springernature.com/scigraph/things/articles/> .
+@prefix article-types: <http://www.springernature.com/scigraph/things/article-types/> .
+@prefix books: <http://www.springernature.com/scigraph/things/books/> .
+@prefix book-chapters: <http://www.springernature.com/scigraph/things/book-chapters/> .
+@prefix book-editions: <http://www.springernature.com/scigraph/things/book-editions/> .
+@prefix book-series: <http://www.springernature.com/scigraph/things/book-series/> .
+@prefix categorization-events: <http://www.springernature.com/scigraph/things/categorization-events/> .
+@prefix categories: <http://www.springernature.com/scigraph/things/categories/> .
+@prefix citation-metrics: <http://www.springernature.com/scigraph/things/citation-metrics/> .
+@prefix concepts: <http://www.springernature.com/scigraph/things/concepts/> .
+@prefix conferences: <http://www.springernature.com/scigraph/things/conferences/> .
+@prefix conference-series: <http://www.springernature.com/scigraph/things/conference-series/> .
+@prefix contracts: <http://www.springernature.com/scigraph/things/contracts/> .
+@prefix contributions: <http://www.springernature.com/scigraph/things/contributions/> .
+@prefix events: <http://www.springernature.com/scigraph/things/events/> .
+@prefix grants: <http://www.springernature.com/scigraph/things/grants/> .
+@prefix index-check-events: <http://www.springernature.com/scigraph/things/index-check-events/> .
+@prefix intangibles: <http://www.springernature.com/scigraph/things/intangibles/> .
+@prefix journals: <http://www.springernature.com/scigraph/things/journals/> .
+@prefix journal-brands: <http://www.springernature.com/scigraph/things/journal-brands/> .
+@prefix metrics: <http://www.springernature.com/scigraph/things/metrics/> .
+@prefix monographs: <http://www.springernature.com/scigraph/things/monographs/> .
+@prefix organizations: <http://www.springernature.com/scigraph/things/organizations/> .
+@prefix persons: <http://www.springernature.com/scigraph/things/persons/> .
+@prefix products: <http://www.springernature.com/scigraph/things/products/> .
+@prefix product-market-codes: <http://www.springernature.com/scigraph/things/product-market-codes/> .
+@prefix publications: <http://www.springernature.com/scigraph/things/publications/> .
+@prefix publication-events: <http://www.springernature.com/scigraph/things/publication-events/> .
+@prefix publication-states: <http://www.springernature.com/scigraph/things/publication-states/> .
+@prefix publish-events: <http://www.springernature.com/scigraph/things/publish-events/> .
+@prefix publish-states: <http://www.springernature.com/scigraph/things/publish-states/> .
+@prefix publishers: <http://www.springernature.com/scigraph/things/publishers/> .
+@prefix review-events: <http://www.springernature.com/scigraph/things/review-events/> .
+@prefix review-states: <http://www.springernature.com/scigraph/things/review-states/> .
+@prefix serials: <http://www.springernature.com/scigraph/things/serials/> .
+@prefix subjects: <http://www.springernature.com/scigraph/things/subjects/> .
+@prefix tangibles: <http://www.springernature.com/scigraph/things/tangibles/> .
+@prefix things: <http://www.springernature.com/scigraph/things/things/> .
+@prefix works: <http://www.springernature.com/scigraph/things/works/> .
+
+##
+#
+# Scigraph core ontology version
+#
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sgo: <http://www.springernature.com/scigraph/ontologies/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sg: owl:versionInfo "1.1.0" .
+#
+# core/classes.ttl
+#
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sgo: <http://www.springernature.com/scigraph/ontologies/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sg:AccessType
+    a owl:Class ;
+    sg:namespace "access-types" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Access type"@en ;
+    rdfs:subClassOf sg:Concept ;
+    rdfs:comment "The :AccessType class provides an instance from a categorisation of the various kinds of permissions/restrictions characterizing the way end users can access a product. In the case of online articles, for example, these can be 'Open Access' or 'Subscription'. Even though in most situations the products in question will be instances of :Publication (e.g. periodicals, issues, or specific components of these), in some cases other entities like datasets or websites may be qualified via an access type. The :AccessType categorisation is implemented as a SKOS concept scheme."@en ;
+    .
+
+sg:Affiliation
+    a owl:Class ;
+    sg:namespace "affiliations" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Affiliation"@en ;
+    rdfs:subClassOf sg:Event ;
+    rdfs:comment "The :Affiliation class groups together events that describe the affiliation of a person with a specific organization (eg university, research institution)."@en ;
+    .
+
+sg:Agent
+    a owl:Class ;
+    sg:namespace "agents" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Agent"@en ;
+    rdfs:subClassOf sg:Thing ;
+    rdfs:comment "The :Agent class groups together all entities that can be the subject of an action. These can be single persons (:Person), or groups of people organised as a legal entity (:Organization)."@en ;
+    .
+
+sg:AggregationEvent
+    a owl:Class ;
+    sg:namespace "aggregation-events" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Aggregation event"@en ;
+    rdfs:subClassOf sg:Event ;
+    rdfs:comment "The :AggregationEvent class groups together all events related to the construction of a publication."@en ;
+    .
+
+sg:Annotation
+    a owl:Class ;
+    sg:namespace "annotations" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Annotation"@en ;
+    rdfs:subClassOf sg:Intangible ;
+    rdfs:comment "The :Annotation class groups together all individuals that represents any entity used to annotate a document or artefact."@en ;
+    .
+
+sg:AnnotationEvent
+    a owl:Class ;
+    sg:namespace "annotation-events" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Annotation event"@en ;
+    rdfs:subClassOf sg:Event ;
+    rdfs:comment "The :AnnotationEvent class groups together all events describing the process of adding notes or marking up a thing."@en ;
+    .
+
+# A fix to be disjoint with :BookSeries
+sg:Article
+    a owl:Class ;
+    owl:disjointWith sg:BookChapter , sg:Book , sg:Journal ;
+    owl:disjointWith sg:BookSeries ;
+    sg:namespace "articles" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Article"@en ;
+    rdfs:subClassOf sg:Product ;
+    rdfs:comment "The :Article class represents a scholarly work normally published as an item of a serial publication. In particular, this concept refers to the abstract notion of an article, rather than any of its realisations after it becomes embodied via a physical medium. With reference to the FRBR model [http://www.ifla.org/publications/functional-requirements-for-bibliographic-records], an :Article can be mapped directly to the frbr:Expression concept. It is worth noting though that within the Scigraph Core Ontology we do not have any notion of a frbr:Work. Hence multiple versions of the same article (e.g. language translations, or revisions) are characterised as such simply by means of some relationship."@en ;
+    .
+
+sg:ArticleType
+    a owl:Class ;
+    sg:namespace "article-types" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Article type"@en ;
+    rdfs:subClassOf sg:Concept ;
+    rdfs:comment "The :ArticleType class represents the various kinds of publication which can be used to index and group (Macmillan) content published by Springer Nature. The instances of :ArticleType are organised hierarchically using the SKOS vocabulary."@en ;
+    .
+
+sg:Book
+    a owl:Class ;
+    owl:disjointWith sg:Article , sg:BookChapter , sg:Journal ;
+    sg:namespace "books" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Book"@en ;
+    rdfs:subClassOf sg:Product ;
+    rdfs:comment "The :Book class represents a non-serial document that is complete in one volume or a designated finite number of volumes. A book may be manifested as a physical printed publication in hard or soft cover form, or in digital format as an 'e-book'."@en ;
+    .
+
+sg:BookChapter
+    a owl:Class ;
+    owl:disjointWith sg:Article , sg:Book , sg:Journal ;
+    sg:namespace "book-chapters" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Book chapter"@en ;
+    rdfs:subClassOf sg:Product ;
+    rdfs:comment "The :BookChapter class represents a defined chapter of a book, usually with a separate title or number."@en ;
+    .
+
+sg:BookEdition
+    a owl:Class ;
+    sg:namespace "book-editions" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Book edition"@en ;
+    rdfs:subClassOf sg:Monograph ;
+    rdfs:comment "The :BookEdition class represents a non-serial work, or monograph, which gathers together separate physical book renditions."@en ;
+    .
+
+sg:BookSeries
+    a owl:Class ;
+    owl:disjointWith sg:JournalBrand ;
+    sg:namespace "book-series" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Book series"@en ;
+    rdfs:subClassOf sg:Serial ;
+    rdfs:comment "The :BookSeries class represents a sequence of books having certain characteristics in common that are formally identified together as a group."@en ;
+    .
+
+sg:CategorizationEvent
+    a owl:Class ;
+    owl:disjointWith sg:IndexCheckEvent ;
+    sg:namespace "categorization-events" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Categorization event"@en ;
+    rdfs:subClassOf sg:AnnotationEvent ;
+    rdfs:comment "The :CategorizationEvent class represents an event which annotates a thing with a category."@en ;
+    .
+
+sg:Category
+    a owl:Class ;
+    sg:namespace "categories" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Category"@en ;
+    rdfs:subClassOf sg:Concept ;
+    rdfs:comment "The :Category class represents a topic, field of study or research area which can be used to categorise the contents of a publication. More specific categorization classes may be used."@en ;
+    .
+
+
+sg:CitationMetrics
+    a owl:Class ;
+    sg:namespace "citation-metrics" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Citation metrics"@en ;
+    rdfs:subClassOf sg:Metrics     ;
+    rdfs:comment "The :CitationMetrics class represents specific measurements of the citation impact of a publication, or group of publications. For example, the metrics provided annually by organisations like the Web of Science, Scopus or Journal Citation Reports."@en ;
+    .
+
+sg:Conference
+    a owl:Class ;
+    sg:namespace "conferences" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Conference"@en ;
+    rdfs:subClassOf sg:Event ;
+    rdfs:comment "The :Conference represents a formal meeting of people with a shared interest, typically one that takes place over several days."@en ;
+    .
+
+sg:ConferenceSeries
+    a owl:Class ;
+    sg:namespace "conference-series" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Conference series"@en ;
+    rdfs:subClassOf sg:Concept ;
+    rdfs:comment "The :ConferenceSeries class refers to a set of scholarly conference events organized in a common format or under a common title or theme."@en ;
+    .
+
+sg:Contract
+    a owl:Class ;
+    sg:namespace "contracts" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Contract"@en ;
+    rdfs:subClassOf sg:Intangible ;
+    rdfs:comment "The :Contract class represents a legal agreement."@en ;
+    .
+
+sg:Contribution
+    a owl:Class ;
+    sg:namespace "contributions" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Contribution"@en ;
+    rdfs:subClassOf sg:Event ;
+    rdfs:comment "The :Contribution class represents events related to the making of a Scigraph entity, from the point of view of its authors, editors, or any other :Agent involved in the creation of the work."@en ;
+    .
+
+sg:Event
+    a owl:Class ;
+    sg:namespace "events" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Event"@en ;
+    rdfs:subClassOf sg:Thing ;
+    rdfs:comment "The :Event class groups together events of varying granularity. Events differ from :Intangible entities because they have an extension in time; they differ from :Tangible entities because they do not have an extension in space."@en ;
+    .
+
+sg:FieldOfResearchCode
+    a owl:Class ;
+    sg:namespace "field-of-research-codes" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Field Of Research (FOR) Code"@en ;
+    rdfs:subClassOf sg:Category ;
+    rdfs:comment "The :FieldOfResearchCode class represents an Australian and New Zealand Standard Research Classification (ANZSRC) Field of Research (FOR) code which can be used to categorise the contents of a publication. The instances of :FieldOfResearchCode are organised hierarchically using the SKOS vocabulary."@en ;
+    .
+
+sg:Grant
+    a owl:Class ;
+    sg:namespace "grants" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Grant"@en ;
+    rdfs:subClassOf sg:Contract ;
+    rdfs:comment "The :Grant class represents a funding award for a research project as a contract."@en ;
+    .
+
+sg:IndexCheckEvent
+    a owl:Class ;
+    owl:disjointWith sg:CategorizationEvent ;
+    sg:namespace "index-check-events" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Index check event"@en ;
+    rdfs:subClassOf sg:AnnotationEvent ;
+    rdfs:comment "The :IndexCheckEvent class represents an event which annotates a thing with an index check."@en ;
+    .
+
+sg:Intangible
+    a owl:Class ;
+    sg:namespace "intangibles" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Intangible"@en ;
+    rdfs:subClassOf sg:Thing ;
+    rdfs:comment "The :Intangible class groups together all individuals which do not exist in the physical world (i.e. have no extension in spacetime)."@en ;
+    .
+
+sg:Journal
+    a owl:Class ;
+    owl:disjointWith sg:Article , sg:BookChapter , sg:Book ;
+    sg:namespace "journals" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Journal"@en ;
+    rdfs:subClassOf sg:Product ;
+    rdfs:comment "The :Journal class represents a scholarly serial publication which is realized as a product publication in a particular medium (print, online, or CD-ROM)."@en ;
+    sg:keyProperty sg:doi , sg:issn , sg:pcode , sg:journalId ;
+    .
+
+sg:JournalBrand
+    a owl:Class ;
+    owl:disjointWith sg:BookSeries ;
+    sg:namespace "journal-brands" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Journal brand"@en ;
+    rdfs:subClassOf sg:Serial ;
+    rdfs:comment "The :JournalBrand class represents a scholarly serial publication, considered from both the scholarly and the commercial perspectives. Thus a journal brand is more than the sum of its product publications; it is an entity characterised by many properties, e.g. its founders, its impact factor, etc."@en ;
+    .
+
+sg:Metrics
+    a owl:Class ;
+    sg:namespace "metrics" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Metrics"@en ;
+    rdfs:subClassOf sg:Annotation ;
+    rdfs:comment "The :Metrics class represents a generic quantitative measurement taken so to gauge the size or impact of a phenomenon. "@en ;
+    .
+
+sg:Monograph
+    a owl:Class ;
+    sg:namespace "monographs" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Monograph"@en ;
+    rdfs:subClassOf sg:Work ;
+    rdfs:comment "The :Monograph class represents publications which appear separately in a new edition. For example, a book-edition."@en ;
+    .
+
+sg:Organization
+    a owl:Class ;
+    owl:disjointWith sg:Person ;
+    sg:namespace "organizations" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Organization"@en ;
+    rdfs:subClassOf sg:Agent ;
+    rdfs:comment "The :Organization class represents an organised body of people normally having a legal status."@en ;
+    .
+
+sg:Person
+    a owl:Class ;
+    owl:disjointWith sg:Organization ;
+    sg:namespace "persons" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Person"@en ;
+    rdfs:subClassOf sg:Agent ;
+    rdfs:comment "The :Person class represents a single person entity."@en ;
+    .
+
+sg:Product
+    a owl:Class ;
+    sg:namespace "products" ;
+    owl:disjointWith sg:Work ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Product"@en ;
+    rdfs:subClassOf sg:Publication ;
+    rdfs:comment "The :Product class groups together all publications which were created to be distributed and consumed as individual, self-contained entities."@en ;
+    .
+
+sg:ProductMarketCode
+    a owl:Class ;
+    sg:namespace "product-market-codes" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Product market code"@en ;
+    rdfs:subClassOf sg:Concept ;
+    rdfs:comment "The :ProductMarketCode class represents a ..."@en ;
+    .
+
+sg:Publication
+    a owl:Class ;
+    sg:namespace "publications" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Publication"@en ;
+    rdfs:subClassOf sg:Intangible ;
+    rdfs:comment "The :Publication class groups together all individuals (or part of) created as the result of the publishing process. Note that we are not referring here to the physical artefacts, but just their abstract counterparts."@en ;
+    .
+
+sg:PublicationEvent
+    a owl:Class ;
+    sg:namespace "publication-events" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Publication event"@en ;
+    rdfs:subClassOf sg:Event ;
+    rdfs:comment "The :PublicationEvent class groups together events that happen within the publishing process, broadly conceived. For example, the submission of an article, or the acceptance of a paper."@en ;
+    .
+
+sg:PublicationState
+    a owl:Class ;
+    sg:namespace "publication-states" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Publication state"@en ;
+    rdfs:subClassOf sg:Concept ;
+    rdfs:comment "The :PublicationState class groups together publish-state and review-state individuals."@en ;
+    .
+
+sg:PublishEvent
+    a owl:Class ;
+    owl:disjointWith sg:ReviewEvent ;
+    sg:namespace "publish-events" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Publish event"@en ;
+    rdfs:subClassOf sg:PublicationEvent ;
+    rdfs:comment "The :PublishEvent class represents events related to the publication of a document. This is intended in a strict sense, i.e. the time when a publication is made 'public'. In order to differentiate these events further, the :PublishState vocabulary is used."@en ;
+    .
+
+sg:PublishState
+    a owl:Class ;
+    owl:disjointWith sg:ReviewState ;
+    sg:namespace "publish-states" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Publish state"@en ;
+    rdfs:subClassOf sg:PublicationState ;
+    rdfs:comment "The :PublishState class provides a categorisation of the possible states a document may have after it has been published. For example, whether it’s an 'Advanced online publication' or an 'Issue publication'.  This categorisation is implemented as a SKOS vocabulary."@en ;
+    .
+
+sg:Publisher
+    a owl:Class ;
+    sg:namespace "publishers" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Publisher"@en ;
+    rdfs:subClassOf sg:Organization ;
+    rdfs:comment "The :Publisher class represents organizations involved in the publishing business."@en ;
+    .
+
+sg:ReviewEvent
+    a owl:Class ;
+    owl:disjointWith sg:PublishEvent ;
+    sg:namespace "review-events" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Review event"@en ;
+    rdfs:subClassOf sg:PublicationEvent ;
+    rdfs:comment "The :ReviewEvent class models events related to the reviewing of a document (before its publication). In order to differentiate these events further, the :ReviewState vocabulary is used."@en ;
+    .
+
+sg:ReviewState
+    a owl:Class ;
+    owl:disjointWith sg:PublishState ;
+    sg:namespace "review-states" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Review state"@en ;
+    rdfs:subClassOf sg:PublicationState ;
+    rdfs:comment "The :ReviewState class provides a categorisation of the possible states a document may have as a result of a reviewing process. For example, whether it’s been 'Received' or 'Accepted'.  This categorisation is implemented as a SKOS vocabulary."@en ;
+    .
+
+sg:Serial
+    a owl:Class ;
+    sg:namespace "serials" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Serial"@en ;
+    rdfs:subClassOf sg:Work ;
+    rdfs:comment "The :Serial class represents publications which appear in a new edition on a regular schedule. For example, a journal, a magazine or a blog. The :PublishEvent class is used to provide more details about the time, place and other contextual information relevant to when a new edition gets published."@en ;
+    .
+
+sg:Subject
+    a owl:Class ;
+    sg:namespace "subjects" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Subject"@en ;
+    rdfs:subClassOf sg:Category ;
+    rdfs:comment "The :Subject class represents a Springer Nature topic, field of study or research area which can be used to categorise the contents of a publication. The instances of :Subject are organised hierarchically using the SKOS vocabulary."@en ;
+    .
+
+sg:Tangible
+    a owl:Class ;
+    sg:namespace "tangibles" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Tangible"@en ;
+    rdfs:subClassOf sg:Thing ;
+    rdfs:comment "The :Tangible class groups together all entities with a spatial extension and that can participate in temporal events. Instances of :Tangible are normally the physical substrate of :Intangible entities, e.g. the physical realization of a book is the substrate for its symbolic contents."@en ;
+    .
+
+sg:TechnicalArticleType
+    a owl:Class ;
+    sg:namespace "technical-article-types" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Technical article type"@en ;
+    rdfs:subClassOf sg:Concept ;
+    rdfs:comment "The :TechnicalArticleType class represents the various technical kinds of publication which can be used to index and group content published by Springer Nature. These types are used in the A++ XML. The instances of :TechnicalArticleType are organised non-hierarchically using the SKOS vocabulary."@en ;
+    .
+
+sg:Thing
+    a owl:Class ;
+    sg:namespace "things" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Thing"@en ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:comment "The :Thing class groups together all individuals used by Springer Nature within the Springer Nature publishing world."@en ;
+    .
+
+sg:Concept
+    a owl:Class ;
+    sg:namespace "concepts" ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Concept"@en ;
+    rdfs:subClassOf sg:Intangible ;
+    rdfs:comment "The :Concept class groups together  all domain-specific categorisations relevant to the Springer Nature publishing world. All of the :Concept categorisations are implemented as self-contained reusable SKOS vocabularies (although not all of them are taxonomies in the strict sense of hierarchical vocabularies)."@en ;
+    .
+
+sg:Work
+    a owl:Class ;
+    sg:namespace "works" ;
+    owl:disjointWith sg:Product ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Work"@en ;
+    rdfs:subClassOf sg:Publication ;
+    rdfs:comment "The :Work class groups together all individuals (or part of) created as the result of the publishing process. Note that we are not referring here to the physical artefacts, but just their abstract counterparts."@en ;
+    .
+#
+# core/ontology.ttl
+#
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sgo: <http://www.springernature.com/scigraph/ontologies/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sg:
+    a owl:Ontology ;
+    dc:creator "Tony Hammond <mailto:tony.hammond@springernature.com>";
+    dc:creator "Michele Pasin <mailto:michele.pasin@springernature.com>";
+    dc:publisher "Springer Nature" ;
+    sg:webpage <http://www.springernature.com/scigraph> ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Springer Nature SciGraph Core Ontology"@en ;
+    rdfs:comment "The Springer Nature SciGraph Core Ontology is a formal model providing definitions for the key concepts of interest to content publishing at Springer Nature."@en ;
+    vann:preferredNamespacePrefix "sg" ;
+    vann:preferredNamespaceUri "http://www.springernature.com/scigraph/ontologies/core/" ;
+    .
+#
+# core/properties.ttl
+#
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix sgg: <http://www.springernature.com/scigraph/graphs/> .
+@prefix sgo: <http://www.springernature.com/scigraph/ontologies/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sg:abstract
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "abstract"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :abstract property specifies the abstract for a publication as a plain string."@en ;
+    .
+
+sg:abstractRights
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "abstract rights"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:accessRights ;
+    rdfs:comment "The :abstractRights property specifies an access right to the abstract section of a publication as a string value."@en ;
+    .
+
+sg:abstractTranslated
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "abstract translated"@en ;
+    rdfs:range rdf:langString ;
+    rdfs:comment "The :abstractTranslated property specifies the abstract for a publication as a language-tagged string."@en ;
+    .
+
+sg:accessRights
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "accessRights"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:rights ;
+    rdfs:comment "The :accessRights property specifies an access right to a publication (or part of it) as a string value."@en ;
+    .
+
+sg:acronym
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "acronym"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:nameInfo;
+    rdfs:comment "The :acronym property specifies an abbreviation formed from the initial letters of other words."@en ;
+    .
+
+sg:annotationAgent
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "annotation agent"@en ;
+    rdfs:domain sg:AnnotationEvent ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :annotation agent property specifies a string value which records the annotator agent in an annotation event."@en ;
+    .
+
+sg:annotationCategory
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:AnnotationEvent ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "annotation category"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :annotationCategory property specifies a category which is used to annotate a thing in an annotation event as a string value."@en ;
+    .
+
+sg:articleId
+    a owl:DatatypeProperty ;
+    # a owl:FunctionalProperty ; a owl:InverseFunctionalProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "articleId"@en ;
+    rdfs:domain sg:Article ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:id ;
+    rdfs:comment "The :articleId property specifies an internal ID for an article."@en ;
+    .
+
+sg:articleType
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "article type"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :articleType property specifies a string value for an article-type."@en ;
+    .
+
+sg:bibliographyRights
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "bibliography rights"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:accessRights ;
+    rdfs:comment "The :bibliographyRights property specifies an access right to the bibliography section of a publication as a string value."@en ;
+    .
+
+sg:body
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "body"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range rdf:langString ;
+    rdfs:comment "The :body property specifies the main body content of a publication as a language string."@en ;
+    .
+
+sg:bodyHtmlRights
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "body HTML rights"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:accessRights ;
+    rdfs:comment "The :bodyHtmlRights property specifies an access right to the HTML body of a publication as a string value."@en ;
+    .
+
+sg:bodyPdfRights
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "body PDF rights"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:accessRights ;
+    rdfs:comment "The :bodyPdfRights property specifies an access right to the PDF body of a publication as a string value."@en ;
+    .
+
+sg:bodyXml
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "body (XML)"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range rdf:langString ;
+    rdfs:comment "The :bodyXml property specifies the main body content of a publication in XML format as a language string."@en ;
+    .
+
+sg:bookType
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "book type"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :bookType property specifies a string value for a book type."@en ;
+    .
+
+sg:category
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "category"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :category property specifies the category, subject or topic of an entity as a string value."@en ;
+    .
+
+sg:chapterCount
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "chapter count"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sg:count ;
+    rdfs:comment "The :chapterCount property specifies a total count for the number of chapters within a publication (e.g. a book)."@en ;
+   .
+
+sg:chapterNumber
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "chapter number"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:publicationNumber ;
+    rdfs:comment "The :chapterNumber property specifies the number of the chapter as a string value."@en ;
+    .
+
+sg:citationRank
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:CitationMetrics ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "citationRank"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :citationRank property specifies the rank of a citation measurement as a string value."@en ;
+    .
+
+sg:city
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "city"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:placeInfo;
+    rdfs:comment "The :city property specifies the city location of a thing as a string value."@en ;
+    .
+
+sg:code
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "code"@en ;
+    rdfs:domain sg:Concept ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The :code property specifies an integer number representing an internal ID for an object. This property is used by the taxonomies for managing terms."@en ;
+    .
+
+sg:content
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "content"@en ;
+    rdfs:domain sg:Article ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :content property specifies a string type for the content of an article, e.g. 'full-text'."@en ;
+    .
+
+sg:copyrightHolder
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "copyright holder"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:rights ;
+    rdfs:comment "The :copyrightHolder property specifies the copyright holder of a publication as a string value."@en ;
+    .
+
+sg:copyrightYear
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "copyright year"@en ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:rights ;
+    rdfs:comment "The :copyrightYear property specifies the copyright year of a publication as a datetime year. This property typically appears together with the sg:copyrightHolder property."@en ;
+    .
+
+sg:count
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "count"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The :count property specifies a count value."@en ;
+    .
+
+sg:country
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "country"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:placeInfo;
+    rdfs:comment "The :country property specifies the country location of a thing as a string value."@en ;
+    .
+
+sg:coverDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "cover date"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :coverDate property specifies the full date of a publication as it is displayed on its cover. This is not necessarily the actual date of publication."@en ;
+    .
+
+sg:coverYear
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "cover year"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :coverDate property specifies the year date of a publication as it is displayed on its cover. This is not necessarily the actual date of publication."@en ;
+    .
+
+sg:coverYearMonth
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "cover year-month"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :coverDate property specifies the year and month date of a publication as it is displayed on its cover. This is not necessarily the actual date of publication."@en ;
+    .
+
+sg:database
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "database"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :database property specifies a database by a simple string value."@en ;
+    .
+
+sg:date
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "date"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :date property specifies the full date for a thing, e.g. a publication or an event."@en  ;
+    .
+
+sg:dateEnd
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "date end"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :dateEnd property specifies the end date for a thing, e.g. a publication or an event. Note that for a serial publication, this date relates to the publisher holdings which may not be the same as the actual publication end date."@en ;
+    .
+
+sg:dateInfo
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "dateInfo"@en ;
+    rdfs:comment "The :dateInfo property is an abstract property used to group together all date-related properties."@en  ;
+    .
+
+sg:dateStart
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "date start"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :dateStart property specifies the start date for a thing, e.g. a publication or an event. Note that for a serial publication, this date relates to the publisher holdings which may not be the same as the actual publication start date."@en ;
+    .
+
+sg:datetime
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "datetime"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:dateTime ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :datetime property specifies a system-generated datetime for an entity."@en  ;
+    .
+
+sg:dblpId
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "DBLP ID"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:id ;
+    rdfs:comment "The :dblpId property specifies an ID within the DBLP publications database."@en  ;
+    .
+
+sg:ddsId
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:subPropertyOf sg:id ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "DDS ID"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :ddsId property specifies an ID within the DDS dataset."@en ;
+    .
+
+sg:ddsIdJournalBrand
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "DDS ID (journal brand)"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :ddsIdJournalBrand property specifies an ID within the DDS dataset used for a journal brand."@en ;
+      .
+
+sg:description
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "description"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range rdf:langString ;
+    rdfs:comment "The :description property specifies a description for a Scigraph entity as a language string."@en ;
+    .
+
+sg:dimensionsId
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:subPropertyOf sg:id ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Dimensions ID"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :dimensionsId property specifies an ID within the Dimensions dataset."@en ;
+    .
+
+sg:doi
+    a owl:DatatypeProperty ;
+    # a owl:FunctionalProperty ; a owl:InverseFunctionalProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "DOI" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :doi property specifies a DOI number for a publication."@en ;
+    .
+
+sg:doiLink
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "DOI link"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:comment "The :doiLink property relates a publication to the URI minted from the DOI."@en ;
+    .
+
+sg:editionNumber
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "edition number"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:publicationNumber ;
+    rdfs:comment "The :editionNumber property specifies the number of the edition as a string value."@en ;
+    .
+
+sg:email
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "email"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :email property specifies an email address."@en ;
+    .
+
+sg:endYear
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "end year"@en ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :endYear property specifies an end year for a thing."@en ;
+    .
+
+sg:esmRights
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "esm rights"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:accessRights ;
+    rdfs:comment "The :esmRights property specifies an access right to the electronic supplementary material (ESM) section of a publication as a string value."@en ;
+    .
+
+sg:example
+    # rdfs:range rdfs:Resource ;
+    a owl:AnnotationProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "example"@en ;
+    rdfs:seeAlso void:exampleResource ;
+    rdfs:comment "The :example property specifies an example of an entity. This property is similar to void:exampleResource. But see also skos:example."@en ;
+    .
+
+sg:familyName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "family name" ;
+    rdfs:domain sg:Person ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :familyName property specifies the family name of a person."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:fundingAmount
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Grant ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "funding amount"@en ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The :fundingAmount property specifies the total original funding for a grant as a decimal number."@en ;
+    .
+
+sg:fundingCurrency
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Grant ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "funding currency"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :fundingCurrency property specifies the currency for the original funding of a grant as a string."@en ;
+    .
+
+sg:givenName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "given name" ;
+    rdfs:domain sg:Person ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :givenName property specifies the given name of a person."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:hasAgent
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has agent"@en ;
+    rdfs:domain sg:Event ;
+    rdfs:range sg:Agent ;
+    rdfs:comment "The :hasAgent property specifies an agent related to an event or one of its subclasses. Note: this property is abstract as it is mainly used for grouping sub-properties like sg:hasPerson."@en ;
+    .
+
+sg:hasAffiliation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has affiliation" ;
+    rdfs:domain sg:Contribution ;
+    rdfs:range sg:Affiliation ;
+    rdfs:comment "The :hasAffiliation property specifies the affiliation details of an agent, as it appears in the context of a publication contribution. Note that in most cases this information is non disambiguated or incomplete e.g. we may have an affiliation name but not an identifier."@en ;
+    .
+
+sg:hasAnnotationAgent
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has annotation agent"@en ;
+    rdfs:domain sg:AnnotationEvent ;
+    rdfs:range sg:Agent ;
+    rdfs:comment "The :hasAnnotationAgent property specifies a resource which identifies the annotator agent in an annotation event."@en ;
+    .
+
+sg:hasAnnotationCategory
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has annotation category"@en ;
+    rdfs:domain sg:AnnotationEvent ;
+    rdfs:range sg:Category ;
+    rdfs:comment "The :hasAnnotationCategory property specifies a category which is used to annotate a thing in an annotation event. "@en ;
+    .
+
+sg:hasAnnotationThing
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has annotation thing"@en ;
+    rdfs:domain sg:AnnotationEvent ;
+    rdfs:range owl:Thing ;
+    rdfs:comment "The :hasAnnotationThing property specifies a thing which is the subject of an annotation event. "@en ;
+      .
+
+sg:hasArticle
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has article"@en ;
+    rdfs:domain sg:PublicationEvent ;
+    rdfs:range sg:Article ;
+    rdfs:comment "The :hasArticle property relates a publication-event to an article."@en ;
+    .
+
+sg:hasArticleType
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has article-type"@en ;
+    rdfs:domain sg:Article ;
+    rdfs:range sg:ArticleType ;
+    rdfs:comment "The :hasArticleType relates an article to an article-type."@en ;
+    .
+
+sg:hasBook
+    a owl:ObjectProperty ;
+    rdfs:domain sg:BookChapter ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has book"@en ;
+    rdfs:range sg:Book ;
+    rdfs:comment "The :hasBook property relates a chapter to a book which contains it."@en ;
+    .
+
+sg:hasBookChapter
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Book ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has book chapter"@en ;
+    rdfs:range sg:BookChapter ;
+    rdfs:comment "The :hasBookChapter property relates a book to a chapter contained within it."@en ;
+    .
+
+sg:hasBookEdition
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has book edition"@en ;
+    rdfs:range sg:BookEdition ;
+    rdfs:comment "The :hasBookEdition property relates a publication (e.g. a book or book chapter) to the book edition which it belongs to."@en ;
+    .
+
+sg:hasBookSeries
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Book ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has book series"@en ;
+    rdfs:range sg:BookSeries ;
+    rdfs:comment "The :hasBookSeries property relates a book to the book series in which it appears."@en ;
+    .
+
+sg:hasCategory
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has category"@en ;
+    # rdfs:range sg:Category ;
+    rdfs:range rdfs:Resource ;
+    rdfs:comment "The :hasCategory property relates a category to a publication."@en ;
+    .
+
+sg:hasConference
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has conference"@en ;
+    rdfs:range sg:Conference ;
+    rdfs:comment "The :hasConference property relates a publication (e.g. a conference proceedings volume) to the conference event it relates to."@en ;
+    .
+
+sg:hasConferenceSeries
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Conference ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has conference series"@en ;
+    rdfs:range sg:ConferenceSeries ;
+    rdfs:comment "The :hasConferenceSeries property relates a conference to its series."@en ;
+    .
+
+sg:hasContribution
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has contribution"@en ;
+    rdfs:domain sg:Thing;
+    rdfs:range sg:Contribution ;
+    rdfs:comment "The :hasContribution property relates a Scigraph entity to a contributor-event that specifies the role an agent has in the context of the history of that entity. For example, a person could be the author, editor, reviewer of different publications at different times."@en ;
+    .
+
+sg:hasFieldOfResearchCode
+    a owl:ObjectProperty ;
+    rdfs:subPropertyOf sg:hasCategory ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has field-of-research code"@en ;
+    rdfs:range sg:FieldOfResearchCode ;
+    rdfs:comment "The :hasFieldOfResearchCode property relates an Australian and New Zealand Standard Research Classification (ANZSRC) Field of Research (FOR) code to a publication."@en ;
+    .
+
+sg:hasFundedPublication
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Grant ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has funded publication"@en ;
+    rdfs:range sg:Publication ;
+    rdfs:comment "The :hasFundedPublication property specifies a publication produced as an outcome of a grant to a funded project."@en ;
+    .
+
+sg:hasFundingOrganization
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Grant ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has funding organization"@en ;
+    rdfs:range sg:Organization ;
+    rdfs:comment "The :hasFundingOrganization property specifies an organization that has funded a grant."@en ;
+    .
+
+sg:hasJournal
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has journal"@en ;
+    rdfs:range sg:Journal ;
+    rdfs:comment "The :hasJournal property relates a publication to a journal."@en ;
+    .
+
+sg:hasJournalBrand
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has journal brand"@en ;
+    rdfs:range sg:JournalBrand ;
+    rdfs:comment "The :hasJournalBrand property relates a publication to a journal brand."@en ;
+    .
+
+sg:hasMetrics
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has metrics"@en ;
+    rdfs:range sg:Metrics ;
+    rdfs:comment "The :hasMetrics property relates a metrics object to a publication."@en ;
+    .
+
+sg:hasOrganization
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has organization"@en ;
+    rdfs:domain sg:Event ;
+    rdfs:range sg:Organization ;
+    rdfs:subPropertyOf sg:hasAgent ;
+    rdfs:comment "The :hasOrganization property specifies an organization related to an event or one of its subclasses."@en ;
+    .
+
+sg:hasPerson
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has person"@en ;
+    rdfs:domain sg:Event ;
+    rdfs:range sg:Person ;
+    rdfs:subPropertyOf sg:hasAgent ;
+    rdfs:comment "The :hasPerson property specifies a person related to an event or one of its subclasses. For example, the author of a :ContributionEvent. "@en ;
+    .
+
+sg:hasPrincipalInvestigator
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Grant ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has principal investigator"@en ;
+    rdfs:range sg:Person ;
+    rdfs:comment "The :hasPrincipalInvestigator property specifies the PI (principal investigator) associated with a grant."@en ;
+    .
+
+sg:hasProduct
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has product"@en ;
+    rdfs:range sg:Product ;
+    rdfs:domain sg:Work ;
+    rdfs:comment "The :hasProduct property relates an abstract work to the product which realizes it."@en ;
+    .
+
+sg:hasProductMarketCode
+    a owl:ObjectProperty ;
+    rdfs:subPropertyOf sg:hasCategory ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has product-market-code"@en ;
+    rdfs:range sg:ProductMarketCode ;
+    rdfs:comment "The :hasProductMarketCode property relates a product-market-code to a publication."@en ;
+    .
+
+sg:hasPublication
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has publication"@en ;
+    rdfs:domain sg:PublicationEvent ;
+    rdfs:range sg:Publication ;
+    rdfs:comment "The :hasPublication property relates a publication-event to a publication."@en ;
+    .
+
+sg:hasPublisher
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has publisher"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range sg:Publisher ;
+    rdfs:comment "The :hasPublisher property relates a publication to the organization that publishes it."@en ;
+    .
+
+sg:hasPublishEvent
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has publish event"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range sg:PublishEvent ;
+    rdfs:comment "The :hasPublishEvent property relates a publication to a publish-event that describes some recognized change in the status of a publication's publish history."@en ;
+    .
+
+sg:hasPublishState
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has publish state"@en ;
+    rdfs:domain sg:PublishEvent ;
+    rdfs:range sg:PublishState ;
+    rdfs:comment "The :hasPublishState property relates a publish-event to a publish-state that describes some recognized change in the status of a publication's publish history."@en ;
+    .
+
+sg:hasRecipientOrganization
+    a owl:ObjectProperty ;
+    rdfs:domain sg:Grant ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has recipient organization"@en ;
+    rdfs:range sg:Organization ;
+    rdfs:comment "The :hasRecipientOrganization property specifies an organization that has received a grant."@en ;
+    .
+
+sg:hasReviewEvent
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has review event"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range sg:ReviewEvent ;
+    rdfs:comment "The :hasReviewEvent property relates a publication to a review-event that describes some recognized change in the status of a publication's review history."@en ;
+    .
+
+sg:hasReviewState
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:domain sg:ReviewEvent ;
+    rdfs:label "has review state"@en ;
+    rdfs:range sg:ReviewState ;
+    rdfs:comment "The :hasReviewState property relates a review-event to a review-state that describes some recognized change in the status of a publication's review history."@en ;
+    .
+
+sg:hasRoot
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has root"@en ;
+    rdfs:domain sg:Concept ;
+    rdfs:range sg:Concept ;
+    rdfs:comment "The :hasRoot property relates a :Concept instance to a toplevel :Concept instance within the same domain model."@en ;
+    .
+
+sg:hasSerial
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has serial"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range sg:Serial ;
+    rdfs:comment "The :hasSerial property relates a publication to a serial."@en ;
+    .
+
+sg:hasSubject
+    a owl:ObjectProperty ;
+    rdfs:subPropertyOf sg:hasCategory ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has subject"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range sg:Subject ;
+    rdfs:comment "The :hasSubject property relates a publication to a subject term which describes one of the main topics the publication is about."@en ;
+    .
+
+sg:hasTechnicalArticleType
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has techincal-article-type"@en ;
+    rdfs:domain sg:Article ;
+    rdfs:range sg:TechnicalArticleType ;
+    rdfs:comment "The :hasTechnicalArticleType relates an article to a technical-article-type."@en ;
+    .
+
+sg:hasWork
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has work"@en ;
+    rdfs:range sg:Work ;
+    rdfs:domain sg:Product ;
+    rdfs:comment "The :hasWork property relates a product to an abstract work from which it derives, or which contains it."@en ;
+    .
+
+sg:homepage
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "homepage" ;
+    rdfs:domain sg:Thing ;
+    rdfs:comment "The :homepage property relates a Scigraph thing to the main page on the web that describes it."@en ;
+    .
+
+sg:id
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "ID"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :id property provides a root property for all Scigraph identity properties."@en ;
+    .
+
+sg:impactFactor
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:CitationMetrics ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "impact factor"@en ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The :impactFactor property specifies the impact factor of a citation measurement as a decimal number."@en ;
+    .
+
+sg:imprint
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "imprint"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :imprint property specifies the imprint of a publication as a string value."@en ;
+    .
+
+sg:indexingDatabase
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "indexing database"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :indexingDatabase property specifies the indexing database for an indexed publication as a string value."@en ;
+    .
+
+sg:intellectualUnitId
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "intellectual unit ID"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :intellectualUnitId property specifies the ID for an intellectual unit within the BFlux model."@en ;
+    .
+
+##
+
+sg:isAgentOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasAgent ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is agent of"@en ;
+    rdfs:comment "The :isAgentOf property is the inverse of the :hasAgent property."@en ;
+    .
+
+sg:isAffiliationOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasAffiliation ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is affiliation of" ;
+    rdfs:comment "The :isAffiliationOf property is the inverse of the :hasAffiliation property."@en ;
+    .
+
+sg:isArticleOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasArticle ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is article of"@en ;
+    rdfs:comment "The :isArticleOf property is the inverse of the :hasArticle property."@en ;
+    .
+
+sg:isArticleTypeOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasArticleType ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is article type of"@en ;
+    rdfs:comment "The :isArticleTypeOf property is the inverse of the :hasArticleType property."@en ;
+    .
+
+sg:isBookOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasBook ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is book of"@en ;
+    rdfs:comment "The :isBookOf property is the inverse of the :hasBook property."@en ;
+    .
+
+sg:isBookChapterOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasBookChapter ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is book chapter of"@en ;
+    rdfs:comment "The :isBookChapterOf property is the inverse of the :hasBookChapter property."@en ;
+    .
+
+sg:isBookEditionOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasBookEdition ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is book edition of"@en ;
+    rdfs:comment "The :isBookEditionOf property is the inverse of the :hasBookEdition property."@en ;
+    .
+
+sg:isBookSeriesOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasBookSeries ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is book series of"@en ;
+    rdfs:comment "The :isBookSeriesOf property is the inverse of the :hasBookSeries property."@en ;
+    .
+
+sg:isCategoryOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasCategory ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is category of"@en ;
+    rdfs:comment "The :isCategoryOf property is the inverse of the :isCategoryOf property."@en ;
+    .
+
+sg:isConferenceSeriesOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasConferenceSeries ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is conference series of"@en ;
+    rdfs:comment "The :isConferenceSeriesOf property is the inverse of the :hasConferenceSeries property."@en ;
+    .
+
+sg:isContributionOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasContribution ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is contribution of"@en ;
+    rdfs:comment "The :isContributionOf property is the inverse of the :hasContribution property."@en ;
+    .
+
+sg:isFieldOfResearchCodeOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasProductMarketCode ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is field-of-research code of"@en ;
+    rdfs:comment "The :isProductMarketCodeOf property is the inverse of the :hasProductMarketCode property."@en ;
+    .
+
+sg:isFundedPublicationOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasFundedPublication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is funded publication of"@en ;
+    rdfs:comment "The :isFundedPublicationOf property is the inverse of the :hasFundedPublication property."@en ;
+    .
+
+sg:isFundingOrganizationOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasFundingOrganization ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is funding organization of"@en ;
+    rdfs:comment "The :isFundingOrganizationOf property is the inverse of the :hasFundingOrganization property."@en ;
+    .
+
+sg:isJournalOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasJournal ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is journal of"@en ;
+    rdfs:comment "The :isJournalOf property is the inverse of the :hasJournal property."@en ;
+    .
+
+sg:isJournalBrandOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasJournalBrand ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is journal brand of"@en ;
+    rdfs:comment  "The :isJournalBrandOf property is the inverse of the :hasJournalBrand property."@en ;
+    .
+
+sg:isMetricsOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasMetrics ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is metrics of"@en ;
+    rdfs:comment "The :isMetricsOf property is the inverse of the :hasMetrics property."@en ;
+    .
+
+sg:isOrganizationOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasOrganization ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is organization of"@en ;
+    rdfs:subPropertyOf sg:isAgentOf ;
+    rdfs:comment "The :isOrganizationOf property is the inverse of the :hasOrganization property."@en ;
+    .
+
+sg:isPersonOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasAgent ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is person of"@en ;
+    rdfs:subPropertyOf sg:isAgentOf ;
+    rdfs:comment "The :isPersonOf property is the inverse of the :hasPerson property."@en ;
+    .
+
+sg:isPrincipalInvestigatorOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasPerson ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is principal investigator of"@en ;
+    rdfs:comment "The :isPrincipalInvestigatorOf property is the inverse of the :hasPrincipalInvestigator property."@en ;
+    .
+
+sg:isProductMarketCodeOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasAgent ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is product-market-code of"@en ;
+    rdfs:comment "The :isProductMarketCodeOf property is the inverse of the :hasProductMarketCode property."@en ;
+    .
+
+sg:isPublicationOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasPublication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is publication of"@en ;
+    rdfs:comment "The :isPublicationOf property is the inverse of the :hasPublication property."@en ;
+    .
+
+sg:isPublisherOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasPublisher ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is publisher of"@en ;
+    rdfs:comment "The :isPublisherOf property is the inverse of the :hasPublisher property."@en ;
+    .
+
+sg:isPublishEventOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasPublishEvent ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is publish event of"@en ;
+    rdfs:comment "The :isPublishEventOf property is the inverse of the :hasPublishEvent property."@en ;
+    .
+
+sg:isPublishStateOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasPublishState ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is publish state of"@en ;
+    rdfs:comment "The :isPublishStateOf property is the inverse of the :hasPublishState property."@en ;
+    .
+
+sg:isRecipientOrganizationOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasAgent ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is recipient organization of"@en ;
+    rdfs:comment "The :isRecipientOrganizationOf property is the inverse of the :hasRecipientOrganization property."@en ;
+    .
+
+sg:isReviewEventOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasReviewEvent ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is review event of"@en ;
+    rdfs:comment "The :isReviewEventOf property is the inverse of the :hasReviewEvent property."@en ;
+    .
+
+sg:isReviewStateOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasReviewState ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is review state of"@en ;
+    rdfs:comment "The :isReviewStateOf property is the inverse of the :hasReviewState property."@en ;
+    .
+
+sg:isRootOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasRoot ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is root of"@en ;
+    rdfs:comment "The :isRootOf property is the inverse of the :hasRoot property."@en ;
+    .
+
+sg:isSerialOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasSerial ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is serial of"@en ;
+    rdfs:comment "The :isSerialOf property is the inverse of the :hasSerial property."@en ;
+    .
+
+sg:isSubjectOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasSubject ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is subject of"@en ;
+    rdfs:comment "The :isSubjectOf property is the inverse of the :hasSubject property."@en ;
+    .
+
+sg:isWorkOf
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:hasWork ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "has work"@en ;
+    rdfs:comment "The :isWorkOf property is the inverse of the :hasWork property."@en ;
+    .
+
+##
+
+sg:isActivePublication
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is active publication"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "The :isActivePublication property marks whether a :Publication is currently being published."@en ;
+    .
+
+sg:isCorresponding
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is corresponding"@en ;
+    rdfs:domain sg:Contribution ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "The :isCorresponding property marks whether a :Contribution is by a corresponding author."@en ;
+    .
+
+sg:isGroup
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is group"@en ;
+    rdfs:domain sg:Contribution ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "The :isGroup property marks whether a :Contribution name refers to a collective agent, i.e. a group of people or an institution."@en ;
+    .
+
+sg:isHistoricalJournal
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is historical journal"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "The :isHistoricalJournal property marks whether a :Journal is an historical version of a more recent :Journal (marked by having a different ISSN). In order to retrieve the most recent version of it, the related :JournalBrand object should be used."@en ;
+    .
+
+sg:isIssueBased
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is issue-based"@en ;
+    rdfs:domain sg:Journal ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "The :isIssueBased property marks whether a journal publishes issues."@en ;
+    .
+
+sg:isLeaf
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is leaf"@en ;
+    rdfs:domain sg:Concept ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "The :isLeaf property marks whether a SKOS concept is a leaf SKOS concept."@en ;
+    .
+
+sg:isOpenAccess
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is open access"@en ;
+    rdfs:domain sg:Article ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "The :isOpenAccess property marks whether an article has an open access license."@en ;
+    .
+
+sg:isRoot
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "is root"@en ;
+    rdfs:domain sg:Concept ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "The :isRoot property marks whether a SKOS concept is a SKOS top concept."@en ;
+    .
+
+sg:isbn
+    a owl:DatatypeProperty ;
+    # a owl:FunctionalProperty ; a owl:InverseFunctionalProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "ISBN"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :isbn property specifies the ISBN number for a publication."@en ;
+    .
+
+sg:issn
+    a owl:DatatypeProperty ;
+    # a owl:FunctionalProperty ; a owl:InverseFunctionalProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "ISSN" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :issn property specifies an ISSN number for a serial."@en ;
+    .
+
+sg:issnElectronic
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:subPropertyOf sg:issn ;
+    rdfs:label "ISSN (electronic)" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :issnElectronic property specifies an ISSN number for a serial as an electronic publication."@en ;
+    .
+
+sg:issnPrint
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:subPropertyOf sg:issn ;
+    rdfs:label "ISSN (print)" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :issnPrint property specifies an ISSN number for a serial as a print publication."@en ;
+    .
+
+sg:issue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "issue" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :issue property specifies an issue label for a publication."@en ;
+    .
+
+sg:issueEnd
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "issue end"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :issueEnd property specifies the end issue for a serial publication. Note that this :issueEnd property relates to the publisher holdings which may not be the same as the actual publication issue end."@en ;
+    .
+
+sg:issueStart
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "issue start"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :issueStart property specifies the start issue for a serial publication. Note that this :issueStart property relates to the publisher holdings which may not be the same as the actual publication issue start."@en ;
+    .
+
+sg:keyProperty
+    a owl:AnnotationProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "key property"@en ;
+    rdfs:comment "The :keyProperty property specifies which are the properties used to unambiguously identify an entity type."@en ;
+    .
+
+sg:language
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "language"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :language property specifies the language of a publication as a string value."@en ;
+    .
+
+sg:license
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "license"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :license property specifies a the license terms for an object as a string."@en ;
+    .
+
+sg:medium
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Product ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "medium"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :medium property specifies the medium in which a product is rendered as a string value."@en ;
+    .
+
+sg:mesh
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "MeSH"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:seeAlso <http://id.nlm.nih.gov/mesh/> ;
+    rdfs:comment "The :mesh property relates a thing to a Medical Subject Heading (MeSH) term as a resource."@en ;
+    .
+
+sg:meshTerm
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "MeSH term"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso <http://id.nlm.nih.gov/mesh/> ;
+    rdfs:comment "The :meshTerm property specifies a Medical Subject Heading (MeSH) term as a string."@en ;
+   .
+
+sg:metadataRights
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "metadata rights"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:accessRights ;
+    rdfs:comment "The :metadataRights property specifies an access right to the metadata section of a publication as a string value."@en ;
+    .
+
+sg:name
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "name" ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :name property specifies the full name for a thing."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:nameInfo
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "name info"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:comment "The :nameInfo property is used for grouping all properties describing names, titles or labels for an object."@en ;
+    .
+
+sg:namespace
+    rdfs:domain owl:Class ;
+    a owl:AnnotationProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "namespace"@en ;
+    rdfs:comment "The :namespace property provides the RDF namespace used in creating instances of a class."@en ;
+    .
+
+sg:npgId
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:subPropertyOf sg:id ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "NPG ID"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :npgId property specifies an ID within the Nature.com dataset."@en ;
+    .
+
+sg:number
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "number"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The :number property specifies a sequence number for a thing, e.g. component such as a figure, or a conference number."@en ;
+   .
+
+sg:oldCode
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "old code"@en ;
+    rdfs:domain sg:Concept ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :oldCode property specifies a number or string previously used by the domain ontologies as an ID for an entity."@en ;
+    .
+
+sg:openAccess
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "open access"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :openAccess property specifies the open access policy of a publication as a string value."@en ;
+    .
+
+sg:orcid
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "ORCID"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:seeAlso <http://orcid.org/> ;
+    rdfs:comment "The :orcid property relates a publication to an ORCID record. As we currently have no persons as such registered in our data model, we use the :orcid property with the :Contribution component that proxies for a person."@en ;
+    .
+
+sg:order
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "order"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The :order property specifies a sequence number for an entity such as a figure, a dataset or a contributor."@en ;
+   .
+
+sg:otherCode
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "other code"@en ;
+    rdfs:domain sg:Concept ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :otherCode property specifies a number or string used by external applications as an ID for an entity."@en ;
+    .
+
+sg:pageEnd
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "page end" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :pageEnd property specifies an ending page number for a document."@en ;
+    .
+
+sg:pageStart
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "page start" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :pageStart property specifies a starting page number for a document."@en ;
+    .
+
+sg:pages
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "pages" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :pages property specifies a page range numbering for a document."@en ;
+    .
+
+sg:pcode
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "pcode"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :pcode property specifies a unique ID for a publication. The term :pcode derives from product code and has been used as a unique ID for publications such as journals, blogs, etc."@en ;
+    .
+
+sg:placeInfo
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "place info"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :placeInfo property is used for grouping all properties describing the location of a thing."@en ;
+    .
+
+sg:pluralLabel
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "plural label"@en ;
+    rdfs:range rdf:langString ;
+    rdfs:comment "The :pluralLabel property specifies a plural form for the preferred label."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:publicationDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication date"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :publicationDate property specifies the first known full date of a publication, either in electronic form or print, as a string."@en ;
+    .
+
+sg:publicationNumber
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication number"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :publicationNumber property specifies the number of the publication as a string value. Note: this property is used primarily for grouping purposes. "@en ;
+    .
+
+sg:publicationStartDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication start date"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf sg:publicationDate ;
+    rdfs:comment "The :publicationStartDate property specifies the full date of a publication's start as a string. Note that this date relates to the publisher holdings which may not be the same as the actual publication start date."@en ;
+    .
+
+sg:publicationEndDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication end date"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf sg:publicationDate ;
+    rdfs:comment "The :publicationEndDate property specifies the full date of a publication's end as a string. Note that this date relates to the publisher holdings which may not be the same as the actual publication end date."@en ;
+    .
+
+sg:publicationDateTime
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication datetime"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:dateTime ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :publicationDateTime property specifies the first known date of a publication, either in electronic form or print, including the time of publication."@en ;
+    .
+
+sg:publicationName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication name"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :publicationName property specifies a string name for an external publication."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:publicationYear
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication year"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :publicationYear property specifies the first known year date of a publication, either in electronic form or print, as a string."@en ;
+    .
+
+sg:publicationStartYear
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication start year"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :publicationStartYear property specifies the year date of a publication's start as a string. Note that this date relates to the publisher holdings which may not be the same as the actual publication start date."@en ;
+    .
+
+sg:publicationEndYear
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication end year"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :publicationEndYear property specifies the year date of a publication's end as a string. Note that this date relates to the publisher holdings which may not be the same as the actual publication end date."@en ;
+    .
+
+sg:publicationYearMonth
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication year-month"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :publicationYearMonth property specifies the first known year and month date of a publication, either in electronic form or print, as a string."@en ;
+    .
+
+sg:publicationStartYearMonth
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication start year-month"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :publicationStartYearMonth property specifies the year and month date of a publication's start as a string. Note that this date relates to the publisher holdings which may not be the same as the actual publication start date."@en ;
+    .
+
+sg:publicationEndYearMonth
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publication end year-month"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :publicationEndYearMonth property specifies the year and month date of a publication's end as a string. Note that this date relates to the publisher holdings which may not be the same as the actual publication end date."@en ;
+    .
+
+sg:publishedFamilyName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "published family name" ;
+    rdfs:domain sg:Event ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :publishedFamilyName property specifies the family name of a person, as it appears in the context of an event, e.g. a publication."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:publishedGivenName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "published given name" ;
+    rdfs:domain sg:Event ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :publishedGivenName property specifies the given name of a person, as it appears in the context of an event, e.g. a publication."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:publishedName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "published name" ;
+    rdfs:domain sg:Event ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :publishedName property specifies the full name of a person, as it appears in the context of an event, e.g. a publication."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:publisher
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "publisher"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :publisher property specifies the publisher of a publication as a string value."@en ;
+    .
+
+sg:pubmedId
+    a owl:DatatypeProperty ;
+    # a owl:FunctionalProperty ; a owl:InverseFunctionalProperty ;
+    rdfs:subPropertyOf sg:id ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "PubMed ID"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :pubmedId property specifies an ID within the PubMed dataset."@en ;
+    .
+
+sg:relation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "relation"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range sg:Publication ;
+    rdfs:comment "The :relation property relates a publication to a publication."@en ;
+    .
+
+sg:replacedBy
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:replaces ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "replaced by"@en ;
+    rdfs:comment "The :replacedBy property relates a thing to another thing that replaces it."@en ;
+    .
+
+sg:replaces
+    a owl:ObjectProperty ;
+    owl:inverseOf sg:replacedBy ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "replaces"@en ;
+    rdfs:comment "The :replaces property relates a thing to another thing that it replaces."@en ;
+    .
+
+sg:rights
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Publication ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "rights"@en ;
+    rdfs:range rdfs:Literal ;
+    rdfs:comment "The :rights property is not intended to be used directly but is supplied to group together, and facilitate querying of, various rights attributes, such as  copyright and access rights."@en ;
+    .
+
+sg:role
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "role" ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :role property specifies the role of an entity as a string, e.g. in the context of a :Contribution. This may be 'author' or 'editor'."@en ;
+    .
+
+sg:scigraphId
+    a owl:DatatypeProperty ;
+    # a owl:FunctionalProperty ; a owl:InverseFunctionalProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "Scigraph ID"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:id ;
+    rdfs:comment "The :scigraphId property provides a unique ID for a Scigraph thing. The :scigraphId value forms the local part of the full Scigraph URI for an entity name."@en ;
+    .
+
+sg:score
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "score"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The :score property specifies an evaluation metric associated with an entity and derived from some test regime. The property value is expressed as a decimal number."@en ;
+   .
+
+sg:shapeDataClient
+  # rdfs:range rdfs:Resource ;
+  a owl:AnnotationProperty ;
+  rdfs:isDefinedBy sg: ;
+  rdfs:label "shape data client"@en ;
+  rdfs:comment "The :shapeDataClient property specifies the data client that a SHACL shape is prepared for. The client may be a data source for imports, or a data sink for exports. See :shapeType for the shape data flow direction. Note that the client may be specified currently as a string, although later is intended to reference a data-clients: taxonomy term."@en ;
+  .
+
+sg:shapeDataGraph
+   # rdfs:range rdfs:Resource ;
+   a owl:AnnotationProperty ;
+   rdfs:isDefinedBy sg: ;
+   rdfs:label "shape data graph"@en ;
+   rdfs:comment "The :shapeDataGraph property specifies the data graph that a SHACL shape will be applied to."@en ;
+   .
+
+sg:shapeType
+   # rdfs:range rdfs:Resource ;
+   a owl:AnnotationProperty ;
+   rdfs:isDefinedBy sg: ;
+   rdfs:label "shape type"@en ;
+   rdfs:comment "The :shapeType property specifies whether a SHACL shape is used primarily for data ingestion (\"import\") or for data publishing ()\"export\")."@en ;
+   .
+
+sg:shortTitle
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "short title" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:nameInfo;
+    rdfs:comment "The :shortTitle property specifies an abbreviated title for a publication."@en ;
+    .
+
+sg:startYear
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "start year"@en ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :startYear property specifies a start year for a thing."@en ;
+    .
+
+sg:subtitle
+    a owl:DatatypeProperty ;
+    rdfs:domain sg:Thing ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "subtitle"@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:nameInfo;
+    rdfs:comment "The :subtitle property specifies a subtitle for a thing as a string value."@en ;
+    .
+
+sg:subtitleXml
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "subtitle (XML)"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:nameInfo;
+    rdfs:comment "The :subtitleXml property specifies a subtitle in XML format for a thing as a string value."@en ;
+    .
+
+sg:submittedBy
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "submitted by"@en ;
+    rdfs:domain sg:Subject ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :submittedBy property specifies the email address of a submitter. This property is used to record who submitted a new definition for a :Subject term."@en ;
+    .
+
+sg:subtypeLabel
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "subtype label"@en ;
+    rdfs:domain sg:Subject ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :subtypeLabel property specifies a label for a subject subtyoe."@en ;
+    rdfs:subPropertyOf sg:nameInfo;
+    .
+
+sg:test
+    # rdfs:domain rdfs:Resource ;
+    # rdfs:range rdfs:Resource ;
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "test"@en ;
+    rdfs:comment "The :test property specifies a general string test property."@en ;
+    .
+
+sg:timestamp
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "timestamp"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The :timestamp property specifies a generic timestamp for an object."@en ;
+    .
+
+sg:title
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "title"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:nameInfo;
+    rdfs:comment "The :title property specifies a title for a thing as a plain string."@en ;
+    .
+
+sg:titleAddedYear
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "title added year"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :titleAddedYear property specifies the year date in which a publication was added to the database."@en ;
+    .
+
+sg:titleTranslated
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "title translated"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range rdf:langString ;
+    rdfs:subPropertyOf sg:nameInfo;
+    rdfs:comment "The :titleTranslated property specifies a title for a thing as a language-tagged string."@en ;
+    .
+
+sg:titleXml
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "title (XML)"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf sg:nameInfo;
+    rdfs:comment "The :titleXml property specifies a title in XML format for a thing as a string value."@en ;
+    .
+
+sg:treeDepth
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "tree depth"@en ;
+    rdfs:domain sg:Concept ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The :treeDepth property specifies the depth of a term within a taxonomy tree. This property is generally computed by a build-time rule"@en ;
+    .
+
+sg:volume
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "volume" ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :volume property specifies a volume label for a publication."@en ;
+    .
+
+sg:volumeCount
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "volume count"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sg:count ;
+    rdfs:comment "The :volumeCount property specifies a total count for the number of volumes within a publication."@en ;
+   .
+
+sg:volumeEnd
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "volume end"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :volumeEnd property specifies the end volume for a serial publication. Note that this :volumeEnd property relates to the publisher holdings which may not be the same as the actual publication volume end."@en ;
+    .
+
+sg:volumeStart
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "volume start"@en ;
+    rdfs:domain sg:Publication ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The :volumeStart property specifies the start volume for a serial publication. Note that this :volumeStart property relates to the publisher holdings which may not be the same as the actual publication volume start."@en ;
+    .
+
+sg:year
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "year"@en ;
+    rdfs:domain sg:Event ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :date property specifies the year date of an event as a string."@en  ;
+    .
+
+sg:yearMonth
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "year-month"@en ;
+    rdfs:domain sg:Event ;
+    rdfs:range xsd:gYearMonth ;
+    rdfs:subPropertyOf sg:dateInfo ;
+    rdfs:comment "The :date property specifies the year and month date of an event as a string."@en  ;
+    .
+
+sg:webpage
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy sg: ;
+    rdfs:label "web page"@en ;
+    rdfs:domain sg:Thing ;
+    rdfs:comment "The :webpage property relates a Scigraph thing to a page on the web that describes it."@en ;
+    .
