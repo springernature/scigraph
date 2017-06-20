@@ -5,7 +5,7 @@
 1. Bring your laptop and charger.
 1. Install [Slack](https://slack.com/) which will be our main communication tool for the day.
 
-## Read up on the Docs 
+## Read up on the docs
 
 It would be great if you could take some time to familiarize yourself with the SciGraph data. Please use the following links to get started with it. 
 
@@ -16,7 +16,7 @@ It would be great if you could take some time to familiarize yourself with the S
 * [Querying GraphDB](https://www.w3.org/TR/rdf-sparql-query) 
 * [Querying Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/query-dsl.html) 
 
-#### Code Examples
+#### Code examples
 
 * [GraphDB](examples/graphdb)
 * [Elasticsearch](examples/elasticsearch)
@@ -24,9 +24,9 @@ It would be great if you could take some time to familiarize yourself with the S
 * [Sample Apps](examples/apps)
 
 
-## Think of some Hacking Ideas 
+## Think of some hacking Ideas 
 
-Here're some examples:
+Here are some examples:
 
 * What topics are newly emerging in sustainable cities research? What is attracting the most attention?
 * Who is putting money into work on cities?
