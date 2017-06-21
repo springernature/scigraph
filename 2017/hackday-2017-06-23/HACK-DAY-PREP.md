@@ -35,9 +35,4 @@ Here are some general themes to consider:
 * *Linked Data Browsing*: develop an intuitive and innovative approach to simply browse our linked data offering, making it easy and fun to explore -rather than to search- on top of linked data
 * *Predictive Analytics*: train a model using SciGraph data, e.g. funding patterns, to be able to predict the future for an institute or a journal based on their past - the data is there!
 
-Here are some more specific questions: 
-
-* What topics are newly emerging in *sustainable cities* research? What is attracting the most attention? Who is putting money into work on cities?
-* Can you do a forecast for a given journal with regards to research domain distribution / funding patterns?
-* Which conferences take place in subject areas that show an increase of funding over the last 5 years in a given geographical area?
-* How can we identify new areas of research, e.g. by linking article and subject over time to quantity, Impact Factor and number of new journals in a field and funding for articles in that field?
+*Note:* More specific ideas around these themes can be found (and edited) using this (Google doc)[https://docs.google.com/document/d/1LFiM2V-nX0lMqGgnfekaPwGQ4b7tYMi7CcFFFyyPESc/edit?usp=sharing]. 
