@@ -7,19 +7,17 @@ construct {
 }
 # from onto:explicit
 where {
-  bind ("Nature" as ?title)
+  bind ("978-0-230-50307-6" as ?isbn)
   {
-    ?jb a sg:JournalBrand ; sg:title ?title .
-    bind (?jb as ?s)
+    ?b a sg:Book ; sg:isbn ?isbn .
+    bind (?b as ?s)
     ?s ?p ?o .
   }
   union
   {
-    ?jb a sg:JournalBrand ; sg:title ?title .
-    bind (?jb as ?s)
-    ?j a sg:Journal .
-    ?j sg:hasJournalBrand ?jb .
-    bind (?j as ?s)
+    ?b a sg:Book ; sg:isbn ?isbn .
+    ?b sg:hasBookEdition ?be .
+    bind (?be as ?s)
     ?s ?p ?o .
   }
 }

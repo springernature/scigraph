@@ -1,9 +1,0 @@
-PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
-
-describe ?s ?bc
-where {
-    	?s sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" .
-    	?bc sg:hasBook ?s .
-}

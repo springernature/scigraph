@@ -1,8 +1,17 @@
-PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix onto: <http://www.ontotext.com/>
+prefix sg: <http://www.springernature.com/scigraph/ontologies/core/>
 
-describe ?s
+construct {
+  ?s ?p ?o
+}
+# from onto:explicit
 where {
-    	?s a sg:Grant .
-} limit 1
+  {
+    select ?s
+    where {
+      ?s a sg:Grant .
+    } limit 1
+  }
+  ?s ?p ?o .
+}

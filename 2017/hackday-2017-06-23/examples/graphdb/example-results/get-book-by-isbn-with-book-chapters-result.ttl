@@ -1,0 +1,33 @@
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix onto: <http://www.ontotext.com/> .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book , sg:Publication , sg:Thing , sg:Product ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-chapters/4116aea4578bb856e2623944a9b15294> a sg:BookChapter , sg:Publication , sg:Thing .
+
+<http://www.springernature.com/scigraph/things/book-chapters/0575fc217183b1a0fd1ac713a0e74d82> a sg:BookChapter , sg:Publication , sg:Thing .
+
+<http://www.springernature.com/scigraph/things/book-chapters/af8e2db84923b0d7ec1385c393ea8c52> a sg:BookChapter , sg:Publication , sg:Thing .
+
+<http://www.springernature.com/scigraph/things/book-chapters/ec367d78feb244ad125c53676b61aa9b> a sg:BookChapter , sg:Publication , sg:Thing .
+
+<http://www.springernature.com/scigraph/things/book-chapters/5d9f1383244082908b3502f443a78f3a> a sg:BookChapter , sg:Publication , sg:Thing .
+
+<http://www.springernature.com/scigraph/things/book-chapters/1ba7773d673cc12c885b1601df947176> a sg:BookChapter , sg:Publication , sg:Thing .
+
+<http://www.springernature.com/scigraph/things/book-chapters/a485e82f33f0d52d34b14331ae115c3e> a sg:BookChapter , sg:Publication , sg:Thing .
+
+<http://www.springernature.com/scigraph/things/book-chapters/38e64b2aeee455f3f8b3baa3cf7b9455> a sg:BookChapter , sg:Publication , sg:Thing .

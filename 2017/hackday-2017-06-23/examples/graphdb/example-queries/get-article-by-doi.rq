@@ -1,8 +1,12 @@
-PREFIX sg: <http://www.springernature.com/scigraph/ontologies/core/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX sgg: <http://www.springernature.com/scigraph/graphs/>
-describe ?s
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix onto: <http://www.ontotext.com/>
+prefix sg: <http://www.springernature.com/scigraph/ontologies/core/>
+
+construct {
+  ?s ?p ?o
+}
+# from onto:explicit
 where {
-    ?s a sg:Article .
-    ?s sg:doi "10.1038/nature13195"
+  ?s a sg:Article ; sg:doi "10.1038/nature13195" .
+  ?s ?p ?o .
 }

@@ -1,0 +1,31 @@
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://www.springernature.com/scigraph/things/books/b476548c4d5aa2a29ec56eaae9e815a9> a sg:Book , sg:Publication , sg:Thing , sg:Product ;
+	sg:hasBookEdition <http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> ;
+	sg:scigraphId "b476548c4d5aa2a29ec56eaae9e815a9" ;
+	sg:ddsId "86474791" ;
+	sg:doi "10.1057/9780230503076" ;
+	sg:isbn "978-0-230-50307-6" ;
+	sg:medium "eBook" ;
+	sg:shortTitle "Horner/Zlosnik, Gothic and the Comic Turn <eBook>" .
+
+<http://www.springernature.com/scigraph/things/book-editions/11bc5bae7a42b324e2096429cf4f0f67> a sg:BookEdition , sg:Publication , sg:Thing ;
+	sg:scigraphId "11bc5bae7a42b324e2096429cf4f0f67" ;
+	sg:ddsId "304003" ;
+	sg:language "En" ;
+	sg:title "Gothic and the Comic Turn" ;
+	sg:hasContribution <http://www.springernature.com/scigraph/things/contributions/d9e66dd0153253a382972e0616d41f20> , <http://www.springernature.com/scigraph/things/contributions/7fa885b5242b83c97956e4155a90135e> ;
+	sg:intellectualUnitId "358108" ;
+	sg:editionNumber "1" ;
+	sg:chapterCount "8"^^xsd:integer ;
+	sg:publisher "Palgrave Macmillan UK" ;
+	sg:copyrightHolder "Palgrave Macmillan, a division of Macmillan Publishers Limited" ;
+	sg:copyrightYear "2005"^^xsd:gYear ;
+	sg:hasProductMarketCode <http://www.springernature.com/scigraph/things/product-market-codes/8> , <http://www.springernature.com/scigraph/things/product-market-codes/812000> , <http://www.springernature.com/scigraph/things/product-market-codes/411130> , <http://www.springernature.com/scigraph/things/product-market-codes/833000> , <http://www.springernature.com/scigraph/things/product-market-codes/821000> , <http://www.springernature.com/scigraph/things/product-market-codes/825000> ;
+	sg:bookType "Monograph" .
