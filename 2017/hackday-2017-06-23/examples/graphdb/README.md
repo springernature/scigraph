@@ -11,8 +11,8 @@ The queries below can be executed in your GraphDB Workbench: `<your-vm-ip-addres
 
 ## 2. Journal and JournalBrand Objects
 
-* **Journal and JournalBrand Objects:** To retrieve information about a journal and journal brand object, see [get-journal-brand-by-title-with-journal.rq](example-queries/get-journal-brand-by-title-with-journal.rq),
- and see [get-journal-brand-by-title-with-journal-result.ttl](example-results/get-journal-brand-by-title-with-journal-result.ttl) for the result in Turtle format.
+* **Journal and JournalBrand Objects:** To retrieve information about a journal and journal brand object, see [get-journal-brand-by-title-with-journals.rq](example-queries/get-journal-brand-by-title-with-journals.rq),
+ and see [get-journal-brand-by-title-with-journals-result.ttl](example-results/get-journal-brand-by-title-with-journals-result.ttl) for the result in Turtle format.
 
 ## 3. BookEdition, Book and BookChapter Objects
 
