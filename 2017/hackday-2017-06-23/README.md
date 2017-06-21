@@ -39,6 +39,17 @@ Please use the following links to get started with the SciGraph data.
 * [Kibana](examples/kibana)
 * [Sample Apps](examples/apps)
 
+## Hacking Ideas 
+
+Here are some general themes to consider:
+
+* *Data Visualization*: Develop insightful dashboards on top of our data, e.g. visually appealing journal or institutional pages
+* *Information Retrieval*: Text data mine our abstracts and grants description texts to better understand what the content is really about by extracting contained facts
+* *Linked Data Browsing*: develop an intuitive and innovative approach to simply browse our linked data offering, making it easy and fun to explore -rather than to search- on top of linked data
+* *Predictive Analytics*: train a model using SciGraph data, e.g. funding patterns, to be able to predict the future for an institute or a journal based on their past - the data is there!
+
+*Note:* More specific ideas around these themes can be found (and edited) using this (Google doc)[https://docs.google.com/document/d/1LFiM2V-nX0lMqGgnfekaPwGQ4b7tYMi7CcFFFyyPESc/edit?usp=sharing]. 
+
 
 ## Comms Channels
 
