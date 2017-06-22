@@ -9,7 +9,7 @@
 
 * GraphDB: `http://<your-vm-ip-address>:7200` (Springer Nature participants: http://kg-prod-graphdb-01.springer-sbm.com:7200/)
 * Elasticsearch 2.4.4: `http://<your-vm-ip-address>:9200/_plugin/head` (Springer Nature participants: http://10.230.13.141:9200/_plugin/head/)
-* Kibana 4.6.4: `http://<your-vm-ip-address>:5601` (Springer Nature participants: please [install your own](https://www.elastic.co/downloads/past-releases/kibana-4-6-4)).
+* Kibana 4.6.4: `http://<your-vm-ip-address>:5601` (Springer Nature participants: please [install your own](https://www.elastic.co/downloads/past-releases/kibana-4-6-4) and [configure it](https://www.elastic.co/guide/en/kibana/4.6/kibana-server-properties.html) to use the Elasticsearch host above).
 
 #### Advanced: Logging in to your VM
 
