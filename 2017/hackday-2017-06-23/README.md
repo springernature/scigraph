@@ -55,7 +55,7 @@ Here are some general themes to consider:
 
 Come talk to us if you get stuck. Alternatively, you can use one of the following channels:
 
-* Twitter: please use the hashtag [\#sn-scigraph](https://twitter.com/hashtag/sn-scigraph)
+* Twitter: please use the hashtag [\#SN_HackDay](https://twitter.com/hashtag/SN_HackDay)
 * [Slack](https://sn-hackday.slack.com)
 * If you want to share your code then please ask the organisers to invite you to [SN-HackDay](https://github.com/SN-HackDay) on GitHub
 
