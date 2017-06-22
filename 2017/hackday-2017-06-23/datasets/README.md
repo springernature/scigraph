@@ -29,6 +29,9 @@ The ontology source file is available [here](https://github.com/springernature/s
 - ES model is a flattened version of the ontology model (e.g. journal info denormalized into article info) 
 - Fields names generally the same: 'object_type.property'
 
+![scigraph-hack-day-2017-06-23](https://github.com/springernature/scigraph/blob/master/2017/hackday-2017-06-23/datasets/es_chapter_index_example.png)
+
+
 ## Disclaimer
 
 - Preview version just for the hack day - please do not redistribute 
