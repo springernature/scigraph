@@ -13,6 +13,8 @@ Welcome to the [Springer Nature SciGraph](http://www.springernature.com/scigraph
 
 ## Datasets
 
+The dataset contains around 1.1 billion triples (0.75 explicit). The following figure provides an overview of how the main types relate to each other, and how many instances they have. 
+
 ![scigraph-hack-day-2017-06-23](https://github.com/springernature/scigraph/wiki/images/scigraph-hack-day-2017-06-23.png)
 
 ## Ontology
