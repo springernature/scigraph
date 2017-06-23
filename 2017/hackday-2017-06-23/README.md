@@ -1,5 +1,9 @@
 # SciGraph Hack Day (23rd June 2017)
 
+## Presentations
+
+Please add your presentation slides to this [Google Doc](https://docs.google.com/presentation/d/14_-Ell32OO8eFsBql4vqJRrSBWfUIaY-DajqCtYYUG4/edit#slide=id.p) before 5pm.
+
 ## Quick Start
 
 1. Ask the organisers for the IP address of your VM
