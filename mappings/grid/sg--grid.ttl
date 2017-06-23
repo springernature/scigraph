@@ -1,0 +1,13 @@
+## Source namespace
+@prefix sg: <http://www.springernature.com/scigraph/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix grid: <http://www.grid.ac/ontology/> .
+
+##  Mappings - classes
+sg:Organization owl:equivalentClass grid:Organisation .
+
+##  Mappings - properties
