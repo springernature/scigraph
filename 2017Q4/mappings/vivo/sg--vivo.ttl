@@ -1,0 +1,14 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+
+##  Mappings - classes
+sg:Abstract owl:equivalentClass vivo:Abstract .
+sg:Publisher owl:equivalentClass vivo:Publisher .
+
+##  Mappings - properties

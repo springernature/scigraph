@@ -1,0 +1,121 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+@prefix sgg: <http://scigraph.springernature.com/graphs/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix shapes: <http://scigraph.springernature.com/shapes/> .
+
+# shape - articles.scigraph-2017-11-07-cc-by
+
+shapes:articles.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetObjectsOf rdf:type ;
+    sh:or (
+              [ sh:hasValue sg:Article ; ]
+              [ sh:hasValue sg:Contribution ; ]
+              [ sh:hasValue sg:Affiliation ; ]
+          )
+    .
+
+# shape - Article
+
+shapes:Article.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:Article ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:articles.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:Article model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:articleType ] ;
+    sh:property [ sh:path sg:coverDate ] ;
+    sh:property [ sh:path sg:coverYear ] ;
+    sh:property [ sh:path sg:coverYearMonth ] ;
+    sh:property [ sh:path sg:doi ] ;
+    sh:property [ sh:path sg:doiLink ] ;
+    sh:property [ sh:path sg:hasArticleType ] ;
+    sh:property [ sh:path sg:hasContributingOrganization ] ;
+    sh:property [ sh:path sg:hasContribution ] ;
+    sh:property [ sh:path sg:hasFieldOfResearchCode ] ;
+    sh:property [ sh:path sg:hasJournal ] ;
+    sh:property [ sh:path sg:hasJournalBrand ] ;
+    sh:property [ sh:path sg:hasSubject ] ;
+    sh:property [ sh:path sg:indexingDatabase ] ;
+    sh:property [ sh:path sg:isFundedPublicationOf ] ;
+    sh:property [ sh:path sg:isOpenAccess ] ;
+    sh:property [ sh:path sg:issnElectronic ] ;
+    sh:property [ sh:path sg:issnPrint ] ;
+    sh:property [ sh:path sg:issue ] ;
+    sh:property [ sh:path sg:language ] ;
+    sh:property [ sh:path sg:license ] ;
+    sh:property [ sh:path sg:openAccess ] ;
+    sh:property [ sh:path sg:pageStart ] ;
+    sh:property [ sh:path sg:pageEnd ] ;
+    sh:property [ sh:path sg:publicationDate ] ;
+    sh:property [ sh:path sg:publicationYear ] ;
+    sh:property [ sh:path sg:publicationYearMonth ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+    sh:property [ sh:path sg:title ] ;
+    sh:property [ sh:path sg:titleTranslated ] ;
+    sh:property [ sh:path sg:volume ] ;
+    sh:property [ sh:path sg:webpage ] ;
+    .
+
+# shape - Contribution
+
+shapes:Contribution.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:Contribution ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:articles.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:Contribution model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:hasAffiliation ] ;
+    sh:property [ sh:path sg:isCorresponding ] ;
+    sh:property [ sh:path sg:order ] ;
+    sh:property [ sh:path sg:publishedFamilyName ] ;
+    sh:property [ sh:path sg:publishedGivenName ] ;
+    sh:property [ sh:path sg:publishedName ] ;
+    sh:property [ sh:path sg:role ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+
+    .
+
+# shape - Affiliation
+
+shapes:Affiliation.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:Affiliation ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:articles.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:Affiliation model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:hasOrganization ] ;
+    sh:property [ sh:path sg:order ] ;
+    sh:property [ sh:path sg:publishedCity ] ;
+    sh:property [ sh:path sg:publishedCountry ] ;
+    sh:property [ sh:path sg:publishedDivision ] ;
+    sh:property [ sh:path sg:publishedName ] ;
+    sh:property [ sh:path sg:publishedPostcode ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+
+    .

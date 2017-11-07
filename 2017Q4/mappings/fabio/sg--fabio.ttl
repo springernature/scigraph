@@ -1,0 +1,20 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix fabio: <http://purl.org/spar/fabio/> .
+
+##  Mappings - classes
+sg:Article owl:equivalentClass fabio:Article .
+sg:Journal owl:equivalentClass fabio:Journal .
+sg:Publication owl:equivalentClass fabio:Expression .
+sg:Serial owl:equivalentClass fabio:Periodical .
+sg:Subject owl:equivalentClass fabio:SubjectTerm .
+
+##  Mappings - properties
+sg:hasSubject owl:equivalentProperty fabio:hasSubjectTerm .
+sg:publicationDate owl:equivalentProperty fabio:hasPublicationYear .
+sg:shortTitle owl:equivalentProperty fabio:hasShortTitle .

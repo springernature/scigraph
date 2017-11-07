@@ -1,0 +1,112 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+@prefix sgg: <http://scigraph.springernature.com/graphs/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix shapes: <http://scigraph.springernature.com/shapes/> .
+
+# shape - journals.scigraph-2017-11-07-cc-by
+
+shapes:journals.scigraph
+    a sh:NodeShape ;
+    sh:targetObjectsOf rdf:type ;
+    sh:or (
+              [ sh:hasValue sg:JournalBrand ; ]
+              [ sh:hasValue sg:Journal ; ]
+              [ sh:hasValue sg:MetricsEvent ; ]
+          )
+    .
+
+
+# shape - JournalBrand
+
+shapes:JournalBrand.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:JournalBrand ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:journals.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:JournalBrand model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:copyrightHolder ] ;
+    sh:property [ sh:path sg:endYear ] ;
+    sh:property [ sh:path sg:hasMetricsEvent ] ;
+    sh:property [ sh:path sg:hasProductMarketCode ] ;
+    sh:property [ sh:path sg:imprint ] ;
+    sh:property [ sh:path sg:isActivePublication ] ;
+    sh:property [ sh:path sg:isContentPublished ] ;
+    sh:property [ sh:path sg:language ] ;
+    sh:property [ sh:path sg:openAccess ] ;
+    sh:property [ sh:path sg:publisher ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+    sh:property [ sh:path sg:shortTitle ] ;
+    sh:property [ sh:path sg:startYear ] ;
+    sh:property [ sh:path sg:subtitle ] ;
+    sh:property [ sh:path sg:title ] ;
+    sh:property [ sh:path sg:titleAddedYear ] ;
+    sh:property [ sh:path sg:volumeCount ] ;
+    sh:property [ sh:path sg:volumeEnd ] ;
+    sh:property [ sh:path sg:volumeStart ] ;
+    sh:property [ sh:path sg:webpage ] ;
+
+    .
+
+# shape - Journal
+
+shapes:Journal.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:Journal ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:journals.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:Journal model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:doi ] ;
+    sh:property [ sh:path sg:hasJournalBrand ] ;
+    sh:property [ sh:path sg:isActivePublication ] ;
+    sh:property [ sh:path sg:isHistoricalJournal ] ;
+    sh:property [ sh:path sg:issn ] ;
+    sh:property [ sh:path sg:medium ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+
+    .
+
+# shape - MetricsEvent
+
+shapes:MetricsEvent.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:MetricsEvent ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:journals.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:MetricsEvent model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:annotationAgent ] ;
+    sh:property [ sh:path sg:annotationCategory ] ;
+    sh:property [ sh:path sg:citationRank ] ;
+    sh:property [ sh:path sg:hasAnnotationThing ] ;
+    sh:property [ sh:path sg:issnElectronic ] ;
+    sh:property [ sh:path sg:issnPrint ] ;
+    sh:property [ sh:path sg:impactFactor ] ;
+    sh:property [ sh:path sg:impactFactorFiveYear ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+    sh:property [ sh:path sg:year ] ;
+
+    .

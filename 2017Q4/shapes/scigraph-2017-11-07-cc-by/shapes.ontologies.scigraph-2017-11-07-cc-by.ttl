@@ -1,0 +1,141 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+@prefix sgg: <http://scigraph.springernature.com/graphs/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix shapes: <http://scigraph.springernature.com/shapes/> .
+
+# shape - ontologies.scigraph-2017-11-07-cc-by
+
+shapes:ontologies.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetObjectsOf rdf:type ;
+    sh:or (
+              [ sh:hasValue owl:Ontology ; ]
+              [ sh:hasValue owl:Class ; ]
+              [ sh:hasValue owl:ObjectProperty ; ]
+              [ sh:hasValue owl:DatatypeProperty ; ]
+              [ sh:hasValue owl:AnnotationProperty ; ]
+          )
+    .
+
+# shape - OwlOntology
+
+shapes:OwlOntology.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass owl:Ontology ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:ontologies.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the owl:Ontology model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path dc:creator ] ;
+    sh:property [ sh:path dc:publisher ] ;
+    sh:property [ sh:path dc:rights ] ;
+    sh:property [ sh:path dcterms:license ] ;
+    sh:property [ sh:path owl:versionInfo ] ;
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:comment ] ;
+    sh:property [ sh:path rdfs:isDefinedBy ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path rdfs:seeAlso ] ;
+    sh:property [ sh:path sg:webpage ] ;
+    sh:property [ sh:path vann:preferredNamespacePrefix ] ;
+    sh:property [ sh:path vann:preferredNamespaceUri ] ;
+
+    .
+
+# shape - OwlClass
+
+shapes:OwlClass.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass owl:Class ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:ontologies.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the owl:Class model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path rdfs:comment ] ;
+    sh:property [ sh:path rdfs:seeAlso ] ;
+    sh:property [ sh:path rdfs:isDefinedBy ] ;
+    sh:property [ sh:path sg:namespace ] ;
+    sh:property [ sh:path rdfs:subClassOf ] ;
+
+    .
+
+# shape - OwlDatatypeProperty
+
+shapes:OwlDatatypeProperty.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass owl:DatatypeProperty ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:ontologies.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the owl:DatatypeProperty model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:comment ] ;
+    sh:property [ sh:path rdfs:domain ] ;
+    sh:property [ sh:path rdfs:isDefinedBy ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path rdfs:range ] ;
+    sh:property [ sh:path rdfs:seeAlso ] ;
+    sh:property [ sh:path rdfs:subPropertyOf ] ;
+
+    .
+
+# shape - OwlObjectProperty
+
+shapes:OwlObjectProperty.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass owl:ObjectProperty ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:ontologies.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the owl:ObjectProperty model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path owl:inverseOf ] ;
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:comment ] ;
+    sh:property [ sh:path rdfs:domain ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path rdfs:isDefinedBy ] ;
+    sh:property [ sh:path rdfs:range ] ;
+    sh:property [ sh:path rdfs:seeAlso ] ;
+    sh:property [ sh:path rdfs:subPropertyOf ] ;
+
+    .
+
+# shape - OwlAnnotationProperty
+
+shapes:OwlAnnotationProperty.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass owl:AnnotationProperty ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:ontologies.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the owl:AnnotationProperty model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:comment ] ;
+    sh:property [ sh:path rdfs:isDefinedBy ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path rdfs:seeAlso ] ;
+    sh:property [ sh:path rdfs:subPropertyOf ] ;
+
+    .

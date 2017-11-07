@@ -1,0 +1,91 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+@prefix sgg: <http://scigraph.springernature.com/graphs/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix shapes: <http://scigraph.springernature.com/shapes/> .
+
+# shape - subjects.scigraph-2017-11-07-cc-by
+
+shapes:subjects.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetObjectsOf rdf:type ;
+    sh:or (
+              [ sh:hasValue skos:ConceptScheme ; ]
+              [ sh:hasValue skos:Concept ; ]
+              [ sh:hasValue sg:Subject ; ]
+          )
+    .
+
+# shape - SubjectConceptScheme
+
+shapes:SubjectConceptScheme.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass skos:ConceptScheme ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:subjects.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the skos:ConceptScheme model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path dcterms:description ] ;
+    sh:property [ sh:path dcterms:title ] ;
+    sh:property [ sh:path owl:versionInfo ] ;
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path skos:definition ] ;
+    sh:property [ sh:path skos:hasTopConcept ] ;
+    sh:property [ sh:path skos:prefLabel ] ;
+
+    .
+
+# shape - SubjectConcept
+
+shapes:SubjectConcept.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:Subject ;
+    sh:targetClass skos:Concept ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:subjects.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:Subject, skos:Concept model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+
+    sh:property [ sh:path sg:labelTreeDepth0 ] ;
+    sh:property [ sh:path sg:labelTreeDepth1 ] ;
+    sh:property [ sh:path sg:labelTreeDepth2 ] ;
+    sh:property [ sh:path sg:labelTreeDepth3 ] ;
+    sh:property [ sh:path sg:labelTreeDepth4 ] ;
+    sh:property [ sh:path sg:labelTreeDepth5 ] ;
+    sh:property [ sh:path sg:labelTreeDepth7 ] ;
+    sh:property [ sh:path sg:treeDepth ] ;
+
+    # sh:property [ sh:path sg:related ] ;
+    # sh:property [ sh:path sg:replacedBy ] ;
+    # sh:property [ sh:path sg:replaces ] ;
+
+    sh:property [ sh:path sg:webpage ] ;
+
+    sh:property [ sh:path skos:altLabel ] ;
+    sh:property [ sh:path skos:broader ] ;
+    sh:property [ sh:path skos:definition ] ;
+    sh:property [ sh:path skos:inScheme ] ;
+    sh:property [ sh:path skos:narrower ] ;
+    sh:property [ sh:path skos:note ] ;
+    sh:property [ sh:path skos:prefLabel ] ;
+    sh:property [ sh:path skos:related ] ;
+    sh:property [ sh:path skos:scopeNote ] ;
+    sh:property [ sh:path skos:topConceptOf ] ;
+
+    .

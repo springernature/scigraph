@@ -1,0 +1,31 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+## Target namespace
+@prefix npg: <http://ns.nature.com/terms/> .
+
+##  Mappings - classes
+sg:Agent skos:closeMatch npg:Agent .
+sg:Annotation skos:closeMatch npg:Annotation .
+sg:Article skos:closeMatch npg:Article .
+sg:Concept skos:closeMatch npg:Concept .
+sg:Contract skos:closeMatch npg:Contract .
+sg:Event skos:closeMatch npg:Event .
+sg:Journal skos:closeMatch npg:Journal .
+sg:Metrics skos:closeMatch npg:Metrics .
+sg:Organization skos:closeMatch npg:Organization .
+sg:Person skos:closeMatch npg:Person .
+sg:Publication skos:closeMatch npg:Publication .
+sg:Publisher skos:closeMatch npg:Publisher .
+sg:Serial skos:closeMatch npg:Serial .
+sg:Subject skos:closeMatch npg:Subject .
+sg:Thing skos:closeMatch npg:Thing .
+
+##  Mappings - properties
+sg:id skos:closeMatch npg:id .
+sg:mesh skos:closeMatch npg:mesh .
+sg:npgId skos:closeMatch npg:npgid .
+sg:orcid skos:closeMatch npg:orcid .

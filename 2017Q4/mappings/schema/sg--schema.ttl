@@ -1,0 +1,19 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix schema: <http://schema.org/> .
+
+##  Mappings - classes
+sg:Article owl:equivalentClass schema:Article .
+sg:Event owl:equivalentClass schema:Event .
+sg:Organization owl:equivalentClass schema:Organization .
+sg:Person owl:equivalentClass schema:Person .
+sg:PublishEvent owl:equivalentClass schema:PublicationEvent .
+sg:ReviewEvent owl:equivalentClass schema:ReviewAction .
+sg:Serial owl:equivalentClass schema:Periodical .
+
+##  Mappings - properties

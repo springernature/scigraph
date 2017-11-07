@@ -1,0 +1,15 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.1/> .
+
+##  Mappings - classes
+
+##  Mappings - properties
+sg:doi owl:equivalentProperty prism:doi .
+sg:publicationDate owl:equivalentProperty prism:publicationDate .
+sg:volume owl:equivalentProperty prism:volume .

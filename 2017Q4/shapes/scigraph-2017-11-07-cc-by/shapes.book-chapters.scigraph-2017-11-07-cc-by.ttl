@@ -1,0 +1,116 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+@prefix sgg: <http://scigraph.springernature.com/graphs/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix shapes: <http://scigraph.springernature.com/shapes/> .
+
+# shape - book-chapters.scigraph-2017-11-07-cc-by
+
+shapes:book-chapters.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetObjectsOf rdf:type ;
+    sh:or (
+              [ sh:hasValue sg:BookChapter ; ]
+              [ sh:hasValue sg:Contribution ; ]
+              [ sh:hasValue sg:Affiliation ; ]
+          )
+    .
+
+# shape - BookChapter
+
+shapes:BookChapter.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:BookChapter ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:book-chapters.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:BookChapter model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:abstractRights ] ;
+    sh:property [ sh:path sg:bibliographyRights ] ;
+    sh:property [ sh:path sg:bodyHtmlRights ] ;
+    sh:property [ sh:path sg:bodyPdfRights ] ;
+    sh:property [ sh:path sg:chapterNumber ] ;
+    sh:property [ sh:path sg:copyrightHolder ] ;
+    sh:property [ sh:path sg:copyrightYear ] ;
+    sh:property [ sh:path sg:doi ] ;
+    # sh:property [ sh:path sg:doiLink ] ;
+    sh:property [ sh:path sg:esmRights ] ;
+    sh:property [ sh:path sg:hasBook ] ;
+    sh:property [ sh:path sg:hasBookEdition ] ;
+    sh:property [ sh:path sg:hasContributingOrganization ] ;
+    sh:property [ sh:path sg:hasContribution ] ;
+    sh:property [ sh:path sg:hasFieldOfResearchCode ] ;
+    sh:property [ sh:path sg:language ] ;
+    sh:property [ sh:path sg:metadataRights ] ;
+    # sh:property [ sh:path sg:openAccess ] ;
+    sh:property [ sh:path sg:pageFirst ] ;
+    sh:property [ sh:path sg:pageLast ] ;
+    # sh:property [ sh:path sg:publicationYear ] ;
+    # sh:property [ sh:path sg:publisher ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+    sh:property [ sh:path sg:subtitle ] ;
+    sh:property [ sh:path sg:title ] ;
+    sh:property [ sh:path sg:webpage ] ;
+
+    .
+
+# shape - Contribution
+
+shapes:Contribution.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:Contribution ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:book-chapters.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:Contribution model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:hasAffiliation ] ;
+    sh:property [ sh:path sg:isCorresponding ] ;
+    sh:property [ sh:path sg:order ] ;
+    sh:property [ sh:path sg:publishedFamilyName ] ;
+    sh:property [ sh:path sg:publishedGivenName ] ;
+    sh:property [ sh:path sg:publishedName ] ;
+    sh:property [ sh:path sg:role ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+
+    .
+
+# shape - Affiliation
+
+shapes:Affiliation.scigraph-2017-11-07-cc-by
+    a sh:NodeShape ;
+    sh:targetClass sg:Affiliation ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
+    sg:shapeDataGraph sgg:book-chapters.scigraph-2017-11-07-cc-by ;
+    sg:shapeType "export" ;
+    rdfs:label "SHACL shape for the sg:Affiliation model (scigraph-2017-11-07-cc-by)" ;
+    sh:closed true ;
+
+    sh:property [ sh:path rdf:type ] ;
+    sh:property [ sh:path rdfs:label ] ;
+    sh:property [ sh:path sg:hasOrganization ] ;
+    sh:property [ sh:path sg:order ] ;
+    sh:property [ sh:path sg:publishedCity ] ;
+    sh:property [ sh:path sg:publishedCountry ] ;
+    sh:property [ sh:path sg:publishedDivision ] ;
+    sh:property [ sh:path sg:publishedName ] ;
+    sh:property [ sh:path sg:publishedPostcode ] ;
+    sh:property [ sh:path sg:scigraphId ] ;
+
+    .

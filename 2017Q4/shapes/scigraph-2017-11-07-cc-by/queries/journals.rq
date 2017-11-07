@@ -1,0 +1,61 @@
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sg: <http://scigraph.springernature.com/ontologies/core/>
+prefix sgg: <http://scigraph.springernature.com/graphs/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix vann: <http://purl.org/vocab/vann/>
+prefix void: <http://rdfs.org/ns/void#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix shapes: <http://scigraph.springernature.com/shapes/>
+
+construct {
+    ?s ?p ?o
+}
+where {
+  {
+      {
+          select distinct ?p
+          where {
+              graph sgg:shapes.journals.scigraph-2017-11-07-cc-by {
+                  ?shape sh:targetClass sg:JournalBrand .
+                  ?shape sh:property [ sh:path ?p ] .
+              }
+          }
+      }
+      ?s a sg:JournalBrand .
+      ?s ?p ?o .
+  }
+  union
+  {
+      {
+          select distinct ?p
+          where {
+              graph sgg:shapes.journals.scigraph-2017-11-07-cc-by {
+                  ?shape sh:targetClass sg:Journal .
+                  ?shape sh:property [ sh:path ?p ] .
+              }
+          }
+      }
+      ?s a sg:Journal .
+      ?s ?p ?o .
+  }
+  union
+  {
+      {
+          select distinct ?p
+          where {
+              graph sgg:shapes.journals.scigraph-2017-11-07-cc-by {
+                  ?shape sh:targetClass sg:MetricsEvent .
+                  ?shape sh:property [ sh:path ?p ] .
+              }
+          }
+      }
+      ?s a sg:Journal .
+      ?s ?p ?o .
+  }
+}

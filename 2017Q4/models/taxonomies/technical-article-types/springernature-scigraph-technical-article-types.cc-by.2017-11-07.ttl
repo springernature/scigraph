@@ -1,0 +1,172 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+@prefix sgg: <http://scigraph.springernature.com/graphs/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix technical-article-types: <http://scigraph.springernature.com/things/technical-article-types/> .
+
+<http://scigraph.springernature.com/things/technical-article-types/>
+    dcterms:description "The Technical Article Types Taxonomy is a categorization of kinds of publication which are used to index and group content published by Springer Nature."@en ;
+    dcterms:title "Technical Article Types Taxonomy"@en ;
+    a skos:ConceptScheme ;
+    skos:hasTopConcept technical-article-types:abstract, technical-article-types:announcement, technical-article-types:biographical-note, technical-article-types:book-review, technical-article-types:brief-communication, technical-article-types:editorial-notes, technical-article-types:erratum, technical-article-types:events, technical-article-types:interview, technical-article-types:letter, technical-article-types:media-report, technical-article-types:news, technical-article-types:original-paper, technical-article-types:product-notes, technical-article-types:review-paper, technical-article-types:unknown .
+
+technical-article-types:abstract
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Abstract"@en ;
+    skos:definition "An abstract."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Abstract"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:acknowledgments
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Acknowledgments"@en ;
+    skos:definition "A listing of active referees."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Acknowledgments"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:announcement
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Announcement"@en ;
+    skos:definition "Short announcement, usually from a society."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Announcement"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:biographical-note
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Biographical Note"@en ;
+    skos:definition "Used in professional journals for a short announcement about a person."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Biographical Note"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:book-review
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Book Review"@en ;
+    skos:definition "A book review."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Book Review"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:brief-communication
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Brief Communication"@en ;
+    skos:definition "Short article submitted for rapid publication and not usually reviewed that exhibits the same structure as a standard article."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Brief Communication"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:editorial-notes
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Editorial Notes"@en ;
+    skos:definition "An editorial."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Editorial Notes"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:erratum
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Erratum"@en ;
+    skos:definition "An article noting a correction to a previously published article."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Erratum"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:events
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Events"@en ;
+    skos:definition "A calendar of events."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Events"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:interview
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Interview"@en ;
+    skos:definition "An interview."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Interview"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:legacy
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Legacy"@en ;
+    skos:definition "Not to be used for new data. Internal use only."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Legacy"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:letter
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Letter"@en ;
+    skos:definition "A letter, or a reply to a letter."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Letter"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:media-report
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Media Report"@en ;
+    skos:definition "Used in professional journals for short announcements of books and other media."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Media Report"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:news
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "News"@en ;
+    skos:definition "Collection of news stories, usually from a society."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "News"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:original-paper
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Original Paper"@en ;
+    skos:definition "Standard article, usually presenting new results."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Original Paper"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:product-notes
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Product Notes"@en ;
+    skos:definition "Used in professional journals for short announcements about products."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Product Notes"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:report
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Report"@en ;
+    skos:definition "A longer report on the proceedings of an event or congress."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Report"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:review-paper
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Review Paper"@en ;
+    skos:definition "Standard article, interpreting previously published results."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Review Paper"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+
+technical-article-types:unknown
+    a sg:TechnicalArticleType, skos:Concept ;
+    rdfs:label "Unknown"@en ;
+    skos:definition "Unknown – Not supported. Do not use."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/technical-article-types/> ;
+    skos:prefLabel "Unknown"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/technical-article-types/> .
+

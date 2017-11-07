@@ -1,0 +1,13 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+##  Mappings - classes
+sg:Concept owl:equivalentClass skos:Concept .
+
+##  Mappings - properties

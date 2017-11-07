@@ -1,0 +1,13 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+
+##  Mappings - classes
+sg:Event owl:equivalentClass event:Event .
+
+##  Mappings - properties

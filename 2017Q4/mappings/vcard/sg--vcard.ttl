@@ -1,0 +1,14 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+##  Mappings - classes
+sg:Agent owl:equivalentClass vcard:Agent .
+sg:Type owl:equivalentClass vcard:Type .
+
+##  Mappings - properties

@@ -1,0 +1,16 @@
+## Source namespace
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+
+## Relation namespace
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+## Target namespace
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+##  Mappings - classes
+sg:Agent owl:equivalentClass dcterms:Agent .
+
+##  Mappings - properties
+sg:hasPublisher owl:equivalentProperty  dcterms:publisher .
+sg:hasSubject owl:equivalentProperty dcterms:subject .
+sg:title owl:equivalentProperty dcterms:title .

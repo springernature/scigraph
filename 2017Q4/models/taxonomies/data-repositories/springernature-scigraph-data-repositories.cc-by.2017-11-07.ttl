@@ -1,0 +1,1180 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sg: <http://scigraph.springernature.com/ontologies/core/> .
+@prefix sgg: <http://scigraph.springernature.com/graphs/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix data-repositories: <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/>
+    dcterms:description "The Data Repositories taxonomy is a categorization of research data repositories that have been evaluated by the Scientific Data team as being suitable for archiving research data in conjunction with a Springer Nature publication."@en ;
+    dcterms:title "Data Repositories Taxonomy"@en ;
+    a skos:ConceptScheme ;
+    owl:versionInfo "0.0.5" ;
+    skos:hasTopConcept <http://scigraph.springernature.com/things/data-repositories/1>, <http://scigraph.springernature.com/things/data-repositories/10>, <http://scigraph.springernature.com/things/data-repositories/100>, <http://scigraph.springernature.com/things/data-repositories/101>, <http://scigraph.springernature.com/things/data-repositories/105>, <http://scigraph.springernature.com/things/data-repositories/107>, <http://scigraph.springernature.com/things/data-repositories/108>, <http://scigraph.springernature.com/things/data-repositories/109>, <http://scigraph.springernature.com/things/data-repositories/11>, <http://scigraph.springernature.com/things/data-repositories/111>, <http://scigraph.springernature.com/things/data-repositories/112>, <http://scigraph.springernature.com/things/data-repositories/113>, <http://scigraph.springernature.com/things/data-repositories/115>, <http://scigraph.springernature.com/things/data-repositories/119>, <http://scigraph.springernature.com/things/data-repositories/124>, <http://scigraph.springernature.com/things/data-repositories/125>, <http://scigraph.springernature.com/things/data-repositories/127>, <http://scigraph.springernature.com/things/data-repositories/128>, <http://scigraph.springernature.com/things/data-repositories/129>, <http://scigraph.springernature.com/things/data-repositories/13>, <http://scigraph.springernature.com/things/data-repositories/130>, <http://scigraph.springernature.com/things/data-repositories/131>, <http://scigraph.springernature.com/things/data-repositories/132>, <http://scigraph.springernature.com/things/data-repositories/133>, <http://scigraph.springernature.com/things/data-repositories/134>, <http://scigraph.springernature.com/things/data-repositories/136>, <http://scigraph.springernature.com/things/data-repositories/137>, <http://scigraph.springernature.com/things/data-repositories/138>, <http://scigraph.springernature.com/things/data-repositories/139>, <http://scigraph.springernature.com/things/data-repositories/14>, <http://scigraph.springernature.com/things/data-repositories/140>, <http://scigraph.springernature.com/things/data-repositories/141>, <http://scigraph.springernature.com/things/data-repositories/142>, <http://scigraph.springernature.com/things/data-repositories/143>, <http://scigraph.springernature.com/things/data-repositories/144>, <http://scigraph.springernature.com/things/data-repositories/145>, <http://scigraph.springernature.com/things/data-repositories/146>, <http://scigraph.springernature.com/things/data-repositories/147>, <http://scigraph.springernature.com/things/data-repositories/148>, <http://scigraph.springernature.com/things/data-repositories/149>, <http://scigraph.springernature.com/things/data-repositories/15>, <http://scigraph.springernature.com/things/data-repositories/150>, <http://scigraph.springernature.com/things/data-repositories/151>, <http://scigraph.springernature.com/things/data-repositories/152>, <http://scigraph.springernature.com/things/data-repositories/153>, <http://scigraph.springernature.com/things/data-repositories/154>, <http://scigraph.springernature.com/things/data-repositories/155>, <http://scigraph.springernature.com/things/data-repositories/156>, <http://scigraph.springernature.com/things/data-repositories/157>, <http://scigraph.springernature.com/things/data-repositories/158>, <http://scigraph.springernature.com/things/data-repositories/159>, <http://scigraph.springernature.com/things/data-repositories/16>, <http://scigraph.springernature.com/things/data-repositories/160>, <http://scigraph.springernature.com/things/data-repositories/161>, <http://scigraph.springernature.com/things/data-repositories/162>, <http://scigraph.springernature.com/things/data-repositories/163>, <http://scigraph.springernature.com/things/data-repositories/164>, <http://scigraph.springernature.com/things/data-repositories/17>, <http://scigraph.springernature.com/things/data-repositories/19>, <http://scigraph.springernature.com/things/data-repositories/20>, <http://scigraph.springernature.com/things/data-repositories/21>, <http://scigraph.springernature.com/things/data-repositories/24>, <http://scigraph.springernature.com/things/data-repositories/25>, <http://scigraph.springernature.com/things/data-repositories/26>, <http://scigraph.springernature.com/things/data-repositories/28>, <http://scigraph.springernature.com/things/data-repositories/30>, <http://scigraph.springernature.com/things/data-repositories/31>, <http://scigraph.springernature.com/things/data-repositories/32>, <http://scigraph.springernature.com/things/data-repositories/33>, <http://scigraph.springernature.com/things/data-repositories/35>, <http://scigraph.springernature.com/things/data-repositories/39>, <http://scigraph.springernature.com/things/data-repositories/4>, <http://scigraph.springernature.com/things/data-repositories/40>, <http://scigraph.springernature.com/things/data-repositories/41>, <http://scigraph.springernature.com/things/data-repositories/42>, <http://scigraph.springernature.com/things/data-repositories/43>, <http://scigraph.springernature.com/things/data-repositories/44>, <http://scigraph.springernature.com/things/data-repositories/45>, <http://scigraph.springernature.com/things/data-repositories/46>, <http://scigraph.springernature.com/things/data-repositories/47>, <http://scigraph.springernature.com/things/data-repositories/49>, <http://scigraph.springernature.com/things/data-repositories/5>, <http://scigraph.springernature.com/things/data-repositories/51>, <http://scigraph.springernature.com/things/data-repositories/52>, <http://scigraph.springernature.com/things/data-repositories/54>, <http://scigraph.springernature.com/things/data-repositories/56>, <http://scigraph.springernature.com/things/data-repositories/6>, <http://scigraph.springernature.com/things/data-repositories/63>, <http://scigraph.springernature.com/things/data-repositories/66>, <http://scigraph.springernature.com/things/data-repositories/69>, <http://scigraph.springernature.com/things/data-repositories/7>, <http://scigraph.springernature.com/things/data-repositories/71>, <http://scigraph.springernature.com/things/data-repositories/72>, <http://scigraph.springernature.com/things/data-repositories/74>, <http://scigraph.springernature.com/things/data-repositories/75>, <http://scigraph.springernature.com/things/data-repositories/76>, <http://scigraph.springernature.com/things/data-repositories/77>, <http://scigraph.springernature.com/things/data-repositories/78>, <http://scigraph.springernature.com/things/data-repositories/80>, <http://scigraph.springernature.com/things/data-repositories/81>, <http://scigraph.springernature.com/things/data-repositories/82>, <http://scigraph.springernature.com/things/data-repositories/83>, <http://scigraph.springernature.com/things/data-repositories/86>, <http://scigraph.springernature.com/things/data-repositories/88>, <http://scigraph.springernature.com/things/data-repositories/89>, <http://scigraph.springernature.com/things/data-repositories/9>, <http://scigraph.springernature.com/things/data-repositories/90>, <http://scigraph.springernature.com/things/data-repositories/92>, <http://scigraph.springernature.com/things/data-repositories/94>, <http://scigraph.springernature.com/things/data-repositories/96>, <http://scigraph.springernature.com/things/data-repositories/97> .
+
+<http://scigraph.springernature.com/things/data-repositories/1>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/neuroscience> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000625> ;
+    sg:webpage <http://fcon_1000.projects.nitrc.org> ;
+    a skos:Concept ;
+    rdfs:label "Functional Connectomes Project International Neuroimaging Data-Sharing Initiative"@en ;
+    skos:altLabel "FCP/INDI"@en ;
+    skos:definition "Database for open data sharing of resting-state fMRI and DTI images collected from over 50 sites around the world. These data collections now contain comprehensive phentoypic information, openly available via data usage agreements."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Functional Connectomes Project International Neuroimaging Data-Sharing Initiative"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/10>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/molecular-biology>, <http://scigraph.springernature.com/things/subjects/structural-biology> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000584> ;
+    sg:webpage <http://www.bmrb.wisc.edu/> ;
+    a skos:Concept ;
+    rdfs:label "Biological Magnetic Resonance Data Bank"@en ;
+    skos:altLabel "BMRB"@en ;
+    skos:definition "BMRB collects, annotates, archives, and disseminates (worldwide in the public domain) the important spectral and quantitative data derived from NMR spectroscopic investigations of biological macromolecules and metabolites. The goal is to empower scientists in their analysis of the structure, dynamics, and chemistry of biological systems and to support further development of the field of biomolecular NMR spectroscopy."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Biological Magnetic Resonance Data Bank"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/100>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000325> ;
+    sg:webpage <http://www.ebi.ac.uk/pride/> ;
+    a skos:Concept ;
+    rdfs:label "PRIDE Archive"@en ;
+    skos:altLabel "PRIDE"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "PRIDE Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/101>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/molecular-biology>, <http://scigraph.springernature.com/things/subjects/structural-biology> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000613> ;
+    sg:webpage <http://pcddb.cryst.bbk.ac.uk/home.php> ;
+    a skos:Concept ;
+    rdfs:label "Protein Circular Dichroism Data Bank"@en ;
+    skos:altLabel "PCDDB"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Protein Circular Dichroism Data Bank"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/105>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/chemistry> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000455> ;
+    sg:webpage <http://pubchem.ncbi.nlm.nih.gov/> ;
+    a skos:Concept ;
+    rdfs:label "NCBI PubChem BioAssay"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NCBI PubChem BioAssay"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/107>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000417> ;
+    sg:webpage <http://rgd.mcw.edu> ;
+    a skos:Concept ;
+    rdfs:label "Rat Genome Database"@en ;
+    skos:altLabel "RGD"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Rat Genome Database"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/108>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/physical-sciences> ;
+    sg:webpage <http://durpdg.dur.ac.uk/HEPDATA/REAC> ;
+    a skos:Concept ;
+    rdfs:label "Reaction Database Standard Search Interface"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Reaction Database Standard Search Interface"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/109>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/health-sciences> ;
+    sg:webpage <http://rdocdb.nimh.nih.gov/> ;
+    a skos:Concept ;
+    rdfs:label "Research Domain Criteria Database"@en ;
+    skos:altLabel "RDoCdb"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Research Domain Criteria Database"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/11>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/systems-biology> ;
+    sg:otherWebpage <https://www.biosharing.org/biodbcore-000306> ;
+    sg:webpage <http://biomodels.net/> ;
+    a skos:Concept ;
+    rdfs:label "BioModels"@en ;
+    skos:definition "BioModels is a repository of computational models of biological processes. It allows users to search and retrieve mathematical models published in the literature. Many models are manually curated (to ensure reproducibility) and extensively cross-linked to publicly available reference information."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "BioModels"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/111>
+    sg:webpage <https://www.synapse.org> ;
+    a skos:Concept ;
+    rdfs:label "Sage Bionetworks"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Sage Bionetworks"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/112>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <https://biosharing.org/biodbcore-000705> ;
+    sg:webpage <http://www.seanoe.org> ;
+    a skos:Concept ;
+    rdfs:label "SEANOE"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "SEANOE"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/113>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/physical-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010163> ;
+    sg:webpage <http://simbad.u-strasbg.fr/simbad/> ;
+    a skos:Concept ;
+    rdfs:label "SIMBAD Astronomical Database"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "SIMBAD Astronomical Database"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/115>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/chemistry> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010719> ;
+    sg:webpage <https://spectradspace.lib.imperial.ac.uk:8443/handle/10042/13> ;
+    a skos:Concept ;
+    rdfs:label "SPECTRa"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "SPECTRa"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/119>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000328> ;
+    sg:webpage <https://www.ebi.ac.uk/ega/> ;
+    a skos:Concept ;
+    rdfs:label "The European Genome-phenome Archive"@en ;
+    skos:altLabel "EGA"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "The European Genome-phenome Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/124>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010230> ;
+    sg:webpage <http://reshare.ukdataservice.ac.uk/> ;
+    a skos:Concept ;
+    rdfs:label "UK Data Service - ReShare"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "UK Data Service - ReShare"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/125>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/physical-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010714> ;
+    sg:webpage <http://www.ukssdc.ac.uk/> ;
+    a skos:Concept ;
+    rdfs:label "UK Solar System Data Centre"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "UK Solar System Data Centre"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/127>
+    sg:webpage <http://www.ebi.ac.uk/uniprot/> ;
+    a skos:Concept ;
+    rdfs:label "UniprotKB"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "UniprotKB"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/128>
+    sg:webpage <https://pure.strath.ac.uk/portal/en/datasets/search.html> ;
+    a skos:Concept ;
+    rdfs:label "University of Strathclyde Pure"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "University of Strathclyde Pure"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/129>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000588> ;
+    sg:webpage <http://www.vectorbase.org/index.php> ;
+    a skos:Concept ;
+    rdfs:label "VectorBase"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "VectorBase"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/13>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/health-sciences> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000532> ;
+    sg:webpage <http://www.cancerimagingarchive.net/> ;
+    a skos:Concept ;
+    rdfs:label "The Cancer Imaging Archive"@en ;
+    skos:altLabel "TCIA"@en ;
+    skos:definition "The Cancer Imaging Archive (TCIA) is a large archive of medical images of cancer accessible for public download. All images are stored in DICOM file format. The images are organized as Collections, typically patients related by a common disease (e.g. lung cancer), image modality (MRI, CT, etc) or research focus."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "The Cancer Imaging Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/130>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms>, <http://scigraph.springernature.com/things/subjects/health-sciences> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000658> ;
+    sg:webpage <https://www.virtualskeleton.ch/> ;
+    a skos:Concept ;
+    rdfs:label "SICAS Medical Image Repository"@en ;
+    skos:altLabel "SMIR"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "SICAS Medical Image Repository"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/131>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010299> ;
+    sg:webpage <http://www.wdc-climate.de> ;
+    a skos:Concept ;
+    rdfs:label "World Data Center for Climate at DKRZ"@en ;
+    skos:altLabel "WDCC"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "World Data Center for Climate at DKRZ"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/132>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/molecular-biology>, <http://scigraph.springernature.com/things/subjects/structural-biology> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000511> ;
+    sg:webpage <http://wwpdb.org/> ;
+    a skos:Concept ;
+    rdfs:label "Worldwide Protein Data Bank"@en ;
+    skos:altLabel "wwPDB"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Worldwide Protein Data Bank"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/133>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000556> ;
+    sg:webpage <http://www.xenbase.org/common/> ;
+    a skos:Concept ;
+    rdfs:label "Xenbase"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Xenbase"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/134>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000575> ;
+    sg:webpage <http://zfin.org> ;
+    a skos:Concept ;
+    rdfs:label "Zebrafish Model Organism Database"@en ;
+    skos:altLabel "ZFIN"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Zebrafish Model Organism Database"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/136>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/ecosystem-ecology> ;
+    sg:webpage <http://www.aekos.org.au/> ;
+    a skos:Concept ;
+    rdfs:label "AEKOS - TERN Ecoinformatics"@en ;
+    skos:altLabel "AEKOS"@en ;
+    skos:definition "TERN AEKOS focuses on ecological plot data that are generated by land-based ecosystem projects that use survey, monitoring and experimental studies to collect raw data on plants, animals (including traits) and their immediate environments at the same location. Plot data are observations sampled by using scientific techniques such as quadrats, grids, transects, animal trap arrays and other structured sampling techniques."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "AEKOS - TERN Ecoinformatics"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/137>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biochemistry>, <http://scigraph.springernature.com/things/subjects/chemical-biology>, <http://scigraph.springernature.com/things/subjects/chemistry> ;
+    sg:webpage <http://www.strenda-db.org> ;
+    a skos:Concept ;
+    rdfs:label "Beilstein-Institut, STRENDA"@en ;
+    skos:definition "STRENDA DB is a storage and search platform supported by the Beilstein-Institut that incorporates the STRENDA Guidelines in a user-friendly, web-based system. If you are an author who is preparing a manuscript containing functional enzymology data, STRENDA DB provides you the means to ensure that your data sets are complete and valid before you submit them as part of a publication to a journal. Data entered in the STRENDA DB submission form are automatically checked for compliance with the STRENDA Guidelines; users receive warnings informing them when necessary information is missing. A successful formal compliance is confirmed by the awarding of a STRENDA Registry Number (SRN) and documented in a fact sheet (PDF) containing all input data that can be submitted with the manuscript to the journal. In addition, each dataset is assigned a DOI that allows reference and tracking of the data. The data become publicly available in the database only after the corresponding article has been peer-reviewed and published in a journal. The STRENDA Commission, comprising an international panel of highly-regarded scientists who have wide-ranging expertise in areas such as biochemistry, enzyme nomenclature, bioinformatics, systems biology, modelling, mechanistic enzymology and theoretical biology, has established standards for data reporting in enzymology research. The aim of these STRENDA Guidelines is to improve the quality of data published in the scientific literature and to enable researchers to compare, evaluate, interpret and reproduce experimental research results published in the literature and databases."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Beilstein-Institut, STRENDA"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/138>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biochemistry>, <http://scigraph.springernature.com/things/subjects/chemical-biology>, <http://scigraph.springernature.com/things/subjects/chemistry> ;
+    sg:webpage <http://cananolab.nci.nih.gov/caNanoLab/> ;
+    a skos:Concept ;
+    rdfs:label "caNanoLab"@en ;
+    skos:definition "caNanoLab is a data sharing portal designed to facilitate information sharing across the international biomedical nanotechnology research community to expedite and validate the use of nanotechnology in biomedicine. caNanoLab provides support for the annotation of nanomaterials with characterizations resulting from physico-chemical, in vitro and in vivo assays and the sharing of these characterizations and associated nanotechnology protocols in a secure fashion."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "caNanoLab"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/139>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/electron-microscopy>, <http://scigraph.springernature.com/things/subjects/tomography>, <http://scigraph.springernature.com/things/subjects/x-ray-crystallography> ;
+    sg:webpage <http://www.emdatabank.org/> ;
+    a skos:Concept ;
+    rdfs:label "EMDataBank"@en ;
+    skos:altLabel "EMDB"@en ;
+    skos:definition "The Electron Microscopy Data Bank (EMDB) is a public repository for electron microscopy density maps of macromolecular complexes and subcellular structures. It covers a variety of techniques, including single-particle analysis, electron tomography, and electron (2D) crystallography."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "EMDataBank"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/14>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/chemistry> ;
+    sg:otherWebpage <https://www.biosharing.org/biodbcore-000015> ;
+    sg:webpage <https://www.ebi.ac.uk/chembl/> ;
+    a skos:Concept ;
+    rdfs:label "ChEMBL"@en ;
+    skos:definition "ChEMBL is an open large-scale bioactivity database containing information largely manually extracted from the medicinal chemistry literature. Information regarding the compounds tested (including their structures), the biological or physicochemical assays performed on these and the targets of these assays are recorded in a structured form, allowing users to address a broad range of drug discovery questions."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "ChEMBL"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/140>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/ecology>, <http://scigraph.springernature.com/things/subjects/environmental-sciences> ;
+    sg:webpage <https://portal.edirepository.org/nis> ;
+    a skos:Concept ;
+    rdfs:label "Environmental Data Initiative"@en ;
+    skos:altLabel "EDI"@en ;
+    skos:definition "The EDI Data Portal contains environmental and ecological data packages contributed by a number of participating organizations."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Environmental Data Initiative"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/141>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:webpage <http://www.ebi.ac.uk/ena/> ;
+    a skos:Concept ;
+    rdfs:label "European Nucleotide Archive"@en ;
+    skos:altLabel "ENA"@en ;
+    skos:definition "The European Nucleotide Archive (ENA) provides a comprehensive record of the world's nucleotide sequencing information, covering raw sequencing data, sequence assembly information and functional annotation."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "European Nucleotide Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/142>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/flow-cytometry>, <http://scigraph.springernature.com/things/subjects/immunology> ;
+    sg:webpage <http://www.immport.org> ;
+    a skos:Concept ;
+    rdfs:label "ImmPort"@en ;
+    skos:altLabel "Immunology Database and Analysis Portal"@en ;
+    skos:definition "The Immunology Database and Analysis Portal (ImmPort) has been developed under the Bioinformatics Integration Support Contract (BISC) Phase II by the Northrop Grumman Information Technology Health Solutions team for the National Institutes of Health (NIH), National Institute of Allergy and Infectious Diseases (NIAID), Division of Allergy, Immunology, and Transplantation (DAIT)."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "ImmPort"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/143>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/proteomics> ;
+    sg:webpage <http://trace.ddbj.nig.ac.jp/jga/index_e.html> ;
+    a skos:Concept ;
+    rdfs:label "Japanese Genotype-phenotype Archive"@en ;
+    skos:altLabel "JGA"@en ;
+    skos:definition "The Japanese Genotype-phenotype Archive (JGA) is a service for permanent archiving and sharing of all types of individual-level genetic and de-identified phenotypic data resulting from biomedical research projects. The JGA contains exclusive data collected from individuals whose consent agreements authorize data release only for specific research use or to bona fide researchers. Strict protocols govern how information is managed, stored and distributed by the JGA. Once processed, all data are encrypted."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Japanese Genotype-phenotype Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/144>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/classification-and-taxonomy>, <http://scigraph.springernature.com/things/subjects/evolution> ;
+    sg:webpage <http://www.morphobank.org/> ;
+    a skos:Concept ;
+    rdfs:label "MorphoBank.org"@en ;
+    skos:definition "MorphoBank is a web application providing an online database and workspace for evolutionary research in systematics (the science of determining the evolutionary relationships among species). MorphoBank invites scientists producing peer-reviewed research to upload images and affiliate data with those images (labels, species names, etc.). MorphoBank also offers a platform for live collaboration on phylgoenetic matrices by teams in a private workspace where they can also affiliate images with phylogenetic matrices. MorphoBank stores digital versions of both text and image-based observations on phenotypes. Phylogenetic matrices (Nexus or TNT format), particularly phenotypical matrices, 2D (including JPEG, GIF, PNG, TIFF and Photoshop) and 3D (PLY, STL, ZIP, TIFF and DCM) image data and video (MPEG-4, QuickTime and WindowsMedia). MorphoBank also offer a Documents folder for additional files about their research such as pdfs, word documents, and text files (e.g., morphometric data, phylogenetic trees)."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "MorphoBank.org"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/145>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing> ;
+    sg:webpage <http://www.ncbi.nlm.nih.gov/assembly> ;
+    a skos:Concept ;
+    rdfs:label "NCBI Assembly"@en ;
+    skos:definition "Genome assembly organization and additional information."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NCBI Assembly"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/146>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biochemistry>, <http://scigraph.springernature.com/things/subjects/chemical-biology>, <http://scigraph.springernature.com/things/subjects/chemistry> ;
+    sg:webpage <http://pubchem.ncbi.nlm.nih.gov/> ;
+    a skos:Concept ;
+    rdfs:label "NCBI PubChem Substance"@en ;
+    skos:definition "PubChem is organized as three linked databases within the NCBI's Entrez information retrieval system. These are PubChem Substance, PubChem Compound, and PubChem BioAssay. PubChem also provides a fast chemical structure similarity search tool. More information about using each component database may be found using the links in the homepage."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NCBI PubChem Substance"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/147>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:webpage <http://www.unavco.org/data/data.html> ;
+    a skos:Concept ;
+    rdfs:label "UNAVCO, Inc."@en ;
+    skos:altLabel "UNAVCO"@en ;
+    skos:definition "UNAVCO promotes research by providing access to data that our community of geodetic scientists uses for quantifying the motions of rock, ice and water that are monitored by a variety of sensor types at or near the Earth's surface. After processing, these data enable millimeter-scale surface motion detection and monitoring at discrete points, and high-resolution strain imagery over areas of tens of square meters to hundreds of square kilometers. The data types include GPS/GNSS, imaging data such as from SAR and TLS, strain and seismic borehole data, and meteorological data."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "UNAVCO, Inc."@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/148>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biological-sciences>, <http://scigraph.springernature.com/things/subjects/business-and-commerce>, <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences>, <http://scigraph.springernature.com/things/subjects/health-sciences>, <http://scigraph.springernature.com/things/subjects/humanities>, <http://scigraph.springernature.com/things/subjects/physical-sciences>, <http://scigraph.springernature.com/things/subjects/scientific-community-and-society>, <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:webpage <https://zenodo.org/> ;
+    a skos:Concept ;
+    rdfs:label "Zenodo"@en ;
+    skos:definition "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities. ZENODO enables researchers, scientists, EU projects and institutions to: easily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science. display their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission. easily access and reuse shared research results."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Zenodo"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/149>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/neuroscience> ;
+    sg:webpage <http://neurodata.io/> ;
+    a skos:Concept ;
+    rdfs:label "NeuroData"@en ;
+    skos:definition "Updated from Open Connectome Project to NeuroData"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NeuroData"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/15>
+    sg:webpage <http://chg.geog.ucsb.edu/> ;
+    a skos:Concept ;
+    rdfs:label "Climate Hazards Group"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Climate Hazards Group"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/150>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biological-sciences>, <http://scigraph.springernature.com/things/subjects/business-and-commerce>, <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences>, <http://scigraph.springernature.com/things/subjects/health-sciences>, <http://scigraph.springernature.com/things/subjects/humanities>, <http://scigraph.springernature.com/things/subjects/physical-sciences>, <http://scigraph.springernature.com/things/subjects/scientific-community-and-society>, <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:webpage <http://researchdata.4tu.nl/en/home/> ;
+    a skos:Concept ;
+    rdfs:label "4TU.Centre for Research Data"@en ;
+    skos:definition "4TU.ResearchData (previously known as 3TU.Datacentrum) offers the knowledge, experience and the tools to archive research data in a standardized, secure and well-documented manner."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "4TU.Centre for Research Data"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/151>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biological-sciences>, <http://scigraph.springernature.com/things/subjects/business-and-commerce>, <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences>, <http://scigraph.springernature.com/things/subjects/health-sciences>, <http://scigraph.springernature.com/things/subjects/humanities>, <http://scigraph.springernature.com/things/subjects/physical-sciences>, <http://scigraph.springernature.com/things/subjects/scientific-community-and-society>, <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:webpage <https://snd.gu.se/sv> ;
+    a skos:Concept ;
+    rdfs:label "Swedish National Data Service"@en ;
+    skos:altLabel "SND"@en ;
+    skos:definition "At Swedish National Data Services we accept research data for conservation with the purpose of making them available for new research. We provide supportive data management services for researchers across the country."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Swedish National Data Service"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/152>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:webpage <https://www.usgs.gov/> ;
+    a skos:Concept ;
+    rdfs:label "U.S. Geological Survey"@en ;
+    skos:altLabel "USGS"@en ;
+    skos:definition "Considered as a project-specific repos, as only accepts USGS data (includes Sciencebase repository)"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "U.S. Geological Survey"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/153>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biological-sciences> ;
+    sg:webpage <https://dbarchive.biosciencedbc.jp/index.html> ;
+    a skos:Concept ;
+    rdfs:label "LSDB Archive"@en ;
+    skos:altLabel "Life Science Database Archive"@en ;
+    skos:definition "The Life Science Database Archive maintains and stores the datasets generated by life scientists in Japan in a long-term and stable state as national public goods."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "LSDB Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/154>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/high-throughput-screening>, <http://scigraph.springernature.com/things/subjects/imaging>, <http://scigraph.springernature.com/things/subjects/pathology> ;
+    sg:webpage <http://idr-demo.openmicroscopy.org/> ;
+    a skos:Concept ;
+    rdfs:label "University of Dundee"@en ;
+    skos:altLabel "IDR"@en ;
+    skos:definition "The IDR makes datasets that have never previously been accessible publicly available, allowing the community to search, view, mine and even process and analyze large, complex, multidimensional life sciences image data."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "University of Dundee"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/155>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/agriculture>, <http://scigraph.springernature.com/things/subjects/biological-sciences>, <http://scigraph.springernature.com/things/subjects/environmental-sciences>, <http://scigraph.springernature.com/things/subjects/social-sciences> ;
+    sg:webpage <https://dataverse.cirad.fr/> ;
+    a skos:Concept ;
+    rdfs:label "CIRAD Dataverse"@en ;
+    skos:altLabel "CIRAD"@en ;
+    skos:definition "French agency for agronomic research and international cooperation for the sustainable development of tropical and Mediterranean regions, CIRAD activities are in the life sciences, social sciences and engineering sciences applied to agriculture, food, the environment and the management of territories."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "CIRAD Dataverse"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/156>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences>, <http://scigraph.springernature.com/things/subjects/ecosystem-ecology> ;
+    sg:webpage <https://dataguru.lu.se/> ;
+    a skos:Concept ;
+    rdfs:label "Lund University"@en ;
+    skos:altLabel "DataGURU"@en ;
+    skos:definition "DataGURU aims to meet the needs of researchers involved in modelling of e.g. ecosystem services or vegetation, as well as researchers investigating population patterns with the aim to use one or another climate or environmental dataset as an explanatory variable. Though initially targeted to researchers within BECC, the aim of this project is to allow all researchers to extract climate, environmental and other spatial data for use within their research projects."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Lund University"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/157>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biological-sciences>, <http://scigraph.springernature.com/things/subjects/business-and-commerce>, <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences>, <http://scigraph.springernature.com/things/subjects/health-sciences>, <http://scigraph.springernature.com/things/subjects/humanities>, <http://scigraph.springernature.com/things/subjects/physical-sciences>, <http://scigraph.springernature.com/things/subjects/scientific-community-and-society>, <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:webpage <http://researchdata.reading.ac.uk/> ;
+    a skos:Concept ;
+    rdfs:label "University of Reading"@en ;
+    skos:definition "The University of Reading Research Data Archive is a multidisciplinary online service for the registration, preservation and publication of research data produced or collected at the University of Reading."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "University of Reading"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/158>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/neuroscience> ;
+    sg:webpage <https://web.gin.g-node.org/> ;
+    a skos:Concept ;
+    rdfs:label "G-Node"@en ;
+    skos:altLabel "GIN"@en ;
+    skos:definition ""@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "G-Node"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/159>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/x-ray-crystallography>, <http://scigraph.springernature.com/things/subjects/x-ray-diffraction> ;
+    sg:webpage <https://data.sbgrid.org/> ;
+    a skos:Concept ;
+    rdfs:label "Structural Biology Data Grid"@en ;
+    skos:altLabel "SBGrid"@en ;
+    skos:definition "We support publication of X-ray diffraction, MicroED, LLSM datasets, as well as structural models."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Structural Biology Data Grid"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/16>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/health-sciences> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000470> ;
+    sg:webpage <http://clinicaltrials.gov/> ;
+    a skos:Concept ;
+    rdfs:label "ClinicalTrials.gov"@en ;
+    skos:definition "ClinicalTrials.gov is a registry and results database of publicly and privately supported clinical studies of human participants conducted around the world."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "ClinicalTrials.gov"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/160>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/classification-and-taxonomy>, <http://scigraph.springernature.com/things/subjects/ecology> ;
+    sg:webpage <https://knb.ecoinformatics.org/> ;
+    a skos:Concept ;
+    rdfs:label "KNB: The Knowledge Network for Biocomplexity"@en ;
+    skos:altLabel "KNB"@en ;
+    skos:definition "An international repository intended to facilitate ecological and environmental research. For scientists, the KNB is an efficient way to share, discover, access and interpret complex ecological data. Due to rich contextual information provided with KNB data, scientists are able to integrate and analyze data with less effort. The data originate from a highly-distributed set of field stations, laboratories, research sites, and individual researchers. The foundation of the KNB is the rich, detailed metadata provided by researchers that collect data, which promotes both automated and manual integration of data into new projects. As part of the KNB effort, data management software is developed in a free and open source manner, so other groups can build upon the tools. The KNB is powered by the Metacat data management system, and is optimized for handling data sets described using the Ecological Metadata Language, but can store any XML-based metadata document."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "KNB: The Knowledge Network for Biocomplexity"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/161>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/physical-sciences> ;
+    sg:webpage <http://opendata.cern.ch/> ;
+    a skos:Concept ;
+    rdfs:label "CERN Open Data Portal"@en ;
+    skos:altLabel "opendata CERN"@en ;
+    skos:definition "The CERN Open Data portal is the access point to a growing range of data produced through the research performed at CERN. It disseminates the preserved output from various research activities, including accompanying software and documentation which is needed to understand and analyse the data being shared."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "CERN Open Data Portal"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/162>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/ocean-sciences> ;
+    sg:webpage <https://www.cefas.co.uk/cefas-data-hub/> ;
+    a skos:Concept ;
+    rdfs:label "Cefas Laboratory, UK"@en ;
+    skos:definition "The Centre for Environment, Fisheries and Aquaculture Science (Cefas) is a world leader in marine science and technology, providing innovative solutions for the aquatic environment, biodiversity and food security."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Cefas Laboratory, UK"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/163>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/ocean-sciences> ;
+    sg:webpage <http://metadata.imas.utas.edu.au/geonetwork/srv/eng/main.home> ;
+    a skos:Concept ;
+    rdfs:label "Institute for Marine and Antarctic Studies, University of Tasmania"@en ;
+    skos:altLabel "IMAS Data Portal"@en ;
+    skos:definition "The Institute for Marine and Antarctic Studies (IMAS) pursues multidisciplinary and interdisciplinary work to advance understanding of temperate marine, Southern Ocean, and Antarctic environments. IMAS research is characterised as innovative, relevant, and globally distinctive. Education at IMAS delivers world class programs, resulting in highly trained graduates who serve the needs of academic institutions, industry, government, and the community. IMAS is naturally advantaged by its Southern Ocean location proximal to Antarctica, and hosts one of the world's largest critical masses of marine and Antarctic researchers. IMAS also operate facilities and host data sets of national and global interest and to the benefit of the community. The guiding framework of IMAS is that all data that are not commercial-in-confidence or restricted by legislation or agreement are owned by the University on behalf of the community or Commonwealth, are hosted by an organisation, and are shared with researchers for analysis and interpretation. IMAS is committed to the concept of Open Data. The IMAS Data Portal is an online interface showcasing the IMAS metadata catalogue and all available IMAS data. The portal aims to make IMAS data freely and openly available for the benefit of Australian marine and environmental science as a whole."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Institute for Marine and Antarctic Studies, University of Tasmania"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/164>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biological-sciences>, <http://scigraph.springernature.com/things/subjects/geography>, <http://scigraph.springernature.com/things/subjects/health-sciences>, <http://scigraph.springernature.com/things/subjects/social-sciences> ;
+    sg:webpage <http://datacompass.lshtm.ac.uk/> ;
+    a skos:Concept ;
+    rdfs:label "London School of Hygiene & Tropical Medicine"@en ;
+    skos:altLabel "LSHTM Data Compass"@en ;
+    skos:definition "LSHTM Data Compass is a managed digital repository of research datasets produced by the London School of Hygiene & Tropical Medicine and its collaborators."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "London School of Hygiene & Tropical Medicine"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/17>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/molecular-biology>, <http://scigraph.springernature.com/things/subjects/structural-biology> ;
+    sg:otherWebpage <http://biosharing.org/biodbcore-000624> ;
+    sg:webpage <http://www.cxidb.org> ;
+    a skos:Concept ;
+    rdfs:label "Coherent X-ray Imaging Data Bank"@en ;
+    skos:altLabel "CXIDB"@en ;
+    skos:definition "The Coherent X-ray Imaging Data Bank (CXIDB) offers scientists from all over the world a unique opportunity to access data from Coherent X-ray Imaging (CXI) experiments. It arose from the need to share the terabytes of data generated from X-ray free-electron laser experiments although it caters to all light sources. Accessibility is crucial not only to make efficient use of experimental facilities, but also to improve the reproducibility of results and enable new research based on previous experiments."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Coherent X-ray Imaging Data Bank"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/19>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/molecular-biology>, <http://scigraph.springernature.com/things/subjects/structural-biology> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000016> ;
+    sg:webpage <http://www.crystallography.net/index.php> ;
+    a skos:Concept ;
+    rdfs:label "Crystallography Open Database"@en ;
+    skos:altLabel "COD"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Crystallography Open Database"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/20>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000628> ;
+    sg:webpage <http://www.ebi.ac.uk/dgva> ;
+    a skos:Concept ;
+    rdfs:label "Database of Genomic Variants Archive"@en ;
+    skos:altLabel "DGVa"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Database of Genomic Variants Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/21>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000558> ;
+    sg:webpage <http://dip.doe-mbi.ucla.edu/dip/Main.cgi> ;
+    a skos:Concept ;
+    rdfs:label "Database of Interacting Proteins"@en ;
+    skos:altLabel "DIP"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Database of Interacting Proteins"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/24>
+    sg:webpage <http://www.ncbi.nlm.nih.gov/gap> ;
+    a skos:Concept ;
+    rdfs:label "dbGAP"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "dbGAP"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/25>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000438> ;
+    sg:webpage <http://www.ncbi.nlm.nih.gov/snp> ;
+    a skos:Concept ;
+    rdfs:label "dbSNP"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "dbSNP"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/26>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000463> ;
+    sg:webpage <http://www.ncbi.nlm.nih.gov/dbvar/> ;
+    a skos:Concept ;
+    rdfs:label "dbVar"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "dbVar"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/28>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000027> ;
+    sg:webpage <http://www.ddbj.nig.ac.jp/> ;
+    a skos:Concept ;
+    rdfs:label "DNA DataBank of Japan"@en ;
+    skos:altLabel "DDBJ"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "DNA DataBank of Japan"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/30>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biological-sciences>, <http://scigraph.springernature.com/things/subjects/business-and-commerce>, <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences>, <http://scigraph.springernature.com/things/subjects/health-sciences>, <http://scigraph.springernature.com/things/subjects/humanities>, <http://scigraph.springernature.com/things/subjects/physical-sciences>, <http://scigraph.springernature.com/things/subjects/scientific-community-and-society>, <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000464> ;
+    sg:webpage <http://datadryad.org/> ;
+    a skos:Concept ;
+    rdfs:label "Dryad Digital Repository"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Dryad Digital Repository"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/31>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010412> ;
+    sg:webpage <http://www.earthchem.org/> ;
+    a skos:Concept ;
+    rdfs:label "EarthChem"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "EarthChem"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/32>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000599> ;
+    sg:webpage <http://www.ebi.ac.uk/metagenomics> ;
+    a skos:Concept ;
+    rdfs:label "EBI Metagenomics"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "EBI Metagenomics"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/33>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000310> ;
+    sg:webpage <http://www.ebi.ac.uk/ena/> ;
+    a skos:Concept ;
+    rdfs:label "EMBL Nucleotide Sequence Database"@en ;
+    skos:altLabel "ENA"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "EMBL Nucleotide Sequence Database"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/35>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000344> ;
+    sg:webpage <http://eupathdb.org/eupathdb/> ;
+    a skos:Concept ;
+    rdfs:label "Eukaryotic Pathogen Database Resources"@en ;
+    skos:altLabel "EuPathDB"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Eukaryotic Pathogen Database Resources"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/39>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000627> ;
+    sg:webpage <http://www.ebi.ac.uk/eva> ;
+    a skos:Concept ;
+    rdfs:label "European Variation Archive"@en ;
+    skos:altLabel "EVA"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "European Variation Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/4>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100000006> ;
+    sg:webpage <http://archaeologydataservice.ac.uk/> ;
+    a skos:Concept ;
+    rdfs:label "Archaeology Data Service"@en ;
+    skos:altLabel "ADS"@en ;
+    skos:definition "The Archaeology Data Service supports research, learning and teaching with freely available, high quality and dependable digital resources. It does this by preserving digital data in the long term, and by promoting and disseminating a broad range of data in archaeology. The ADS promotes good practice in the use of digital data in archaeology, it provides technical advice to the research community, and supports the deployment of digital technologies."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Archaeology Data Service"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/40>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/biological-sciences>, <http://scigraph.springernature.com/things/subjects/business-and-commerce>, <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences>, <http://scigraph.springernature.com/things/subjects/health-sciences>, <http://scigraph.springernature.com/things/subjects/humanities>, <http://scigraph.springernature.com/things/subjects/physical-sciences>, <http://scigraph.springernature.com/things/subjects/scientific-community-and-society>, <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000303> ;
+    sg:webpage <http://figshare.com/> ;
+    a skos:Concept ;
+    rdfs:label "figshare"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "figshare"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/41>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms>, <http://scigraph.springernature.com/things/subjects/flow-cytometry> ;
+    sg:otherWebpage <https://www.biosharing.org/biodbcore-000184> ;
+    sg:webpage <https://flowrepository.org/> ;
+    a skos:Concept ;
+    rdfs:label "FlowRepository"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "FlowRepository"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/42>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000037> ;
+    sg:webpage <http://flybase.org/> ;
+    a skos:Concept ;
+    rdfs:label "FlyBase"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "FlyBase"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/43>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000001> ;
+    sg:webpage <http://www.ncbi.nlm.nih.gov/genbank/> ;
+    a skos:Concept ;
+    rdfs:label "GenBank"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "GenBank"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/44>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000441> ;
+    sg:webpage <http://www.ncbi.nlm.nih.gov/geo/> ;
+    a skos:Concept ;
+    rdfs:label "Gene Expression Omnibus"@en ;
+    skos:altLabel "GEO"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Gene Expression Omnibus"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/45>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000164> ;
+    sg:webpage <http://genomernai.dkfz.de/GenomeRNAi//> ;
+    a skos:Concept ;
+    rdfs:label "GenomeRNAi"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "GenomeRNAi"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/46>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/classification-and-taxonomy> ;
+    sg:otherWebpage <https://www.biosharing.org/biodbcore-000635> ;
+    sg:webpage <http://www.gbif.org> ;
+    a skos:Concept ;
+    rdfs:label "The Global Biodiversity Information Facility"@en ;
+    skos:altLabel "GBIF"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "The Global Biodiversity Information Facility"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/47>
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010051> ;
+    sg:webpage <http://dataverse.harvard.edu> ;
+    a skos:Concept ;
+    rdfs:label "Harvard Dataverse"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Harvard Dataverse"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/49>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000183> ;
+    sg:webpage <http://www.fludb.org> ;
+    a skos:Concept ;
+    rdfs:label "Influenza Research Database"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Influenza Research Database"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/5>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000305> ;
+    sg:webpage <http://www.ebi.ac.uk/arrayexpress/> ;
+    a skos:Concept ;
+    rdfs:label "ArrayExpress"@en ;
+    skos:definition "ArrayExpress is a database of functional genomics experiments that can be queried and the data downloaded. It includes gene expression data from microarray and high throughput sequencing studies. Data is collected to MIAME and MINSEQE standards. Experiments are submitted directly to ArrayExpress or are imported from the NCBI GEO database."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "ArrayExpress"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/51>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000054> ;
+    sg:webpage <http://www.ebi.ac.uk/intact/> ;
+    a skos:Concept ;
+    rdfs:label "IntAct"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "IntAct"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/52>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/classification-and-taxonomy> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000597> ;
+    sg:webpage <http://www.itis.gov/> ;
+    a skos:Concept ;
+    rdfs:label "Integrated Taxonomic Information System"@en ;
+    skos:altLabel "ITIS"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Integrated Taxonomic Information System"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/54>
+    sg:webpage <https://edal.ipk-gatersleben.de/repos/pgp/> ;
+    a skos:Concept ;
+    rdfs:label "IPK Gatersleben"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "IPK Gatersleben"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/56>
+    sg:webpage <http://www.kimosys.org/> ;
+    a skos:Concept ;
+    rdfs:label "Kinetic Models of Biological Systems"@en ;
+    skos:altLabel "KiMoSys"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Kinetic Models of Biological Systems"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/6>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100000038> ;
+    sg:webpage <https://www1.data.antarctica.gov.au> ;
+    a skos:Concept ;
+    rdfs:label "Australian Antarctic Data Centre"@en ;
+    skos:altLabel "AADC"@en ;
+    skos:definition "The Australian Antarctic Data Centre (AADC) provides data collection and data management services in Australia's Antarctic Science Program. The AADC manages science data from Australia's Antarctic research, maps Australia's areas of interest in the Antarctic region, manages Australia's Antarctic state of the environment reporting, and provides advice and education and a range of other products."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Australian Antarctic Data Centre"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/63>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010273> ;
+    sg:webpage <http://www.marine-geo.org/index.php> ;
+    a skos:Concept ;
+    rdfs:label "Marine Geosciences Data System"@en ;
+    skos:altLabel "MGDS"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Marine Geosciences Data System"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/66>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000168> ;
+    sg:webpage <http://www.ebi.ac.uk/metabolights/> ;
+    a skos:Concept ;
+    rdfs:label "MetaboLights"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "MetaboLights"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/69>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000421> ;
+    sg:webpage <http://www.informatics.jax.org/> ;
+    a skos:Concept ;
+    rdfs:label "Mouse Genome Informatics"@en ;
+    skos:altLabel "MGI"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Mouse Genome Informatics"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/7>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010914> ;
+    sg:webpage <http://portal.aodn.org.au/aodn/> ;
+    a skos:Concept ;
+    rdfs:label "Australian Ocean Data Network"@en ;
+    skos:altLabel "AODN"@en ;
+    skos:definition "Australian Ocean Data Network (AODN) provides data collected by the Australian marine community. AODN's data is searchable via map interface and metadata catalogue. AODN is Australia's exhaustive repository for marine and climate data. AODN has merged with IMOS eMarine Information Infrastructure (eMII) Facility in May 2016. IMOS is a multi-institutional collaboration with a focus on open data access. It is ideally placed to manage the AODN on behalf of the Australian marine and climate community."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Australian Ocean Data Network"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/71>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:webpage <http://disc.gsfc.nasa.gov/> ;
+    a skos:Concept ;
+    rdfs:label "NASA Goddard Earth Sciences Data and Information Services Center"@en ;
+    skos:altLabel "GES DISC"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NASA Goddard Earth Sciences Data and Information Services Center"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/72>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/health-sciences> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000482> ;
+    sg:webpage <http://www.icpsr.umich.edu/icpsrweb/NAHDAP/index.jsp> ;
+    a skos:Concept ;
+    rdfs:label "National Addiction & HIV Data Archive Program"@en ;
+    skos:altLabel "NAHDAP"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "National Addiction & HIV Data Archive Program"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/74>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/health-sciences> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000491> ;
+    sg:webpage <http://ndar.nih.gov/> ;
+    a skos:Concept ;
+    rdfs:label "National Database for Autism Research"@en ;
+    skos:altLabel "NDAR"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "National Database for Autism Research"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/75>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/health-sciences> ;
+    sg:webpage <http://ndct.nimh.nih.gov/> ;
+    a skos:Concept ;
+    rdfs:label "National Database for Clinical Trials related to Mental Illness"@en ;
+    skos:altLabel "NDCT"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "National Database for Clinical Trials related to Mental Illness"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/76>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000444> ;
+    sg:webpage <http://www.ncbi.nlm.nih.gov/sra> ;
+    a skos:Concept ;
+    rdfs:label "NCBI Sequence Read Archive"@en ;
+    skos:altLabel "SRA"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NCBI Sequence Read Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/77>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/classification-and-taxonomy> ;
+    sg:otherWebpage <http://www.biosharing.org/bsg-000154> ;
+    sg:webpage <http://www.ncbi.nlm.nih.gov/taxonomy> ;
+    a skos:Concept ;
+    rdfs:label "NCBI Taxonomy"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NCBI Taxonomy"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/78>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/dna-sequencing>, <http://scigraph.springernature.com/things/subjects/next-generation-sequencing>, <http://scigraph.springernature.com/things/subjects/rna-sequencing> ;
+    sg:otherWebpage "https://www.biosharing.org/biodbcore-000636" ;
+    sg:webpage <http://www.ncbi.nlm.nih.gov/Traces/home/> ;
+    a skos:Concept ;
+    rdfs:label "NCBI Trace Archive"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NCBI Trace Archive"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/80>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010558> ;
+    sg:webpage <http://www.nerc.ac.uk/research/sites/data/> ;
+    a skos:Concept ;
+    rdfs:label "NERC Data Centres"@en ;
+    skos:altLabel "NERC"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NERC Data Centres"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/81>
+    sg:webpage <http://neuromorpho.org/neuroMorpho/index.jsp> ;
+    a skos:Concept ;
+    rdfs:label "NeuroMorpho.org"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NeuroMorpho.org"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/82>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010286> ;
+    sg:webpage <http://www.ncei.noaa.gov/> ;
+    a skos:Concept ;
+    rdfs:label "NOAA National Centers for Environmental Information"@en ;
+    skos:altLabel "NCEI"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NOAA National Centers for Environmental Information"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/83>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/physical-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100011583> ;
+    sg:webpage <http://nomad-repository.eu/> ;
+    a skos:Concept ;
+    rdfs:label "NoMaD Repository"@en ;
+    skos:altLabel "NoMaD"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "NoMaD Repository"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/86>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100000037> ;
+    sg:webpage <http://daac.ornl.gov/> ;
+    a skos:Concept ;
+    rdfs:label "Oak Ridge National Laboratory Distributed Active Archive Center"@en ;
+    skos:altLabel "ORNL DAAC"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Oak Ridge National Laboratory Distributed Active Archive Center"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/88>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:otherWebpage <https://www.biosharing.org/biodbcore-000655> ;
+    sg:webpage <https://osf.io/> ;
+    a skos:Concept ;
+    rdfs:label "Open Science Framework"@en ;
+    skos:altLabel "OSF"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Open Science Framework"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/89>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/neuroscience> ;
+    sg:otherWebpage <http://biosharing.org/biodbcore-000620> ;
+    sg:webpage <https://openfmri.org/> ;
+    a skos:Concept ;
+    rdfs:label "OpenfMRI"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "OpenfMRI"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/9>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms>, <http://scigraph.springernature.com/things/subjects/neuroscience> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000410>, <http://www.biosharing.org/biodbcore-000495> ;
+    sg:webpage <http://thebiogrid.org/> ;
+    a skos:Concept ;
+    rdfs:label "Biological General Repository for Interaction Datasets"@en ;
+    skos:altLabel "BioGRID"@en ;
+    skos:definition "BioGRID is an interaction repository with data compiled through comprehensive curation efforts. BioGRID currently holds over 980,000 interactions curated from both high-throughput datasets and individual focused studies, as derived from over 55,000 publications in the primary literature. Complete coverage of the entire literature is maintained for budding year (S. cerevisiae), fission yeast (S. pome), and thale cress (A. thaliana), and efforts to expand curation across multiple metazoan species are underway. All data are freely provided via the search index and available for download in standardized formats."@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Biological General Repository for Interaction Datasets"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/90>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/social-science> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010255> ;
+    sg:webpage <https://www.openicpsr.org/> ;
+    a skos:Concept ;
+    rdfs:label "openICPSR"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "openICPSR"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/92>
+    sg:webpage <https://ir.library.oregonstate.edu/xmlui/> ;
+    a skos:Concept ;
+    rdfs:label "Oregon State University Libraries"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "Oregon State University Libraries"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/94>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/earth-and-environmental-sciences> ;
+    sg:otherWebpage <http://service.re3data.org/repository/r3d100010134> ;
+    sg:webpage <http://www.pangaea.de/> ;
+    a skos:Concept ;
+    rdfs:label "PANGAEA"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "PANGAEA"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/96>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/genomics>, <http://scigraph.springernature.com/things/subjects/metabolomics>, <http://scigraph.springernature.com/things/subjects/protoemics> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000392> ;
+    sg:webpage <http://www.peptideatlas.org/> ;
+    a skos:Concept ;
+    rdfs:label "PeptideAtlas"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "PeptideAtlas"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
+<http://scigraph.springernature.com/things/data-repositories/97>
+    sg:hasSubject <http://scigraph.springernature.com/things/subjects/experimental-organisms>, <http://scigraph.springernature.com/things/subjects/health-sciences> ;
+    sg:otherWebpage <http://www.biosharing.org/biodbcore-000488> ;
+    sg:webpage <http://physionet.org/> ;
+    a skos:Concept ;
+    rdfs:label "PhysioNet"@en ;
+    skos:inScheme <http://scigraph.springernature.com/things/data-repositories/> ;
+    skos:prefLabel "PhysioNet"@en ;
+    skos:topConceptOf <http://scigraph.springernature.com/things/data-repositories/> .
+
