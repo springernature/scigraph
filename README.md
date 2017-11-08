@@ -1,5 +1,5 @@
-# SciGraph Dataset Downloads
+# SciGraph
 
 Welcome to the SciGraph project.
 
-Please see the [wiki](https://github.com/springernature/scigraph/wiki) for more information.
+Please see the [https://www.springernature/scigraph](https://www.springernature/scigraph) for more information.
