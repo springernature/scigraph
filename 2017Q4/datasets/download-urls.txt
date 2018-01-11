@@ -72,7 +72,7 @@ http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu
 http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-book-chapters-1901-1950.cc-by-nc.2017-11-07.tar.bz2
 http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-book-chapters-1801-1900.cc-by.2017-11-07.tar.bz2
 http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-book-chapters-1801-1900.cc-by-nc.2017-11-07.tar.bz2
-http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-conferences.cc-by.2017-11-07.tar.bz2
+http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-conferences.cc-zero.2017-11-07-UPDATED.tar.bz2
 http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-grants.cc-by-nc.2017-11-07.tar.bz2
 http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-index-check-events.cc-by.2017-11-07.tar.bz2
-http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-journals.cc-by.2017-11-07.tar.bz2
+http://s3-service-broker-live-afe45d64-24d0-4a96-b6a8-23b79e885eb7.s3-website.eu-central-1.amazonaws.com/2017-11-07/springernature-scigraph-journals.cc-by.2017-11-07-UPDATED.tar.bz2
