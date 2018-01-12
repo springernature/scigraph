@@ -47,6 +47,7 @@ shapes:JournalBrand.scigraph-2017-11-07-cc-by
     sh:property [ sh:path sg:isActivePublication ] ;
     sh:property [ sh:path sg:isContentPublished ] ;
     sh:property [ sh:path sg:language ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:openAccess ] ;
     sh:property [ sh:path sg:publisher ] ;
     sh:property [ sh:path sg:scigraphId ] ;
@@ -80,6 +81,7 @@ shapes:Journal.scigraph-2017-11-07-cc-by
     sh:property [ sh:path sg:isActivePublication ] ;
     sh:property [ sh:path sg:isHistoricalJournal ] ;
     sh:property [ sh:path sg:issn ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:medium ] ;
     sh:property [ sh:path sg:scigraphId ] ;
 
@@ -106,6 +108,7 @@ shapes:MetricsEvent.scigraph-2017-11-07-cc-by
     sh:property [ sh:path sg:issnPrint ] ;
     sh:property [ sh:path sg:impactFactor ] ;
     sh:property [ sh:path sg:impactFactorFiveYear ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:scigraphId ] ;
     sh:property [ sh:path sg:year ] ;
 

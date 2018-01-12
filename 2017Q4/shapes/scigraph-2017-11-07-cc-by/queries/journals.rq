@@ -55,7 +55,7 @@ where {
               }
           }
       }
-      ?s a sg:Journal .
+      ?s a sg:MetricsEvent .
       ?s ?p ?o .
   }
 }

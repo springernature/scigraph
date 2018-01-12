@@ -45,6 +45,7 @@ shapes:BookSeries.scigraph-2017-11-07-cc-by
     sh:property [ sh:path sg:issnElectronic ] ;
     sh:property [ sh:path sg:issnPrint ] ;
     sh:property [ sh:path sg:language ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:scigraphId ] ;
     sh:property [ sh:path sg:shortTitle ] ;
     sh:property [ sh:path sg:title ] ;
@@ -75,6 +76,7 @@ shapes:BookEdition.scigraph-2017-11-07-cc-by
     sh:property [ sh:path sg:hasContributingOrganization ] ;
     sh:property [ sh:path sg:hasContribution ] ;
     sh:property [ sh:path sg:hasProductMarketCode ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:publisher ] ;
     sh:property [ sh:path sg:scigraphId ] ;
     sh:property [ sh:path sg:subtitle ] ;
@@ -100,6 +102,7 @@ shapes:Book.scigraph-2017-11-07-cc-by
     sh:property [ sh:path sg:hasBookSeries ] ;
     sh:property [ sh:path sg:hasConference ] ;
     sh:property [ sh:path sg:isbn ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:medium ] ;
     sh:property [ sh:path sg:scigraphId ] ;
     sh:property [ sh:path sg:shortTitle ] ;
@@ -122,6 +125,7 @@ shapes:Contribution.scigraph-2017-11-07-cc-by
     sh:property [ sh:path rdfs:label ] ;
     sh:property [ sh:path sg:hasAffiliation ] ;
     sh:property [ sh:path sg:isCorresponding ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:order ] ;
     sh:property [ sh:path sg:publishedFamilyName ] ;
     sh:property [ sh:path sg:publishedGivenName ] ;
@@ -145,6 +149,7 @@ shapes:Affiliation.scigraph-2017-11-07-cc-by
     sh:property [ sh:path rdf:type ] ;
     sh:property [ sh:path rdfs:label ] ;
     sh:property [ sh:path sg:hasOrganization ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:order ] ;
     sh:property [ sh:path sg:publishedCity ] ;
     sh:property [ sh:path sg:publishedCountry ] ;

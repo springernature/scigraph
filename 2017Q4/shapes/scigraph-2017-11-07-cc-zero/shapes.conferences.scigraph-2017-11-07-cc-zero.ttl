@@ -13,9 +13,9 @@
 
 @prefix shapes: <http://scigraph.springernature.com/shapes/> .
 
-# shape - conferences.scigraph-2017-11-07-cc-by
+# shape - conferences.scigraph-2017-11-07-cc-zero
 
-shapes:conferences.scigraph-2017-11-07-cc-by
+shapes:conferences.scigraph-2017-11-07-cc-zero
     a sh:NodeShape ;
     sh:targetObjectsOf rdf:type ;
     sh:or (
@@ -26,32 +26,33 @@ shapes:conferences.scigraph-2017-11-07-cc-by
 
 # shape - ConferenceSeries
 
-shapes:ConferenceSeries.scigraph-2017-11-07-cc-by
+shapes:ConferenceSeries.scigraph-2017-11-07-cc-zero
     a sh:NodeShape ;
     sh:targetClass sg:ConferenceSeries ;
-    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
-    sg:shapeDataGraph sgg:conferences.scigraph-2017-11-07-cc-by ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-zero" ;
+    sg:shapeDataGraph sgg:conferences.scigraph-2017-11-07-cc-zero ;
     sg:shapeType "export" ;
-    rdfs:label "SHACL shape for the sg:ConferenceSeries model (scigraph-2017-11-07-cc-by)" ;
+    rdfs:label "SHACL shape for the sg:ConferenceSeries model (scigraph-2017-11-07-cc-zero)" ;
     sh:closed true ;
 
     sh:property [ sh:path rdf:type ] ;
     sh:property [ sh:path rdfs:label ] ;
     sh:property [ sh:path sg:dblpId ] ;
     sh:property [ sh:path sg:name ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:scigraphId ] ;
 
     .
 
 # shape - Conference
 
-shapes:Conference.scigraph-2017-11-07-cc-by
+shapes:Conference.scigraph-2017-11-07-cc-zero
     a sh:NodeShape ;
     sh:targetClass sg:Conference ;
-    sg:shapeDataClient "scigraph-2017-11-07-cc-by" ;
-    sg:shapeDataGraph sgg:conferences.scigraph-2017-11-07-cc-by ;
+    sg:shapeDataClient "scigraph-2017-11-07-cc-zero" ;
+    sg:shapeDataGraph sgg:conferences.scigraph-2017-11-07-cc-zero ;
     sg:shapeType "export" ;
-    rdfs:label "SHACL shape for the sg:Conference model (scigraph-2017-11-07-cc-by)" ;
+    rdfs:label "SHACL shape for the sg:Conference model (scigraph-2017-11-07-cc-zero)" ;
     sh:closed true ;
 
     sh:property [ sh:path rdf:type ] ;
@@ -62,6 +63,7 @@ shapes:Conference.scigraph-2017-11-07-cc-by
     sh:property [ sh:path sg:dateEnd ] ;
     sh:property [ sh:path sg:dateStart ] ;
     sh:property [ sh:path sg:hasConferenceSeries ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:name ] ;
     sh:property [ sh:path sg:number ] ;
     sh:property [ sh:path sg:scigraphId ] ;

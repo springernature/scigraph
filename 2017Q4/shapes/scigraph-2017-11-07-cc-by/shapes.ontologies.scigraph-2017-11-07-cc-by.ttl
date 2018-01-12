@@ -48,6 +48,7 @@ shapes:OwlOntology.scigraph-2017-11-07-cc-by
     sh:property [ sh:path rdfs:isDefinedBy ] ;
     sh:property [ sh:path rdfs:label ] ;
     sh:property [ sh:path rdfs:seeAlso ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:webpage ] ;
     sh:property [ sh:path vann:preferredNamespacePrefix ] ;
     sh:property [ sh:path vann:preferredNamespaceUri ] ;
@@ -70,6 +71,7 @@ shapes:OwlClass.scigraph-2017-11-07-cc-by
     sh:property [ sh:path rdfs:comment ] ;
     sh:property [ sh:path rdfs:seeAlso ] ;
     sh:property [ sh:path rdfs:isDefinedBy ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:namespace ] ;
     sh:property [ sh:path rdfs:subClassOf ] ;
 
@@ -94,6 +96,7 @@ shapes:OwlDatatypeProperty.scigraph-2017-11-07-cc-by
     sh:property [ sh:path rdfs:range ] ;
     sh:property [ sh:path rdfs:seeAlso ] ;
     sh:property [ sh:path rdfs:subPropertyOf ] ;
+    sh:property [ sh:path sg:license ] ;
 
     .
 
@@ -117,6 +120,7 @@ shapes:OwlObjectProperty.scigraph-2017-11-07-cc-by
     sh:property [ sh:path rdfs:range ] ;
     sh:property [ sh:path rdfs:seeAlso ] ;
     sh:property [ sh:path rdfs:subPropertyOf ] ;
+    sh:property [ sh:path sg:license ] ;
 
     .
 
@@ -137,5 +141,6 @@ shapes:OwlAnnotationProperty.scigraph-2017-11-07-cc-by
     sh:property [ sh:path rdfs:label ] ;
     sh:property [ sh:path rdfs:seeAlso ] ;
     sh:property [ sh:path rdfs:subPropertyOf ] ;
+    sh:property [ sh:path sg:license ] ;
 
     .

@@ -35,5 +35,6 @@ shapes:Article.scigraph-2017-11-07-cc-by-nc
 
     sh:property [ sh:path sg:abstract ] ;
     sh:property [ sh:path sg:abstractTranslated ] ;
+    sh:property [ sh:path sg:license ] ;
 
     .

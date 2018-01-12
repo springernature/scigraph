@@ -38,6 +38,7 @@ shapes:IndexCheckEvent.scigraph-2017-11-07-cc-by
     sh:property [ sh:path rdfs:label ] ;
     sh:property [ sh:path sg:annotationAgent ] ;
     sh:property [ sh:path sg:date ] ;
+    sh:property [ sh:path sg:license ] ;
     sh:property [ sh:path sg:scigraphId ] ;
     sh:property [ sh:path sg:hasAnnotationThing ] ;
 
