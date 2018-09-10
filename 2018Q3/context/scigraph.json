@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@version": 0.1,
+        "@version": 1,
         "@vocab": "http://schema.org/",
         "@base": null,
         "sg": "http://scigraph.springernature.com/id/",
