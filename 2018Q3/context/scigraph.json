@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "@version": 0.1,
+        "@vocab": "http://schema.org/",
+        "@base": null,
+        "sg": "http://scigraph.springernature.com/id/",
+        "sgo": "http://scigraph.springernature.com/ontologies/core/",
+        "id": "@id",
+        "type": "@type"
+    }
+}
