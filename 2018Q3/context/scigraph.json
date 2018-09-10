@@ -1,6 +1,7 @@
 {
     "@context": {
         "@vocab": "http://schema.org/",
+        "@base": null,
         "sg": "http://scigraph.springernature.com/id/",
         "sgo": "http://scigraph.springernature.com/ontologies/core/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
