@@ -18,6 +18,9 @@
             "@id": "sgo:sdSource",
             "@type": "@id"
         },
+        "sdDataset": {
+            "@id": "sgo:sdDataset"
+        },
         "isCurrent": {
             "@id": "sgo:isCurrent",
             "@type": "Boolean"
@@ -29,6 +32,15 @@
         "editor": {
             "@id": "schema:editor",
             "@container": "@list"
+        },
+        "inDefinedTermSet": {
+            "@id": "schema:inDefinedTermSet",
+            "@type": "@id"
+        },
+        "sameAs": {
+            "@id": "schema:sameAs",
+            "@type": "@id",
+            "@container": "@set"
         }
     }
 }
