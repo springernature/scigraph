@@ -21,6 +21,9 @@
         "sdDataset": {
             "@id": "sgo:sdDataset"
         },
+        "datePublishedReg": {
+            "@id": "sgo:datePublishedReg"
+        },
         "isCurrent": {
             "@id": "sgo:isCurrent",
             "@type": "Boolean"
