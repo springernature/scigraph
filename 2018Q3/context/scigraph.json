@@ -44,6 +44,11 @@
             "@id": "schema:sameAs",
             "@type": "@id",
             "@container": "@set"
-        }
+        },
+        "isFundedItemOf": {
+            "@reverse": "pending:fundedItem",
+            "@type": "@id",
+            "@container": "@set"
+        }        
     }
 }
