@@ -1,0 +1,146 @@
+{
+    "@context": "https://rawgit.com/springernature/scigraph/master/2018Q3/context/scigraph.json",
+    "id": "sg:journal.18957",
+    "type": "Periodical",
+    "name": "Nature",
+    "alternateName": "International weekly journal of science",
+    "issn": ["0028-0836", "1476-4687"],
+    "publisher": {
+        "type": "Organization",
+        "name": "Nature Publishing Group UK"
+    },
+    "publisherImprint": "Nature Research",
+    "mainEntity": "Science, Humanities and Social Sciences, multidisciplinary",
+    "url": "http://www.nature.com/nature/",
+    "sameAs": ["https://app.dimensions.ai/details/publication/pub.1000676771"],
+    "inLanguage": ["en"],
+    "startDate": "1869",
+    "license": "Subscription Only",
+    "isAccessibleForFree": false,
+    "editor": [
+        {
+            "type": "Person",
+            "familyName": "Skipper",
+            "givenName": "Magdalena"
+        }
+    ],
+    "identifier": [
+        {
+            "type": "PropertyValue",
+            "name": "dimensions_id",
+            "value": ["journ.18957"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "oclc_id",
+            "value": ["01586310"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "wos_id",
+            "value": ["0028-0836/NATURE"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "scopus_id",
+            "value": ["21206"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "nlm_unique_ids",
+            "value": ["0410462"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "smsids",
+            "value": ["102293"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "nsd_ids",
+            "value": ["422484"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "era_ids",
+            "value": ["17479"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "crossref_id",
+            "value": ["0028-0836/1476-4687/Nature"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "readcube_id",
+            "value": ["0028-0836/1476-4687/Nature"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "springer_id",
+            "value": ["41586", "3000", "42260", "42261"]
+        }
+    ],
+    "about": [
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://scigraph.springernature.com/ontologies/product-market-codes/",
+            "id": "http://scigraph.springernature.com/ontologies/product-market-codes/SCA11007",
+            "name": "Science, Humanities and Social Sciences, multidisciplinary"
+        },
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://scigraph.springernature.com/ontologies/product-market-codes/",
+            "id": "http://scigraph.springernature.com/ontologies/product-market-codes/SCA12000",
+            "name": "Science, multidisciplinary"
+        }
+    ],
+    "contentRating": [
+        {
+            "type": "Rating",
+            "ratingValue": "8.039",
+            "author": "snip"
+        },
+        {
+            "type": "Rating",
+            "ratingValue": "18.134",
+            "author": "sjr"
+        },
+        {
+            "type": "Rating",
+            "ratingValue": "18.134",
+            "author": "sjr"
+        },
+        {
+            "type": "Rating",
+            "ratingValue": "41.577",
+            "dateCreated": "2017",
+            "author": "impact_factor_wos"
+        },
+        {
+            "type": "Rating",
+            "ratingValue": "40.137",
+            "dateCreated": "2016",
+            "author": "impact_factor_wos"
+        },
+        {
+            "type": "Rating",
+            "ratingValue": "38.138",
+            "dateCreated": "2015",
+            "author": "impact_factor_wos"
+        },
+        {
+            "type": "Rating",
+            "ratingValue": "41.456",
+            "dateCreated": "2014",
+            "author": "impact_factor_wos"
+        }
+    ],
+    "sdDatePublished": "2018-04-21T20:00",
+    "sdLicense": "https://scigraph.springernature.com/explorer/license/",
+    "sdPublisher": {
+        "type": "Organization",
+        "name": "Springer Nature - SN SciGraph project"
+    },
+    "sdSource": "http://bucket.s3-aws-region.amazonaws.com/data/source/path"
+}

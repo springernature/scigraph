@@ -1,0 +1,87 @@
+{
+    "@context": "https://rawgit.com/springernature/scigraph/master/2018Q3/context/scigraph.json",
+    "id": "sg:grant.2691278",
+    "type": "MonetaryGrant",
+    "name": "Joint SNP and CNV calling in 1000 Genomes sequence data",
+    "description": "DESCRIPTION: (provided by applicant): The 1000 Genomes Project is developing data resources and analytical methods required for the next stage of human genetics research: (a) discovering millions of novel polymorphisms with frequencies 0.5%-10%, which can then be tested for association to disease via imputation and direct genotyping in patients, and (b) bringing together genome centers, technology companies and population geneticists in a collaborative framework to develop data formats, analytical methods and standards for sensitive, accurate genome-wide resequencing for rare variants. The Project's goals are aggressive as detection of rare variants requires unprecedented accuracy, multiplied by the inclusion of multiple rapidly-evolving next generation sequencing platforms. Key tasks for Data Processing include (a) defining the biases and error processes characteristic of each sequencing platform, (b) determining how to use properly calibrated data to discover and genotype variants (SNP and structural), including making use of population genetics and prior array data for each sample, and (c) making it easy for users to browse the resulting data, and integrate it in statistical genetic analysis of disease samples. As members of the 1000 Genomes Project Analysis Group, we propose three Aims. First, to develop, implement and apply methodology to convert raw intensity data from each platform into accurate four-base probabilities, refining and calibrating the underlying base-call probabilities, and increasing accuracy. Second, to develop and implement an integrated approach to SNP and CNV detection that utilizes these probabilities, combines information across multiple samples, and exploits existing information from genotyping arrays, increasing sensitivity and accuracy for both SNPs and structural variants. Third, to develop user-friendly software for browsing and applying 1000 Genomes Project data in disease research, making Project data on sequence variation and linkage disequilibrium accessible and easily usable to the wider genetics community. We have assembled an experienced and skilled team of statistical and population genetic analysts and software engineers, with a track record of contributions to the SNP Consortium, HapMap project, and disease association studies. If funded, we will develop improved methods for interpreting raw next generation sequencing data, and software tools that speed the application of data from the Project to the genetics community. PUBLIC HEALTH RELEVANCE: The data for the 1000 Genomes project will provide the underpinnings for the execution and interpretation of all complex human disease genetic research that follows. As this constitutes the most prodigious investment in human variation resource generation to date, it is Imperative that the data from this project is processed and analyzed as accurately as possible as the raw data is of such a scale that it cannot be maintained permanently. In addition the methods developed in this proposal will be directly applied beyond the 1000 Genomes project to medical sequencing efforts to unlock the genetics of complex disease.",
+    "url": "http://projectreporter.nih.gov/project_info_description.cfm?aid=7932960",
+    "sameAs": ["https://app.dimensions.ai/details/grant/grant.2691278"],
+    "start_date": "2009-09-16T00:00:00Z",
+    "end_date": "2013-06-30T00:00:00Z",
+    "inLanguage": ["en"],
+    "funder": {
+        "type": "Organization",
+        "id": "http://www.grid.ac/institutes/grid.280128.1"
+    },
+    "recipient": [
+        {
+            "type": "Organization",
+            "id": "http://www.grid.ac/institutes/grid.66859.34"
+        },
+        {
+            "type": "Person",
+            "id": "sg:ur.011517303117.07",
+            "familyName": "DALY",
+            "givenName": "MARK J",
+            "affiliation": {
+                "type": "Organization",
+                "name": "BROAD INSTITUTE, INC.",
+                "id": "http://www.grid.ac/institutes/grid.66859.34"
+            }
+        },
+        {
+            "type": "Role",
+            "member": "sg.persons:ur.011517303117.07",
+            "roleName": "PI"
+        }
+    ],
+    "amount": {
+        "type": "MonetaryAmount",
+        "value": "180000",
+        "currency": "USD"
+    },
+    "//": "NOTE funded pubs are not normally added here but in pubs data, via the reverse property isFundedItemOf",
+    "fundeditem": [
+        {
+            "type": "CreativeWork",
+            "id": "sg:pub.10.1038/nature09534",
+            "sameAs": "https://doi.org/10.1038/nature09534"
+        },
+        {
+            "type": "CreativeWork",
+            "sameAs": "https://doi.org/10.1093/bioinformatics/btq671"
+        }
+    ],
+    "identifier": [
+        {
+            "type": "PropertyValue",
+            "name": "dimensions_id",
+            "value": ["grant.2691278"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "nih_id",
+            "value": ["U01HG005208"]
+        }
+    ],
+    "keywords": ["structural variants", "applications", "etcetera"],
+    "about": [
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/2201"
+        },
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/2206"
+        }
+    ],
+    "sdDatePublished": "2018-04-21T20:00",
+    "sdLicense": "https://scigraph.springernature.com/explorer/license/",
+    "sdPublisher": {
+        "type": "Organization",
+        "name": "Springer Nature - SN SciGraph project"
+    },
+    "sdSource": "http://bucket.s3-aws-region.amazonaws.com/data/source/path"
+}
