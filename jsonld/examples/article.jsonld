@@ -18,7 +18,7 @@
             "volumeNumber": "164"
         },
         {
-            "id": "sg.journals:jour.1018957",
+            "id": "sg.journal.1018957",
             "type": "Periodical",
             "name": "Nature",
             "issn": ["0028-0836", "1476-4687"],
@@ -34,7 +34,7 @@
             "type": "Person",
             "familyName": "BROOM",
             "givenName": "R.",
-            "id": "sg.persons:ur.07436771311.31",
+            "id": "sg.person.07436771311.31",
             "affiliation": {
                 "type": "Organization",
                 "name": "United Institute of Geology, Geophysics, and Mineralogy, Siberian Branch, Russian Academy of Sciences, Novosibirsk, Russia",
@@ -46,7 +46,7 @@
             "type": "Person",
             "familyName": "ROBINSON",
             "givenName": "J. T.",
-            "id": "sg.persons:ur.015344462111.07",
+            "id": "sg.person.015344462111.07",
             "affiliation": {
                 "type": "Organization",
                 "name": "United Institute of Geology, Geophysics, and Mineralogy, Siberian Branch, Russian Academy of Sciences, Novosibirsk, Russia",

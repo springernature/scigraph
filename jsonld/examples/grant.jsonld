@@ -31,7 +31,7 @@
         },
         {
             "type": "Role",
-            "member": "sg.persons:ur.011517303117.07",
+            "member": "sg.person.011517303117.07",
             "roleName": "PI"
         }
     ],
