@@ -11,6 +11,7 @@
         "grid-institutes": "http://www.grid.ac/institutes/",
         "sg": "http://scigraph.springernature.com/",
         "sgo": "http://scigraph.springernature.com/ontologies/core/",
+        "sgo-pmc": "http://scigraph.springernature.com/ontologies/product-market-codes/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "schema": "http://schema.org/",
