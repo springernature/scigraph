@@ -1,5 +1,5 @@
 {
-    "@context": "https://rawgit.com/springernature/scigraph/master/jsonld/sgcontext.json",
+    "@context": "https://cdn.jsdelivr.net/gh/springernature/scigraph/jsonld/sgcontext.json",
     "id": "sg:grant.2691278",
     "type": "MonetaryGrant",
     "name": "Joint SNP and CNV calling in 1000 Genomes sequence data",

@@ -1,5 +1,5 @@
 {
-    "@context": "https://rawgit.com/springernature/scigraph/master/jsonld/sgcontext.json",
+    "@context": "https://cdn.jsdelivr.net/gh/springernature/scigraph/jsonld/sgcontext.json",
     "id": "sg:pub.10.1038/164322a0",
     "type": "ScholarlyArticle",
     "name": "A New Type of Fossil Man",
