@@ -1,0 +1,47 @@
+{
+    "@context": "https://rawgit.com/springernature/scigraph/master/jsonld/sgcontext.json",
+    "id": "sg:person.07436771311.31",
+    "type": "Person",
+    "sameAs": [
+        "https://app.dimensions.ai/discover/publication?and_facet_researcher=ur.07436771311.31",
+        "https://orcid.org/0000-0002-1838-9363"
+    ],
+    "familyName": "BROOM",
+    "givenName": "R.",
+    "affiliation": [
+        {
+            "type": "OrganizationRole",
+            "affiliation": {
+                "type": "Organization",
+                "id": "http://www.grid.ac/institutes/grid.4886.2"
+            },
+            "isCurrent": true
+        },
+        {
+            "type": "Organization",
+            "id": "http://www.grid.ac/institutes/grid.421234.2"
+        },
+        {
+            "type": "Organization",
+            "id": "http://www.grid.ac/institutes/grid.457768.f"
+        },
+        {
+            "type": "Organization",
+            "id": "http://www.grid.ac/institutes/grid.457836.b"
+        }
+    ],
+    "identifier": [
+        {
+            "type": "PropertyValue",
+            "name": "orcid_id",
+            "value": ["0000-0002-1838-9363"]
+        }
+    ],
+    "sdDatePublished": "2018-04-21T20:00",
+    "sdLicense": "https://scigraph.springernature.com/explorer/license/",
+    "sdPublisher": {
+        "type": "Organization",
+        "name": "Springer Nature - SN SciGraph project"
+    },
+    "sdSource": "http://bucket.s3-aws-region.amazonaws.com/data/source/path"
+}

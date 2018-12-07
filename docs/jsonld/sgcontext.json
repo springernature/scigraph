@@ -1,0 +1,64 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "@base": null,
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "geo-pos": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "grid": "http://www.grid.ac/ontology/",
+        "grid-institutes": "http://www.grid.ac/institutes/",
+        "sg": "http://scigraph.springernature.com/",
+        "sgo": "http://scigraph.springernature.com/ontologies/core/",
+        "sgo-pmc": "http://scigraph.springernature.com/ontologies/product-market-codes/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "pending": "http://pending.schema.org/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "skosxl": "http://www.w3.org/2008/05/skos-xl#",
+        "vann": "http://purl.org/vocab/vann/",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "id": "@id",
+        "type": "@type",
+        "sdSource": {
+            "@id": "sgo:sdSource",
+            "@type": "@id"
+        },
+        "Patent": {
+            "@id": "sgo:Patent"
+        },
+        "sdDataset": {
+            "@id": "sgo:sdDataset"
+        },
+        "isCurrent": {
+            "@id": "sgo:isCurrent",
+            "@type": "Boolean"
+        },
+        "author": {
+            "@id": "schema:author",
+            "@container": "@list"
+        },
+        "editor": {
+            "@id": "schema:editor",
+            "@container": "@list"
+        },
+        "inDefinedTermSet": {
+            "@id": "schema:inDefinedTermSet",
+            "@type": "@id"
+        },
+        "sameAs": {
+            "@id": "schema:sameAs",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "isFundedItemOf": {
+            "@reverse": "pending:fundedItem",
+            "@type": "@id",
+            "@container": "@set"
+        }
+    }
+}
