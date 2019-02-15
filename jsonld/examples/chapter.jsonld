@@ -1,5 +1,5 @@
 {
-    "@context": "https://rawgit.com/springernature/scigraph/master/jsonld/sgcontext.json",
+    "@context": "https://springernature.github.io/scigraph/jsonld/sgcontext.json",
     "id": "sg:pub.10.1002/9780470015902.a0027944",
     "type": "Chapter",
     "name": "Recent Advances on Polymer Lipid Particles (PoLP) in Membrane Protein Research",
