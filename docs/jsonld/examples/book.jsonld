@@ -1,0 +1,75 @@
+{
+    "@context": "https://springernature.github.io/scigraph/jsonld/sgcontext.json",
+    "id": "sg:pub.10.4324/9780203402498",
+    "type": "Book",
+    "name": "Political Ideologies",
+    "url": "https://www.tandfebooks.com/doi/abs/10.4324/9780203402498",
+    "sameAs": [
+        "https://doi.org/10.4324/9780203402498",
+        "https://app.dimensions.ai/details/publication/pub.1004502899"
+    ],
+    "datePublished": "2003-09-02",
+    "datePublishedReg": "2003-09-02",
+    "description": "This informative and widely-used text is now available in a third edition. Building on the success of previous editions, it continues to provide a clear and accessible introduction to the complexities of political ideologies. The latest edition of Political Ideologies:",
+    "isAccessibleForFree": false,
+    "isbn": ["9780203218396"],
+    "genre": "book",
+    "inLanguage": ["en"],
+    "publisher": {
+        "type": "Organization",
+        "name": "Routledge"
+    },
+    "productId": [
+        {
+            "type": "PropertyValue",
+            "name": "dimensions_id",
+            "value": ["pub.1004502899"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "readcube_id",
+            "value": [
+                "1574d12a53e8f73242db0b60a9d1c88038bafb3adb190f01495fce798f6d580a"
+            ]
+        }
+    ],
+    "keywords": ["third edition", "introduction", "complexity"],
+    "author": [
+        {
+            "type": "Person",
+            "familyName": "Eccleshall",
+            "givenName": "Robert"
+        },
+        {
+            "type": "Person",
+            "familyName": "Postis",
+            "givenName": "Alan"
+        },
+        {
+            "type": "Person",
+            "familyName": "Kenny",
+            "givenName": "Michael"
+        }
+    ],
+    "about": [
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/0303",
+            "name": "Macromolecular and Materials Chemistry"
+        },
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/03",
+            "name": "Chemical Sciences"
+        }
+    ],
+    "sdDatePublished": "2018-04-21T20:00",
+    "sdLicense": "https://scigraph.springernature.com/explorer/license/",
+    "sdPublisher": {
+        "type": "Organization",
+        "name": "Springer Nature - SN SciGraph project"
+    },
+    "sdSource": "http://bucket.s3-aws-region.amazonaws.com/data/source/path"
+}
