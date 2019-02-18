@@ -1,0 +1,110 @@
+{
+    "@context": "https://springernature.github.io/scigraph/jsonld/sgcontext.json",
+    "id": "sg:clinicaltrial.NCT00072761",
+    "type": "MedicalStudy",
+    "name": "Silent Cerebral Infarct Transfusion Multi-Center Clinical Trial",
+    "description": "The goal of this study is to determine the effectiveness of blood transfusion therapy for prevention of silent cerebral infarct (stroke) in children with sickle cell anemia.\n\nDetailed Description\nSilent cerebral infarct (stroke) is the most common cause of severe cognitive impairments and related neurological functions in children with sickle cell anemia. Currently there exists no systemic strategy to identify or treat children with silent strokes. The primary aim of this trial is to determine the effectiveness of blood transfusion therapy for the prevention of silent strokes in children with sickle cell anemia. This trial will also determine if blood transfusion therapy will prevent further cerebral injury and if the measured benefits of the therapy outweigh the risks associated with it. Participants in this multi-center trial will be randomly assigned to one of 2 groups-the blood transfusion group or the observation group. Those in the blood transfusion group will receive at least monthly blood transfusion therapy. All participants will have history and physical examinations every 3 months, and magnetic resonance imaging (MRI) at the beginning of their entry into the study and at study exit. Advances in the understanding and treatment of silent strokes will likely lead to a decrease in the burden associated with cerebral injury in children with sickle cell anemia and change the standard care for these children. Statistical Analyses: The original statistical analysis plan suggested a simple difference in proportions between the proportion of individuals with an endpoint in the transfusion group and the proportion of individuals with an endpoint in the usual care group using a traditional chi squared test. The data should be analyzed according to an intent to treat principal. Because of various logistical concerns in SIT, some individuals were not imaged within the 36-month window (30-42 months). We propose using all available information by changing the primary analysis from a dichotomous (yes/no) endpoint to a traditional epidemiological endpoint of an incidence rate in the group randomized to transfusion to the incidence rate in the group randomized to usual care. We will compute the incidence ratio: (a/ta)/(b/tb) Where \"a\" is the number of endpoints in the transfusion group, \"ta\" is the sum of the individual times at risk of the individuals randomized to the transfusion group, \"b\" is the number of endpoints in the observation group and \"tb\" is the sum of the individual times at risk of the individuals randomized to the observation group. Since the standard statistical test for it being different than 1.0 involves the assumption of a Poisson distribution, we will compute an \"exact\" 95% confidence interval using a bootstrap with a large number of replications.",
+    "start_date": "2004-12-01T00:00:00Z",
+    "end_date": "2013-12-01T00:00:00Z",
+    "url": "https://clinicaltrials.gov/show/NCT00072761",
+    "sameAs": ["https://app.dimensions.ai/details/clinical_trial/NCT00072761"],
+    "sponsor": [
+        {
+            "type": "Organization",
+            "id": "http://www.grid.ac/institutes/grid.416870.c"
+        },
+        {
+            "type": "Organization",
+            "id": "http://www.grid.ac/institutes/grid.152326.1"
+        },
+        {
+            "type": "Organization",
+            "id": "http://www.grid.ac/institutes/grid.4367.6"
+        }
+    ],
+    "subjectOf": [
+        {
+            "type": "CreativeWork",
+            "id": "sg:pub.10.1038/165022a0",
+            "sameAs": [
+                "https://doi.org/10.1038/165022a0",
+                "https://app.dimensions.ai/details/publication/pub.1055780051"
+            ]
+        },
+        {
+            "type": "CreativeWork",
+            "id": "https://app.dimensions.ai/details/publication/pub.1004204240"
+        }
+    ],
+    "about": [
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/3177"
+        }
+    ],
+    "keywords": [
+        "multi-center trial",
+        "trial",
+        "transfusion therapy",
+        "bootstrap",
+        "history",
+        "severe cognitive impairment",
+        "clinical trial",
+        "stroke",
+        "primary aim",
+        "statistical analysis",
+        "sum",
+        "assumption",
+        "endpoint",
+        "transfusion",
+        "beginning",
+        "incidence rate",
+        "effectiveness",
+        "large number",
+        "risk",
+        "cerebral infarct",
+        "TB",
+        "therapy",
+        "window",
+        "incidence",
+        "benefit",
+        "primary analysis",
+        "available information",
+        "SIT",
+        "usual care",
+        "CHI",
+        "Poisson distribution",
+        "child",
+        "cerebral injury",
+        "entry",
+        "difference",
+        "burden",
+        "replication",
+        "Magnetic Resonance Imaging",
+        "prevention",
+        "confidence interval",
+        "individual",
+        "standard care",
+        "Sickle Cell Anemia",
+        "silent stroke",
+        "decrease",
+        "intent",
+        "blood transfusion",
+        "TAS",
+        "neurological function",
+        "usual care group",
+        "silent cerebral infarct",
+        "observation",
+        "physical examination",
+        "proportion",
+        "yes/no"
+    ],
+    "sdDatePublished": "2018-04-21T20:00",
+    "sdLicense": "https://scigraph.springernature.com/explorer/license/",
+    "sdPublisher": {
+        "type": "Organization",
+        "name": "Springer Nature - SN SciGraph project"
+    },
+    "sdSource": "http://bucket.s3-aws-region.amazonaws.com/data/source/path"
+}

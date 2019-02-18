@@ -1,0 +1,76 @@
+{
+    "@context": "https://springernature.github.io/scigraph/jsonld/sgcontext.json",
+    "id": "sg:patent.US-7309768-B2",
+    "type": "Patent",
+    "name": "PRO4347 polypeptides",
+    "description": "<p num=\"p-0001\">The present invention is directed to novel polypeptides and to nucleic acid molecules encoding those polypeptides. Also provided herein are vectors and host cells comprising those nucleic acid sequences, chimeric polypeptide molecules comprising the polypeptides of the present invention fused to heterologous polypeptide sequences, antibodies which bind to the polypeptides of the present invention and to methods for producing the polypeptides of the present invention.</p>",
+    "datePublished": "2007-12-18T00:00:00Z",
+    "sameAs": ["https://app.dimensions.ai/details/patent/US-7309768-B2"],
+    "author": [
+        {
+            "type": "Person",
+            "name": "Audrey Goddard"
+        },
+        {
+            "type": "Person",
+            "name": "Paul J. Godowski"
+        },
+        {
+            "type": "Person",
+            "name": "Austin L. Gurney"
+        },
+        {
+            "type": "Person",
+            "name": "Victoria Smith"
+        },
+        {
+            "type": "Person",
+            "name": "William I. Wood"
+        }
+    ],
+    "recipient": [
+        {
+            "type": "Organization",
+            "id": "http://www.grid.ac/institutes/grid.418158.1"
+        }
+    ],
+    "citation": [
+        {
+            "type": "CreativeWork",
+            "id": "sg:pub.10.1038/165022a0",
+            "sameAs": [
+                "https://doi.org/10.1038/165022a0",
+                "https://app.dimensions.ai/details/publication/pub.1055780051"
+            ]
+        },
+        {
+            "type": "CreativeWork",
+            "id": "https://app.dimensions.ai/details/publication/pub.1004204240"
+        }
+    ],
+    "about": [
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/2837"
+        }
+    ],
+    "keywords": [
+        "vector",
+        "method",
+        "nucleic acid molecule",
+        "nucleic acid sequence",
+        "host cell",
+        "antibody",
+        "polypeptide",
+        "invention",
+        "polypeptide sequence"
+    ],
+    "sdDatePublished": "2018-04-21T20:00",
+    "sdLicense": "https://scigraph.springernature.com/explorer/license/",
+    "sdPublisher": {
+        "type": "Organization",
+        "name": "Springer Nature - SN SciGraph project"
+    },
+    "sdSource": "http://bucket.s3-aws-region.amazonaws.com/data/source/path"
+}

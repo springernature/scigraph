@@ -1,0 +1,178 @@
+{
+    "@context": "https://springernature.github.io/scigraph/jsonld/sgcontext.json",
+    "id": "sg:pub.10.1002/9780470015902.a0027944",
+    "type": "Chapter",
+    "name": "Recent Advances on Polymer Lipid Particles (PoLP) in Membrane Protein Research",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/9780470015902.a0027944",
+    "sameAs": [
+        "https://doi.org/10.1002/9780470015902.a0027944",
+        "https://app.dimensions.ai/details/publication/pub.1105553051"
+    ],
+    "isPartOf": [
+        {
+            "type": "Book",
+            "name": "eLS",
+            "isbn": ["9780470016176", "9780470015902"]
+        }
+    ],
+    "datePublished": "2018-07-13",
+    "pagination": "1-11",
+    "description": "Membrane proteins (MPs) structure elucidation is of crucial importance as they represent a major target for drug design. However, owing to their high hydrophobicity, MPs are challenging proteins to study. The use of polymer lipid nanoparticles (PoLP) has recently allowed a leap forward in the field of MP research. A wide range of polymers have been successfully used for elucidating the structure of MPs. One polymer in particular, styrene maleic acid (SMA) copolymer, is recently catching a large interest owing to its easy use in detergent\u2010free membrane solubilisation and the recent successes in purification and stabilising MPs for further biophysical studies. SMA copolymers are new tools to purify membrane proteins. SMA copolymers can solubilise membrane proteins directly without the need of detergents. Membrane proteins purified in SMALP are stable over time and remain active owing to the retention of native lipids around the proteins. SMA use limitations include acid pH sensitivity, divalent cations sensitivity and UV absorption. New polymers (SMA and others) are being engineered to overcome these limitations.",
+    "isAccessibleForFree": false,
+    "genre": "chapter",
+    "inLanguage": ["en"],
+    "publisher": {
+        "type": "Organization",
+        "name": "John Wiley & Sons, Ltd",
+        "location": "Chichester, UK"
+    },
+    "author": [
+        {
+            "type": "Person",
+            "familyName": "de Marcos Lousa",
+            "givenName": "Carine",
+            "affiliation": [
+                {
+                    "type": "Organization",
+                    "name": "Leeds Beckett University",
+                    "alternateName": "Leeds Beckett University",
+                    "id": "http://www.grid.ac/institutes/grid.10346.30"
+                },
+                {
+                    "type": "Organization",
+                    "name": "University of Leeds, Leeds, UK",
+                    "alternateName": "University of Leeds",
+                    "id": "http://www.grid.ac/institutes/grid.9909.9"
+                }
+            ]
+        },
+        {
+            "type": "Person",
+            "familyName": "Postis",
+            "givenName": "Vincent",
+            "affiliation": [
+                {
+                    "type": "Organization",
+                    "name": "Leeds Beckett University",
+                    "alternateName": "Leeds Beckett University",
+                    "id": "http://www.grid.ac/institutes/grid.10346.30"
+                },
+                {
+                    "type": "Organization",
+                    "name": "University of Leeds, Leeds, UK",
+                    "alternateName": "University of Leeds",
+                    "id": "http://www.grid.ac/institutes/grid.9909.9"
+                }
+            ]
+        }
+    ],
+    "editor": [
+        {
+            "type": "Person",
+            "familyName": "John Wiley & Sons Ltd"
+        }
+    ],
+    "productId": [
+        {
+            "type": "PropertyValue",
+            "name": "dimensions_id",
+            "value": ["pub.1105553051"]
+        },
+        {
+            "type": "PropertyValue",
+            "name": "readcube_id",
+            "value": [
+                "79c45cb420d89226c1894ddbc61cd85f413807e654be854e49ba4a2ece7f27d4"
+            ]
+        }
+    ],
+    "keywords": [
+        "cave",
+        "swartkrans",
+        "jaws",
+        "skull",
+        "huge ape - man paranthropus",
+        "mr. j. t. robinson",
+        "april 29",
+        "low jaw",
+        "new type",
+        "man",
+        "same cave",
+        "large ape - man",
+        "date",
+        "main bone breccia",
+        "cave deposit",
+        "pocket",
+        "dark type",
+        "matrix",
+        "limited extent",
+        "ft",
+        "thickness",
+        "deposit",
+        "other bone",
+        "human jaw",
+        "few remain",
+        "small mammal",
+        "age",
+        "main deposit",
+        "upper pliocene",
+        "lower pleistocene"
+    ],
+    "about": [
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/0303",
+            "name": "Macromolecular and Materials Chemistry"
+        },
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/03",
+            "name": "Chemical Sciences"
+        },
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/0601",
+            "name": "Biochemistry and Cell Biology"
+        },
+        {
+            "type": "DefinedTerm",
+            "inDefinedTermSet": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/",
+            "id": "http://purl.org/au-research/vocabulary/anzsrc-for/2008/06",
+            "name": "Biological Sciences"
+        }
+    ],
+    "citations": [
+        {
+            "type": "CreativeWork",
+            "id": "sg:pub:10.1038/165022a0",
+            "sameAs": [
+                "https://doi.org/10.1038/165022a0",
+                "https://app.dimensions.ai/details/publication/pub.1055780051"
+            ]
+        },
+        {
+            "type": "CreativeWork",
+            "id": "https://app.dimensions.ai/details/publication/pub.1004204240"
+        }
+    ],
+    "isFundedItemOf": [
+        {
+            "type": "MonetaryGrant",
+            "id": "sg:grant.2719091"
+        },
+        {
+            "type": "MonetaryGrant",
+            "id": "sg:grant.2725800"
+        }
+    ],
+    "sdDatePublished": "2018-04-21T20:00",
+    "sdLicense": "https://scigraph.springernature.com/explorer/license/",
+    "sdPublisher": {
+        "type": "Organization",
+        "name": "Springer Nature - SN SciGraph project"
+    },
+    "sdSource": "http://bucket.s3-aws-region.amazonaws.com/data/source/path"
+}
